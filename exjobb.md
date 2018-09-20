@@ -18,9 +18,12 @@ There are many potential factors for defining what constitues 'Good' DX.  <cite>
 - Are the solutions self-serving, without need of demos or 'call us'?
 - Is the pricing clearly stated?
 
-<cite>[Sam Jarman][1]</cite> has other factors for he uses to evaulate if something gives a good DX. He for example puts emphesis on communication between the product provider and the developer. The dialog between the product provider and the community needs to be authentic, open and honest in order the give a good developer experience, according to Jarman. He also states that 
+<cite>[Sam Jarman][1]</cite> has other factors for he uses to evaulate if something gives a good DX. He for example puts emphesis on communication between the product provider and the developer. The dialog between the product provider and the community needs to be authentic, open and honest in order the give a good developer experience, according to Jarman. He also states that ...
+
+<cite>[Graziotin, et. al.][3]</cite> researched what makes a developer happy and unhappy, and found several indicators. They found both internal- and extrernal factors, where external are the most interesting for this project. However, the internal unhappiness factor of 'work withdrawel' is worth noticing. Being stuck on a task without any progress for too long leads to unhappiness.
 
 ## Subtitle 3
 
 [1]: https://hackernoon.com/the-best-practices-for-a-great-developer-experience-dx-9036834382b0
 [2]: http://everydeveloper.com/developer-experience/
+[3]: https://www.sciencedirect.com/science/article/pii/S0164121218300323

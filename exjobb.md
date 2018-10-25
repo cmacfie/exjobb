@@ -8,8 +8,18 @@ This paper aims to
 __ Text about openness/closeness of a software platform grows dependence, but risks given advantages to competitors __
 __ Qlik Core builds on other platforms (Javacript, Docker, etc). Is it it's own platform? __
 
+### What is User Experience?
+User Experience (UX) is the collective term of many disciplines merged into one that
+evaluates the overall experience delivered to a user of a system, product or service.
+The term was coined by Donald Norman in the 1990s[Citation needed] who has a background
+in the fields of cognitive science and usability engineering.
+It is defined by ISO 9241-210, part of "Ergonomics of human system interactions",
+as *"a person's perceptions and responses that result from the use or anticipated use of a product, system or service"*.
+It can therefor be considered a subjective quality of a product, system or service.
+
+
 ### What is Developer Experience?
-Developer Experience, or DX, is similiar to the more well known User Experience (UX), but with the user being a software developer. DX is defined by Sam Jarman as 
+Developer Experience, or DX, is similar to the more well known User Experience (UX), but with the user being a software developer. DX is defined by Sam Jarman as
 
 "_/...the experience developers have when they use your product, be it client libraries, SDKs, frameworks, open source code, tools, API, technology or service._" <cite>[Sam Jarman][1]</cite>. 
 
@@ -25,6 +35,38 @@ There are many potential factors for defining what constitues 'Good' DX.  <cite>
 <cite>[Sam Jarman][1]</cite> has other factors for he uses to evaulate if something gives a good DX. He for example puts emphesis on communication between the product provider and the developer. The dialog between the product provider and the community needs to be authentic, open and honest in order the give a good developer experience, according to Jarman. He also states that ...
 
 <cite>[Graziotin, et. al.][3]</cite> researched what makes a developer happy and unhappy, and found several indicators. They found both internal- and extrernal factors, where external are the most interesting for this project. However, the internal unhappiness factor of 'work withdrawel' is worth noticing. Being stuck on a task without any progress for too long leads to unhappiness.
+
+### Kinds of APIs
+Application Program Interfaces (APIs) are, simply put, a software that lets one application interact with another applications inner data and services.
+It's the link between the two pieces of software that let's them communicate. Because of APIs broad nature, there are many types of APIs.
+Applications are in need of an interface to interact with it's inner parts to create, read, update and read (CRUD) as well as execute commands.
+#### Internal, Public and Partner APIs
+Internal APIs are APIs that har meant to be used in production and within an organisation or company.
+They are often developed to be used between different teams in the company to
+be able to connect software components in the application, without having to actually know the
+code of component. The benefit of this is that the team can open up certain needed functionality of
+the software to other teams while still being in control of their own code.
+This kind of APIs are protected and require internal API keys to access to
+ensure that people outside of the company are not able to access them.
+
+Public APIs is another kind of API. This is a way for the company to open up
+functionality of the software's inner workings to the world so that anyone
+may build new applications that are built upon the original software.
+This kind of interface often only has a small percentage of the functionality
+that the internal API has, since the circuitry of the software must be protected for
+security reasons as well as business intelligence theft. If the internal API was
+open to the public anyone could build their own copy of the program.
+This kind of APIs either do not require any API key to access, or have
+an API key that is open for anyone to acquire.
+
+Partner APIs are a third interface that can be shared business-to-business (B2B), with
+strategic partners to the company. Partner APIs often put some restraints on what
+can be exposed so that the inner workings of the software is still protected, but
+is able to be more open than a public API. These kinds of APIs require an API key that
+is often contracted with terms and condition to protect the company's business intelligence. <cite>[Levin, Guy.][6]</cite>
+
+#### REST vs SOAP
+REST (Representational State Transfer)
 
 ## Execution
 
@@ -68,4 +110,4 @@ The non-developer group cares about other things than the developers. This group
 [3]: https://www.sciencedirect.com/science/article/pii/S0164121218300323	"What happens when software developers are (un)happy"
 [4]: https://medium.com/@ApurvaBDave/lessons-in-business-to-developer-marketing-55c847300808	"Four Strategies for Business-to-Developer (B2D) Marketing"
 [5]: https://www.mnot.net/blog/2012/04/14/user_personas_for_http_apis	"User Personas for HTTP APIs"
-
+[6]: https://blog.restcase.com/internal-vs-external-apis/ "Internal vs External APIs"

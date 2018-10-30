@@ -25,7 +25,7 @@ Developer Experience, or DX, is similar to the more well known User Experience (
 
 ### How do we define 'Good DX'?
 
-There are many potential factors for defining what constitues 'Good' DX.  <cite>[EveryDeveloper][2]</cite> has developed a _DX Index_ from 1-10, where they consider four factors:
+There are many potential factors for defining what constitutes 'Good' DX.  <cite>[EveryDeveloper][2]</cite> has developed a _DX Index_ from 1-10, where they consider four factors:
 
 - Are the libraries available in popular languages?
 - How prominent, in-depth are the starting guides?
@@ -82,7 +82,14 @@ The result of the survey can be seen in Appendix Y.
 The results were evaluated through initially three different filters, which were compared to the overall group, to see if there were any trends amongst certain groups. The groups that were filtered by were: 'People with more than 5 years experience in the industry', 'People who are developers within the industry' and 'People in companies with more than 200 employees'. The last filter with the larger companies was scrapped since the majority of all answers were from Qlik, and the controll group was therefor to small to compare with.
 ##### Software factors
 Overall, all but 3 factors scored a positive score, meaning that they are all factors are more often considered than not. The most important factor was 'The API has code examples', followed by the importance of an active community around the software, and thirdly that the API explainations were thorough.
-The least two important factors were 'The documentation has consistent language' and 'The release- and change notes are thorough'. This is an interesting find, since litterature highlights these to factors as being very important. Many companies also spend a lot of resources to keep documentation up-to-date and release notes thorough. Here we see that most people, more often than not, do _not_ consider these factors.
+The least two important factors were 'The documentation has consistent language' and 'The release- and change notes are thorough'.
+This is an interesting find, since literature highlights these to factors
+as being very important. Many companies also spend a lot of resources to
+keep documentation up-to-date and release notes thorough. Here we see that
+ most people, more often than not, do _not_ consider these factors. A
+ potential explanation to this could be that the question is phrased so
+ that it puts the emphasis on _try_ a new software, whereas these two
+ factors may be only relevant in long term use of a software.
 
 For the more experienced users, the result differ some to the control group. They take less consideration to factors surrounding APIs, documentation and time to get started, and care more about pricing, cross-platform compatibility and the thoroughness of release notes.
 
@@ -94,6 +101,10 @@ With the more experienced users, they considered all factors even more rarely th
 
 With the group consisting of only developers, it's much the same as before, with the one exception that 'I have heard of the creator of the software before' had an increase by 10%. It is however still the least considered factor.
 
+#### Follow-up interview
+After the results had been evaluated, two follow-up interviews were
+conducted in order to get some insights if there were any issues with
+the survey.
 
 #### Conclusions from survey
 The two factors 'The documentation has consistent language' and 'The release- and change notes are thorough' scored surprisingly low. This goes against the litterature, and will be investigated more. A potential difference could be that question only states what would make the user *try* a new software. It may not be an initial stopper, but could cause issues once the user has decided to use the software. 

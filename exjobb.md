@@ -180,29 +180,72 @@ retrieving data and not performing actions.
 ## Execution
 
 ### Initial Survey
-After gathering potential factors, through litteratur and brainstorming, on what would lead to good DX, it was concluded that a smaller, initial survey would be relevant to conduct to test the waters on the potential factors that had been found. It also intended to find more potential factors that had not been thought of.
-The small survey got 38 responses, mostly from Qlik employees. The survey confirmed some initial assumtions but also raised some questions. It also highlighted that some questions may need to be added, some rephrased and some removed for the main survey. The survey questions can be seen in Appendix X.
+After gathering potential factors, through litteratur and brainstorming,
+on what would lead to good DX, it was concluded that a smaller, initial
+survey would be relevant to conduct to test the waters on the potential
+factors that had been found. It also intended to find more potential factors
+that had not been thought of.
+The small survey got 38 responses, mostly from Qlik employees. The survey
+confirmed some initial assumtions but also raised some questions. It also
+highlighted that some questions may need to be added, some rephrased and
+some removed for the main survey. The survey questions can be seen in Appendix X.
 #### Survey structure
-The survey consisted of three parts. The first part was a small screener to gather some information about the person taking the survey. The second part was about users usage of new software and the third and last part was about the DX factors, and how important they were to the user.
-After the survey was done, the data was gathered and evaluated using Qlik Sense. Although the dataset was too small to make any direct affirmations, it gave some indications.
-In the part about the DX factors, the user were to rank each factor depending on how often they considered the factor when finding new software. To able to rank the answers, each answer was given a value: 'Always Consider' (+5), 'Often Consider' (+3), 'Sometimes Consider' (0), 'Rarely Consider' (-3), 'Never Consider' (-5). After summing them up, I was able to give each question a score from -10 to 10, where a 10.0 score would mean that everyone answered 'Always consider' and -10.0 would mean that everyone answered 'Never consider', and a 0/10 would mean that the result had been even outed from both sides.
+The survey consisted of three parts. The first part was a small screener
+to gather some information about the person taking the survey. The second
+part was about users usage of new software and the third and last part
+was about the DX factors, and how important they were to the user.
+After the survey was done, the data was gathered and evaluated using
+Qlik Sense. Although the dataset was too small to make any direct affirmations,
+it gave some indications.
+In the part about the DX factors, the user were to rank each factor depending
+on how often they considered the factor when finding new software. To able to
+rank the answers, each answer was given a value: 'Always Consider' (+4),
+'Often Consider' (+3), 'Sometimes Consider' (+2), 'Rarely Consider' (+1),
+'Never Consider' (0). After summing them up, I was able to give each question
+a score between 0 and 1, where a 1.0 score would mean that everyone answered
+'Always consider' and 0 would mean that everyone answered 'Never consider'.
 The result of the survey can be seen in Appendix Y.
 #### Indications of survey results
-The results were evaluated through initially three different filters, which were compared to the overall group, to see if there were any trends amongst certain groups. The groups that were filtered by were: 'People with more than 5 years experience in the industry', 'People who are developers within the industry' and 'People in companies with more than 200 employees'. The last filter with the larger companies was scrapped since the majority of all answers were from Qlik, and the controll group was therefor to small to compare with.
+The results were evaluated through initially three different filters,
+which were compared to the overall group, to see if there were any trends
+ amongst certain groups. The groups that were filtered by were:
+ 'People with more than 5 years experience in the industry',
+ 'People who are developers within the industry' and
+ 'People in companies with more than 200 employees'. The last filter with
+ the larger companies was scrapped since the majority of all answers were
+ from Qlik, and the group was therefor a too big majority of the whole group.
+ When evaluating the data we also found that the people who had the jobtitle of
+ architect stood out quite a lot compared to the overall group. Even though the
+ sample size was small, only 5 out of the 38, this group could be interesting to look
+ at since they are a key group for this survey.
+ 
+ It should be noted that there is quite a lot of overlap between the experienced group and the developer group.
+ 13 people are developers with more than five years experience in the industry.
+ 
 ##### Software factors
-Overall, all but 3 factors scored a positive score, meaning that they are all factors are more often considered than not. The most important factor was 'The API has code examples', followed by the importance of an active community around the software, and thirdly that the API explainations were thorough.
-The least two important factors were 'The documentation has consistent language' and 'The release- and change notes are thorough'.
-This is an interesting find, since literature highlights these to factors
-as being very important. Many companies also spend a lot of resources to
-keep documentation up-to-date and release notes thorough. Here we see that
- most people, more often than not, do _not_ consider these factors. A
+Overall, all but 3 factors scored a positive score, meaning that they are
+all factors are more often considered than not. The most important factor
+was 'The API has code examples', followed by the importance of an active
+community around the software, and thirdly that the API explanations were thorough.
+The least two important factors were 'The documentation has consistent language'
+and 'The release- and change notes are thorough'. This is an interesting find,
+since literature highlights these to factors as being very important.
+Many companies also spend a lot of resources to keep documentation up-to-date
+ and release notes thorough. Here we see that most people,
+ more often than not, do _not_ consider these factors. A
  potential explanation to this could be that the question is phrased so
  that it puts the emphasis on _try_ a new software, whereas these two
  factors may be only relevant in long term use of a software.
 
-For the more experienced users, the result differ some to the control group. They take less consideration to factors surrounding APIs, documentation and time to get started, and care more about pricing, cross-platform compatibility and the thoroughness of release notes.
+For the more experienced users, the result differ some to the control group. 
+They take less consideration to factors surrounding APIs, documentation and time to get started, 
+and care more about pricing, cross-platform compatibility and the thoroughness of release notes.
 
-With the group consisting of mainly developers, we see almost the inversion of some trends in the more-experience-group. The developer group cares about documentation and time-to-get-started, and do not care about release notes and cross-platform compatiblity.
+With the group consisting of mainly developers, we see almost the inversion of some trends in 
+the more-experience-group. The developer group cares about documentation and time-to-get-started, 
+and do not care about release notes and cross-platform compatibility.
+
+ ![Scores](ScoresByPoints.png)
 ##### Creator behind the software factors
 Overall, the creator behind the software seem to be not non-important, but not very important, with all factors scoring close to 0/10. The most commonly considered factor was that the creator seemed professional, but that only ranked 3.0/10. The least consided factor was 'I have heard of the creator of the software before', which ranked -2.47/10.
 

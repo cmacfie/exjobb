@@ -13,19 +13,19 @@ and bug fixes. We also talk about known bugs that we are still working on.
 
 This is the new method to create the cake engine. It replaces the now depricated
 
-####`makeAnySizeCake(int: size)`
+#### `makeAnySizeCake(int: size)`
 
 This method replaces the methods `makeLargeCake()`, `makeMediumCake()` and `makeSmallCake`.
 
 
-### Updated
+### Updated Methods
 
 `serveCake(string: place)` now also supports the input `inFace`.
 
-### Deprecated
+### Deprecated Methods
 Some methods will be deprecated with the this release. 
 
-####Deprecated Methods
+#### List
 * `makeBadEngine()`, instead use `createSuperEngine()`
 
 `makeBadEngine()` will not be supported with the introduction of our new engine.

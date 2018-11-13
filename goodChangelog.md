@@ -12,8 +12,6 @@ and bug fixes. We also talk about known bugs that we are still working on.
 
 With the release we present two new methods.
 
-----
-
 #### `createSuperEngine()`
 
 This is the new method to create the cake engine. It replaces the now deprecated
@@ -38,7 +36,7 @@ This method replaces the methods `makeLargeCake()`, `makeMediumCake()` and `make
 ### Deprecated Methods
 Some methods will be deprecated with the this release. 
 
-#### List
+#### List of depricated methods
 * `makeBadEngine()`, instead use `createSuperEngine()`
 
 `makeBadEngine()` will not be supported with the introduction of our new engine.
@@ -48,7 +46,7 @@ Some methods will be deprecated with the this release.
 * `makeSmallCake()`, instead use `makeAnySizeCake(100)`
 
 The reasoning behind removing the  methods are that they are reliant on our old `BadCakeMachineEnginge`
-that had performance issues. 
+that had performance issues. With the introduction of `makeAnySizeCake`, the baker can make any sized cake.
 
 * `makeHorribleCake()`
 
@@ -92,7 +90,7 @@ BakerPropertyError: {
     Name: John Smith
     Age: 54
     State: HungOver
-    EnergyLevel: -54
+    EnergyLevel: -1
 }
 Expected EnergyLevel to be 100.
 Could not bake cake.

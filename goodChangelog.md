@@ -9,18 +9,31 @@ community have pointed about. This release sees new methods, updated methods, de
 and bug fixes. We also talk about known bugs that we are still working on.
 
 ### New Methods
+
+With the release we present two new methods.
+
+----
+
 #### `createSuperEngine()`
 
-This is the new method to create the cake engine. It replaces the now depricated
+This is the new method to create the cake engine. It replaces the now deprecated
+
+ Read specifications here: **<cite>[createSuperEngine specifications][1]</cite>**
+ 
+ ----
 
 #### `makeAnySizeCake(int: size)`
 
 This method replaces the methods `makeLargeCake()`, `makeMediumCake()` and `makeSmallCake`.
 
+ Read specifications here: **<cite>[makeAnySizeCake spec][1]</cite>**
+
 
 ### Updated Methods
 
 `serveCake(string: place)` now also supports the input `inFace`.
+ 
+ Read specifications here: **<cite>[serveCake spec][1]</cite>**
 
 ### Deprecated Methods
 Some methods will be deprecated with the this release. 

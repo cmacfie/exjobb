@@ -177,10 +177,20 @@ Qlik Core also provides a discovery service called Mira, which let's the user
 make insights about their data. Mira is a REST-API, since this is a about
 retrieving data and not performing actions.
 
+### API User Personas
+There are many types of people using platforms, whom all have different requirements.
+They can be roughly divided into two important groups: 'Decision makers' and 'Users'.
+These both need to be catered to in order to have a successful platform: if the decision
+makers are ignored the platform will not be implemented by companies in the first place. 
+If the users are ignored, the platform will be quickly dropped since it's usage is not
+good enough.
+
+<cite>[Mark Nottingham][5]</cite> lists 11 personas for HTTP-based APIs. 
+
 ## Execution
 
 ### Initial Survey
-After gathering potential factors, through litteratur and brainstorming,
+After gathering potential factors, through litterateur and brainstorming,
 on what would lead to good DX, it was concluded that a smaller, initial
 survey would be relevant to conduct to test the waters on the potential
 factors that had been found. It also intended to find more potential factors
@@ -328,11 +338,35 @@ which they have power to make major decisions in the company. The group therefor
 have other priorities than the lone developer, that only considers his own workflow.
 In the next survey we will make the context more specific so that the two groups
 are not mixed up.
+
+## Survey 2
+### Changes from survey 1
+It was clear that most people had not heard of, or were not sure about, what developer experience was.
+I will therefor in the next survey explain more what DX is about.
+The follow-up interview made it clear that people may have not read the information text
+in the first survey, so I will therefor in the next survey confirm that they have read it.
+It was also not clear in what mindset people were when they answered survey 1, professional or 
+non-professional. It was also unclear if they were taking into consideration that others may use the 
+software. The next survey will therefor give a more precise context, so that we can be sure that
+the answers are consistent.
+
+Overall, the width of the project have to be scoped down, and some things will have to be dropped
+from exploration in this project.
+The first survey found that the creator behind a software was less considered than expected.
+The questions about how they find new software and how long time they spend on this will also
+be dropped from exploration.
+
+The focus will be scoped down to solely focus on the software considerations required to give
+a good DX.
+
+
 ## Good Sources
 
 <cite>[B2D practices and stratergies][4]</cite>. Some key notes are that in B2D is that the value of the product must shown before the purchase. Let developers use the product! Not demos or trials.
 
 <cite>[Developer Personas][5]</cite>. Defines different personas of developers. Who are the developers that will be using our product?
+
+<cite>[Best practices in API documentation][8]</cite> 
 
 [1]: https://hackernoon.com/the-best-practices-for-a-great-developer-experience-dx-9036834382b0	"The Best Practices for a Great Developer Experience (DX)"
 [2]: http://everydeveloper.com/developer-experience/	"WHAT IS DEVELOPER EXPERIENCE?"
@@ -341,3 +375,4 @@ are not mixed up.
 [5]: https://www.mnot.net/blog/2012/04/14/user_personas_for_http_apis	"User Personas for HTTP APIs"
 [6]: https://blog.restcase.com/internal-vs-external-apis/ "Internal vs External APIs"
 [7]: https://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#relwwwrest "W3 REST"
+[8]: https://swagger.io/blog/api-documentation/best-practices-in-api-documentation/

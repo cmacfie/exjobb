@@ -2,10 +2,21 @@
 
 ## Baker
 
-### `makeCake()`
+### `makeCake()` method
 
-`makeCake(Engine)` follows the exact instructions and amounts given by `Recipe`<sup><cite>[Spec][1]</cite></sup>. It will automatically change `mode` 
-of `Engine`<sup><cite>[Spec][1]</cite></sup>. It returns an object of the class `Cake`<sup><cite>[Spec][1]</cite></sup>.
+### Usage
+
+`baker.makeCake()`
+
+The method calls on the class `Baker` to follow the exact instructions and amounts given by 
+`Recipe`<sup><cite>[Spec][1]</cite></sup>. It will automatically 
+change `mode` 
+of `Engine`<sup><cite>[Spec][1]</cite></sup> if needed. It returns an object of the class 
+`Cake`<sup><cite>[Spec][1]</cite></sup> or throws an error.
+
+#### Parameters
+
+This method takes no parameters.
 
 #### Returns
 
@@ -17,9 +28,9 @@ of `Engine`<sup><cite>[Spec][1]</cite></sup>. It returns an object of the class 
 |`WrongEngineModeError`| Error| This error is returned when the mode of the `Engine` `mode` does not match the mode required by `Recipe` | 
 
 
-#### Example
+#### Examples
 
-##### Simple Example
+##### Basic Example
 This example makes a strawberry cake without any changes.
 ```
 let engine = makeSuperEngine();
@@ -28,17 +39,18 @@ baker.setRecipe('strawberry cake');
 let cake = baker.makeCake();
 baker.serveCake(cake);
 ```
-##### Advanced Example
+##### Example with modifications
 This example makes a strawberry cake, but doubles the amount of flour, changes the speed of the engine 
 and adds a pause step after step 4.
 ```
 let engine = makeSuperEngine();
 let baker = new Baker(engine);
 baker.setRecipe('strawberry cake');
-baker.setIngredientAmount(baker.getIngredient('flour').changeAmount(2));
+baker.setIngredientAmount('flour', baker.getRecipe().getAmount('flour')*2);
 baker.getEngine().setSpeed(400);
-baker.getRecipe().addStep('after', 4, new Step('pause', 300000));
-baker.makeCake();
+baker.setRecipe(baker.getRecipe().addStep('after', 4, new Step('pause', 300000));
+let cake = baker.makeCake();
+baker.serveCake(cake);
 ```
 
 

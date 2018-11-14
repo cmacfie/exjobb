@@ -14,7 +14,7 @@ With the release we present two new methods.
 
 #### `createSuperEngine()`
 
-This is the new method to create the cake engine. It replaces the now deprecated
+This is the new method to create the cake engine. It replaces the now deprecated `createEngine()`
 
  Read specifications here: **<cite>[createSuperEngine specifications][1]</cite>**
  
@@ -37,9 +37,9 @@ This method replaces the methods `makeLargeCake()`, `makeMediumCake()` and `make
 Some methods will be deprecated with the this release. 
 
 #### List of depricated methods
-* `makeBadEngine()`, instead use `createSuperEngine()`
+* `createEngine()`, instead use `createSuperEngine()`
 
-`makeBadEngine()` will not be supported with the introduction of our new engine.
+`createEngine()` will not be supported with the introduction of our new engine.
 
 * `makeLargeCake()`, instead use `makeAnySizeCake(500)`
 * `makeMediumCake()`, instead use `makeAnySizeCake(300)`
@@ -54,11 +54,11 @@ This method has been deprecated since it's usage has been close to zero. If you 
 the following code will yield the same result:
 ```
 let engine = createSuperEngine();
-engine.setRecipe('weddingCake');
-engine.getIngredients().forEach((ingredient) => {
+let baker = new Baker(engine);
+baker.setRecipe('weddingCake');
+baker.getIngredients().forEach((ingredient) => {
    ingredient.setAmount('random');
 });
-let baker = createBaker(engine);
 baker.makeCake();
 ```
 ### Bug fixes

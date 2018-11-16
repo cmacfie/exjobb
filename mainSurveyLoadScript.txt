@@ -1,0 +1,353 @@
+Set dataManagerTables = '','MainSurveyData', 'JobTitle', 'Level', 'Experience', 'Company Size', 'Decision Makers', 'Professional Group', 'Professional Single', 'Hobby', 'Positive DX', 'Negative DX';
+//This block renames script tables from non generated section which conflict with the names of managed tables
+
+For each name in $(dataManagerTables)
+    Let index = 0;
+    Let currentName = name;
+    Let tableNumber = TableNumber(name);
+    Let matches = 0;
+    Do while not IsNull(tableNumber) or (index > 0 and matches > 0)
+        index = index + 1;
+        currentName = name & '-' & index;
+        tableNumber = TableNumber(currentName)
+        matches = Match('$(currentName)', $(dataManagerTables));
+    Loop
+    If index > 0 then
+            Rename Table '$(name)' to '$(currentName)';
+    EndIf;
+Next;
+Set dataManagerTables = ;
+
+
+Unqualify *;
+
+
+[MainSurveyData]:
+LOAD
+	[Timestamp],
+	[Have you read and understood the text above?],
+	[Would you be willing to be contacted after this survey to do a more in-depth interview?],
+	[First- and last name],
+	[Email],
+	[What company do you work at?],
+	[What is your job title?],
+	[What is your level?],
+	[How many years have your been working professionally within the software industry?],
+	[How big is the company you work at?],
+	[Are you in a position where you can make decisions on what software other coworkers will use, for example what platform a project will be built upon?],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The API has code examples]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The API documentation gives thorough explanations on how it works]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [There exists an active online community around the software]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [I can have working code quickly]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The pricing of the software]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The software is compatible with different platforms (Such as different operating systems or browsers)]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The software uses the programming language I am most comfortable with]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The software is offered in more than one programming language]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [How often the software is updated]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The software has the same features on all different platforms (Such as different operating systems or browsers)]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The documentation is easy to navigate]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The documentation doesn't assume any prior expertise]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The documentation has consistent language]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The release- and change notes are thorough]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The official website looks professional]",
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The software is open source]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The API has code examples]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The API documentation gives thorough explanations on how it works]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [There exists an active online community around the software]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [I can have working code quickly]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The pricing of the software]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The software is compatible with different platforms (Such as different operating systems or browsers)]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The software uses the programming language I am most comfortable with]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The software is offered in more than one programming language]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [How often the software is updated]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The software has the same features on all different platforms (Such as different operating systems or browsers)]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The documentation is easy to navigate]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The documentation doesn't assume any prior expertise]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The documentation has consistent language]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The release- and change notes are thorough]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The official website looks professional]",
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The software is open source]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The API has code examples on how it works]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The API documentation gives thorough explanations on how it works]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [There exists an active online community around the software]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [I can have working code quickly]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The pricing of the software]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The software is compatible with different platforms (Such as different operating systems or browsers)]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The software uses the programming language I am most comfortable with]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The software is offered in more than one programming language]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [How often the software is updated]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The software has the same features on all different platforms (Such as different operating systems or browsers)]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The documentation is easy to navigate]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The documentation doesn't assume any prior expertise]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The documentation has consistent language]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The release- and change notes are thorough]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The official website looks professional]",
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The software is open source]",
+	[Did you read the background text above?],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The pricing of the software was easy to find]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The code examples for the API were good]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The API was thoroughly explained so that you could understand how it worked]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The online community was helpful with up-to-date discussion threads]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The documentation was easy to navigate]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [I could quickly have working code when starting from scratch]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The release notes for what's new/updated/deprecated/etc in an update were well-written]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software was compatible on different platforms (Such as different operating systems or browsers)]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software used a programming language I am skilled in]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software was offered in more than programming language]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software quickly released updates to address bugs]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The official website looked professional]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The documentation did not assume that I had any prior expertise with the software, not referencing software-specific things without explaining them]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The documentation had a consistent language, not using different words to mean the same thing]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software's features existed and acted the same on different platforms (such as different operating systems or browsers)]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software was open source]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The pricing of the software was hard to find]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The code examples for the APIs were bad]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The API was poorly explained so that you could not understand how it worked]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The online community was not helpful and the discussion threads were out-of-date]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The documentation was hard to navigate]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [I took a long time before I had working code when starting from scratch]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The change- and release logs for what's new/updated/deprecated/etc in an update were poorly written]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software was compatible on only one platform (Such as operating system or browser)]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software used a programming language I am not very skilled in]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software was only offered in one programming language]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software was slow to release updates to address bugs]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The official website did not look professional]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The documentation assumed I had prior expertise with the software, referencing software-specific things without explaining them]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The documentation did not have a consistent language, using different words to mean the same thing]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software's features did not exist or acted differently on different platforms (such as different operating systems or browsers)]",
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software was not open source]",
+	[Feedback]
+ FROM [lib://Exjobb/MainSurveyData.xlsx]
+(ooxml, embedded labels, table is MainSurveyData);
+
+
+[JobTitle]:
+CrossTable([JobTitle QID], [JobTitle Responses], 1)
+LOAD
+    [Timestamp],
+	[What is your job title?] as [Job Title]
+Resident [MainSurveyData];
+
+// 'Level', 'Experience', 'Company Size', 'Decision Makers';
+
+// 	[What is your level?],
+// 	[How many years have your been working professionally within the software industry?],
+// 	[How big is the company you work at?],
+// 	[Are you in a position where you can make decisions on what software other coworkers will use, for example what platform a project will be built upon?],
+[Level]:
+CrossTable([Level QID], [Level Rsponses], 1)
+LOAD
+	[Timestamp],
+    [What is your level?]
+Resident [MainSurveyData];
+
+[Experience_temp]:
+CrossTable([Experience QID], [Experience Responses], 1)
+LOAD
+	[Timestamp],
+	[How many years have your been working professionally within the software industry?]
+Resident [MainSurveyData];
+
+[Experience Grouped]:
+LOAD *,
+if((match([Experience Responses], '1 year') or match([Experience Responses], '2 years') or match([Experience Responses], '3 years') or match([Experience Responses], '4 years') or match([Experience Responses], 'Less than 1 year')), '< 5 years',
+if((match([Experience Responses], '5 - 7 years') or match([Experience Responses], '8 - 10 years')), '5 - 10 years',
+if((match([Experience Responses], '15 - 20 years') or match ([Experience Responses], '20 - 25 years')), '15 - 25 years',
+if((match([Experience Responses], '25+ years')), '25+ years')))) as [Experience Grouped]
+Resident [Experience_temp];
+
+DROP TABLE Experience_temp;
+
+[Company Size]:
+CrossTable([Company Size QID], [Company Size Responses], 1)
+LOAD
+	[Timestamp],
+    [How big is the company you work at?]
+Resident [MainSurveyData];
+
+[Decision Makers]:
+CrossTable([Decision Makers QID], [Decision Makers Responses], 1)
+LOAD
+	[Timestamp],
+    [Are you in a position where you can make decisions on what software other coworkers will use, for example what platform a project will be built upon?]
+Resident [MainSurveyData];
+
+// Professional Group
+
+[Professional Group_temp]:
+CrossTable([Group QID], [Group Responses], 1)
+LOAD
+	[Timestamp],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The API has code examples]" AS [The API has code examples],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The API documentation gives thorough explanations on how it works]" AS [The API documentation gives thorough explanations on how it works],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [There exists an active online community around the software]" AS [There exists an active online community around the software],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [I can have working code quickly]" AS [I can have working code quickly],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The pricing of the software]" AS [The pricing of the software],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The software is compatible with different platforms (Such as different operating systems or browsers)]" AS [The software is compatible with different platforms (Such as different operating systems or browsers)],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The software uses the programming language I am most comfortable with]" AS [The software uses the programming language I am most comfortable with],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The software is offered in more than one programming language]" AS [The software is offered in more than one programming language],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [How often the software is updated]" AS [How often the software is updated],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The software has the same features on all different platforms (Such as different operating systems or browsers)]" AS [The software has the same features on all different platforms (Such as different operating systems or browsers)],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The documentation is easy to navigate]" AS [The documentation is easy to navigate],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The documentation doesn't assume any prior expertise]" AS [The documentation doesn't assume any prior expertise],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The documentation has consistent language]" AS [The documentation has consistent language],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The release- and change notes are thorough]" AS [The release- and change notes are thorough],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The official website looks professional]" AS [The official website looks professional],
+	"When working professionally and deciding for a group, which of these traits or aspects do you usually consider when using a software platform? [The software is open source]" AS [The software is open source]
+Resident [MainSurveyData];
+
+[Professional Group]:
+LOAD *,
+if(match([Group Responses],'Always consider'),1,
+if(match([Group Responses],'Often consider'),0.75,
+if(match([Group Responses],'Sometimes consider'),0.5,
+if(match([Group Responses],'Rarely consider'),0.25,
+if(match([Group Responses],'Never consider'),0,0))))) as [Group Points]
+Resident [Professional Group_temp];
+
+Drop Table [Professional Group_temp];
+
+// Professional Single
+
+[Professional Single_temp]:
+Crosstable([Single QID], [Single Responses], 1)
+Load
+	[Timestamp],
+    "When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The API has code examples]" AS [The API has code examples],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The API documentation gives thorough explanations on how it works]" AS [The API documentation gives thorough explanations on how it works],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [There exists an active online community around the software]" AS [There exists an active online community around the software],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [I can have working code quickly]" AS [I can have working code quickly],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The pricing of the software]" AS [The pricing of the software],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The software is compatible with different platforms (Such as different operating systems or browsers)]" AS [The software is compatible with different platforms],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The software uses the programming language I am most comfortable with]" AS [The software uses the programming language I am most comfortable with],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The software is offered in more than one programming language]" AS [The software is offered in more than one programming language],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [How often the software is updated]" AS [How often the software is updated],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The software has the same features on all different platforms (Such as different operating systems or browsers)]" AS [The software has the same features on all different platforms],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The documentation is easy to navigate]" AS [The documentation is easy to navigate],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The documentation doesn't assume any prior expertise]" AS [The documentation doesn't assume any prior expertise],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The documentation has consistent language]" AS [The documentation has consistent language],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The release- and change notes are thorough]" AS [The release- and change notes are thorough],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The official website looks professional]" AS [The official website looks professional],
+	"When working professionally and deciding for yourself, which of these traits or aspects do you usually consider when using a software platform? [The software is open source]" AS [The software is open source]
+Resident [MainSurveyData];
+
+
+[Professional Group]:
+LOAD *,
+if(match([Single Responses],'Always consider'),1,
+if(match([Single Responses],'Often consider'),0.75,
+if(match([Single Responses],'Sometimes consider'),0.5,
+if(match([Single Responses],'Rarely consider'),0.25,
+if(match([Single Responses],'Never consider'),0,0))))) as [Single Points]
+Resident [Professional Single_temp];
+
+Drop Table [Professional Single_temp];
+
+// Hobby
+
+[Hobby_temp]:
+CrossTable([Hobby QID], [Hobby Responses], 1)
+Load
+	[Timestamp],
+    "When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The API has code examples on how it works]" AS [The API has code examples on how it works],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The API documentation gives thorough explanations on how it works]" AS [The API documentation gives thorough explanations on how it works],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [There exists an active online community around the software]" AS [There exists an active online community around the software],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [I can have working code quickly]" AS [I can have working code quickly],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The pricing of the software]" AS [The pricing of the software],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The software is compatible with different platforms (Such as different operating systems or browsers)]" AS [The software is compatible with different platforms],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The software uses the programming language I am most comfortable with]" AS [The software uses the programming language I am most comfortable with],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The software is offered in more than one programming language]" AS [The software is offered in more than one programming language],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [How often the software is updated]" AS [How often the software is updated],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The software has the same features on all different platforms (Such as different operating systems or browsers)]" AS [The software has the same features on all different platforms],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The documentation is easy to navigate]" AS [The documentation is easy to navigate],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The documentation doesn't assume any prior expertise]" AS [The documentation doesn't assume any prior expertise],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The documentation has consistent language]" AS [The documentation has consistent language],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The release- and change notes are thorough]" AS [The release- and change notes are thorough],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The official website looks professional]" AS [The official website looks professional],
+	"When working on a hobby project, which of these traits or aspects do you usually consider when using a software platform? [The software is open source]" AS [The software is open source]
+Resident [MainSurveyData];
+
+[Hobby]:
+LOAD *,
+if(match([Hobby Responses],'Always consider'),1,
+if(match([Hobby Responses],'Often consider'),0.75,
+if(match([Hobby Responses],'Sometimes consider'),0.5,
+if(match([Hobby Responses],'Rarely consider'),0.25,
+if(match([Hobby Responses],'Never consider'),0,0))))) as [Hobby Points]
+Resident [Hobby_temp];
+
+DROP TABLE Hobby_temp;
+
+// Positive DX
+[Positive DX_temp]:
+CrossTable([Positive DX QID], [Postive DX Responses], 1)
+LOAD
+	[Timestamp],
+    "On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The pricing of the software was easy to find]" AS [The pricing of the software was easy to find],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The code examples for the API were good]" AS [The code examples for the API were good],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The API was thoroughly explained so that you could understand how it worked]" AS [The API was thoroughly explained so that you could understand how it worked],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The online community was helpful with up-to-date discussion threads]" AS [The online community was helpful with up-to-date discussion threads],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The documentation was easy to navigate]" AS [The documentation was easy to navigate],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [I could quickly have working code when starting from scratch]" AS [I could quickly have working code when starting from scratch],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The release notes for what's new/updated/deprecated/etc in an update were well-written]" AS [The release notes for what's new/updated/deprecated/etc in an update were well-written],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software was compatible on different platforms (Such as different operating systems or browsers)]" AS [The software was compatible on different platforms],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software used a programming language I am skilled in]" AS [The software used a programming language I am skilled in],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software was offered in more than programming language]" AS [The software was offered in more than programming language],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software quickly released updates to address bugs]" AS [The software quickly released updates to address bugs],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The official website looked professional]" As [The official website looked professional],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The documentation did not assume that I had any prior expertise with the software, not referencing software-specific things without explaining them]" As [The documentation did not assume that I had any prior expertise with the software, not referencing software-specific things without explaining them],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The documentation had a consistent language, not using different words to mean the same thing]" AS [The documentation had a consistent language, not using different words to mean the same thing],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software's features existed and acted the same on different platforms (such as different operating systems or browsers)]" AS [The software's features existed and acted the same on different platforms (such as different operating systems or browsers)],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a POSITIVE FEELING? [The software was open source]" AS [The software was open source]
+Resident [MainSurveyData];
+
+[Postive DX]:
+LOAD *,
+if(match([Postive DX Responses],'5 - Very Important'),1,
+if(match([Postive DX Responses],'4'),0.75,
+if(match([Postive DX Responses],'3 - Neutral'),0.5,
+if(match([Postive DX Responses],'2'),0.25,
+if(match([Postive DX Responses],'1 - Not very important'),0,0))))) as [Positive DX Points]
+Resident [Positive DX_temp];
+
+DROP TABLE [Positive DX_temp];
+
+// Negative DX
+
+[Negative DX_temp]:
+CrossTable([Negative DX QID], [Negative DX Responses], 1)
+LOAD
+	[Timestamp],
+    "On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The code examples for the APIs were bad]" AS [The code examples for the APIs were bad],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The API was poorly explained so that you could not understand how it worked]" AS [The API was poorly explained so that you could not understand how it worked],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The online community was not helpful and the discussion threads were out-of-date]" AS [The online community was not helpful and the discussion threads were out-of-date],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The documentation was hard to navigate]" AS [The documentation was hard to navigate],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [I took a long time before I had working code when starting from scratch]" AS [I took a long time before I had working code when starting from scratch],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The change- and release logs for what's new/updated/deprecated/etc in an update were poorly written]" AS [The change- and release logs for what's new/updated/deprecated/etc in an update were poorly written],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software was compatible on only one platform (Such as operating system or browser)]" AS [The software was compatible on only one platform],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software used a programming language I am not very skilled in]" AS [The software used a programming language I am not very skilled in],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software was only offered in one programming language]" AS [The software was only offered in one programming language],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software was slow to release updates to address bugs]" AS [The software was slow to release updates to address bugs],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The official website did not look professional]" AS [The official website did not look professional],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The documentation assumed I had prior expertise with the software, referencing software-specific things without explaining them]" AS [The documentation assumed I had prior expertise with the software, referencing software-specific things without explaining them],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The documentation did not have a consistent language, using different words to mean the same thing]" AS [The documentation did not have a consistent language, using different words to mean the same thing],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software's features did not exist or acted differently on different platforms (such as different operating systems or browsers)]" AS [The software's features did not exist or acted differently on different platforms],
+	"On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the interaction with the software platform with a NEGATIVE FEELING? [The software was not open source]" AS [The software was not open source]
+Resident [MainSurveyData];
+
+[Negative DX]:
+LOAD *,
+if(match([Negative DX Responses],'5 - Very Important'),1,
+if(match([Negative DX Responses],'4'),0.75,
+if(match([Negative DX Responses],'3 - Neutral'),0.5,
+if(match([Negative DX Responses],'2'),0.25,
+if(match([Negative DX Responses],'1 - Not very important'),0,0))))) as [Negative DX Points]
+Resident [Negative DX_temp];
+
+DROP TABLE [Negative DX_temp];
+
+
+
+DROP TABLE MainSurveyData;
+
+

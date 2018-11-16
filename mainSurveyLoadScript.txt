@@ -121,12 +121,24 @@ LOAD
 (ooxml, embedded labels, table is MainSurveyData);
 
 
-[JobTitle]:
+[JobTitle_temp]:
 CrossTable([JobTitle QID], [JobTitle Responses], 1)
 LOAD
     [Timestamp],
-	[What is your job title?] as [Job Title]
+	Capitalize([What is your job title?]) as [Job Title]
 Resident [MainSurveyData];
+
+[Job Title]:
+LOAD *,
+	if((WildMatch([JobTitle Responses], '*Architect*')), 'Architects',
+    if((WildMatch([JobTitle Responses], 'Software*Developer*') or WildMatch([JobTitle Responses], 'Developer')), 'Software Developers',
+    if((WildMatch([JobTitle Responses], '*Developer*')), 'Other Developers',
+    if((WildMatch([JobTitle Responses], '*Software*Engineer*')), 'Software Engineers',
+    if((WildMatch([JobTitle Responses], '*Engineer*')), 'Other Engineers',
+    if((WildMatch([JobTitle Responses], '*')), 'Other')))))) as [Job Title Grouped]
+Resident [JobTitle_temp];
+
+DROP TABLE JobTitle_temp;
 
 // 'Level', 'Experience', 'Company Size', 'Decision Makers';
 

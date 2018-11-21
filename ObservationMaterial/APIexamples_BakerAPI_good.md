@@ -1,6 +1,8 @@
-# MyBakery API
+# MyBakery Platform
 
-## Baker
+## Baker API
+
+The `Baker` is the central part of the MyBaker Platform, creating all `Cake` objects.
 
 ### `makeCake()` method
 
@@ -14,11 +16,11 @@ change `mode`
 of `Engine`<sup><cite>[Spec][1]</cite></sup> if needed. It returns an object of the class 
 `Cake`<sup><cite>[Spec][1]</cite></sup> or throws an error.
 
-#### Parameters
+### Parameters
 
 This method takes no parameters.
 
-#### Returns
+### Returns
 
 |Return type | Status | Description |
 |---------|--------|-------------|
@@ -28,27 +30,30 @@ This method takes no parameters.
 |`WrongEngineModeError`| Error| This error is returned when the mode of the `Engine` `mode` does not match the mode required by `Recipe` | 
 
 
-#### Examples
+### Examples
 
-##### Basic Example
+#### Example
 This example makes a strawberry cake without any changes.
 ```
-let engine = makeSuperEngine();
+let engine = SuperEngine();
 let baker = new Baker(engine);
-baker.setRecipe('strawberry cake');
+let recipeDB = new RecipeDatabase('recipes/cakes.json');
+baker.setRecipe(recipeDB.getRecipe('strawberry cake'));
 let cake = baker.makeCake();
 baker.serveCake(cake);
 ```
-##### Example with modifications
+#### Example with modifications
 This example makes a strawberry cake, but doubles the amount of flour, changes the speed of the engine 
 and adds a pause step after step 4.
 ```
-let engine = makeSuperEngine();
+let engine = SuperEngine();
 let baker = new Baker(engine);
-baker.setRecipe('strawberry cake');
-baker.setIngredientAmount('flour', baker.getRecipe().getAmount('flour')*2);
-baker.getEngine().setSpeed(400);
-baker.setRecipe(baker.getRecipe().addStep('after', 4, new Step('pause', 300000));
+let recipeDB = new RecipeDatabase('recipes/cakes.json');
+let recipe = recipeDB.getRecipe('strawberry cake');
+recipe.setIngredientAmount('flour', recipe.getAmount('flour')*2);
+recipe.addStep('after', 4, new Step('pause', 300000));
+baker.setRecipe(recipe);
+baker.setEngine(getEngine().setSpeed(400));
 let cake = baker.makeCake();
 baker.serveCake(cake);
 ```

@@ -53,9 +53,10 @@ that had performance issues. With the introduction of `makeAnySizeCake`, the bak
 This method has been deprecated since it's usage has been close to zero. If you still wish to use it
 the following code will yield the same result:
 ```
-let engine = createSuperEngine();
+let engine = SuperEngine();
 let baker = new Baker(engine);
-baker.setRecipe('weddingCake');
+let recipeDB = new RecipeData(cakes.json);
+baker.setRecipe(recipeDB.get('weddingCake'));
 baker.getIngredients().forEach((ingredient) => {
    ingredient.setAmount('random');
 });
@@ -88,7 +89,6 @@ We are currently still working on the bug of the baker returning the error code 
 ```
 BakerPropertyError: {
     Name: John Smith
-    Age: 54
     State: HungOver
     EnergyLevel: -1
 }

@@ -359,6 +359,151 @@ be dropped from exploration.
 The focus will be scoped down to solely focus on the software considerations required to give
 a good DX.
 
+### Survey 2 Structure
+The second survey can be divided into two major parts. The first part, like in survey 1, focuses on what people consider when
+choosing a software platform. This part was divided into three categories, which from now on will be called 'Group', 'Single' and 'Hobby'.
+Group: When working professionally and choosing a software platform for a group of people,
+Single: When professionally choosing a software platform solely for yourself, and Hobby: When working non-professionally on a hobby project.
+The questions were the same in these three prats, the only different was the context given.
+
+The second part of the survey focused on developer experience. It had two sub-parts, how likely a factor is to cause them 
+to leave an interaction with a software platform with a positive feeling, and how likely a factor is to cause them to leave
+an interaction with a software platform with a negative feeling. The question were closely linked to the questions asked in 
+the consideration part, but focused on the _feeling_ rather than if they usually consider the factor when choosing a software 
+platform.
+
+### Survey 2 results
+
+We got 39 responses in total. The results were loaded into Qlik Sense where we could find different groups and patterns.
+We looked at the results from three angels: The overall average result, result depending on your job title and result
+depending on how much experience you have in the industry.
+
+#### Overall Result
+In general, people consider things more often when they are choosing for a group than for themselves. For the three categories, 
+Single is the closest to the average result, with Group and Hobby existing as opposites on either side of Single. 
+In all but one case, if it's often considered when choosing for a group, it's _not_ important when choosing for a hobby project, 
+and vice versa. 
+
+Overall it can be said that there is a direct correlation between if an aspect in it's good form has a positive impact, 
+that same aspect in it's bad form will have about the same level of negative impact. However, in all but once case, the positive
+effect is greater than the negative effect, if only slightly. In general, it's closely related to how often something is 
+considered. If something has a strong DX-impact, it is something that is often considered, and vice versa. There are some
+outliers to this, but in general it seems that people actually consider things that will cause them to have a good DX.
+
+The top three most important aspects for each category can be seen in the table below.
+
+|Average                                                          |Group                                                            |Single                                                           |Hobby                                                            |
+|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
+|The API has code examples                                        |The API has code examples                                        |The API has code examples                                        |The pricing of the software                                      |
+|The API documentation gives thorough explanations on how it works|The API documentation gives thorough explanations on how it works|The API documentation gives thorough explanations on how it works|The API has code examples                                        |
+|I can have working code quickly                                  |The software is compatible with different platforms              |I can have working code quickly                                  |I can have working code quickly                                  |
+
+
+The overall result concluded that _the_ most considered aspect overall is 'The API has code examples'. For hobby, it's the second most
+ important aspect, losing the first place by only 0.03 points. For everyone else, it's the most important aspect.
+ Further, good code examples had the biggest positive impact on developer 
+ experience, and bad code examples had the biggest negative impact on DX. The negative impact if the examples are bad are not
+ as extreme as the positive impact is if they are good however. In conclusion, API examples are a key factor for software platforms' quality.
+ 
+ The thoroughness of the documentation is also one of the most important aspects, coming in as the second most important aspect
+ for all categories except for Hobby. The positive DX-impact is as big as the negative one, and it's also reflected in that
+ it's consideration points are as high as the DX-impact points.
+ 
+ Having working code quickly is also in the top three for all but the group category, where it's in fourth place.
+ The positive DX-impact if you can have working code quickly is slightly higher than the negative DX-impact if it takes a 
+ long time before you have working code. The positive impact is also stronger than if you compare it to how often it's considered.
+ 
+ Having the software be compatible with different platforms is a big divider. It's the third most important aspect for Group, but
+ one the least important aspects for Hobby, and somewhere in the middle for Single. The positive impact is lower than how often it's
+ considered, and the negative DX-impact is even less. If you exclude the Group-category, it places itself on average as the 11<sup>th</sup> most
+ important aspect, out of 16. 
+ 
+ The pricing of the software is important to everyone, placing itself on average as the 4<sup>th</sup> most important aspect overall,
+ but _the_ most important aspect for Hobby. For group and single, it's both the 5<sup>th</sup> and 4<sup>th</sup> most important aspect respectively.
+ It's a little bit harder to make statements about the DX-impact since it's phrased a little differently. The question for consideration
+ is simply how often they consider 'The pricing of the software'. In the DX-questions however, it's phrased as 'The pricing of the software
+ was easy to find' and 'The pricing of the software has hard to find'. The positive and negative impact of those two are however
+ less than how often it is considered.
+
+#### Job Title
+
+The job titles were divided into four groups: Architects, Developer and Engineers, Managers and Other. There were in total
+10 architects, 21 developer and engineers, 4 managers and 4 other. The Other-group consisted of a CTO, a 'Head of consulting & 
+development', a 'Principal Consultant' and a 'Product Designer'.
+
+The top three aspects for each job title category can be seen below.
+
+|Architect                                                        |Developers and Engineers                                         |Managers                                                         |Other                                                            |
+|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
+|The API has code examples                                        |The API has code examples                                        |The API has code examples                                        |The API has code examples                                        |
+|I can have working code quickly                                  |The API documentation gives thorough explanations on how it works|The pricing of the software                                      |I can have working code quickly                                  |
+|The API documentation gives thorough explanations on how it works|The pricing of the software                                      |The API documentation gives thorough explanations on how it works|The pricing of the software                                      |
+
+
+#### Experience
+
+The responses were also divided into five groups, depending on how much experience in the software industry the had.
+There were 5 people with less than 5 years experience, 10 people with 5 - 10 years experience, 10 people with 10 - 15 years experience,
+12 people with 15 - 25 years experience and 2 people with 25+ years of experience in the software industry.
+
+|Less than 5 years                                                |5 - 10 years                                                     |10 - 15 years                                                    |15 - 25 years                                                    |25+ years                                                        |
+|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
+|The API documentation gives thorough explanations on how it works|The API has code examples                                        |The API has code examples                                        |The API has code examples                                        |The API has code examples                                        |
+|The API has code examples                                        |The API documentation gives thorough explanations on how it works|The API has code examples                                        |The pricing of the software                                      |I can have working code quickly                                  |
+|There exists an active online community around the software      |I can have working code quickly                                  |The API documentation gives thorough explanations on how it works|I can have working code quickly                                  |The API documentation gives thorough explanations on how it works|
+
+#### Decision Makers
+
+We divided the group into decision makers and non-decision makers. The groups are of comparable size: There are 22 
+decision makers for groups and 14 non-decision makers for grups, and 3 who answered that it is not applicable.
+The following are the top three most important aspects to the groups:
+
+|Decision Makers | Non-Decision Makers|
+|----------------|--------------------|
+|The API has code examples                                        |The API has code examples                                        |
+|The API documentation gives thorough explanations on how it works|The pricing of the software |
+|I can have working code quickly                                  |The API documentation gives thorough explanations on how it works|
+
+It could also be interesting to see who are the decision makers. Divided by job title and level, it looks like this:
+
+|Job Title | Level | Decision Makers | Non-decision Makers |
+|---------|---------|-----------------|--------------------|
+||**22** | **14**|
+|Architect|Junior   |0|0|
+|Architect|Senior   |7|2|
+|Developer and Engineers|Junior   |3|4|
+|Developer and Engineers|Senior   |5|7|
+|Managers|Junior   |1|0|
+|Managers|Senior   |3|0|
+|Other|Junior   |0|0|
+|Other|Senior   |3|1|
+
+As we can see, and not surprising, all managers are decision makers. Somewhat more interesting, two architects
+claim they are not in a position to make decisions on what software others will use. We also see that 50% of Middle level
+people are decision makers, and 64% of Senior level people are decision makers.
+
+
+
+#### Not considered
+
+Because of the way the data pool was shaped, we did not look at two groups, which could have been interesting. The first one
+is company size. 30 out of 39 people worked in companies with more than 1000 people, and only 4 out of 39 people worked in
+companies with less than 100 people. Therefor the data pool is too small to make any larger claims on patterns.
+
+The other group that could have been interesting to look at is the professional level of the persons. However, 77% were
+senior level, and 23% were middle, and no one was junior level. The job title level is somewhat arbitrary, and it can be 
+argued however that looking at years of experience,
+where the answers are more divided, can substitute this angle. Most of the people with a middle level have worked \< 5 years.
+How big part of the work experience grouped are made up of middle and senior level respectively can be seen in the table below.
+
+|Years of experience|Middle level |Senior level|
+|-------------------|-----------------------|-----------------------|
+|< 5 years          |100%                   |0%                     |
+|5 - 10 years       |20%                    |80%                    |
+|10 - 15 years      |20%                    |80%                    |
+|15 - 25 years      |0%                     |100%                   |
+|25+ years          |0%                     |100%                   |
+
 
 ## Good Sources
 

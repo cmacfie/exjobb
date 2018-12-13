@@ -34,6 +34,47 @@ defined by Sam Jarman as
 client libraries, SDKs, frameworks, open source code, tools, API,
 technology or service._" <cite>[Sam Jarman][1]</cite>.
 
+### Standardizations
+International Organisation for Standardization (ISO) has yet to present a
+standard for Developer Experience. There are however other standards from ISO
+ that are interesting to have a look at. One is *ISO 9126 Software engineering - Product Quality*.
+ One part of the ISO-standard concerns quality. This part of the ISO standardizes how to measure the quality of software.
+ It has six different characteristics: functionality, reliability, usability, efficiency, maintainability and
+ portability. Each of these characteristics have sub-characteristics. The definition of each
+ characteristic is listed, and some their sub-characteristics, is in the table below:
+
+Characteristic | Ref | Sub-characteristic | Explanation |
+|--------------|----------------|--------------------|-------------|
+|Functionality|F1|Suitability |Can software perform the tasks required?
+||F2|Accurateness |Is the result as expected?
+||F3|Interoperability| Can the system interact with another system?
+||F4|Security| Does the software prevent unauthorised access?
+|Reliability|R1|Maturity| Have most of the faults in the software been eliminated over time?
+||R2|Fault tolerance | Is the software capable of handling errors?
+||R3|Recoverability| Can the software resume working and restore lost data after failure?
+|Usability|U1|Understandability | Does the user comprehend how to use the system easily?
+||U2|Learnability | Can the user learn to use the system easily?
+||U3|Operability | Can the user use the system without much effort?
+||U4|Attractiveness| Does the interface look good?
+|Efficiency | E1|Time Behaviour | How quickly does the system respond?
+||E2|Resource Utilisation | Does the system utilise resources efficiently?
+|Maintainability|M1|Analysability | Can faults be easily diagnosed?
+||M2|Changeability | Can the software be easily modified?
+||M3|Stability | Can the software continue functioning if changes are made?
+||M4|Testability |Can the software be tested easily?
+|Portability|P1| Adaptability |Can the software be moved to other environments?
+||P2|Installability| Can the software be installed easily?
+||P3|Conformance |Does the software comply with portability standards?
+||P4|Replaceability |Can the software easily replace other software?
+|All characteristics |AC|Compliance | Does the software comply with laws or regulations?
+
+
+
+
+There is also a standard for UX,
+namely *ISO-9241-210: Ergonomics of human-system interaction -
+Part 210: Human-centred design for interactive systems*.
+
 ### How do we define 'Good DX'?
 
 There are many potential factors for defining what constitutes 'Good'
@@ -45,8 +86,8 @@ DX. <cite>[EveryDeveloper][2]</cite> has developed a _DX Index_ from
 - Are the solutions self-serving, without need of demos or 'call us'?
 - Is the pricing clearly stated?
 
-<cite>[Sam Jarman][1]</cite> has other factors for he uses to evaulate
-if something gives a good DX. He for example puts emphesis on
+<cite>[Sam Jarman][1]</cite> has other factors for he uses to evaluate
+if something gives a good DX. He for example puts emphasis on
 communication between the product provider and the developer. The dialog
 between the product provider and the community needs to be authentic,
 open and honest in order the give a good developer experience, according
@@ -54,9 +95,9 @@ to Jarman. He also states that ...
 
 <cite>[Graziotin, et. al.][3]</cite> researched what makes a developer
 happy and unhappy, and found several indicators. They found both
-internal- and extrernal factors, where external are the most interesting
+internal- and external factors, where external are the most interesting
 for this project. However, the internal unhappiness factor of 'work
-withdrawel' is worth noticing. Being stuck on a task without any
+withdrawal' is worth noticing. Being stuck on a task without any
 progress for too long leads to unhappiness.
 
 ### What is Qlik Core?
@@ -247,6 +288,90 @@ is not good enough.
 
 ## Execution
 
+
+### Deciding consideration aspects
+
+There are a lot of aspects we could have considered as requirements for
+good DX. We had to limit them down however, and ended up with 14 aspects.
+For the second survey, we added two more aspects, namely aspect 13 and 14 in the list below.
+The reasoning for adding this is
+discussed later in the paper. The fourteen original aspects were decided in a combination
+of reading literature, our own experience of what we would consider when
+picking software platforms, and a brainstorm meeting with more experienced
+people at Qlik, consisting of architects and developers.
+The list we ended up with is the following:
+
+1. How often the software is updated
+2. I can have working code quickly
+3. The API documentation gives thorough explanations on how it works
+4. The API has code examples
+5. The documentation doesn't assume any prior expertise
+6. The documentation has consistent language
+7. The documentation is easy to navigate
+8. The official website looks professional
+9. The pricing of the software
+10. The release- and change notes are thorough
+11. The software has the same features on all different platforms
+12. The software is compatible with different platforms
+13. The software is offered in more than one programming language
+14. The software is open source
+15. The software uses the programming language I am most comfortable with
+16. There exists an active online community around the software
+
+<cite>[Sam Jarman][1]</cite>'s article is the source for some of these
+aspects. One of the points he makes is the importance of a great documentation.
+He says the documentation should always be written as if the developer is
+a beginner, which lead to aspect `5 - The documentation doesn't assume any prior expertise` in the list.
+He also says great documentation is consistent, ergo it does not use different
+words to mean the same thing, which lead to aspect `6 - The documentation has consistent language`.
+A third aspect he says is needed for great documentation is that is has a
+logical structure, which lead to aspect `7 - The documentation is easy to navigate`.
+The last part he considers important for a great documentation is verbosity.
+As he puts it, "You can never say too much". This resulted in `3 - The API documentation gives thorough explanations on how it works`.
+Jarman also think it's important to have good release notes. He goes on
+to present what release notes should consist of. According to him, not
+only should the release notes consist of the expected, such as what's new,
+updated, deprecated, fixed, etc, but also point out possible risks of the new release,
+such as things that might break with it. Although these sub-features of release notes
+might be interesting to list as their own aspects, we had to keep the list short
+and ended up with the general aspect of `10 - The release- and change notes are thorough`.
+
+Jarman also talks about pricing. He puts emphasis on that pricing of the software
+should be easy to find for the developer. During the brainstorming, this
+aspect was also discussed, and we ended up with the somewhat vague
+aspect of `9 - The pricing of the software`. This was deliberately chosen
+to be a somewhat open-ended aspect, since there's a lot of things that you can
+consider around the pricing, and we simply wanted to know if pricing is something
+that is often considered in general. In hindsight, it might have been better to have
+divided this into several aspects, since it's difficult to know how the
+survey taker interpreted the aspect.
+
+When we had this short list, we sat down and thought of things that we
+consider ourself when picking software. The list was extended further,
+with aspects related to API examples, online community and  platform compatibility.
+We then had a brainstorming meeting, where did not present our list, and people
+were free to present things they usually considered. After the people present
+at the meeting had presented their ideas, we showed our list and compared.
+The aspects on the list were discussed, the phrasing of it and the importance
+of them. Finally we ended up with the list of fourteen aspects.
+Being open source was discussed, but after some hesitance dropped. It
+was pointed out as important by Sam Jarman. And after the first survey, when it was
+also pointed out by survey takers as an aspect that they considered, it was
+added to the list in the second survey.
+Aspect number 15 on the list, which was added for the second survey, was
+added for the second survey as well. The reasoning here being that the aspect
+`13 - The software is offered in more than one programming language` felt
+like it needed a parallel question: `15 - The software uses the programming language I am most comfortable with`,
+to see if the importance of several language was solely based on the fact that
+people wanted their favorite programming language.
+
+
+### Linking considerations to ISO-9241
+
+As said before, there is no standard for DX. ISO-9421 is however a standard
+to measure the quality of software, so comparing the aspects to this list can
+be interesting.
+
 ### Initial Survey
 
 After gathering potential factors, through litterateur and
@@ -267,7 +392,7 @@ to gather some information about the person taking the survey. The
 second part was about users usage of new software and the third and last
 part was about the DX factors, and how important they were to the user.
 After the survey was done, the data was gathered and evaluated using
-Qlik Sense. Although the dataset was too small to make any direct
+Qlik Sense. Although the data set was too small to make any direct
 affirmations, it gave some indications. In the part about the DX
 factors, the user were to rank each factor depending on how often they
 considered the factor when finding new software. To able to rank the

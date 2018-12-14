@@ -1,0 +1,1131 @@
+1
+Interviewer:
+Okay so today's the 6th of September
+
+2
+Interviewee:
+December
+
+3
+Interviewer:
+December, sorry! And we're at the Qlik's offices. And this is Christoffer MacFie talking. And I'm here with...
+
+4
+Interviewee:
+Amela Ajanovic
+
+5
+Interviewer:
+And you work here at the Qlik?
+
+6
+Interviewee:
+Yeah I work at Qlik as a software engineer.
+
+7
+Interviewer:
+Mm! Ehm... So I have some questions for you regarding... We're gonna to talk about API related stuff
+
+8
+Interviewee:
+Mm.
+
+9
+Interviewer:
+And we're gonna; gonna talk a little bit about release notes and we kind of talked a little bit about online communities around software platforms. And you looked at some material beforehand.
+
+10
+Interviewee:
+Yeah.
+
+11
+Interviewer:
+So if we start with API related things...
+
+12
+Interviewee:
+Okay
+
+13
+Interviewer:
+Ehm... So... When you're looking at... How important would you say that API examples and documentation is for a software platform?
+
+14
+Interviewee:
+ Probably one of the most important things when it comes to documentation because I would say most; for most people that's the first thing you look at.
+
+15
+Interviewer:
+Mm!
+
+16
+Interviewee:
+Because if it's an API you're not familiar with the examples are the... ehm... the way you actually want to get familiar with how things are working...
+
+17
+Interviewer:
+Mm!
+
+18
+Interviewee:
+So... Very important.
+
+19
+Interviewer:
+So when you look at API examples, what are you trying to... ehm... what are you looking for like when you look up API examples what is it what is it you want to find out?
+
+20
+Interviewee:
+Ehm.. I don't know I guess it depends on what I'm looking for sometimes it can be if I'm looking at a specific method I want to be able to find that quickly
+
+21
+Interviewer:
+Mm!
+
+22
+Interviewee:
+And to have an example of how that thing works in specific way. Ehm... And I guess it should be clear examples, consistent examples and... Yeah I don't know.
+
+23
+Interviewer:
+Mm. Would you...
+
+24
+Interviewee:
+And; and also that there's some explanation, not just code
+
+25
+Interviewer:
+Mm.
+
+26
+Interviewee:
+But also explanation about what that code does
+
+27
+Interviewer:
+Mm.
+
+28
+Interviewee:
+Ehm... yeah some kind of documentation about the methods, and what they do, and... how they should behave.
+
+29
+Interviewer:
+Mm.
+
+30
+Interviewee:
+Mm.
+
+31
+Interviewer:
+So is it; would you; it's more of a... so it's a mixture of trying to understand how they are used and where they were used? Or...
+
+32
+Interviewee:
+Yeah! Yeah, of course.
+
+33
+Interviewer:
+And copy paste in code, is that something that is good for code examples as well or just to...
+
+34
+Interviewee:
+Eh, what do you mean for; you mean for the developer to be able to just copy paste and try something out?
+
+35
+Interviewer:
+Mm.
+
+36
+Interviewee:
+Ehm... I think it's good if you can get like; if you can try something out quickly... just to see that that's what you're... that it works I guess? Ehm... But it doesn't need to be a complete example in which, you know... Everything is done for you.
+
+37
+Interviewer:
+Mm. It's more important of a concise example with just what they're trying to explain...
+
+38
+Interviewee:
+Mm.
+
+39
+Interviewer:
+Rather than a big one?
+
+40
+Interviewee:
+Yeah I think it's good to have... It really depends on the case. Sometimes it's nice to have both.
+
+41
+Interviewer:
+Mm.
+
+42
+Interviewee:
+Like to use that example in the context of something bigger.
+
+43
+Interviewer:
+Mm.
+
+44
+Interviewee:
+Ehm... But it it really depends on the method: if it's something; something as simple as... you know, you need to do a copy paste, then it's enough to just focus on that simple method: how to do a copy paste with this API.
+
+45
+Interviewer:
+Okay
+
+46
+Interviewee:
+Ehm... Because it doesn't really have a lot of dependencies on other things.
+
+47
+Interviewer:
+Mm.
+
+48
+Interviewee:
+So I think it really depends... When it comes to; it's not really API is but in Qlik, when it comes to... the scripting language when you developed apps and things... for example there it's nice to have examples that are within a bigger context.
+
+49
+Interviewer:
+Mm.
+
+50
+Interviewee:
+Ehm... So yeah, it kind of depends. But I would if I have to choose then it would be; it would be more concise examples that just show you: okay this is what I wanted to know and I don't have to go searching like a pile of examples.
+
+51
+Interviewer:
+So you said... In the context of Qlik it's better to have a bigger example. When is it not... When... In what context is better to have a smaller example than... It's like... What makes Qlik, ehm... need bigger;
+
+52
+
+
+53
+Interviewee:
+Yeah, yeah. So in this sense it wasn't Qlik as everything related to Qlik. It was specifically because, yeah... I always complain, and other people I think always complain, with the documentation regarding the app development and scripting...
+
+54
+Interviewer:
+Mm.
+
+55
+Interviewee:
+And in that case you need more knowledge before you can jump into a specific...
+
+56
+Interviewer:
+Mm.
+
+57
+Interviewee:
+...method. So there you kind of; it's important to have more step-by-step things.
+
+58
+Interviewer:
+Okay, so... because it's more advanced we need, ehm...
+
+59
+Interviewee:
+Yeah... Yeah because you can't just; You need some prerequisite knowledge in order to get to that...
+
+60
+Interviewer:
+Okay.
+
+61
+Interviewee:
+So I think in every documentation it's important if you know that you need some... some prerequisite knowledge...
+
+62
+Interviewer:
+Mm.
+
+63
+Interviewee:
+...that it's not maybe very common that it's nice to have those examples as well.
+
+64
+Interviewer:
+Okay.
+
+65
+Interviewee:
+Or at least some links or references to where can you learn about that.
+
+66
+Interviewer:
+Mm.
+
+67
+Interviewee:
+Because it's; yeah it can be quite annoying when you get; start reading an explanation and then there's ten; ten things you don't even know what they mean
+
+68
+Interviewer:
+Mm.
+
+69
+Interviewee:
+And it's nowhere explained...
+
+70
+Interviewer:
+Okay.
+
+71
+Interviewee:
+So yeah...
+
+72
+Interviewer:
+Ehm... So how does it affect you if you're, ehm, looking at API examples and they're... not very good. How does that affect your work?
+
+73
+Interviewee:
+Ehm... Well, if I have a choice to find something else to use then I would just... do that.
+
+74
+Interviewer:
+Mm.
+
+75
+Interviewee:
+Ehm... If I don't have a choice... well usually you have a choice, I mean... Usually you can choose between different... different options of... which API used to go; go to do... to do the same thing. Ehm... So in that case if you select one thing and then you see the documentation is bad, usually you just scrape it and turn to something different.
+
+76
+Interviewer:
+Mm.
+
+77
+Interviewee:
+Ehm... had a situation like that recently.
+
+78
+Interviewer:
+Mm.
+
+79
+Interviewee:
+When we started and that we actually implemented stuff using this... I forgot how it's called... doesn't really matter. But we had written code and everything and... yeah it was all the working examples but more and more we were working with it we realized the documentation is really lacking...
+
+80
+Interviewer:
+Mm.
+
+81
+Interviewee:
+...and it was difficult once you get into problems to fix them... So we actually just scraped that and started all over again with a different...
+
+82
+Interviewer:
+Mm.
+
+83
+Interviewee:
+So, with a different solution. So, yeah... it; it; it  definitely affects the developer in a... in a bad way.
+
+84
+Interviewer:
+Ehm... So looking at the material, is there anything that you saw that... Okay this is very important or this is not important, or is there some key aspects that you're missing here that you usually look at...
+
+85
+Interviewee:
+Ehm.. it was a lot of pictures!
+
+86
+Interviewer:
+Yeah!
+
+87
+Interviewee:
+But yeah, it's definitely good that there is some; there were some examples of how to do... well in this case, yeah... ehm... very basic example, like the; this is how you get started. That's nice! And then some example of, okay this is one step more...
+
+88
+Interviewer:
+Mm.
+
+89
+Interviewee:
+...a bit more advanced. So I think that's a nice way to present it, to have like a... the very basic one and then to go into... this is how you can modify things.
+
+90
+Interviewer:
+Mm.
+
+91
+Interviewee:
+So I definitely like that. Ehm... and yeah, I like that you have in the meta descriptions, that you have listed like the parameters and their types and description. That's always helpful.
+
+92
+Interviewer:
+Mm.
+
+93
+Interviewee:
+Ehm...
+
+94
+Interviewer:
+So is that something that is something that should always exist, or is it some kind of like a bonus? "This is good if it exists"?
+
+95
+Interviewee:
+I would say it's something that should always exist.
+
+96
+Interviewer:
+Mm.
+
+97
+Interviewee:
+So, I mean... It seems like a very basic, ehm... basic description to have. Like when you want to use the method you want to know which parameters it has, what type they can be... and yeah, what do they actually do.
+
+98
+Interviewer:
+Mm.
+
+99
+Interviewee:
+So for me that's kind of a must. Examples as well! Like always... Ehm... Yeah, the... the release notes... that's always good to have.
+
+100
+Interviewer:
+Mm.
+
+101
+Interviewee:
+...just to make sure you're not using something that... doesn't work anymore or will be deprecated once you upgrade.
+
+102
+Interviewer:
+Mm.
+
+103
+Interviewee:
+So yeah.
+
+104
+Interviewer:
+I'll come to that later... ehm... So another thing about, you've touched upon this a bit, to have working code quickly.
+
+105
+Interviewee:
+Mm.
+
+106
+Interviewer:
+Is that something that is important to you?
+
+107
+Interviewee:
+Ehm... I think it's nice to have working code quickly... To have some kind of a basic example quickly.
+
+108
+Interviewer:
+Mm.
+
+109
+Interviewee:
+But then once, of course, it would usually need more work and more time when you want to have something more advanced.
+
+110
+Interviewer:
+Mm.
+
+111
+Interviewee:
+But it's nice to be able to say: "Okay, this is how I can at least get the setup part done".
+
+112
+Interviewer:
+Mm.
+
+113
+Interviewee:
+And I can see that I get something out. So, you don't have to spend a day and then, "oh this this doesn't work at all".
+
+114
+Interviewer:
+Yeah.
+
+115
+Interviewee:
+So I think having some kind of a... a basic working example, it's important.
+
+116
+Interviewer:
+So in what situation are you willing to accept not having working code quickly, is it always needed to have just the... getting basics... "okay this is rendering", ehm... and then go more advanced, or you wait for a long time...
+
+117
+Interviewee:
+I guess if I... if I know that it's something that definitely works, that it doesn't matter... I don't; I don't need to be the one testing it.
+
+118
+Interviewer:
+Mm.
+
+119
+Interviewee:
+...so it's something that's, eh... how do you say, ehm... it's kind of a standard. You know people are using this and it works, I'm not gonna run into some trouble where: "oh this is very experimental".
+
+120
+Interviewer:
+Mm.
+
+121
+Interviewee:
+That someone wrote and... yeah I need to be the one testing it. So I guess in that case it doesn't really have to be, ehm... a quick working example.
+
+122
+Interviewer:
+Mm.
+
+123
+Interviewee:
+Because I'm already aware; okay maybe there is even a community around the... the solution so...
+
+124
+Interviewer:
+Mm.
+
+125
+Interviewee:
+Yeah. Maybe that's... That's one reason.
+
+126
+Interviewer:
+But you, ehm... You said that early that he scraped and started over because of the documentation being poor.
+
+127
+Interviewee:
+Yeah.
+
+128
+Interviewer:
+Ehm... So that was more... You work is with something new, then...
+
+129
+Interviewee:
+Mm...
+
+130
+Interviewer:
+Did you have start; ehm... Was working code a issue there, ehm... or just that you saw that this wasn't scalable if this documentation is poor?
+
+131
+Interviewee:
+Yeah it's; so exactly it was, ehm... It was; You could get a quick working example and that's quick; in that case quickly.
+
+132
+Interviewer:
+Mm.
+
+133
+Interviewee:
+And you could do the basic things quickly and it worked well. But after a while every time you ran into a problem and you wanted to fix it and you look into the documentation it's like: it doesn't say anything here.
+
+134
+Interviewer:
+Okay.
+
+135
+Interviewee:
+And if you try to google it it's, you know... maybe you'll find something, maybe you don't, so you're kind of left on your own.
+
+136
+Interviewer:
+Mm.
+
+137
+Interviewee:
+Which is not a very nice thing. Or something like that does; like the answer does exist in the documentation but you need to search for it for half an hour because it's not ordered in a correct way or it's very inconsistent or I don't know...
+
+138
+Interviewer:
+Mm.
+
+139
+Interviewee:
+So after... Kind of... How do you say? After having the same problem multiple times...
+
+140
+Interviewer:
+Mm.
+
+141
+Interviewee:
+...then we realized: "Okay, if this continues happening you just keep losing time, every time you want to fix something". So we kind of scraped it and did an investigation: "Okay what are our other options?". And in this case, let's try to look at the documentation straight away and see if all of the problems we had with the older one are now gonna be fixed.
+
+142
+Interviewer:
+Mm.
+
+143
+Interviewee:
+So yeah.
+
+144
+Interviewer:
+So would you say that... working code quickly is, ehm... if the documentation is good and the API examples are good, will you always have working code quickly? Are those linked?
+
+145
+Interviewee:
+Eh... Yeah! They're definitely linked. The better the documentation is the easier it will be for you to get; get up and running.
+
+146
+Interviewer:
+Mm.
+
+147
+Interviewee:
+I mean...
+
+148
+Interviewer:
+But obviously, as you said, then the other way around doesn't work. Having working code quickly it doesn't mean that the documentation will be good?
+
+149
+Interviewee:
+Yeah. Yeah in that case it doesn't so link. So... Yeah it kind of... The good documentation brings a lot of good things with it as well. And the bad documentation will bring a lot of bad things with it.
+
+150
+Interviewer:
+Mm.
+
+151
+Interviewee:
+Ehm... But yeah. I guess even in bad documentation it's, ehm... it's possible to have, ehm... basic examples.
+
+152
+Interviewer:
+Mm.
+
+153
+Interviewee:
+But then once you get into the more advanced stuff, then it fails you.
+
+154
+Interviewer:
+Mm.
+
+155
+Interviewee:
+So...
+
+156
+Interviewer:
+So the documentation it's a very key part of... it effects everything?
+
+157
+Interviewee:
+Yeah, yeah yeah. Definitely.
+
+158
+
+
+159
+//Release notes
+
+160
+
+
+161
+
+
+162
+Interviewer:
+Okay! So if we move over more to talk about release notes.
+
+163
+Interviewee:
+Mm.
+
+164
+Interviewer:
+In general, how often would you say that you look at release notes?
+
+165
+Interviewee:
+Ehm... Not very often really, ehm... But it's usually not me who and; who has to decide between like which software we are using or which solutions, which api's so... I guess it's not so often that I; that I look at it because of that, ehm...
+
+166
+Interviewer:
+So...
+
+167
+Interviewee:
+But yeah but I think it's still; it's still important to be able to find release notes.
+
+168
+Interviewer:
+Mm.
+
+169
+Interviewee:
+Because eventually you will want to like; you want to upgrade.
+
+170
+Interviewer:
+Mm.
+
+171
+Interviewee:
+Whatever software you're using. And in that case, if you don't have documentation you can easily run into trouble.
+
+172
+Interviewer:
+Mm.
+
+173
+Interviewee:
+If you don't have release notes...
+
+174
+Interviewer:
+So... When you end up looking at release notes, under what circumstances, since you're not as you said the decider to upgrade... when you look at them why; how come you do that?
+
+175
+Interviewee:
+I don't know if I've ever looked at release notes...
+
+176
+Interviewer:
+[laughter]
+
+177
+Interviewee:
+It's really for when it comes to api's, ehm...
+
+178
+Interviewer:
+Even not when if we take the context that you're working on something privately... at home, for example.
+
+179
+Interviewee:
+Yeah... I guess, yeah. If you... If you work on something privately and then, ehm... in that case it will make more sense to look at release notes, but at the same time if you look; if you're working on something privately that's like just a... it doesn't need to go into production...
+
+180
+Interviewer:
+Mm.
+
+181
+Interviewee:
+...or something then you don't care too much about if you're using a deprecated method or not. Ehm... so yeah. But I think when it comes to, ehm... I mean I can talk about in the context of, ehm... Since our team is working with API governance and the entire work; kind of the entire... How you say... job, let's say job. Where the goal is to present the API changes and to make sure that the customers that are using Qlik API is know; what has what has changed between releases. Because, for them when they want to upgrade to a new version of Qlik Sense... That's very important.
+
+182
+Interviewer:
+Mm.
+
+183
+Interviewee:
+So, ehm... From from that perspective, looking at how; how much other people are interested in having us present that, then it seems like it's quite important. [laughter]
+
+184
+Interviewer:
+Yeah. So what is important to have in release notes?
+
+185
+Interviewee:
+Ehm... I guess it's important to have, ehm... Enough details so that people are know; people know what; what has happened between releases.
+
+186
+Interviewer:
+Mm.
+
+187
+Interviewee:
+Ehm... For us, we usually just; and I think most, they just present kind of what has... What has changed if you have new methods or new ways of doing things and... if you are supposed to avoid some methods.
+
+188
+Interviewer:
+Mm.
+
+189
+Interviewee:
+That you were using before.
+
+190
+Interviewer:
+So in the material we have a very detailed release note and very non detailed.
+
+191
+Interviewee:
+Yeah.
+
+192
+Interviewer:
+Do you see any... ups or downs with either version.
+
+193
+Interviewee:
+Ehm... Yes... Yeah, so here in the short release notes, when you have like the new/updated, you don't really know what has changed. If one of these has been updated... So it doesn't say from... It doesn't say which one of these are completely new, which are updated and how they are updated. So that's something I; That would be my first question, like I don't know what has happened I just know something has changed, but it's what exactly? I have no idea. And then in the deprecated one, you see that four methods have been deprecated but then if you have the; if you have used these methods in your code it... doesn't say what you should do instead.
+
+194
+Interviewer:
+Mm.
+
+195
+Interviewee:
+So you're kind of left wondering: "Okay, how am I supposed to fix my code?"
+
+196
+Interviewer:
+Mm.
+
+197
+Interviewee:
+Ehm.. And I think this was fixed in the big change log... Yeah, you have a list of the deprecated methods and you specify what you should use instead, ehm... Yeah, even having the reasoning why you remove something, I think; I think that's nice, ehm... When you defecate it kind of builds, ehm... How you say... It builds trust.
+
+198
+Interviewer:
+Mm.
+
+199
+Interviewee:
+When you can explain why we did this change.
+
+200
+Interviewer:
+So, ehm... If we take the bigger version. Is it too detailed, is to like... it; or is it like how it should be, in quotations. You have any issues with that?
+
+201
+Interviewee:
+Yeah, I didn't read through it completely, but... I think when it comes to release notes if you would choose between having not enough and too much it's better to have too much.
+
+202
+Interviewer:
+Mm.
+
+203
+Interviewee:
+Ehm... I mean if it's like a few pages or like a screen... You usually know what you want to look for so it's easy to find even if it's a big; big text. But down here... Yeah I think it's nice. It seems like I wouldn't have it... I wouldn't need to have it shorter than this.
+
+204
+Interviewer:
+Mm.
+
+205
+Interviewee:
+Yeah, having bugs and talking about when it was introduced... Yeah. I think it's good.
+
+206
+Interviewer:
+So, ehm... How, ehm... If there are; if the release notes are poorly written...
+
+207
+Interviewee:
+Mm.
+
+208
+Interviewer:
+How would it affect you?
+
+209
+Interviewee:
+I think it's bad when it comes to... kind of the trust I mentioned between whoever is using the API and whoever is developing.
+
+210
+Interviewer:
+Mm.
+
+211
+Interviewee:
+Ehm... If it's a big company such as Qlik... I know it's always really big; it's a big deal in a bad way if; if you upgrade to a new version of Sense and all of a sudden things are not working.
+
+212
+Interviewer:
+Mm.
+
+213
+Interviewee:
+I think it reflects really poorly on the company, ehm... And yeah it's definitely a big deal.
+
+214
+Interviewer:
+Mm. Are there any other way of obtaining this kind of information than release notes, or is that the only... is that the go-to way of finding out this?
+
+215
+Interviewee:
+Finding out kind of the changes between releases?
+
+216
+Interviewer:
+Yeah. Some companies, ehm... Take more care of release notes, and some don't.
+
+217
+Interviewee:
+Mm.
+
+218
+Interviewer:
+But, ehm... If you don't have good release notes... These companies still exist.
+
+219
+Interviewee:
+Mm.
+
+220
+Interviewer:
+Do they have some other way of presenting this or is it just that they have poor release notes?
+
+221
+Interviewee:
+Yeah, I'm not sure what the other way would be? I guess depends on how you call it, but yeah there should be some way of finding out what has happened in between releases, I would say.
+
+222
+// Online Community
+
+223
+Interviewer:
+Mm. So if we move over to, ehm... and talk about online communities instead.
+
+224
+Interviewee:
+Mm.
+
+225
+
+
+226
+Interviewer:
+Ehm... [long pause].  So, yeah; How often do you take help from online communities when working.
+
+227
+Interviewee:
+All the time.
+
+228
+Interviewer:
+All the time.
+
+229
+Interviewee:
+Yeah.
+
+230
+Interviewer:
+So... So how important is it for you when you work with software that there there is an online community around it?
+
+231
+Interviewee:
+Ehm... I think it's quite important because sometimes, even when you have a documentation that's average or even good, it's always nice to have online communities because you have then people that's run into the same issues as you do.
+
+232
+Interviewer:
+Mm.
+
+233
+Interviewee:
+And I think it's enough to be in a community; it can be either on github like you have opened issues on the repository... something as small as that or just enough users that use the software so you get for example and Stack Overflow you can see issues of people using the same thing. It doesn't have to be like a specific, ehm... Site that's dedicated just to that product.
+
+234
+Interviewer:
+Mm.
+
+235
+Interviewee:
+I think online; when it comes to online community it's like anywhere on the internet.
+
+236
+Interviewer:
+Mm.
+
+237
+Interviewee:
+But yeah. I think it's definitely important.
+
+238
+Interviewer:
+So even; so even if the documentation was flawless you'd still want a on my community around it?
+
+239
+Interviewee:
+Yeah, I think it's still nice to have an online community. Because then you see that people are actually using...
+
+240
+Interviewer:
+Mm.
+
+241
+Interviewee:
+Using it. Like the documentation can be perfect but if no one is using this then why should I?
+
+242
+Interviewer:
+So is it, ehm... Important to feel like you are a part of a community?
+
+243
+Interviewee:
+Ehm... Yeah! I would say so.
+
+244
+Interviewer:
+Ehm... So why is it important then? What happens if, ehm... You're working with a software that doesn't have an online community, how does that make you feel?
+
+245
+Interviewee:
+I don't know. It seems like, as I said, like why am I the only one using this?
+
+246
+Interviewer:
+Mm.
+
+247
+Interviewee:
+That will be kind of my question. If I try to; if I find... I don't know, some software, some API or some product and I can't find anyone else using that thing I would; it would be like "okay there's something wrong about it. There's something that doesn't fit".
+
+248
+Interviewer:
+Yeah.
+
+249
+Interviewee:
+Ehm... So I think in in that sense, it's important to feel like: "Okay, there are other people using it, other people that maybe... have run into the same issues and have solved the same issues"... And you have someone also to turn to kind of when you run into problems, so...
+
+250
+Interviewer:
+So are there any; can you think of; if you try to think of communities you've encountered that you liked and encountered communities that you didn't like...
+
+251
+Interviewee:
+Mm.
+
+252
+Interviewer:
+What are the differences between these two communities?
+
+253
+Interviewee:
+Ehm... Yeah, I'm not sure if I have examples of communities that I didn't like you.
+
+254
+Interviewer:
+Mm.
+
+255
+Interviewee:
+Ehm...
+
+256
+Interviewer:
+Can you think of things that are... when you come into a community that you feel like "ahh, I like this community!". Some aspects that that community had that you were like: "Okay, this is this is positive".
+
+257
+Interviewee:
+Yeah... I'm not sure in the sense of... like working with api's. Because for me when I say... In that sense, it's not like a specific place you go to and you are talking only about... It's; it's just having people that are using it and it can be as I said on github or in Stack Overflow or, ehm... Yeah wherever.
+
+258
+Interviewer:
+It's important that it feels alive, the community?
+
+259
+Interviewee:
+Yeah, yeah. That's for sure.
+
+260
+Interviewer:
+And is it, ehm... is it important that it feels helpful?
+
+261
+Interviewee:
+Yeah. Yeah, I mean if, ehm... if you see that there are people; or there is some type of online community but there's either very little people or people that are not; not active in it then it's really not useful in the end.
+
+262
+Interviewer:
+Mm.
+
+263
+Interviewee:
+Ehm.. And yeah you to be able to engage with other people.
+
+264
+Interviewer:
+Ehm... Is it important that, ehm... the software; the company connected to the software that you're using.
+
+265
+Interviewee:
+Mhm.
+
+266
+Interviewer:
+That they're part of the community?
+
+267
+Interviewee:
+Yeah,  I think that's always good. I think it... I don't think it's necessary... that they are part of the community but I think it... it would make the... the consumer feel better about using the product, and feel... Yeah, again coming back to the trust and the relationship between the the product and the user.
+
+268
+Interviewer:
+Mm.
+
+269
+Interviewee:
+So, it's; it can't be a bad thing, I would say.
+
+270
+Interviewer:
+Okay. Ehm... So is there a difference if you're using something big, like a software platform, compared to something small like a library? Ehm... What you expect from an online community?
+
+271
+Interviewee:
+Yeah, I think it's definitely; there's definitely a difference. I mean for; for something small like a library, you usually... Yeah you don't need the same level of interaction basically, and usually it's something that you will just, ehm... use a few times and don't think about it. But when it comes to the platform, it's probably something you interact with, ehm... Constantly.
+
+272
+Interviewer:
+Mm.
+
+273
+Interviewee:
+So you kind of want to have... Yeah then it's more important to have a bigger community, an online community, or even a separate space just for...
+
+274
+Interviewer:
+Mm.
+
+275
+Interviewee:
+Just for the platform itself. I'm...
+
+276
+Interviewer:
+...more important with, eh... The bigger it is, the more important?
+
+277
+Interviewee:
+Yeah, yeah I would; I mean when it comes to a small library, basically if you find something on github... To me what I look at is that it's updated, it doesn't really need to have an online community around it as long as you see that it's still ongoing and that it's not dead when it comes to updates. So, yeah. It's, it's... The size matters.
+
+278
+Interviewer:
+Yeah. So, it; Like, overall... What is it that you want from an online community?
+
+279
+Interviewee:
+Ehm... I guess I can think about it in terms of Qlik sense, and that type of community... But yeah I think I would like to have... Yeah activity and people interacting with each other and having questions and examples and... Yeah.
+
+280
+Interviewer:
+Mm. Ehm... Is there anything we've.... You want to ask me, or something you thought about... That you thought I'd ask that yeah I haven't? Or something that you...
+
+281
+Interviewee:
+I don't know. Nothing that I can think about.
+
+282
+Interviewer:
+Ehm... Then I think that I've got all the answers I need.
+
+283
+Interviewee:
+Okay, great.
+
+284
+Interviewer:
+Thank you very much.
+
+285
+Interviewee:Thank you.

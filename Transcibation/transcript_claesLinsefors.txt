@@ -1,0 +1,943 @@
+1
+Interviewer:
+Okay so today's date is the 14th of December... Eh, 2018 and we're here at Qlik's offices. And this is Christoffer MacFie talking and I'm here with...
+
+2
+Interviewee:
+Claes Linsefors
+
+3
+Interviewer:
+Ehh, and you work here at Qlik.
+
+4
+Interviewee:
+Yes, I do.
+
+5
+Interviewer:
+As an architect?
+
+6
+Interviewee:
+As an architect, yeah.
+
+7
+Interviewer:
+Ehh... So I'm going to talk a little bit about, eh, mainly three topics. I'm gonna talk about APIs
+
+8
+Interviewee:
+Mm.
+
+9
+Interviewer:
+And we're gonna talk about release notes and I'm gonna talk a little bit about online communities.
+
+10
+Interviewee:
+Mm.
+
+11
+Interviewer:
+Ehm... So if we start off by talking about API in general and API documentation how important would you say that API documentation is for a software platform?
+
+12
+Interviewee:
+To be; I mean depends I would say.
+
+13
+Interviewer:
+Mmm
+
+14
+Interviewee:
+But in normal cases is extremely important because if you don't have the documentation it's very difficult to know if you can maintain and production ready... The exception is when you just want to play around and then it's less important.
+
+15
+Interviewer:
+Okay. So when you look at API documentation, what are you usually looking for?
+
+16
+Interviewee:
+[groaning] In what stage, am I using or am looking for something that I would recommend somebody to use?
+
+17
+Interviewer:
+We could take both when you haven't decided yet to use a, ehm... I guess we can take those cases, when starting off.
+
+18
+Interviewee:
+Yeah so let's say I look for if I would like to use this in our product somewhere, ehm... I would look both at the API documentation but also how much is used and how much it's maintained, what was the latest changes and things like that
+
+19
+Interviewer:
+Mm.
+
+CL For the API as such, it's very important that it's consistent in its way.
+
+20
+Interviewer:
+Mmm
+
+21
+Interviewee:
+So things have this same casing, same names and things like that, because otherwise people will make fool; foolish mistakes.
+
+22
+Interviewer:
+Mm
+
+23
+Interviewee:
+I think that's; that's the thing but if... in the situation I want to try out the underlying product, eh... I would be very frustrated with; if the documentation didn't contain a lot of examples.
+
+24
+Interviewer:
+Okay!
+
+25
+Interviewee:
+Because that's the way it normally starts.
+
+26
+Interviewer:
+Mm. Eh, we can go and talk about API examples. Ehh... So usually when you look at them, ehm... what is your goal? Wh; why do you go to API examples?
+
+27
+Interviewee:
+Because I mean... If I want to try out try it out, I want something that's... I get started directly, I am a very impatient person. And from there I will go on... So, I would like to find an example that is fairly close to what I'm aiming at.
+
+28
+Interviewer:
+Mm.
+
+29
+Interviewee:
+Which means that if it's a broad and generic API you; they will have need to have a lot of examples.
+
+30
+Interviewer:
+Mm
+
+31
+Interviewee:
+Ehm.. If it's a very targeted API it normally is very easy to find the situation you want. Ehm... but the reason is really because... It's very difficult I think to understand how easy an API is to use if you don't use it. And just reading it; it's not good enough.
+
+32
+Interviewer:
+Learning by doing is...
+
+33
+Interviewee:
+Yeah. But they; the combination I mean. You would like to understand immediately, eh... why it doesn't work as you expect.
+
+34
+Interviewer:
+Mmm. So... like so it's both for just having working code quickly but also understanding down the line structure in a way, or?
+
+35
+Interviewee:
+[hesitation] Yes, I mean... Again and that comes back to what kind of API, I mean some make the eyes are more narrow so there is really like five methods or something
+
+36
+Interviewer:
+Mm.
+
+37
+Interviewee:
+Then you don't really need a background for how things work, otherwise you need to understand how they're interrelate because normally if you look at the product there's a lot of APIs
+
+38
+Interviewer:
+Mm.
+
+39
+Interviewee:
+And you have to understand how they're related. I mean in the example you have there is like three different and you have to understand how they relate! And then in that case documentation comes handy but again I would still like to start with an example to understand what the intention is and to work out from that.
+
+40
+Interviewer:
+Mm. You said it's having working code quickly what's important to you.
+
+41
+Interviewee:
+Yeah.
+
+42
+Interviewer:
+Ehm... And why is that important... you touched on that.
+
+43
+Interviewee:
+Again, yeah, I don't; I don't get the feeling of the API otherwise I mean it could be like it looks very nice when you read about it and then you start to use it; it's like; it's it's clumsy because you don't get enough feedback, you don't; depending on what kind of languages is that you don't get enough information when you're typing because modern tools normally pick up the documentation.
+
+44
+Interviewer:
+Mm.
+
+45
+Interviewee:
+So you can see "okay..." and you can even see "okay this method was deprecated so I should probably not use it". And that feeling also is important because if I have to check every time if I spelled it correctly if it's deprecated and don't get the feedback in the tool...
+
+46
+Interviewer:
+Mm.
+
+47
+Interviewee:
+That is annoying. Or if I call function in the wrong way... Like "you can't call this because we haven't called open".
+
+48
+Interviewer:
+Mm.
+
+49
+Interviewee:
+I would like a very good error message telling me that!
+
+50
+Interviewer:
+Yeah.
+
+51
+Interviewee:
+Eh, preferably that shouldn't be such things but I mean if they all right I should get... So that's why; it's a combination of documentation and how it acts while I use it.
+
+52
+Interviewer:
+Mm.
+
+53
+Interviewee:
+That's why I want to get to the use case as soon as possible.
+
+54
+Interviewer:
+So it's in working code quickly a just a consequence of good API documentation and examples? Or can they exist separately?
+
+55
+Interviewee:
+I mean, how the example; I mean if they exist in the documentation or they are in another place which is easy to find... is less important I would say. Sometimes, if you have examples in the code; in the documentation, it becomes; becoming; can sometimes become more difficult to read because it's longer text... So, but I've; Yeah I don't know it's; it's more and more common to have examples in; in the documentation.
+
+56
+Interviewer:
+So we try to get a grip on what exactly is good documentation.
+
+57
+Interviewee:
+[laughter] Yeah.
+
+58
+Interviewer:
+So if we look at the examples, was is something that you thought of like this should always exist, or I'm missing something that I expect from documentation.
+
+59
+Interviewee:
+The one you have giving me?
+
+60
+Interviewer:
+Yeah it's; it's a very concise and small example but...
+
+61
+Interviewee:
+Yeah I know. Well I have just briefly read, I haven't spent a lot of time but... My immediate reaction would be; I would like to have an initial example say so; so I understand the idea behind this.
+
+62
+Interviewer:
+A "getting started" kind of..?
+
+63
+Interviewee:
+Yeah kind of getting started or a summary or something that brings me into the concepts because I have to read quite a lot here before; before I got the; there is an engine, there is a bakery and a recipe database and; and this concept should be easily more easily presented.
+
+64
+Interviewer:
+Mm.
+
+65
+Interviewee:
+But that could be because, I mean, a PDF is normally not the way you read [laughter].
+
+66
+Interviewer:
+
+
+67
+Interviewee:
+Normally we would get to a place where you're getting started. So; so that's my immediate reaction. Ehm... Then I didn't really read details but I've; I think that there was something about deprecation and... That again should be very easy to find and that's because... And that's, I think, ehm... In some places I found the documentation that you have; "This is the APIs" and then you have "This is the deprecated part of the API". They are separate.
+
+68
+Interviewer:
+Mm.
+
+69
+Interviewee:
+And when you initially read, that's given because you don't want to see the deprecated things, you don't want to use it. But when you maintain something, or you try to understand somebody else's code, then you would like the opposite, you were like all the functions...
+
+70
+Interviewer:
+
+
+71
+Interviewee:
+...clearly marked as deprecated, so I think I would prefer the latter so, I mean, you have the entire API and it's very easy to see which one you shouldn't use rather than having them separate.
+
+72
+Interviewer:
+Okay.
+
+73
+Interviewee:
+And I have seen both.
+
+74
+Interviewer:
+So are there any... When you look at a new software platform and trying to; Are there any red flags that you have, like, "Ok this is..."
+
+75
+Interviewee:
+Ehm... Well the normal red flag: "This is too complicated" because I haven't focused enough. And the other one red flag is, ehm... it hasn't been touched for a long time.
+
+76
+Interviewer:
+Yeah. So, okay...
+
+77
+Interviewee:
+That's... Or maybe it's just very few persons involved in it that could also be a red flag.
+
+78
+Interviewer:
+Mm. So, if you come across and work with documentation that is not very good how does that affect you?
+
+79
+Interviewee:
+Yeah, well, then I wouldn't recommend it I mean I would normally not use it. I mean I should be... There should be some other reason. Could be like this is the only platform that actually gives me this new feature so I can play with the feature. Let's say... machine learning in some specific language or something.
+
+80
+Interviewer:
+Mm.
+
+81
+Interviewee:
+Then I could live with a bad documentation, otherwise I will just ignore that because if there are options.
+
+82
+Interviewer:
+
+
+83
+Interviewee:
+I mean again it comes back to; I mean as soon as it's put in my working domain as an; as an employee... that is key, I mean... if you can't understand documentation you will have a lot of issues. That's the same reason why I feel in-house developed tools is less attractive than public tools. It's mainly not because the tool is bad, it's many because it's very difficult to get help without the person in front of you. So that comes back to documentation and usage.
+
+84
+Interviewer:
+Mm.
+
+85
+Interviewee:
+So if... Another way I would look at something; an API is I would try to Google things and see if I get some response.
+
+86
+Interviewer:
+Mm.
+
+CL And if I select a function that is very specific by name like... "makeLargeCake" or something... And I didn't get any hits that would be bad.
+
+87
+Interviewer:
+Yeah! We come; we'll come to that with online community later I think. But yeah so if; if the documentation is poor you'll... most likely try to find another solution
+
+88
+Interviewee:
+Yes, yes.
+
+89
+Interviewer:
+You can't live with poor...
+
+90
+Interviewee:
+you look for something you would find more than one.
+
+91
+Interviewer:
+Mm.
+
+92
+Interviewee:
+the API documentation is good.
+
+93
+Interviewer:
+what should a... maybe that's too broad of a question, but what should a APIs; an API example look like?  Because you; as you said you can have very... big ones, and small;
+
+94
+Interviewee:
+I think, alright, I think there are; I think I would like two different kinds. I would like the one that gives me a good start I'm getting started documentation that gives me both a working example and an idea what the intention is.
+
+95
+Interviewer:
+Mm.
+
+96
+Interviewee:
+I think there are some in the things you have. Ad then I would like this more like the snippet one's more connected to "This is the function" and put it in a context as an example.
+
+97
+Interviewer:
+Mm.
+
+98
+Interviewee:
+So that's typically not working by itself.
+
+99
+Interviewer:
+Yeah.
+
+100
+Interviewee:
+I think I would I prefer both of those.
+
+101
+Interviewer:
+So should every for example every method have both a; an example within a big context and just a snippet?
+
+102
+Interviewee:
+No no I think the method should be us have the snippet and the other example should be somewhere else.
+
+103
+Interviewer:
+Mm. Ehm... [pause] Yeah... If we move over to about release notes.
+
+104
+Interviewee:
+Yeah.
+
+105
+Interviewer:
+How often would you say that you look at release notes?
+
+106
+Interviewee:
+[hesitation] There is... I would say there's three different times, um, one is in the initial; looking; more of getting the feeling of how well they are documenting things. Ehm... and it also gives you a feeling how mature or obsolete...
+
+107
+Interviewer:
+Mm.
+
+108
+Interviewee:
+...the function is. If the last release note is five years old and... that's a bad thing.
+
+109
+Interviewer:
+Mm.
+
+110
+Interviewee:
+If there is new release notes every day that's also a warning sign, means it's not mature. So that's one phase. The other one is when, uh, in more in the like the frustration phase. "Why is this not working, it should work", and then you're going to release notes, it's more like finding issues. Ehm... And then for the... probably the real reason release notes, it's like "Okay should we upgrade?".
+
+111
+Interviewer:
+Mm.
+
+112
+Interviewee:
+I mean, should we look at the next version? Is; is there something interesting worth the work to upgrade... And I think that's the key thing with release notes, that's why you have them, if it's worth to upgrade.
+
+113
+Interviewer:
+how important is it that a platform has release notes?
+
+114
+Interviewee:
+If it's part of the product they have to be there.
+
+115
+Interviewer:
+Mm. It's like key?
+
+116
+Interviewee:
+you know if; trial-and-error, it's not a good thing.
+
+117
+Interviewer:
+example I gave, I had two versions of the release notes. One very... a long one and one quite concise. Eh... How detailed do you think release notes should be?
+
+118
+Interviewee:
+I think it's like a newspaper, you want like the short version.
+
+119
+Interviewer:
+Mm.
+
+120
+Interviewee:
+And that you fold out and then you get a long version.
+
+121
+Interviewer:
+Okay.
+
+122
+Interviewee:
+So I mean; and normally I could live without the short version but I mean reality that would be... a minus. If they don't have a short version. Because that's where you start. So if you look at, like, "Okay we should probably upgrade" so, and then look into "Okay, yeah, there's something very important in there".
+
+123
+Interviewer:
+Mm.
+
+124
+Interviewee:
+That's the point of that. Of the release notes. So, and again, it depends of course of the quality of release the release notes. I mean it should bring out; what I mean you should think when you do this short, you should be really thinking of explaining why it's important and why it's not important to upgrade.
+
+125
+Interviewer:
+Mm. So for example in the longer one it's talked about why something is updated or changed. And why some things are deprecated and not... It takes time from a company to do that. Is it worth the time from the company or is it... Should they spend that kind of time or should they simply just say that this is deprecated without an explanation for example.
+
+126
+Interviewee:
+Good question, ehm... I mean if they feel they don't have the time that should probably be very active listening, because... I mean this is a live document.
+
+127
+Interviewer:
+Mm.
+
+128
+Interviewee:
+So if you say "this is deprecated" and you feel about that that's okay and then you get a lot of issues; questions then feel it "Why is it deprecated". Eh... But the most important of course if you deprecated, you should should explain... How should I do the same thing? Because that's that's really what you're looking for, it's more; much more important to understand I have this function and now suddenly I should; it's deprecated. What's the solution?
+
+129
+Interviewer:
+Mm.
+
+130
+Interviewee:
+If I feel I need it... It doesn't really help that... "We didn't like the name" or something, I mean... Whatever reason, ehm... If you don't give me a way to solve the same problem... It's; it's... So that's probably the most important; in most case when you look at defecation... I would say that's not the problem. It's more like... If you change something more radically then you have to explain why... Because it's when I have a lot of work, it's a problem. If it's just one or two functions that's not the big thing.
+
+131
+Interviewer:
+Mm.
+
+132
+Interviewee:
+So...  but if you say like like Angular 1 or Angular 2, which was like... "Okay I have to redo everything".
+
+133
+Interviewer:
+Yeah.
+
+134
+Interviewee:
+Then you really have to give a good explanation [laughter].
+
+135
+Interviewer:
+So, I mean, if... Like I asked about a poor API documentation... How does it affect you if there's; the release notes are poorly written?
+
+136
+Interviewee:
+they must be good enough to able to; to understand  the work. So, I mean, if; if I look at something I should be able to, from the release notes, make an estimate if it's worth for us to upgrade or not.
+
+137
+Interviewer:
+Mm.
+
+138
+Interviewee:
+So there should be enough information there to understand that. And if it isn't then, again, I would hesitate very much to take it.
+
+139
+Interviewer:
+But you said that you, even before you decide to use a platform, you usually look at release notes.
+
+140
+Interviewee:
+Yes, yes. But because, that's what I mean... If; if we go into say something the idea is to keep it I mean we don't take it in and throw it out by the next release. Normally you would like to stay, there so you have to understand the way it interacts.
+
+141
+Interviewer:
+Mm. 'cause in the survey... Release notes was listed as amongst the least most; the least most important things, considered. Even amongst architects and decision makers. You; do you personally have any theory why people don't care for release notes?
+
+142
+Interviewee:
+I think it... I mean I think there is two reasons. One is you; you know... [hesitation]} It's not so often you use them, so in that case there was seldom most; most things doesn't change that often. And I mean... I'm a bit surprised like that I would say. Because, to me, I mean on the other hand when a lot of years ago when I was new I would probably say the same thing to be honest. It's more like afterwards you really realize how important it becomes when you sit there and you have to give the next version. So it; Maybe it's easy to overlook the fact that... Or, I mean, sometimes it doesn't really matter because you take it in because... You have you already plan you make your own solution, so we take this in because we don't have this, but we plan to do something. Then it becomes less important, because you don't plan to actually live with this product. Ehm... But normally I think it's important. It's also because I've been in the opposite situation when I talk to our customers and I say "How often should we release?" and they say "We don't really care"...
+
+143
+Interviewer:
+Mm.
+
+144
+Interviewee:
+..."But you should give us good release notes so we now we can upgrade or not.". Eh... So I've been taught in that sense that these are very important.
+
+145
+Interviewer:
+Mm.
+
+146
+Interviewee:
+And it's pretty difficult to write so it's a valid question how much should you put there. And it's probably a learning process depending on what kind of product you're selling.
+
+147
+Interviewer:
+Mm. Eh, so if we move over to an online community; online communities surrounding software platforms.
+
+148
+Interviewee:
+Mm.
+
+149
+Interviewer:
+Ehm... When I say "An online community around a software platform"... How would you describe that, what is that?
+
+150
+Interviewee:
+specific about that. But, ehm... So it could be their own community, like we have Qlik community. Ehm... But when I got the questions I was kind of... "But what if it's like a; like Stack Overflow" or something like where I can still find a lot of information about it.
+
+151
+Interviewer:
+Mm.
+
+152
+Interviewee:
+And I realize... In reality I don't really care [laughter]
+
+153
+Interviewer:
+Yeah.
+
+154
+Interviewee:
+Ehm... So; so from that perspective... is; if; I wouldn't say that if they didn't have their own community but it was a lively debate somewhere else when I would typically find discussions, I would say that they're pretty equal, to me.
+
+155
+Interviewer:
+Mm.
+
+156
+Interviewee:
+And mean sometimes the debate is directly in the github repo, I mean... [inaudible] ...it doesn't really. The place is not that important because in the end I will typically Google anyhow. And I; I mean even I, living in Qlik... If I want to find some information about our product, I just Google it.
+
+157
+Interviewer:
+Yeah.
+
+158
+Interviewee:
+I don't go through the community or the help site normally.
+
+159
+Interviewer:
+Yeah.
+
+160
+Interviewee:
+Which I would have done only like 20 years ago or something.
+
+161
+Interviewer:
+Yeah.
+
+162
+Interviewee:
+But today, I mean, that's; that's why I'm saying that's that's one test I do with the product. It's to see how difficult this is to find help.
+
+163
+Interviewer:
+Mm.
+
+164
+Interviewee:
+Without going directly into the manual. So you; you be... You know pretty well what you're looking for if you go directly into the documentation.
+
+165
+Interviewer:
+Mm. So, ehm... If we take the concept of online community and include Stack Overflow as a community, doesn't have to be... In those kind of communities that you like, what do they have in common?
+
+166
+Interviewee:
+Eh... [hesitation] I would say they the commonality is the ability... There is two things, of course. The one is to find... But that's normally not the community's problem. Eh... And the other one is the way they answer questions.
+
+167
+Interviewer:
+Mm.
+
+168
+Interviewee:
+So, I mean, in many cases you find the answer. But it should be a possibility to put a question there.
+
+169
+Interviewer:
+Mm.
+
+170
+Interviewee:
+and that's more difficult because it's very difficult to try that out in a good way. But you can get a feeling if you follow the discussion threads and things like that to see that... If most of them end in... like people don't understand anything. That's a bad thing. Even if; That's very important answer. That there is no answer.
+
+171
+Interviewer:
+Mm. So it's important that the community feels alive?
+
+172
+Interviewee:
+Yeah.
+
+173
+Interviewer:
+
+
+174
+Interviewee:
+call a dead community a community.
+
+175
+Interviewer:
+Yeah.
+
+176
+Interviewee:
+the community, that there really is somebody there. So, otherwise if; if the community isn't able to answer questions I put there then it's not the community I would say. So that's that's to me the key thing about it; it's gonna be; I get a feeling that if I; if I reach out and ask something I will get an answer.
+
+177
+Interviewer:
+Mm.
+
+178
+Interviewee:
+And that's the most important thing.
+
+179
+Interviewer:
+these kind of communities?
+
+180
+Interviewee:
+How often I..?
+
+181
+Interviewer:
+Take help from these kind of communities.
+
+182
+Interviewee:
+[pause] On what level; I'm in; I use them very often to just find the answers and explicitly an; asking questions... I would probably say... Like a couple of times a month maybe.
+
+183
+Interviewer:
+Yeah. So it's important to feel... In order for you to like the software platform, do you need to feel like you're a part of the community?
+
+184
+Interviewee:
+Eh... Generally no, I would say. Because in... I mean in the role of here and Qlik... It's a more professional use of the platform, so no I don't feel I have to be part of the community.
+
+185
+Interviewer:
+Is it important that the company behind the software feels like they're a part of the community?
+
+186
+Interviewee:
+In general, yes, I would say. I mean again it depends on what kind of; some; some things we use are like tiny open-source project and then; we don't; there is no big company. But if I would like use React or Angular and; and the companies behind them wasn't there... Yeah they would be on the list.
+
+187
+Interviewer:
+If... if we; if we compare some very big and software platform with a huge company and for example a small library made by someone, ehm... Is it more important that either one have a active community rather than the other?
+
+188
+Interviewee:
+The more importa; I mean I would say the more dependent we are on this; I mean again if you have a small library that you feel help us, which I mean is typical I mean if you take something that you use in the product like just an MPM... thing. There is always, I mean, then you can consider the option what if we have to build it ourselves.
+
+189
+Interviewer:
+Mm.
+
+190
+Interviewee:
+So I mean that's that's a possible option in these cases. And then, these kind of questions becomes less; I mean but on the other hand if we use decide to go for React, for example, it's not an option to say "Okay if they abandon that that we build in ourselves". So then it becomes extremely important. So there is all the range because on that level... So it really depends how far from; Could we do it ourselves?
+
+191
+Interviewer:
+Mm.
+
+192
+Interviewee:
+It becomes... I mean, so small; small libraries like we use them because it's convenient. They are open source, why why build it ourselves when it's already there.
+
+193
+Interviewer:
+Mm.
+
+194
+Interviewee:
+like, "Okay then we have to do it".
+
+195
+Interviewer:
+Mm. The reason I'm asking is more of a... ehm... 'cause if you have a huge company behind it, it is often a very good documentation and all that, whereas for libraries may be by a person who has somewhat abandoned that project so the help you can get is more from a community...
+
+196
+Interviewee:
+feeling that somebody else already started to abandon it or if it's very few persons, then; then can't be crucial to the product.
+
+197
+Interviewer:
+Mm.
+
+198
+Interviewee:
+If it's just a tiny thing and the option is that we have to spend time to develop the stuff ourselves, but it's still an option, then you could use most of the open source community. But I mean I; and I don't really... I mean there are some, ehm... small libraries that are very well documented and there are some companies supported libraries that are not so well documented. [laughter]. That's not the general statementm, I would say.
+
+199
+Interviewer:
+was flawless, would you still need in on my community?
+
+200
+Interviewee:
+[pause] Yes, I would say so.
+
+201
+Interviewer:
+Mm.
+
+202
+Interviewee:
+Because they will all run in to other kind of problems like "Why can't I do..", because... [inaudible]. And to be honest there is no such thing as a flawless documentation. [laughter].
+
+203
+Interviewer:
+But, eh...
+
+204
+Interviewee:
+understand your question and... I would be very hesitating if there wasn't... some kind of community around it.
+
+205
+Interviewer:
+Mm. So in the... I've made two surveys, with similar questions and the; in the first survey online community ranked as the second most important aspect of all.
+
+206
+Interviewee:
+Mm, mm.
+
+207
+Interviewer:
+Whereas in the second one, ehm, it's somewhere in the middle.
+
+208
+Interviewee:
+Mm.
+
+209
+Interviewer:
+And even; looking for many angles I can't seem to find any reason behind it moving down. Could you have any theory around why people...
+
+210
+Interviewee:
+Yeah when I, I know; When I took your survey my; I sometimes hesitated how to answer depending, because... As I said, In my role typically I have two aspects. The one is evaluating to take this into our products or to use it if it's a tool. Ehm... And then I have one pair of glasses on. And the other way is like... I want to understand some new aspect of technology, like machine learning, or... [pause] Well I think that's... good way. Then I have a totally different aspect though it's; Because then it's like "Okay they don't have release notes, they are not stable, over a few people", But it's very easy to test the concept.
+
+211
+Interviewer:
+Mm.
+
+212
+Interviewee:
+And then I look at the other libraries and say "Okay, they're more complicated, but the general concepts are the same."
+
+213
+Interviewer:
+Mm.
+
+214
+Interviewee:
+They're trying to solve the same kind of problem. I would happily take the one that gave me less work to get started and trying out, because I'm trying out the underlying feature.
+
+215
+Interviewer:
+Mm.
+
+216
+Interviewee:
+...not the library itself, so that's why they become different. And I think the same thing goes for community. It can also be if it's something brand new is coming out like React was... There's not so many using it, in the very beginning, when it was talked about. Or NodeJS was the same thing it was... And if there wasn't the living community, that's was like, because there is no but; but; not a lot of people using it, so you can live with that.
+
+217
+Interviewer:
+Mm.
+
+218
+Interviewee:
+So it depends on where you are in the spectrum because; but if; if it becomes part of; of Qlik in our use; we use it... Then it's crucial that there are communities and or documentation and are help because otherwise you will get stuck.
+
+219
+Interviewer:
+Mm.
+
+220
+Interviewee:
+You won't find the experts all the time. So I think it's depends on where you are and that's; that could be one reason why you get different answers. Because you be kind of; how are you, in the initial questions, need people to think about it.
+
+221
+Interviewer:
+Yeah.
+
+222
+Interviewee:
+So that's why I said I was like "Okay, is this important or not it?" will depends on whose side I am on, so; And I think that's community...
+
+223
+Interviewer:
+Okay... Do you have any questions that; to me or anything that you thought I would ask that I haven't asked?
+
+224
+Interviewee:
+haven't thought about that. Ehm... There is one aspect which comes up quite often in some coffee discussions around APIs and libraries. And it's the, what was typically called IntelliSense. Of things that you get from the tooling.
+
+225
+Interviewer:
+Mm.
+
+226
+Interviewee:
+And I don't see that in your papers at all, and to me... Again, because I'm not trying out things, it's extremely useful because I don't have to look at things. I can guess like "Okay, it's "bakeCake" and not "makeCake", ehm... And if I have to look that up every time then; then I get frustrated, eh... So that is to me also key, and that's, to me, a part of documentation if it's integrated into... There are more and more languages that are becoming good at that so if you write the documentation in; in the library you will get that automatically.
+
+227
+Interviewer:
+Mm.
+
+228
+Interviewee:
+But to me that's; that's an important feature. Ehm... There was something else, eh... There are other aspects of library depending or what the kind of libraries there are. That this surprisingly difficult to find, and like, ehm... If you take something that is produced, something for the end-user. Like how capable are your at different languages... [inaudible] ...our product. These kind of things could also be extremely important but if it's a back-end API doesn't really matter.
+
+229
+Interviewer:
+Mm.
+
+230
+Interviewee:
+And that's again... I find that; in some of the studies I have done it's like... "How do I know this?" when I look at something. And it's; it's... There is no good standard around that so, eh... I've been surprised by myself, because and; and we have done mistakes in Qlik too... So... It's a challenge.
+
+231
+Interviewer:
+Mm.
+
+232
+Interviewee:
+And that's probably out of things like... it's typically with libraries that; that... thing like React and things like that... How good are they at being; different languages, locales, accessibility...
+
+233
+Interviewer:
+Mm.
+
+234
+Interviewee:
+Do they handle that for you? And again that's a bit tricky to understand from the documentation.
+
+235
+Interviewer:
+Mm... I think that's all the questions I have for you. Eh... Thank you very much.

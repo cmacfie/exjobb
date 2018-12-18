@@ -1,0 +1,2208 @@
+1
+00:00:00,770 --> 00:00:06,000
+okay so today's the 6th of September
+
+2
+00:00:04,799 --> 00:00:08,940
+yeah
+
+3
+00:00:06,000 --> 00:00:11,250
+December sorry and we're at clique
+
+4
+00:00:08,940 --> 00:00:16,230
+offices and this is Christopher McPhee
+
+5
+00:00:11,250 --> 00:00:18,270
+talking and I'm here with my honored and
+
+6
+00:00:16,230 --> 00:00:24,000
+you work here at the clique yeah I work
+
+7
+00:00:18,270 --> 00:00:27,949
+a clique as a software engineer hmm so I
+
+8
+00:00:24,000 --> 00:00:27,949
+have some questions for you regarding
+
+9
+00:00:28,039 --> 00:00:33,300
+we're going to talk about API rate
+
+10
+00:00:31,380 --> 00:00:35,070
+lighter stuff we're gonna talk a little
+
+11
+00:00:33,300 --> 00:00:36,690
+bit about release notes and we kind of
+
+12
+00:00:35,070 --> 00:00:39,860
+talked a little bit about online
+
+13
+00:00:36,690 --> 00:00:42,590
+communities around software platforms
+
+14
+00:00:39,860 --> 00:00:48,660
+hmm and you looked at some material
+
+15
+00:00:42,590 --> 00:00:55,829
+beforehand so if we start with API
+
+16
+00:00:48,660 --> 00:01:01,079
+related things okay so when you're
+
+17
+00:00:55,829 --> 00:01:04,500
+looking at how important would you say
+
+18
+00:01:01,079 --> 00:01:07,770
+that API examples a documentation is for
+
+19
+00:01:04,500 --> 00:01:10,040
+a software platform probably one of the
+
+20
+00:01:07,770 --> 00:01:13,680
+most important things when it comes to
+
+21
+00:01:10,040 --> 00:01:15,900
+documentation because I would say most
+
+22
+00:01:13,680 --> 00:01:18,659
+for most people that's the first thing
+
+23
+00:01:15,900 --> 00:01:20,610
+you look at because if it's an API
+
+24
+00:01:18,659 --> 00:01:24,330
+you're not familiar with the examples
+
+25
+00:01:20,610 --> 00:01:29,880
+are the the way you actually want to get
+
+26
+00:01:24,330 --> 00:01:31,590
+familiar with how things are working so
+
+27
+00:01:29,880 --> 00:01:37,320
+when you look at a very examples why are
+
+28
+00:01:31,590 --> 00:01:39,990
+you trying to what are you looking for
+
+29
+00:01:37,320 --> 00:01:43,850
+like when you look up by examples what
+
+30
+00:01:39,990 --> 00:01:43,850
+is it what is it you want to find out I
+
+31
+00:01:44,060 --> 00:01:49,380
+don't know I guess it depends on what
+
+32
+00:01:46,920 --> 00:01:51,810
+I'm looking for sometimes it can be if
+
+33
+00:01:49,380 --> 00:01:54,450
+I'm looking at a specific method I want
+
+34
+00:01:51,810 --> 00:01:56,939
+to be able to find that quickly and to
+
+35
+00:01:54,450 --> 00:02:02,450
+have an example of how that thing works
+
+36
+00:01:56,939 --> 00:02:06,490
+in specific way and I guess it should be
+
+37
+00:02:02,450 --> 00:02:09,200
+clear examples consistent examples and
+
+38
+00:02:06,490 --> 00:02:12,530
+[Music]
+
+39
+00:02:09,200 --> 00:02:15,150
+yeah I don't know
+
+40
+00:02:12,530 --> 00:02:18,299
+but and and also that there's some
+
+41
+00:02:15,150 --> 00:02:21,739
+explanation not just code but also
+
+42
+00:02:18,299 --> 00:02:24,659
+explanation about what that code does
+
+43
+00:02:21,739 --> 00:02:28,319
+yeah some kind of documentation about
+
+44
+00:02:24,659 --> 00:02:30,150
+the methods and what they do and how
+
+45
+00:02:28,319 --> 00:02:33,599
+they should behave hmm
+
+46
+00:02:30,150 --> 00:02:37,079
+so it's it so would it's more of a it's
+
+47
+00:02:33,599 --> 00:02:38,849
+a mixture of trying to understand how
+
+48
+00:02:37,079 --> 00:02:43,019
+they are used and where they were used
+
+49
+00:02:38,849 --> 00:02:45,359
+or yeah yeah of course and copy paste
+
+50
+00:02:43,019 --> 00:02:49,530
+encoded that it's not something that is
+
+51
+00:02:45,359 --> 00:02:52,709
+good for code examples as well or just
+
+52
+00:02:49,530 --> 00:02:55,260
+to what do you mean for you mean for the
+
+53
+00:02:52,709 --> 00:02:59,519
+developer to be able to just copy paste
+
+54
+00:02:55,260 --> 00:03:03,120
+and try something out I think it's good
+
+55
+00:02:59,519 --> 00:03:05,849
+if you can get like if you can try
+
+56
+00:03:03,120 --> 00:03:11,389
+something out quickly just to see that
+
+57
+00:03:05,849 --> 00:03:14,400
+that's what you're that it works I guess
+
+58
+00:03:11,389 --> 00:03:17,579
+but it doesn't need to be a complete
+
+59
+00:03:14,400 --> 00:03:18,859
+example in which you know everything is
+
+60
+00:03:17,579 --> 00:03:23,730
+done for you hmm
+
+61
+00:03:18,859 --> 00:03:26,010
+it's more important of a concise example
+
+62
+00:03:23,730 --> 00:03:28,530
+we just what they're trying to explain
+
+63
+00:03:26,010 --> 00:03:31,739
+rather than a big one yeah I think it's
+
+64
+00:03:28,530 --> 00:03:33,599
+good to have it really depends on the
+
+65
+00:03:31,739 --> 00:03:37,109
+case sometimes it's nice to have both
+
+66
+00:03:33,599 --> 00:03:41,099
+like to use that example in the context
+
+67
+00:03:37,109 --> 00:03:42,720
+of something bigger but it it really
+
+68
+00:03:41,099 --> 00:03:45,150
+depends on the method if it's it
+
+69
+00:03:42,720 --> 00:03:47,220
+something something as simple as you
+
+70
+00:03:45,150 --> 00:03:50,609
+know you need to do a copy paste then
+
+71
+00:03:47,220 --> 00:03:53,190
+it's enough to just focus on that simple
+
+72
+00:03:50,609 --> 00:03:54,840
+method how to do a copy paste with this
+
+73
+00:03:53,190 --> 00:03:56,849
+API okay
+
+74
+00:03:54,840 --> 00:04:00,540
+because it doesn't really have a lot of
+
+75
+00:03:56,849 --> 00:04:05,190
+dependencies on other things so I think
+
+76
+00:04:00,540 --> 00:04:07,919
+it really depends when it comes to it's
+
+77
+00:04:05,190 --> 00:04:11,609
+not really API is but in click when it
+
+78
+00:04:07,919 --> 00:04:14,329
+comes to the scripting language when you
+
+79
+00:04:11,609 --> 00:04:18,060
+developed apps and things for example
+
+80
+00:04:14,329 --> 00:04:22,139
+there it's nice to have examples that
+
+81
+00:04:18,060 --> 00:04:25,480
+are within a bigger context so yeah it
+
+82
+00:04:22,139 --> 00:04:27,400
+kind of depends but I would
+
+83
+00:04:25,480 --> 00:04:29,770
+if I have to choose then it would be it
+
+84
+00:04:27,400 --> 00:04:32,830
+would be more concise examples that just
+
+85
+00:04:29,770 --> 00:04:35,080
+show you okay this is what I wanted to
+
+86
+00:04:32,830 --> 00:04:40,540
+know and I don't have to go searching
+
+87
+00:04:35,080 --> 00:04:42,400
+like they said in the context of click
+
+88
+00:04:40,540 --> 00:04:46,060
+it's new you have it a bigger example
+
+89
+00:04:42,400 --> 00:04:48,340
+when is it not when it's in what context
+
+90
+00:04:46,060 --> 00:04:55,000
+is better to have a smaller example then
+
+91
+00:04:48,340 --> 00:04:58,120
+it's like what makes click and they get
+
+92
+00:04:55,000 --> 00:05:00,490
+bigger yeah yeah so in this sense it
+
+93
+00:04:58,120 --> 00:05:04,180
+wasn't click as everything related to
+
+94
+00:05:00,490 --> 00:05:06,460
+click it was specifically because yeah I
+
+95
+00:05:04,180 --> 00:05:08,560
+always complain and other people I think
+
+96
+00:05:06,460 --> 00:05:11,920
+always complain with the documentation
+
+97
+00:05:08,560 --> 00:05:15,370
+regarding the app development and
+
+98
+00:05:11,920 --> 00:05:17,650
+scripting and in that case you need more
+
+99
+00:05:15,370 --> 00:05:21,310
+knowledge before you can jump into a
+
+100
+00:05:17,650 --> 00:05:23,200
+specific method so there you kind of
+
+101
+00:05:21,310 --> 00:05:29,230
+it's important to have more step-by-step
+
+102
+00:05:23,200 --> 00:05:31,120
+things it's more advanced we need yeah
+
+103
+00:05:29,230 --> 00:05:34,210
+yeah because you can't just you need
+
+104
+00:05:31,120 --> 00:05:36,490
+some prerequisite knowledge in order to
+
+105
+00:05:34,210 --> 00:05:40,120
+get to that okay so I think in every
+
+106
+00:05:36,490 --> 00:05:44,770
+documentation it's important if you know
+
+107
+00:05:40,120 --> 00:05:46,480
+that you need some some prerequisite
+
+108
+00:05:44,770 --> 00:05:48,670
+knowledge that it's not maybe very
+
+109
+00:05:46,480 --> 00:05:52,210
+common that it's nice to have those
+
+110
+00:05:48,670 --> 00:05:55,210
+examples as well or at least some links
+
+111
+00:05:52,210 --> 00:05:58,540
+or references to where can you learn
+
+112
+00:05:55,210 --> 00:06:00,640
+about that because it's yeah it can be
+
+113
+00:05:58,540 --> 00:06:02,530
+quite annoying when you get start
+
+114
+00:06:00,640 --> 00:06:04,990
+reading an explanation and then there's
+
+115
+00:06:02,530 --> 00:06:10,540
+ten ten things you don't even know what
+
+116
+00:06:04,990 --> 00:06:13,690
+they mean and it's nowhere explained so
+
+117
+00:06:10,540 --> 00:06:16,870
+how does it affect you if you're looking
+
+118
+00:06:13,690 --> 00:06:20,860
+at FBI examples and they're not very
+
+119
+00:06:16,870 --> 00:06:23,320
+good how does that affect your work well
+
+120
+00:06:20,860 --> 00:06:29,590
+if I have a choice to find something
+
+121
+00:06:23,320 --> 00:06:31,780
+else to use then I would just do that if
+
+122
+00:06:29,590 --> 00:06:34,590
+I don't have a choice well usually you
+
+123
+00:06:31,780 --> 00:06:37,870
+have a choice I mean usually you can
+
+124
+00:06:34,590 --> 00:06:38,690
+choose between different different
+
+125
+00:06:37,870 --> 00:06:42,110
+options
+
+126
+00:06:38,690 --> 00:06:47,540
+which API used to go go to do this the
+
+127
+00:06:42,110 --> 00:06:49,220
+same thing so in that case if you select
+
+128
+00:06:47,540 --> 00:06:51,110
+one thing and then you see the
+
+129
+00:06:49,220 --> 00:06:52,970
+documentation is bad usually you just
+
+130
+00:06:51,110 --> 00:06:57,170
+scrape it and turn to something
+
+131
+00:06:52,970 --> 00:06:59,930
+different had the situation like that
+
+132
+00:06:57,170 --> 00:07:03,530
+recently when we started and that we
+
+133
+00:06:59,930 --> 00:07:07,640
+actually implemented stuff using this
+
+134
+00:07:03,530 --> 00:07:10,580
+I forgot how it's called doesn't really
+
+135
+00:07:07,640 --> 00:07:13,790
+matter but we had the written code and
+
+136
+00:07:10,580 --> 00:07:16,790
+everything and yeah it was all the
+
+137
+00:07:13,790 --> 00:07:18,440
+working examples but more and more we
+
+138
+00:07:16,790 --> 00:07:21,170
+were working with it we realized the
+
+139
+00:07:18,440 --> 00:07:23,090
+documentation is really lacking and it
+
+140
+00:07:21,170 --> 00:07:25,850
+was difficult once you get into problems
+
+141
+00:07:23,090 --> 00:07:27,830
+to fix them so we actually just scraped
+
+142
+00:07:25,850 --> 00:07:31,720
+that and started all over again with the
+
+143
+00:07:27,830 --> 00:07:36,260
+difference so with a different solution
+
+144
+00:07:31,720 --> 00:07:43,390
+so yeah it's it definitely affects the
+
+145
+00:07:36,260 --> 00:07:47,180
+developer in a bad way so looking at the
+
+146
+00:07:43,390 --> 00:07:50,210
+material is there anything that you saw
+
+147
+00:07:47,180 --> 00:07:53,210
+that okay this is very important or this
+
+148
+00:07:50,210 --> 00:07:55,640
+is not important or is there some key
+
+149
+00:07:53,210 --> 00:08:00,530
+aspects that you're missing here that
+
+150
+00:07:55,640 --> 00:08:03,380
+you usually look at it was a lot of
+
+151
+00:08:00,530 --> 00:08:06,140
+pictures yeah but yeah it's definitely
+
+152
+00:08:03,380 --> 00:08:10,310
+good that there is some there were some
+
+153
+00:08:06,140 --> 00:08:16,790
+examples of how to do well in this case
+
+154
+00:08:10,310 --> 00:08:19,130
+yeah very basic example like the this is
+
+155
+00:08:16,790 --> 00:08:23,090
+how you get started that's nice and then
+
+156
+00:08:19,130 --> 00:08:27,200
+some example of okay this is one step
+
+157
+00:08:23,090 --> 00:08:29,390
+more a bit more advanced so I think
+
+158
+00:08:27,200 --> 00:08:33,260
+that's a nice way to present it to have
+
+159
+00:08:29,390 --> 00:08:35,560
+like the very basic one and then to go
+
+160
+00:08:33,260 --> 00:08:39,710
+into this is how you can modify things
+
+161
+00:08:35,560 --> 00:08:44,450
+so I definitely like that and yeah I
+
+162
+00:08:39,710 --> 00:08:46,700
+like that you have in meta descriptions
+
+163
+00:08:44,450 --> 00:08:51,050
+that you have listed like the parameters
+
+164
+00:08:46,700 --> 00:08:53,800
+and their types and description that's
+
+165
+00:08:51,050 --> 00:08:53,800
+always helpful
+
+166
+00:08:53,900 --> 00:08:59,030
+so is that something that is something
+
+167
+00:08:56,930 --> 00:09:01,570
+that should always exist or is it some
+
+168
+00:08:59,030 --> 00:09:04,820
+kind of like a bonus this is good if it
+
+169
+00:09:01,570 --> 00:09:09,020
+exists I would say it's something that
+
+170
+00:09:04,820 --> 00:09:13,100
+should always exist so I mean it seems
+
+171
+00:09:09,020 --> 00:09:14,930
+like a very basic basic description to
+
+172
+00:09:13,100 --> 00:09:16,730
+have like when you want to use method
+
+173
+00:09:14,930 --> 00:09:20,990
+you want to know which parameters since
+
+174
+00:09:16,730 --> 00:09:23,660
+has what type they can be and yeah what
+
+175
+00:09:20,990 --> 00:09:28,700
+do they actually do so for me that's
+
+176
+00:09:23,660 --> 00:09:31,000
+kind of a must examples as well like
+
+177
+00:09:28,700 --> 00:09:31,000
+always
+
+178
+00:09:31,390 --> 00:09:40,420
+yeah release notes that's always good to
+
+179
+00:09:37,130 --> 00:09:44,630
+have just to make sure you're not using
+
+180
+00:09:40,420 --> 00:09:47,290
+something that doesn't work anymore or
+
+181
+00:09:44,630 --> 00:09:54,830
+will be deprecated then once you upgrade
+
+182
+00:09:47,290 --> 00:09:58,730
+hmm later so another thing about you've
+
+183
+00:09:54,830 --> 00:10:00,980
+touched upon this a bit to have working
+
+184
+00:09:58,730 --> 00:10:05,270
+code quickly is that something that is
+
+185
+00:10:00,980 --> 00:10:08,480
+important to you I think it's nice to
+
+186
+00:10:05,270 --> 00:10:11,690
+have working code quickly to have some
+
+187
+00:10:08,480 --> 00:10:14,360
+kind of a basic example quickly but then
+
+188
+00:10:11,690 --> 00:10:16,850
+once of course it would usually need
+
+189
+00:10:14,360 --> 00:10:18,080
+more work and more time when you want to
+
+190
+00:10:16,850 --> 00:10:20,690
+have something more advanced
+
+191
+00:10:18,080 --> 00:10:23,450
+but it's nice to be able to say okay
+
+192
+00:10:20,690 --> 00:10:26,150
+this is how I can at least get the setup
+
+193
+00:10:23,450 --> 00:10:29,570
+part done and I can see that I get
+
+194
+00:10:26,150 --> 00:10:32,540
+something out so you don't have to spend
+
+195
+00:10:29,570 --> 00:10:35,720
+the day and then oh this this doesn't
+
+196
+00:10:32,540 --> 00:10:39,080
+work at all yeah so I think having some
+
+197
+00:10:35,720 --> 00:10:43,280
+kind of a basic working example it's
+
+198
+00:10:39,080 --> 00:10:45,500
+important so in what situation are you
+
+199
+00:10:43,280 --> 00:10:47,780
+willing to accept not something working
+
+200
+00:10:45,500 --> 00:10:50,780
+code quickly is it always needed to have
+
+201
+00:10:47,780 --> 00:10:54,380
+just the getting basics okay this is
+
+202
+00:10:50,780 --> 00:10:57,050
+rendering and then don't what bounced oh
+
+203
+00:10:54,380 --> 00:11:02,440
+can you wait for a long time I guess if
+
+204
+00:10:57,050 --> 00:11:05,090
+I know that it's something that
+
+205
+00:11:02,440 --> 00:11:06,470
+definitely works that it doesn't matter
+
+206
+00:11:05,090 --> 00:11:08,720
+I do I
+
+207
+00:11:06,470 --> 00:11:13,460
+need to be the one testing it so it's
+
+208
+00:11:08,720 --> 00:11:15,320
+something that's how do you say it's
+
+209
+00:11:13,460 --> 00:11:17,450
+kind of a standard you know people are
+
+210
+00:11:15,320 --> 00:11:20,840
+using this and it works I'm not gonna
+
+211
+00:11:17,450 --> 00:11:24,340
+run into some trouble where oh this is
+
+212
+00:11:20,840 --> 00:11:27,470
+very experimental that someone wrote and
+
+213
+00:11:24,340 --> 00:11:29,480
+yeah I need to be the one testing it so
+
+214
+00:11:27,470 --> 00:11:34,190
+I guess in that case it doesn't really
+
+215
+00:11:29,480 --> 00:11:36,260
+have to be a quick working example hmm
+
+216
+00:11:34,190 --> 00:11:40,670
+because I'm already aware okay maybe
+
+217
+00:11:36,260 --> 00:11:45,710
+there is even a community around the
+
+218
+00:11:40,670 --> 00:11:49,190
+solution so yeah maybe that's that's one
+
+219
+00:11:45,710 --> 00:11:51,440
+reason but you you said that early that
+
+220
+00:11:49,190 --> 00:11:56,420
+he scraped and started over because of
+
+221
+00:11:51,440 --> 00:12:01,840
+the documentation being poor so that was
+
+222
+00:11:56,420 --> 00:12:01,840
+more you work is with something new then
+
+223
+00:12:02,050 --> 00:12:11,540
+did you have started what working code a
+
+224
+00:12:07,120 --> 00:12:14,150
+issue there or just that is so that this
+
+225
+00:12:11,540 --> 00:12:18,500
+wasn't scalable if this documentation is
+
+226
+00:12:14,150 --> 00:12:21,470
+poor yeah it's so exactly it was it was
+
+227
+00:12:18,500 --> 00:12:23,330
+you could get a quick working example
+
+228
+00:12:21,470 --> 00:12:25,280
+and that's quick in that case quickly
+
+229
+00:12:23,330 --> 00:12:28,550
+and you could do the basic things
+
+230
+00:12:25,280 --> 00:12:30,740
+quickly and it worked well but after a
+
+231
+00:12:28,550 --> 00:12:34,190
+while every time you ran into a problem
+
+232
+00:12:30,740 --> 00:12:35,990
+and you wanted to fix it and you look
+
+233
+00:12:34,190 --> 00:12:38,480
+into the documentation it's like it
+
+234
+00:12:35,990 --> 00:12:40,850
+doesn't say anything here okay and if
+
+235
+00:12:38,480 --> 00:12:42,860
+you try to google it it's you know maybe
+
+236
+00:12:40,850 --> 00:12:45,410
+you'll find something maybe you don't so
+
+237
+00:12:42,860 --> 00:12:50,000
+you're kind of left on your own which is
+
+238
+00:12:45,410 --> 00:12:53,030
+not a very nice thing or something like
+
+239
+00:12:50,000 --> 00:12:55,220
+that does like the answer does exist in
+
+240
+00:12:53,030 --> 00:12:58,490
+the documentation but you need to search
+
+241
+00:12:55,220 --> 00:13:00,740
+for it for half an hour because it's not
+
+242
+00:12:58,490 --> 00:13:03,920
+ordered in a correct way or it's very
+
+243
+00:13:00,740 --> 00:13:10,520
+inconsistent or I don't know
+
+244
+00:13:03,920 --> 00:13:12,530
+so after kind of how do you say after
+
+245
+00:13:10,520 --> 00:13:15,710
+having the same problem multiple times
+
+246
+00:13:12,530 --> 00:13:18,259
+then we realized okay if this continues
+
+247
+00:13:15,710 --> 00:13:21,350
+happening you just keep losing time
+
+248
+00:13:18,259 --> 00:13:22,970
+time you want to fix something so we
+
+249
+00:13:21,350 --> 00:13:25,519
+kind of scraped it and did the
+
+250
+00:13:22,970 --> 00:13:28,189
+investigation okay what are our other
+
+251
+00:13:25,519 --> 00:13:31,489
+options and in this case let's try to
+
+252
+00:13:28,189 --> 00:13:33,589
+look at the documentation straight away
+
+253
+00:13:31,489 --> 00:13:35,989
+and see if all of the problems we had
+
+254
+00:13:33,589 --> 00:13:44,059
+with the older one are now gonna be
+
+255
+00:13:35,989 --> 00:13:47,989
+mixed so what do you say that working
+
+256
+00:13:44,059 --> 00:13:50,959
+code quickly is if the documentation is
+
+257
+00:13:47,989 --> 00:13:53,679
+good and they are examples are good will
+
+258
+00:13:50,959 --> 00:13:59,269
+you always have working code quickly
+
+259
+00:13:53,679 --> 00:14:01,369
+those links yeah I there definitely
+
+260
+00:13:59,269 --> 00:14:04,129
+linked yeah the better the documentation
+
+261
+00:14:01,369 --> 00:14:07,609
+is the easier it will be for you to get
+
+262
+00:14:04,129 --> 00:14:09,679
+get up and running I mean but obviously
+
+263
+00:14:07,609 --> 00:14:11,629
+as I said then the other way around uh
+
+264
+00:14:09,679 --> 00:14:13,429
+support working code quickly it doesn't
+
+265
+00:14:11,629 --> 00:14:19,600
+mean that the documentation will be good
+
+266
+00:14:13,429 --> 00:14:23,559
+yeah yeah in that case it doesn't so
+
+267
+00:14:19,600 --> 00:14:26,959
+yeah it kind of the good documentation
+
+268
+00:14:23,559 --> 00:14:29,419
+brings a lot of good things with it and
+
+269
+00:14:26,959 --> 00:14:34,489
+the bad documentation will bring a lot
+
+270
+00:14:29,419 --> 00:14:38,269
+of bad things but yeah I guess even in
+
+271
+00:14:34,489 --> 00:14:42,470
+bad documentation it's it's possible to
+
+272
+00:14:38,269 --> 00:14:45,379
+have basic examples but then once you
+
+273
+00:14:42,470 --> 00:14:46,549
+get into the more advanced stuff then it
+
+274
+00:14:45,379 --> 00:14:49,669
+fails you hmm
+
+275
+00:14:46,549 --> 00:14:55,399
+so the documentation it's a very key
+
+276
+00:14:49,669 --> 00:14:58,939
+part of it effects everything yeah okay
+
+277
+00:14:55,399 --> 00:15:04,579
+so if we move over more to talk about
+
+278
+00:14:58,939 --> 00:15:07,839
+release notes in general how often would
+
+279
+00:15:04,579 --> 00:15:12,730
+you say that you look at release notes
+
+280
+00:15:07,839 --> 00:15:16,970
+not very often really but it's usually
+
+281
+00:15:12,730 --> 00:15:20,389
+not me who and who has to decide between
+
+282
+00:15:16,970 --> 00:15:24,499
+like which software we are using or
+
+283
+00:15:20,389 --> 00:15:27,589
+which solutions which api's so I guess
+
+284
+00:15:24,499 --> 00:15:30,189
+it's not so often that I did I look at
+
+285
+00:15:27,589 --> 00:15:30,189
+it because of that
+
+286
+00:15:31,670 --> 00:15:36,590
+but yeah but I think it's still it's
+
+287
+00:15:34,040 --> 00:15:40,400
+still important to be able to find
+
+288
+00:15:36,590 --> 00:15:44,230
+release notes because eventually you
+
+289
+00:15:40,400 --> 00:15:47,840
+will want to like you want to upgrade
+
+290
+00:15:44,230 --> 00:15:49,820
+whatever software you're using and in
+
+291
+00:15:47,840 --> 00:15:52,310
+that case if you don't have
+
+292
+00:15:49,820 --> 00:15:54,590
+documentation you can easily run into
+
+293
+00:15:52,310 --> 00:15:58,970
+trouble if you don't have release notes
+
+294
+00:15:54,590 --> 00:16:00,730
+like this and so when you end up looking
+
+295
+00:15:58,970 --> 00:16:03,440
+at released under what circumstances
+
+296
+00:16:00,730 --> 00:16:06,890
+since you're not as you said the decider
+
+297
+00:16:03,440 --> 00:16:14,570
+to upgrade when you look at them why how
+
+298
+00:16:06,890 --> 00:16:19,940
+come you do that it's really for when it
+
+299
+00:16:14,570 --> 00:16:21,590
+comes to api's even not when if we take
+
+300
+00:16:19,940 --> 00:16:27,430
+the context that you're working on
+
+301
+00:16:21,590 --> 00:16:30,980
+something privately for example yeah I
+
+302
+00:16:27,430 --> 00:16:35,390
+guess yeah if you if you work on
+
+303
+00:16:30,980 --> 00:16:37,370
+something privately and then in that
+
+304
+00:16:35,390 --> 00:16:39,230
+case it will make more sense to look at
+
+305
+00:16:37,370 --> 00:16:40,580
+release notes but at the same time if
+
+306
+00:16:39,230 --> 00:16:43,730
+you're look if you're working on
+
+307
+00:16:40,580 --> 00:16:45,710
+something privately that's like just it
+
+308
+00:16:43,730 --> 00:16:48,560
+doesn't need to go into production or
+
+309
+00:16:45,710 --> 00:16:52,280
+something then you don't care too much
+
+310
+00:16:48,560 --> 00:16:57,950
+about if you're using a deprecated
+
+311
+00:16:52,280 --> 00:17:01,580
+method or not so yeah but I think when
+
+312
+00:16:57,950 --> 00:17:05,540
+it comes to I mean I can talk about in
+
+313
+00:17:01,580 --> 00:17:08,770
+the context of since our team is working
+
+314
+00:17:05,540 --> 00:17:16,640
+with API governance and the entire work
+
+315
+00:17:08,770 --> 00:17:19,720
+kind of the entire how you say job let's
+
+316
+00:17:16,640 --> 00:17:23,180
+say job where the goal is to present the
+
+317
+00:17:19,720 --> 00:17:25,640
+API changes and to make sure that the
+
+318
+00:17:23,180 --> 00:17:28,640
+customers that are using click API is
+
+319
+00:17:25,640 --> 00:17:31,760
+know what has what has changed between
+
+320
+00:17:28,640 --> 00:17:35,590
+releases because for them when they want
+
+321
+00:17:31,760 --> 00:17:41,960
+to upgrade to a new version of clixsense
+
+322
+00:17:35,590 --> 00:17:44,450
+that's very important so from from that
+
+323
+00:17:41,960 --> 00:17:45,800
+perspective looking at how how much
+
+324
+00:17:44,450 --> 00:17:50,060
+other people are injured
+
+325
+00:17:45,800 --> 00:17:55,340
+in having us presents that then it seems
+
+326
+00:17:50,060 --> 00:17:59,260
+like it's quite important yeah so what
+
+327
+00:17:55,340 --> 00:18:03,620
+is important to have in release notes I
+
+328
+00:17:59,260 --> 00:18:06,800
+guess it's important to have enough
+
+329
+00:18:03,620 --> 00:18:08,960
+details so that people are know people
+
+330
+00:18:06,800 --> 00:18:14,540
+know what what has happened between
+
+331
+00:18:08,960 --> 00:18:17,210
+releases for us we usually just and I
+
+332
+00:18:14,540 --> 00:18:21,890
+think most they just present kind of
+
+333
+00:18:17,210 --> 00:18:24,650
+what has what has changed if you have
+
+334
+00:18:21,890 --> 00:18:29,350
+new methods or new ways of doing things
+
+335
+00:18:24,650 --> 00:18:33,470
+and if you are supposed to avoid some
+
+336
+00:18:29,350 --> 00:18:34,850
+methods that you were using before so in
+
+337
+00:18:33,470 --> 00:18:40,040
+the material we have a very detailed
+
+338
+00:18:34,850 --> 00:18:44,540
+release note and very non detailed do
+
+339
+00:18:40,040 --> 00:18:53,750
+you see any observe downs with either
+
+340
+00:18:44,540 --> 00:18:56,450
+version yes yeah so here in the short
+
+341
+00:18:53,750 --> 00:19:00,290
+release notes when you have like the new
+
+342
+00:18:56,450 --> 00:19:04,210
+updated you don't really know what has
+
+343
+00:19:00,290 --> 00:19:09,650
+changed if one of these has been updated
+
+344
+00:19:04,210 --> 00:19:11,300
+so it doesn't say from it doesn't say
+
+345
+00:19:09,650 --> 00:19:14,030
+which one of these are completely new
+
+346
+00:19:11,300 --> 00:19:17,720
+which are updated and how they are
+
+347
+00:19:14,030 --> 00:19:19,940
+updated so that's something I that would
+
+348
+00:19:17,720 --> 00:19:22,550
+be my first question like I don't know
+
+349
+00:19:19,940 --> 00:19:24,680
+what has happened I just know something
+
+350
+00:19:22,550 --> 00:19:29,450
+has changed but it's what exactly I have
+
+351
+00:19:24,680 --> 00:19:32,270
+and then in the deprecated one you see
+
+352
+00:19:29,450 --> 00:19:35,090
+that four methods have been deprecated
+
+353
+00:19:32,270 --> 00:19:37,370
+but then if you have the if you have
+
+354
+00:19:35,090 --> 00:19:39,410
+used these methods in your code it
+
+355
+00:19:37,370 --> 00:19:41,960
+doesn't say what you should do instead
+
+356
+00:19:39,410 --> 00:19:44,900
+hmm so you're kind of left wondering
+
+357
+00:19:41,960 --> 00:19:51,680
+okay how am I supposed to fix my code
+
+358
+00:19:44,900 --> 00:19:55,400
+and I think this was fixed in the big
+
+359
+00:19:51,680 --> 00:19:58,050
+change lock yeah you have a list of the
+
+360
+00:19:55,400 --> 00:20:04,480
+Prakriti methods and you
+
+361
+00:19:58,050 --> 00:20:07,060
+specify what you should use instead yeah
+
+362
+00:20:04,480 --> 00:20:09,540
+even having the reasoning why you remove
+
+363
+00:20:07,060 --> 00:20:15,940
+something I think I think that's nice
+
+364
+00:20:09,540 --> 00:20:21,990
+when you defecate it kind of builds how
+
+365
+00:20:15,940 --> 00:20:29,650
+you say it builds trust when you can
+
+366
+00:20:21,990 --> 00:20:34,750
+explain why we did this change as if we
+
+367
+00:20:29,650 --> 00:20:39,010
+took the bigger version is it too
+
+368
+00:20:34,750 --> 00:20:43,420
+detailed is to like it or is it like how
+
+369
+00:20:39,010 --> 00:20:48,880
+it should be in quotations you have an
+
+370
+00:20:43,420 --> 00:20:51,160
+issue I think when it comes to release
+
+371
+00:20:48,880 --> 00:20:53,650
+notes if you would choose between having
+
+372
+00:20:51,160 --> 00:21:00,100
+not enough and too much it's better to
+
+373
+00:20:53,650 --> 00:21:04,690
+have too much I mean if it's like a few
+
+374
+00:21:00,100 --> 00:21:08,470
+pages or like a screen you usually know
+
+375
+00:21:04,690 --> 00:21:13,380
+what you want to look for so it's easy
+
+376
+00:21:08,470 --> 00:21:20,710
+to find even if it's a big big text
+
+377
+00:21:13,380 --> 00:21:24,400
+button here yeah I think it's nice it
+
+378
+00:21:20,710 --> 00:21:30,430
+seems like I wouldn't have it I wouldn't
+
+379
+00:21:24,400 --> 00:21:44,710
+need this yeah having bugs and talking
+
+380
+00:21:30,430 --> 00:21:48,850
+about when it was introduced so if there
+
+381
+00:21:44,710 --> 00:21:56,020
+are if the release notes are poorly
+
+382
+00:21:48,850 --> 00:22:02,260
+written how would they affect you I
+
+383
+00:21:56,020 --> 00:22:05,260
+think it's bad when it comes to kind of
+
+384
+00:22:02,260 --> 00:22:08,880
+the trust I mentioned between whoever is
+
+385
+00:22:05,260 --> 00:22:10,960
+using the API and whoever is developing
+
+386
+00:22:08,880 --> 00:22:14,679
+if it's a big company
+
+387
+00:22:10,960 --> 00:22:20,049
+such as click I know it's always really
+
+388
+00:22:14,679 --> 00:22:22,240
+big it's a big deal in a bad way if if
+
+389
+00:22:20,049 --> 00:22:23,950
+you upgrade to a new version of cents
+
+390
+00:22:22,240 --> 00:22:26,200
+and all of a sudden things are not
+
+391
+00:22:23,950 --> 00:22:29,620
+working I think it reflects really
+
+392
+00:22:26,200 --> 00:22:32,700
+poorly on the company and yeah it's
+
+393
+00:22:29,620 --> 00:22:32,700
+definitely a big deal
+
+394
+00:22:34,740 --> 00:22:40,450
+are there any other way of obtaining
+
+395
+00:22:37,929 --> 00:22:44,950
+this kind of information then release
+
+396
+00:22:40,450 --> 00:22:49,600
+notes or is that the only is that the
+
+397
+00:22:44,950 --> 00:22:52,299
+go-to way of finding out this finding
+
+398
+00:22:49,600 --> 00:22:57,340
+out kind of the changes between releases
+
+399
+00:22:52,299 --> 00:23:04,240
+yeah some companies take more care of
+
+400
+00:22:57,340 --> 00:23:06,669
+release notes and some don't but if you
+
+401
+00:23:04,240 --> 00:23:12,039
+don't have good release notes these
+
+402
+00:23:06,669 --> 00:23:13,090
+companies still exist - they still do
+
+403
+00:23:12,039 --> 00:23:16,480
+they have it some other way of
+
+404
+00:23:13,090 --> 00:23:20,770
+presenting this or is it just that they
+
+405
+00:23:16,480 --> 00:23:23,470
+have poor release notes yeah I'm not
+
+406
+00:23:20,770 --> 00:23:25,480
+sure what the other way would be I guess
+
+407
+00:23:23,470 --> 00:23:28,740
+depends on how you call it but yeah
+
+408
+00:23:25,480 --> 00:23:31,600
+there should be some way of finding out
+
+409
+00:23:28,740 --> 00:23:39,730
+what has happened in between releases I
+
+410
+00:23:31,600 --> 00:23:41,480
+would say so if we move over to and talk
+
+411
+00:23:39,730 --> 00:23:45,470
+about online communities and study
+
+412
+00:23:41,480 --> 00:23:45,470
+[Music]
+
+413
+00:23:51,250 --> 00:24:00,890
+so how do you take help from online
+
+414
+00:23:58,610 --> 00:24:04,820
+communities when working all the time
+
+415
+00:24:00,890 --> 00:24:06,530
+all the time yeah so so how important is
+
+416
+00:24:04,820 --> 00:24:08,090
+it for you when you work with software
+
+417
+00:24:06,530 --> 00:24:11,300
+there there is an online community
+
+418
+00:24:08,090 --> 00:24:14,860
+around it I think it's quite important
+
+419
+00:24:11,300 --> 00:24:17,750
+because sometimes even when you have a
+
+420
+00:24:14,860 --> 00:24:21,500
+documentation that's average or even
+
+421
+00:24:17,750 --> 00:24:23,510
+good it's always nice to have online
+
+422
+00:24:21,500 --> 00:24:25,640
+communities because you have then people
+
+423
+00:24:23,510 --> 00:24:29,810
+that's run into the same issues as you
+
+424
+00:24:25,640 --> 00:24:32,180
+do and I think it's enough to be in a
+
+425
+00:24:29,810 --> 00:24:35,870
+community it can be either on github
+
+426
+00:24:32,180 --> 00:24:38,600
+like you have opened issues on the
+
+427
+00:24:35,870 --> 00:24:44,120
+repository something as small as that or
+
+428
+00:24:38,600 --> 00:24:46,100
+just enough users that use the software
+
+429
+00:24:44,120 --> 00:24:49,130
+so you get for example and Stack
+
+430
+00:24:46,100 --> 00:24:51,320
+Overflow you can see issues of people
+
+431
+00:24:49,130 --> 00:24:55,280
+using the same thing it doesn't have to
+
+432
+00:24:51,320 --> 00:24:59,780
+be like a specific site that's dedicated
+
+433
+00:24:55,280 --> 00:25:02,050
+just to that product I think online when
+
+434
+00:24:59,780 --> 00:25:05,660
+it comes to online community it's like
+
+435
+00:25:02,050 --> 00:25:07,760
+anywhere on the internet but yeah I
+
+436
+00:25:05,660 --> 00:25:09,890
+think it's definitely important so even
+
+437
+00:25:07,760 --> 00:25:12,980
+even if the documentation was flawless
+
+438
+00:25:09,890 --> 00:25:15,560
+you still want a on my community around
+
+439
+00:25:12,980 --> 00:25:17,420
+it yeah I think it's still nice to have
+
+440
+00:25:15,560 --> 00:25:20,240
+an online community because then you see
+
+441
+00:25:17,420 --> 00:25:22,400
+that people are actually using using it
+
+442
+00:25:20,240 --> 00:25:24,650
+like the documentation can be perfect
+
+443
+00:25:22,400 --> 00:25:30,170
+but if no one is using this then why
+
+444
+00:25:24,650 --> 00:25:34,010
+should I so is it important to feel like
+
+445
+00:25:30,170 --> 00:25:36,460
+you're a part of a community yeah I
+
+446
+00:25:34,010 --> 00:25:40,880
+would say so
+
+447
+00:25:36,460 --> 00:25:44,240
+so why is it important then what happens
+
+448
+00:25:40,880 --> 00:25:45,560
+if you're working with a software that
+
+449
+00:25:44,240 --> 00:25:48,740
+doesn't have an online community how
+
+450
+00:25:45,560 --> 00:25:52,610
+does that make you feel I don't know it
+
+451
+00:25:48,740 --> 00:25:56,570
+seems like as I said like why am I the
+
+452
+00:25:52,610 --> 00:26:01,880
+only one using this that will be kind of
+
+453
+00:25:56,570 --> 00:26:03,120
+my question if I try to if I find I know
+
+454
+00:26:01,880 --> 00:26:07,710
+some software something
+
+455
+00:26:03,120 --> 00:26:10,650
+Pearson product and I can't find anyone
+
+456
+00:26:07,710 --> 00:26:13,970
+else using that thing I would it would
+
+457
+00:26:10,650 --> 00:26:18,750
+be like okay there's something wrong
+
+458
+00:26:13,970 --> 00:26:21,210
+there's something that fit so I think in
+
+459
+00:26:18,750 --> 00:26:23,190
+in that sense it's important to feel
+
+460
+00:26:21,210 --> 00:26:28,050
+like okay there are other people using
+
+461
+00:26:23,190 --> 00:26:30,180
+it other people that maybe have run into
+
+462
+00:26:28,050 --> 00:26:33,300
+the same issues and have solved the same
+
+463
+00:26:30,180 --> 00:26:37,500
+issues and you have someone also to turn
+
+464
+00:26:33,300 --> 00:26:40,200
+to kind of when you run into problems so
+
+465
+00:26:37,500 --> 00:26:41,760
+are they an a can you think of if you
+
+466
+00:26:40,200 --> 00:26:43,860
+tried to think of communities in
+
+467
+00:26:41,760 --> 00:26:46,890
+encounter that you liked and counted
+
+468
+00:26:43,860 --> 00:26:48,809
+communities that you didn't like what
+
+469
+00:26:46,890 --> 00:26:58,860
+are the differences between these two
+
+470
+00:26:48,809 --> 00:27:03,750
+communities examples of communities that
+
+471
+00:26:58,860 --> 00:27:07,890
+I didn't like you know think of the
+
+472
+00:27:03,750 --> 00:27:10,020
+things that are when you come into a
+
+473
+00:27:07,890 --> 00:27:12,840
+community that you feel like are like
+
+474
+00:27:10,020 --> 00:27:15,030
+this community some aspects that that
+
+475
+00:27:12,840 --> 00:27:19,170
+community had that you were like okay
+
+476
+00:27:15,030 --> 00:27:24,590
+this is this is positive yeah I'm mature
+
+477
+00:27:19,170 --> 00:27:29,400
+in the sense of like working with api's
+
+478
+00:27:24,590 --> 00:27:31,980
+because for me when I say in that sense
+
+479
+00:27:29,400 --> 00:27:36,390
+it's not like a specific place you go to
+
+480
+00:27:31,980 --> 00:27:39,390
+and you are talking only about it's it's
+
+481
+00:27:36,390 --> 00:27:41,429
+just having people that are using it and
+
+482
+00:27:39,390 --> 00:27:46,080
+it can be as I said on github or in
+
+483
+00:27:41,429 --> 00:27:48,210
+Stack Overflow or yeah wherever it's
+
+484
+00:27:46,080 --> 00:27:51,300
+important that it feels alive the
+
+485
+00:27:48,210 --> 00:27:54,420
+community yeah yeah that's for sure and
+
+486
+00:27:51,300 --> 00:28:02,070
+is it is it important that it feels
+
+487
+00:27:54,420 --> 00:28:04,260
+helpful yeah yeah I mean if if you see
+
+488
+00:28:02,070 --> 00:28:06,240
+that there are people or there is some
+
+489
+00:28:04,260 --> 00:28:09,510
+type of online community but there's
+
+490
+00:28:06,240 --> 00:28:12,360
+either very little people or people that
+
+491
+00:28:09,510 --> 00:28:16,830
+are not not active in it then it's
+
+492
+00:28:12,360 --> 00:28:17,190
+really not useful in the end and yeah
+
+493
+00:28:16,830 --> 00:28:21,860
+you
+
+494
+00:28:17,190 --> 00:28:21,860
+to be able to engage with other people
+
+495
+00:28:22,010 --> 00:28:29,070
+it's important that the software the
+
+496
+00:28:27,540 --> 00:28:31,620
+company connected to the software that
+
+497
+00:28:29,070 --> 00:28:34,980
+you're using that they're part of the
+
+498
+00:28:31,620 --> 00:28:39,210
+community yeah I think that's always
+
+499
+00:28:34,980 --> 00:28:41,490
+good I think it I don't think it's
+
+500
+00:28:39,210 --> 00:28:45,510
+necessary that they are part of the
+
+501
+00:28:41,490 --> 00:28:51,960
+community but I think it it would make
+
+502
+00:28:45,510 --> 00:28:55,980
+the the consumer feel better about using
+
+503
+00:28:51,960 --> 00:28:57,930
+the product and feel yeah again coming
+
+504
+00:28:55,980 --> 00:29:04,560
+back to the trust and the relationship
+
+505
+00:28:57,930 --> 00:29:07,020
+between the the product and the user so
+
+506
+00:29:04,560 --> 00:29:12,540
+it's it can't be a bad thing I would say
+
+507
+00:29:07,020 --> 00:29:15,120
+okay so is there a difference if you're
+
+508
+00:29:12,540 --> 00:29:17,490
+using is something big like a software
+
+509
+00:29:15,120 --> 00:29:22,380
+platform compared to something small
+
+510
+00:29:17,490 --> 00:29:25,430
+like a library what do you expect from
+
+511
+00:29:22,380 --> 00:29:27,870
+the online community
+
+512
+00:29:25,430 --> 00:29:31,920
+yeah I think it's definite there's
+
+513
+00:29:27,870 --> 00:29:34,320
+definitely a difference I mean for for
+
+514
+00:29:31,920 --> 00:29:39,630
+something small like a library you
+
+515
+00:29:34,320 --> 00:29:42,150
+usually yeah you don't need the same
+
+516
+00:29:39,630 --> 00:29:43,680
+level of interaction basically and
+
+517
+00:29:42,150 --> 00:29:48,930
+usually it's something that you will
+
+518
+00:29:43,680 --> 00:29:50,640
+just use a few times and don't think
+
+519
+00:29:48,930 --> 00:29:53,460
+about it but when it comes to the
+
+520
+00:29:50,640 --> 00:29:58,020
+platform it's probably something you
+
+521
+00:29:53,460 --> 00:30:01,680
+interact with constantly hmm so you kind
+
+522
+00:29:58,020 --> 00:30:03,720
+of want to have yeah then it's more
+
+523
+00:30:01,680 --> 00:30:05,820
+important to have a bigger community and
+
+524
+00:30:03,720 --> 00:30:09,900
+online community community or even a
+
+525
+00:30:05,820 --> 00:30:13,320
+separate space just for just for the
+
+526
+00:30:09,900 --> 00:30:15,330
+platform itself I'm more important with
+
+527
+00:30:13,320 --> 00:30:17,190
+only but the bigger it is the more
+
+528
+00:30:15,330 --> 00:30:19,440
+important yeah yeah I would
+
+529
+00:30:17,190 --> 00:30:22,530
+I mean when it comes to a small library
+
+530
+00:30:19,440 --> 00:30:25,650
+basically if you find something on
+
+531
+00:30:22,530 --> 00:30:27,810
+github to me what I look at is that it's
+
+532
+00:30:25,650 --> 00:30:28,230
+updated it doesn't really need to have
+
+533
+00:30:27,810 --> 00:30:31,320
+an own
+
+534
+00:30:28,230 --> 00:30:34,860
+and community around it as long as you
+
+535
+00:30:31,320 --> 00:30:37,700
+see that it's still ongoing and that
+
+536
+00:30:34,860 --> 00:30:43,260
+it's not that when it comes to updates
+
+537
+00:30:37,700 --> 00:30:48,780
+so yeah it's the size matters yeah so it
+
+538
+00:30:43,260 --> 00:30:56,280
+like overall what is it that you want
+
+539
+00:30:48,780 --> 00:30:59,160
+from an online community I guess I can
+
+540
+00:30:56,280 --> 00:31:04,530
+think about it in terms of click sense
+
+541
+00:30:59,160 --> 00:31:09,059
+and that type of community but yeah I
+
+542
+00:31:04,530 --> 00:31:13,290
+think I would like to have yeah activity
+
+543
+00:31:09,059 --> 00:31:19,100
+and people interacting with each other
+
+544
+00:31:13,290 --> 00:31:22,100
+and having questions and examples and
+
+545
+00:31:19,100 --> 00:31:22,100
+yeah
+
+546
+00:31:24,020 --> 00:31:31,020
+is there anything we've you want to ask
+
+547
+00:31:28,740 --> 00:31:32,900
+me or something you thought about that
+
+548
+00:31:31,020 --> 00:31:37,260
+you thought I'd ask that yeah I haven't
+
+549
+00:31:32,900 --> 00:31:49,950
+or something that you I don't know
+
+550
+00:31:37,260 --> 00:31:53,580
+nothing that I can think of then I think
+
+551
+00:31:49,950 --> 00:31:57,740
+that I've got all the answers I need
+
+552
+00:31:53,580 --> 00:31:57,740
+okay great thank you very much
+

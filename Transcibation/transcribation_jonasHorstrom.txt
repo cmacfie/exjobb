@@ -1,0 +1,1335 @@
+C:
+Okay today's date is the 14th of
+December 2018 and we are here at Qlik
+offices and this is Christoffer MacFie
+talking. And I'm here with...
+
+J:
+Jonas Hörström.
+
+C
+Eh... And we're gonna talk a
+little bit about mainly three topics: APIs
+in general and release notes and online
+communities around software platforms.
+Ehm... So, in general
+how important would you say that API
+documentation is?
+
+J
+If I start working with
+something I think it's really important
+actually because I've started with
+different products and... when; and you
+thought about the products; quality of
+the projects; the fun item in it... it's
+hard connection to the API documentation.
+I have a home assistant fresh in mind [laughter] which I'm
+using right now which I don't like at
+all after a couple of hours in it. It's
+really hard to find some stuff.
+
+C
+Because the documentation is...
+
+J
+Yeah I
+think it was scattered and it was... I
+couldn't find everything I wanted so it;
+it seems to be around in blogs and posts
+everywhere.
+
+C
+Mm
+
+J
+But they are one date in time,
+and since it's not a stable product it's
+0.8 something something. Ehh... they might not
+work, and the; then I want to go to the main
+page and I could find stuff there... but I
+think they were were lacking examples or
+lacking the full picture to really get
+what I wanted.
+
+C
+Mm
+
+J
+So that's a problem I think.
+
+C
+So
+when you look at API documentation...
+What are you generally looking for, what
+do you want from a documentation?
+
+J
+I'm lazy so first of all examples. [laughter].
+Just like a lot of people. And then... So
+first examples, then it's the more
+broader picture. Does it look like
+something I would understand or is it.. is it
+scattered a lot of different areas and so on.
+
+C
+Mm.
+
+J
+And I think the reason for that...
+You're looking at so many different
+small products in the word so before you
+want to invest a lot of time in it you
+try to or you... Maybe you do it without
+knowing, but you assess the quality based
+on what you see the first five minutes
+or something.
+
+C
+Mm.
+
+J
+So you; you start looking
+into it and yes you shouldn't play down by
+look and feel on that because that; if
+it's fresh in you and updated, yes it's
+good and it's positive, if it looks like
+they are asking others to continue; I
+think that's a positive thing as well...
+
+C
+Mm.
+
+J
+But I think it goes down to examples and
+then, does it feel full is it; is there
+enough things? Can I see in the beginning
+that all it looks like it's covers the
+ideas I had about this. So it's not if I
+click on something it's like yeah
+
+there's you have to look into this
+
+ripple to find this to find this or even
+
+worse it's in French it's it's pending
+
+near translation can you do the use
+
+Google Translate anyone know you
+
+mentioned API samples they were very
+
+important to you they are because since
+
+I'm lazy I want to get something started
+
+fast and then I want to invest and I
+
+think that's the the reason is for me to
+
+get caught up in something if I if I
+
+want to invest I can invest as much time
+
+as I can depending part but but to know
+
+if I should do it I tend to look at
+
+examples and ideas how to accomplish
+
+something because I want to know do I
+
+need to write like 20 lines of code to
+
+do it or is it free and if it's free is
+
+it's actually doing what I want to
+
+really do I need to do a lot of weird
+
+stuff with the three lines to make it
+
+work hmm so do you
+
+as it having working out quickly is
+
+important to you do you use the that's
+
+the is that the main thing I use the
+
+examples for to just copy paste to have
+
+something going or I think it's to get
+
+started mmm because
+
+I like the idea of having something in
+
+build up on that and I very rarely think
+
+about okay let's use this bakery and
+
+then I read through the whole API and
+
+then I start working no I go to the
+
+first example I can find attacked me in
+
+the example we copy paste it and then I
+
+don't get there I run it cool it looks
+
+like this and then okay what does this
+
+method you and then I go and look at
+
+that mess okay that's not and then I do
+
+something more and then I realized that
+
+maybe I should know a little bit for me
+
+because I'm just patching here and then
+
+I thought it tend to read a little bit
+
+more about it maybe how we should do it
+
+that's all okay I like to play around
+
+before I and I guess I'm not I'm not
+
+like a senior developer working on our
+
+feature I go to release soccer so it's
+
+also because I'm it's hobby products I'm
+
+looking mmm
+
+so when are you willing to accept not
+
+having working code quickly if if I have
+
+an assignment I really won't need know
+
+what to do and I have some time I know
+
+good for this and maybe it's it's a more
+
+complex task and I know that I need to
+
+Seoul
+
+so I have already thought in my mind
+
+that I need to invest more than like
+
+here's two hours for this to get started
+
+maybe I understand this is I'm going to
+
+do a new scheduling system for releasing
+
+that and I know I know enough they
+
+require some writing in our state
+
+machine or something that I know okay I
+
+already know that I need to that's quite
+
+a long time and I had heard that this is
+
+a good API or this is a good product
+
+then I would start to work um you know
+
+so one of the things we're trying to
+
+understand is what exactly is good
+
+documentation so if we use the examples
+
+is there something there that you
+
+thought of okay this is something I'll
+
+always expect from me good documentation
+
+is there something missing something
+
+made that made you react I think that
+
+was a class or something where it there
+
+was not an explanation
+
+if it was sake that was one which only
+
+had information in about see here I
+
+think it was Baker API where they it
+
+doesn't say what's here
+
+or if it was to suit this super and you
+
+know I read I could get more from the
+
+release notes than I could from the real
+
+documentation no I don't like that
+
+because they it's good with a release
+
+but it's one item in time so I want the
+
+real documentation to actually mirror
+
+that and I think it was when you created
+
+an Indian the super end euro sound like
+
+nothing there was no information about
+
+that in the real I think it was only
+
+Creighton yeah I don't think there's any
+
+things that actually is that it came
+
+into the super end in here but then you
+
+called my intention attention apparently
+
+because I was looking more for more
+
+information yeah just example well that
+
+was fun thing yeah I think it was
+
+getting a when you created a new Baker
+
+what you you're supplying the engine but
+
+there's no explanation or the
+
+constructor of the maker I was missing
+
+that but if we talk more in general
+
+about how we can should construct a
+
+documentation is there anything is there
+
+aught of any red flags when you see you
+
+encounter a new software platform and
+
+read the documentation are there any red
+
+flags that you think ok this is if you
+
+have a lot of proprietary parameters or
+
+something which or list just listed
+
+without any description on it I think
+
+that's bad I also don't like if there is
+
+no examples as I said before I really
+
+like to have some example in the
+
+beginning of a class showing or whatever
+
+it is library something just showing
+
+this is a simple example and then
+
+you can use that to navigate down so a
+
+simple one maybe I'm not the worst one
+
+as well but have something like that in
+
+the beginning is really important for me
+
+how much of a should they be example be
+
+more of a snippet or should it be put in
+
+a context more how much of a context is
+
+needed
+
+I think it's depends on what type of
+
+area it is if it's uh if it's a utility
+
+library I mean that's a snippet is good
+
+enough and if it's an item doing sorry
+
+if it's let's say yeah we have those
+
+products which are that's a reading
+
+statistics from github for just look at
+
+today and there they had an example this
+
+is how we should do it and okay that's a
+
+good example I have two factor
+
+authentication what do i do nothing but
+
+it's good enough I can understand how
+
+big the library looks like Mason example
+
+what I can do then I search further from
+
+my special case which is outside example
+
+so that was good for adapter one if if
+
+there would be a full solution where I
+
+had to install something to get it going
+
+then I would assume that there was an
+
+example somewhere because if if the
+
+first thing is to I think that is the
+
+speed to run something neuro determinant
+
+so in our case in clique or would be
+
+that if there wouldn't be any easy way
+
+to set up the engine and quickly pull it
+
+down I wouldn't bother because it's too
+
+long time for me to okay now I have to
+
+download something a feeling a for I
+
+don't know a lot of stuff before I can
+
+even get it running the small snippet I
+
+have here
+
+that's dangerous I think then you're
+
+into this that prove I have to assign a
+
+lot of time on it make sure that I make
+
+it methodically and set up my ID that's
+
+okay so the the size of the example
+
+depends on the context of the yes so I
+
+would say in most cases it's how fast I
+
+can get something after running I will
+
+have a lot better feeling about the
+
+stuff if there's
+
+has made very fast guide on just getting
+
+something else then I can evaluate if I
+
+would like to take this or one of the
+
+three other items I found for this area
+
+and we need to do if it's like a helper
+
+library somebody'd see crucial I was
+
+there because it if it would be an
+
+external course or a song if I had reach
+
+my show she is probably one which is
+
+most popular and then there is free
+
+which are popular them it needs to be
+
+very quick easy way to get it running
+
+for me to understand okay I should use
+
+this one hmm I didn't mention him before
+
+we start the interview what is your role
+
+here at click I'm a development manager
+
+for the click core team I'm not
+
+developer for saying here wannabe hobby
+
+and my education so what is your tasks
+
+during the day I say so I I would say in
+
+this this form here it's other people
+
+manager and I'm and I think the roles or
+
+scrum master or tried one part of a
+
+tried which means that I'm part of the
+
+planning the work but also about
+
+suggesting solutions or priorities in
+
+the team a little bit of product I ought
+
+to get a bit of architect and a product
+
+designer so it's a mix of those things
+
+and development is I would say it's a
+
+minimal part I use it because I like to
+
+understand what we're doing in the team
+
+and of interest I think in my role you
+
+could get out a gift away without
+
+knowing anything but you had to work in
+
+a different way
+
+mmm-hmm so in as part of your role you
+
+don't have to read a lot of
+
+documentation it's more when you're
+
+working on side projects yes so it's if
+
+I'm doing something in the code here
+
+I'm trying to do sometimes I do it of
+
+course but it's not my main no it's not
+
+my part of the work hmm so but you're
+
+like if click were to use a new software
+
+platform you're still part of the
+
+decision-making to use that platform or
+
+are you taking listening to for example
+
+architects and what they want to use and
+
+you approve that or what's your rosin
+
+yeah I'm part of it no I will rely if an
+
+architect know that I want this because
+
+of that I would because I would never
+
+say anything against them if it's if I
+
+don't have any person and so no that's
+
+true I would probably suggest and based
+
+on my experience suggests what I believe
+
+is my idea of a good platform do you
+
+think it is working card quickly just a
+
+consequence of good documentation and
+
+API examples or is it a separate aspect
+
+no I think it's the same actually yeah I
+
+think it's there every library needs to
+
+sell itself and proved its use and I
+
+think one way is to do it like that you
+
+could have a the most simple one and
+
+that will be a lot harder to sell to
+
+people if it's not easily
+
+[Music]
+
+because we if we it would be interesting
+
+to get a in this interviews I'm talking
+
+directly to you architects and
+
+developers and such but now we have a
+
+manager role here which isn't as you say
+
+directly involved in the documentation
+
+reading in its work role so would you
+
+say that you how much of an interest in
+
+your work role do you take in API
+
+documentation of a software platform
+
+that would be used in the product for
+
+example the platform for how we write
+
+documentation or we could take we could
+
+take both examples like if click were to
+
+use another software platform in in its
+
+product and it had to be approved and
+
+all that how much of an interest you
+
+take in your working role for that I
+
+think I think it's hard to say how much
+
+but I take interest in it
+
+mmm because I that's a simple one like a
+
+UI framework or something like that I
+
+want to know why we're choosing a
+
+special framework and I think it's it's
+
+twofold one is of course the one which
+
+are important my role will this be
+
+something which is valuable not just
+
+today but in two years is it something
+
+which works well with competence we have
+
+the team and in the surroundings which
+
+is something weird because it's found we
+
+have to have a really good really simple
+
+so so those are and then of course how
+
+live that one is if he ever is starting
+
+to maybe not in the my current role but
+
+in my previous role where we bought the
+
+software platforms then it was very
+
+important that they are maintained
+
+correctly and they are cost efficient
+
+and that we get the support we need hmm
+
+so all those questions are very
+
+important to me now and then I would say
+
+the rest is just my technical interest
+
+feel it's not obliged but it's fun to
+
+know about those though so that's the
+
+other part but not so specific so it's
+
+those things you mentioned is that
+
+something that if there's some things
+
+that only managers care about that
+
+developers or architects wouldn't care
+
+about when using a when it comes to
+
+documentation I think that vapors tend
+
+to play down the need for production it
+
+could be that it's not that it's missed
+
+out but at least in some places it's it
+
+looks good if they it's fun to work with
+
+it's good and I totally understand that
+
+but sometimes it could be that you also
+
+have have it a factory environment and
+
+if something breaks down in that Factory
+
+you will lose a lot of money each
+
+minutes or so then you have to look into
+
+a lot of other stuff like is there any
+
+support contracts here which make sure
+
+that this contact or there is a
+
+percentage of times they're going to
+
+happen because that's going to be a
+
+discussion I have if I buy that sort of
+
+support contract I would think
+
+developers don't really want to talk
+
+about those things there it's not there
+
+a deal it's more or less purchase
+
+purchasing discussion and like support
+
+discussion and that me as a developer I
+
+think you know I'm more responsible for
+
+those so in my current role we don't
+
+have that many of those because we're
+
+using mostly open source code work in
+
+open source world where there are other
+
+things that play which is more important
+
+like how well is this adopted by the
+
+majority of local sort word and how much
+
+maintenance is it and so on and I was a
+
+historically it's not there the
+
+developer the manager's primary
+
+knowledge so here I depend a little
+
+moron architects women taking those
+
+decisions and maybe that's also why I
+
+want to dig more into this because I
+
+need to understand so I can be support
+
+when when we're taking such decisions
+
+mm-hmm
+
+if we move over to release notes how
+
+often would you say that you look at
+
+release we're doing automatic upgrades
+
+okay okay you have to see how it's done
+
+so as I went into the other it's a
+
+failed test okay I need to understand
+
+why and then there was a link to the
+
+release notes where I can see why and
+
+that's all oh this is nothing
+
+so that's that's thing otherwise it I
+
+always say it's for my if I'm doing a
+
+hobby product I might do it if it's I
+
+know it's zero point version because
+
+that might break break my way existing
+
+corporation mmm but it's hobby so yeah
+
+it's it's not that social well okay
+
+because once again it's interesting to
+
+see if release notes matter at all to
+
+managers because we'll get the
+
+perspective of architects and developers
+
+from other interviews so do you think
+
+general managers in general or you care
+
+about release notes I would say from
+
+from a manager perspective I care if it
+
+breaks my stuff and if I need to add any
+
+resources to this then that's my
+
+perspective so nothing detailed like I
+
+said that's not something that we look
+
+into the furniture so if I'm going to if
+
+we only talk about okay should we
+
+upgrade to this solution I would post it
+
+and I would participate in a meeting
+
+where we took the decision then I would
+
+be interested mmm because I want to know
+
+how big of a change and how much time do
+
+we need to invest in such a change so
+
+that's very important
+
+and so for major releases that I think
+
+that's the most important for a manager
+
+small patches I don't think they are
+
+only important if something has mmm so
+
+in the material we had a year two
+
+extremes
+
+one very short version and were quite
+
+elaborate version because it's when it
+
+comes to writing release notes it's a I
+
+mean you have to a company has to spend
+
+time and therefore money in order to
+
+have more thorough release notes and
+
+it's a balance to between these two how
+
+much should you write do you have any
+
+opinion on how much I think the short
+
+one for imaginary I think that was
+
+enough that there changes in this area
+
+okay there we are
+
+it looks like they they've added some
+
+stuff and are we using the differ kg
+
+stuff so so from a manic perspective I
+
+think that's that's enough for me if a
+
+little bit further I think when I read
+
+the more detailed version I think that
+
+it was good but I suspected that to be
+
+in the real documentation is there so
+
+for me it would be we have added these
+
+stuff here's a link to the documentation
+
+where it's I don't know mmm I think okay
+
+so maybe more like okay you can't use
+
+this form or use this new them all the
+
+if not how you use an example states in
+
+the region documentation mmm otherwise
+
+you delicate so again from a manager
+
+perspective when you decided to use a
+
+new platform then it has to be approved
+
+its release that's something that will
+
+be looked at
+
+before as part of the are we gonna use
+
+this yeah I think that matiee the patch
+
+ones I think being your changes like
+
+that sometimes have other presentations
+
+not in the release notes section it's
+
+more like this new feature to have all
+
+these many features and I'm sure would
+
+probably look at that and see if it
+
+matches their need and then probably
+
+also architects and developers to tell
+
+how much work they needed to put in to
+
+fulfill the rest of the stuff the
+
+deprecated stuff was known so I don't
+
+think the manager it's even even before
+
+like even before something has been
+
+adopted you probably all probably check
+
+ok that it's like the pricing you'll
+
+infect II like lore surrounding it and
+
+maybe it'll check out how is the
+
+permutation how is it support but you
+
+probably not check ok are the release
+
+notes gonna be good when we're gonna
+
+need them in one year probably not
+
+I think that's unfortunately not to say
+
+it's I probably should and then I have
+
+to back a little bit on one thing since
+
+I also have a scrum master role as a
+
+manager which is not normal but in this
+
+company we have it I would be interested
+
+in what has actually changed when I came
+
+into that solution so first I would take
+
+the decision on a modular but if I get
+
+into scrum master and then are more into
+
+an operative mode and then I need to
+
+know okay what what type has chance do
+
+what deprecated Partizan then I would
+
+probably read it together office it's a
+
+little bit of a mixed role that's why
+
+maybe it's mixed
+
+mmm we can move over to a white
+
+community night
+
+so in general when I just say that a
+
+software has an online community what
+
+does that mean to you active discussions
+
+that people are asking question and
+
+they're getting answers quickly and
+
+preferably not an active there are
+
+people out there helping so in
+
+communities that you like what did they
+
+have in common that they are polite
+
+first and they're there they are
+
+elaborate answers to questions if
+
+someone comes with a problem also on
+
+there are people answering to the right
+
+level because sometimes it could be
+
+people who misuse this but I have to
+
+show something to my manager please do
+
+this for me I don't think those but you
+
+should at least support out here some
+
+help but to get you stormed here you
+
+have this thing yeah so is it important
+
+that the community feels alive that's a
+
+very and also as you said they take
+
+immunity must be helpful then it helpful
+
+and but also polite yeah Politis that
+
+I've seen some communities they are an
+
+exception but they could be like yeah as
+
+I said read the fucking that people are
+
+trying and I think that's scaring people
+
+away yeah supposed to be very complex
+
+and cool but it's not helping if you're
+
+inviting we
+
+like that with that turn you away from
+
+if you'll just stop me I was using a
+
+software platform I need to Google
+
+something and you realize okay this is
+
+the kind of yeah it's a decision which
+
+goes a lot of indicators even if it's
+
+like that then you have bad communicator
+
+documentation that needs to know that
+
+really and because as community it could
+
+be either be like for a click we have to
+
+branch or comma community that's managed
+
+by clique themselves and then you have
+
+like a communities that only exist on
+
+Stack Overflow for example for they is
+
+Stack Overflow one where it has its own
+
+life is it important that the the
+
+company behind the software that they
+
+are a part of that community not
+
+necessarily if taking if it's so famous
+
+that people are there and answering all
+
+the questions and they are correct to
+
+sponsors then I think the company has
+
+succeeded in something really cool so
+
+for me it would just tell me that yeah
+
+this is a really good product people are
+
+helping each other just because they
+
+like it that's good this has also a
+
+thing that's that's a time I first and
+
+therefore money by the company that they
+
+spend a lot of time I'm answering
+
+community questions how important is it
+
+that the company answers questions I
+
+think it goes down to money question
+
+area if it's if you can get I get by
+
+without because there's a lot of people
+
+are saying these things for you then
+
+you're lucky you're a lucky company and
+
+you don't need to do that
+
+if it's not it's a niche product or if
+
+it's you're struggling to get people to
+
+work with and so on I think you have to
+
+help people are get going if you're
+
+going to create the community I think a
+
+lot about what you you probably need to
+
+have a seed the community strategy and
+
+then you can back away if you think that
+
+the communities is working by itself in
+
+the beginning you probably need to be
+
+there hmm so like just overall to put it
+
+concise what what do you want from an
+
+online community I think it's I want
+
+answers to my questions I think that's
+
+it so if I'm if further but if I'm
+
+looking for different from evaluating
+
+different products what I want for my
+
+community is an active community I want
+
+to see that's live there's good answers
+
+to questions and it feels like then then
+
+it's a plus in my decision mmm if I have
+
+already decided or there's only one then
+
+of course I have to make do with what I
+
+have but then I have the same needs but
+
+maybe I can have less more less because
+
+I have to I have to use it so so let's
+
+say that there was such a thing as a
+
+flawless documentation would you still
+
+need an online community not if I didn't
+
+have any documentation gives all I need
+
+mmm okay so yes that's also a any
+
+company could invest energy in making
+
+the community more alive or making API
+
+documentation better so making the
+
+documentation better it could replace a
+
+community the need for a community you
+
+say yeah
+
+but the I think that is it's a little
+
+bit dependent that area because it could
+
+be really hard to provide examples which
+
+are good enough for most people who
+
+comes an interest area mm-hmm
+
+while a community or more maybe if
+
+they're willing they can put the
+
+solution in perspective to the question
+
+which a documentation couldn't do so if
+
+you have an area which are very generic
+
+for example you can do whatever with it
+
+and then people come in are able to do
+
+this fun stuff then I guess a community
+
+could catch that person easier than our
+
+documentation we should be very generic
+
+in them okay don't really know if I can
+
+do this or not
+
+mmm the communique yeah of course you
+
+can you just use these four or five
+
+different calls and then something like
+
+this and here's a very easy to see it so
+
+in in reality they're do there is a need
+
+of for an online community yeah if it's
+
+a very generic product because you said
+
+the perfect or perfect augmentation
+
+would have a solution for requesting
+
+you're kidding okay so so if but if you
+
+step down to a more realistic approach
+
+yes I think that our it exists there
+
+exists companies and solutions which
+
+would require community have any
+
+questions for me or something you
+
+thought I would ask that I didn't know I
+
+think it was good at the Oscar what my
+
+role was I think it's very important to
+
+to steer it yeah but now getting that
+
+perspective I think when I started
+
+thinking here different actually so I
+
+started answering for two different
+
+perspective we just might be a little
+
+bit confusing so maybe I should just
+
+describe my previous row
+
+I was a product owner and a little bit
+
+of response over purchasing in my
+
+current we're working purely know the
+
+source more my role is more technical so
+
+I have a large interest in solutions but
+
+not purchasing decision since most
+
+things are for free you know the source
+
+and it's the technology which rules so
+
+they are different somehow
+
+these different roles mmm open-source
+
+bird is actually complicating it a
+
+little bit you don't have this
+
+historically ok the manager stands for
+
+the money and and the developers for
+
+their so that might be something you can
+
+pick up here yeah yes what I made it
+
+clear your role as India we had a good
+
+perspective from the nominal okay thanks

@@ -105,784 +105,701 @@ But I think it goes down to examples and
 then, does it feel full is it; is there
 enough things? Can I see in the beginning
 that all it looks like it's covers the
-ideas I had about this. So it's not if I
-click on something it's like yeah
+ideas I had about this. So it's not; if I
+click on something it's like "Yeah
+there's; you have to look into this
+repo to find this; to find this".
 
-there's you have to look into this
+C
+Mm.
 
-ripple to find this to find this or even
+J
+Or even
+worse, it's in French. [laughter]
+Like one of the things I saw. "It's; it's pending
+translation, can you do the use
+Google Translate". And me like: "No? Sorry."
 
-worse it's in French it's it's pending
+C
+You
+mentioned API examples, they were very
+important to you.
 
-near translation can you do the use
-
-Google Translate anyone know you
-
-mentioned API samples they were very
-
-important to you they are because since
-
-I'm lazy I want to get something started
-
-fast and then I want to invest and I
-
-think that's the the reason is for me to
-
-get caught up in something if I if I
-
-want to invest I can invest as much time
-
-as I can depending part but but to know
-
+J
+They are because... Since
+I'm lazy [laughter] I want to get something started
+fast and then I want to invest, and I
+think that's; the the reason is for me to
+get caught up in something. If I... If I
+want to invest, I can invest as much time
+as I can, depending priority... But; but to know
 if I should do it I tend to look at
-
-examples and ideas how to accomplish
-
-something because I want to know do I
-
+examples and ideas on how to accomplish
+something, because I want to know do I
 need to write like 20 lines of code to
-
-do it or is it free and if it's free is
-
-it's actually doing what I want to
-
-really do I need to do a lot of weird
-
+do it, or is it three? And if it's three, is
+it's actually doing what I want to,
+ or do I need to do a lot of weird
 stuff with the three lines to make it
+work
 
-work hmm so do you
+C
+Mm.
+So do you,
+as it... Having working out quickly is
+important to you.
 
-as it having working out quickly is
+J
+Mm
 
-important to you do you use the that's
+C
+Do you use the... That's;
+Is that the main thing you use the
+examples for, to just copy paste to have
+something going, or...
 
-the is that the main thing I use the
+J
+I think it's to get
+started.
 
-examples for to just copy paste to have
+C
+Mm
 
-something going or I think it's to get
+J
+Because
+I like the idea of having something and
+build up on that. And I very rarely think
+about "Okay let's use this bakery" and
+then I read through the whole API, and
+then I start working. No. I go to the
+first example I can find. I type in the example,
+copy paste it, and then I look at;
+I run it.
 
-started mmm because
+C
+Mm.
 
-I like the idea of having something in
-
-build up on that and I very rarely think
-
-about okay let's use this bakery and
-
-then I read through the whole API and
-
-then I start working no I go to the
-
-first example I can find attacked me in
-
-the example we copy paste it and then I
-
-don't get there I run it cool it looks
-
-like this and then okay what does this
-
-method you and then I go and look at
-
-that mess okay that's not and then I do
-
+J
+"Ahh, cool it looks
+like this, fun.", and then "Okay what does this
+method do?" and then I go and look at
+that meth; "Okay, ahh, that's how it..." and then I do
 something more and then I realized that
+maybe I should know a little bit more [laughter]
+because I'm just patching here. Then
+I tend to read a little bit
+more about it, maybe how we should do it.
 
-maybe I should know a little bit for me
+C
+Okay
 
-because I'm just patching here and then
+J
+But I like to play around
+before I... I guess I'm not; I'm not
+like a senior developer working on a
+feature I go to release somewhere so... It's
+also because I'm; it's hobby project I'm
+looking..
 
-I thought it tend to read a little bit
+C
+Mm. So when are you willing to accept not
+having working code quickly?
 
-more about it maybe how we should do it
+J
+If if I have
+an assignment I really want; need; know
+what to do and I have some time, I know...
+put for this.
 
-that's all okay I like to play around
+C
+Mm.
 
-before I and I guess I'm not I'm not
+J
+And maybe it's; it's a more
+complex task I... I know that I need to
+solve and I have already thought in my mind
+that I need to invest more than like...
+"Here's two hours for this to get started"
 
-like a senior developer working on our
+C
+Mm.
 
-feature I go to release soccer so it's
-
-also because I'm it's hobby products I'm
-
-looking mmm
-
-so when are you willing to accept not
-
-having working code quickly if if I have
-
-an assignment I really won't need know
-
-what to do and I have some time I know
-
-good for this and maybe it's it's a more
-
-complex task and I know that I need to
-
-Seoul
-
-so I have already thought in my mind
-
-that I need to invest more than like
-
-here's two hours for this to get started
-
-maybe I understand this is I'm going to
-
-do a new scheduling system for releasing
-
-that and I know I know enough they
-
-require some writing in our state
-
-machine or something that I know okay I
-
+J
+Maybe I understand "This is; I'm going to
+do a new scheduling system for this and
+that" and I know; I know that it
+requires a lot of... writing a state
+machine or something... Then I know: Okay I
 already know that I need to that's quite
+a long time and I've heard that this is
+a good API or this is a good project,,
+then I would start to work, um, you know...
 
-a long time and I had heard that this is
+C
+So one of the things we're trying to
+understand is... what exactly is good
+documentation?
 
-a good API or this is a good product
+J
+Mm.
 
-then I would start to work um you know
-
-so one of the things we're trying to
-
-understand is what exactly is good
-
-documentation so if we use the examples
-
+C
+So if we use the examples,
 is there something there that you
+thought of "Okay this is something I'll
+always expect from a good documentation"?
+Is there something missing? Something
+made that made you react?
 
-thought of okay this is something I'll
-
-always expect from me good documentation
-
-is there something missing something
-
-made that made you react I think that
-
-was a class or something where it there
-
+J
+I think there
+was a class or something where it; there
 was not an explanation
-
-if it was sake that was one which only
-
-had information in about see here I
-
-think it was Baker API where they it
-
-doesn't say what's here
-
-or if it was to suit this super and you
-
-know I read I could get more from the
-
+if it was a baker, or I don't remember the one.
+There was one which only
+had information in; about... See here...
+I
+think it was Baker API, where they; it
+doesn't say... Let me check here. [flips through papers]
+Where it was; it was the super engine. I read; I could get
+ more from the
 release notes than I could from the real
+documentation
 
-documentation no I don't like that
+C
+Mm
 
-because they it's good with a release
+J
+And I don't like that
+because, eh.. It's good with a release
+note
+but it's one item in time. So I want the
+real documentation to, eh... To actually mirror
+that. And I think it was when you created
+an engine, the super engine. Or something like that.
+There was no information about
+that in the real... I think it was only
+create engine...
 
-but it's one item in time so I want the
+C
+Yeah... I don't think there's any...
+thing that's actually is dedicated to the
+super engine here.
 
-real documentation to actually mirror
+J
+[flips through papers]
+Yeah, I wanted to know, because I had to use it in the... [laughter]
+So i thought "Was does that do, what is it?". And
+I thought like... But then you
+caught my intention; attention apparently
+because I was looking more; for more
+information
 
-that and I think it was when you created
+C
+Yeah.
 
-an Indian the super end euro sound like
+J
+...just example. But that was one thing.
+I think it was
+getting a... When you created a new Baker,
+what... you; you're supplying the engine but
+there's no explanation of the
+constructor of the baker. So I was missing
+that.
 
-nothing there was no information about
-
-that in the real I think it was only
-
-Creighton yeah I don't think there's any
-
-things that actually is that it came
-
-into the super end in here but then you
-
-called my intention attention apparently
-
-because I was looking more for more
-
-information yeah just example well that
-
-was fun thing yeah I think it was
-
-getting a when you created a new Baker
-
-what you you're supplying the engine but
-
-there's no explanation or the
-
-constructor of the maker I was missing
-
-that but if we talk more in general
-
-about how we can should construct a
-
-documentation is there anything is there
-
-aught of any red flags when you see you
-
+C
+But if we talk more in general
+about how we can could; should construct a
+documentation. Is there anything; Is; Are there
+any red flags when you see; you
 encounter a new software platform and
+read the documentation. Are there any red
+flags that you think "Ok this is..."
 
-read the documentation are there any red
-
-flags that you think ok this is if you
-
-have a lot of proprietary parameters or
-
-something which or list just listed
-
+J
+Yeah, if you
+have a lot of properties, parameters or
+something which are list; just listed
 without any description on it I think
-
-that's bad I also don't like if there is
-
-no examples as I said before I really
-
+that's bad. I also don't like if there is
+no examples, as I said before. I really
 like to have some example in the
+beginning of a class showing... Or whatever
+it is, a library or something. Just showing:
+"This is a simple example", and then
+you can use that to navigate down. So a
+simple one, maybe an advanced one
+as well, but have something like that in
+the beginning is really important for me.
 
-beginning of a class showing or whatever
+C
+How much of a should they... Should the example be
+more of a snippet or should, it be put in
+a context. More... How much of a context is
+needed?
 
-it is library something just showing
-
-this is a simple example and then
-
-you can use that to navigate down so a
-
-simple one maybe I'm not the worst one
-
-as well but have something like that in
-
-the beginning is really important for me
-
-how much of a should they be example be
-
-more of a snippet or should it be put in
-
-a context more how much of a context is
-
-needed
-
+J
 I think it's depends on what type of
+area it is. If it's, uh, if it's a utility
+library, I mean... That's; A snippet is good
+enough. And if it's an item doing someth;
+If it's; Let's say, ehh, we have those
+projects which are, eh... Let's reading
+statistics from github for example. I just looked at that
+today [laughter].
 
-area it is if it's uh if it's a utility
+C
+Mm
 
-library I mean that's a snippet is good
-
-enough and if it's an item doing sorry
-
-if it's let's say yeah we have those
-
-products which are that's a reading
-
-statistics from github for just look at
-
-today and there they had an example this
-
-is how we should do it and okay that's a
-
-good example I have two factor
-
-authentication what do i do nothing but
-
-it's good enough I can understand how
-
-big the library looks like Mason example
-
-what I can do then I search further from
-
-my special case which is outside example
-
-so that was good for adapter one if if
-
+J
+And they; they had an example: "This
+is how you should do it" and like "Okay that's a
+good example". "I have two factor
+authentication, what do i do?" Nothing in example, but
+it's good enough! I can understand how
+big the, the... The library looks like based on example of
+what I can do. Then I search further from
+my special case which is outside example.
+So that was good for that one. If; if
 there would be a full solution where I
-
-had to install something to get it going
-
+had to install something to get it going,
 then I would assume that there was an
-
-example somewhere because if if the
-
-first thing is to I think that is the
-
-speed to run something neuro determinant
-
-so in our case in clique or would be
-
+example somewhere. Because if; if the
+first thing is to... I think that is the
+speed to run something, which are determining it.
+So in our case in Qlik Core it would be
 that if there wouldn't be any easy way
+to set up the engine, and quickly pull it
+down... I wouldn't bother, because it's too
+long time for me to... "Okay now I have to
+download something or fill in a form".
 
-to set up the engine and quickly pull it
+C
+Mm
 
-down I wouldn't bother because it's too
+J
+I
+don't know. A lot of stuff before I can
+even get it running, the small snippet I
+have here.
+That's dangerous, I think. Then you're
+into this, that... prob; I have to assign a
+lot of time on it and make sure that I make
+it methodically and set up my IDE, so that's...
 
-long time for me to okay now I have to
+C
+Okay so... The... The size of the example
+depends on the context of the...
 
-download something a feeling a for I
-
-don't know a lot of stuff before I can
-
-even get it running the small snippet I
-
-have here
-
-that's dangerous I think then you're
-
-into this that prove I have to assign a
-
-lot of time on it make sure that I make
-
-it methodically and set up my ID that's
-
-okay so the the size of the example
-
-depends on the context of the yes so I
-
+J
+Yes. So I
 would say in most cases it's how fast I
-
-can get something after running I will
-
+can get something up and running. I will
 have a lot better feeling about the
+stuff if a; if someone has made a
+very fast guide on just getting
+something up.
 
-stuff if there's
+C
+Mm
 
-has made very fast guide on just getting
+J
+Then I can evaluate if I
+would like to take this, or one of the
+three other items I found for this area.
+I mean, if it's like a helper
+library for example. Is it crucial? I would say.
+If it would be an XML parser or something. If I had, I don't know,
+there was hundreds of them on the web. Which one should I choose?
+Probably the one which is the most popular.
+And then there is three
+which are popular. Then it needs to be
+very quick.
 
-something else then I can evaluate if I
+C
+Mm
 
-would like to take this or one of the
+J
+Easy way to get it running
+for me to understand, "Okay I should use
+this one".
 
-three other items I found for this area
+C
+Mm. I didn't mention him before
+we started the interview, what is your role
+here at Qlik?
 
-and we need to do if it's like a helper
+J
+I'm a development manager
+for the Qlik core team. I'm not
+developer per say, here. Wannabe! [laughter].
+Hobby dev, eh...
+But my education is...
 
-library somebody'd see crucial I was
+C
+So what is your, eh... Tasks
+during the day as a...
 
-there because it if it would be an
-
-external course or a song if I had reach
-
-my show she is probably one which is
-
-most popular and then there is free
-
-which are popular them it needs to be
-
-very quick easy way to get it running
-
-for me to understand okay I should use
-
-this one hmm I didn't mention him before
-
-we start the interview what is your role
-
-here at click I'm a development manager
-
-for the click core team I'm not
-
-developer for saying here wannabe hobby
-
-and my education so what is your tasks
-
-during the day I say so I I would say in
-
-this this form here it's other people
-
-manager and I'm and I think the roles or
-
-scrum master or tried one part of a
-
-tried which means that I'm part of the
-
+J
+So I... I would say in
+this; in this form here it's, eh... I'm a people
+manager and I'm, a... I think the roles of
+scrum master or triad... one part of a
+triad which means that I'm part of the...
 planning the work but also about
-
 suggesting solutions or priorities in
+the team. A little bit of product [inaudible]
+together with architect and a product
+designer. So it's a mix of those things.
+And development is, I would say, it's a
+minimal part.
 
-the team a little bit of product I ought
+C
+Mm
 
-to get a bit of architect and a product
+J
+I use it because I like to
+understand what we're doing in the team,
+and of interest. I think in my role you
+could get out; get a away without
+knowing anything, but you had to work in
+a different way.
 
-designer so it's a mix of those things
-
-and development is I would say it's a
-
-minimal part I use it because I like to
-
-understand what we're doing in the team
-
-and of interest I think in my role you
-
-could get out a gift away without
-
-knowing anything but you had to work in
-
-a different way
-
-mmm-hmm so in as part of your role you
-
+C
+Mm. So in as part of your role you
 don't have to read a lot of
+documentation, it's more when you're
+working on side projects?
 
-documentation it's more when you're
+J
+Yes. So it's... If
+I'm doing something in the code here,
+I'm trying to do sometimes [laughter], I do it of
+course but it's not my main... No it's not
+my part of the work.
 
-working on side projects yes so it's if
-
-I'm doing something in the code here
-
-I'm trying to do sometimes I do it of
-
-course but it's not my main no it's not
-
-my part of the work hmm so but you're
-
-like if click were to use a new software
-
+C
+Mm. So... But you're...
+Like if Qlik were to use a new software
 platform you're still part of the
-
-decision-making to use that platform or
-
-are you taking listening to for example
-
+decision-making to use that platform? Or
+are you taking; listening to for example
 architects and what they want to use and
+you approve that, or what's your roll?
 
-you approve that or what's your rosin
+J
+Yeah I'm part of it, but I will rely; If an
+architect told that "I want this because
+of that" I would yield. Because I would never, like,
+say anything against them if it's; if I
+don't have any [inaudble laughter]. So no, that's
+true. I would probably suggest, and based
+on my experience, suggest what I believe...
+My idea of a good platform.
 
-yeah I'm part of it no I will rely if an
-
-architect know that I want this because
-
-of that I would because I would never
-
-say anything against them if it's if I
-
-don't have any person and so no that's
-
-true I would probably suggest and based
-
-on my experience suggests what I believe
-
-is my idea of a good platform do you
-
-think it is working card quickly just a
-
+C
+Mm... [pause] Do you
+think it; is working card quickly just a
 consequence of good documentation and
+API examples, or is it a separate aspect?
 
-API examples or is it a separate aspect
+J
+No I think it's the same actually. Yeah, I
+think it's there's; every library needs to
+sell itself and prove its use.
 
-no I think it's the same actually yeah I
+C
+Mm
 
-think it's there every library needs to
-
-sell itself and proved its use and I
-
-think one way is to do it like that you
-
-could have a the most simple one and
-
+J
+And I think one way is to do it like that.
+You could have the most simple one and
 that will be a lot harder to sell to
+people if it's not easily set up and done.
 
-people if it's not easily
-
-[Music]
-
-because we if we it would be interesting
-
-to get a in this interviews I'm talking
-
-directly to you architects and
-
-developers and such but now we have a
-
-manager role here which isn't as you say
-
+C
+Mm. Ehm... [pause]. Because we if we... It would be interesting
+to get a... In these interviews I'm talking
+directly to architects and
+developers and such. But now we have a
+manager role here which isn't, as you say,
 directly involved in the documentation
-
-reading in its work role so would you
-
-say that you how much of an interest in
-
+reading in its work role. So would you
+say that you... How much of an interest in
 your work role do you take in API
-
 documentation of a software platform
+that would be used in the product, for
+example?
 
-that would be used in the product for
+J
+The platform for how we write
+documentation, or..?
 
-example the platform for how we write
-
-documentation or we could take we could
-
-take both examples like if click were to
-
+C
+We could take; we could
+take both examples. Like if Qlik were to
 use another software platform in in its
+product, and it had to be approved and
+all that.
 
-product and it had to be approved and
+J
+Mm
 
-all that how much of an interest you
+C
+How much of an interest you
+take in your working role for that?
 
-take in your working role for that I
+J
+I think take... It's hard to say how much,
+but I take interest in it.
 
-think I think it's hard to say how much
+C
+Mm
 
-but I take interest in it
-
-mmm because I that's a simple one like a
-
-UI framework or something like that I
-
+J
+Because I... Let's say a simple one like a
+UI framework, or something like that. I
 want to know why we're choosing a
+special framework.
 
-special framework and I think it's it's
+J
+Mm
 
-twofold one is of course the one which
+C
+And I think it's; it's
+twofold. One is of course the one which
+are important to my role. Will this be
+something which is valuable... Not just
+today, but in two years or something like that.
 
-are important my role will this be
+C
+Mm
 
-something which is valuable not just
-
-today but in two years is it something
-
-which works well with competence we have
-
-the team and in the surroundings which
-
-is something weird because it's found we
-
-have to have a really good really simple
-
-so so those are and then of course how
-
-live that one is if he ever is starting
-
-to maybe not in the my current role but
-
-in my previous role where we bought the
-
-software platforms then it was very
-
+J
+Which is something that works well with competence we have in
+the team and in the surroundings. Did we choose
+something weird because it's fun? We
+have to have a really good reason for that. So those are the...
+And then of course how
+live that one is. If we're ever starting
+to, maybe not in the my current role, but
+in my previous role where we bought...
+Software platforms then it was very
 important that they are maintained
+correctly and that... they are cost efficient
+and that we get the support we need.
 
-correctly and they are cost efficient
+C
+Mm
 
-and that we get the support we need hmm
+J
+So all those questions are very
+important to me. And then I would say
+the rest is just my technical interest. I
+feel... It's not obliged, but it's fun to
+know about those things, so that's the
+other part. But not so specific.
 
-so all those questions are very
-
-important to me now and then I would say
-
-the rest is just my technical interest
-
-feel it's not obliged but it's fun to
-
-know about those though so that's the
-
-other part but not so specific so it's
-
-those things you mentioned is that
-
-something that if there's some things
-
+C
+So it's...
+Those things you mentioned is that
+something that... Is there some things
 that only managers care about that
-
 developers or architects wouldn't care
+about when using a... When it comes to
+documentation?
 
-about when using a when it comes to
-
-documentation I think that vapors tend
-
-to play down the need for production it
-
-could be that it's not that it's missed
-
-out but at least in some places it's it
-
-looks good if they it's fun to work with
-
-it's good and I totally understand that
-
+J
+I think that developers tend
+to... Play down the need for production worthy code. [laughter]
+It could be that... It's not that it's missed
+out, but at least in some places it's; it's... It
+looks good, if they it's fun to work with,
+it's good. And I totally understand that,
 but sometimes it could be that you also
-
-have have it a factory environment and
-
-if something breaks down in that Factory
-
+have... Have it a factory environment and
+if something breaks down in that factory
 you will lose a lot of money each
-
-minutes or so then you have to look into
-
-a lot of other stuff like is there any
-
-support contracts here which make sure
-
-that this contact or there is a
-
+minutes or so. Then you have to look into
+a lot of other stuff like is there any...
+Support contracts here which make sure
+that this can't happen, or there is a
 percentage of times they're going to
-
 happen because that's going to be a
-
 discussion I have if I buy that sort of
-
-support contract I would think
-
+support contract.
+I would think
 developers don't really want to talk
-
-about those things there it's not there
-
-a deal it's more or less purchase
-
+about those things. They're; It's their
+deal, it's more or less purchase;
 purchasing discussion and like support
-
-discussion and that me as a developer I
-
+discussion. And that, me as a developer [manager], I
 think you know I'm more responsible for
+those.
 
-those so in my current role we don't
+C
+Mm
 
-have that many of those because we're
-
-using mostly open source code work in
-
+J
+So in my current role we don't
+have that many of those, because we're
+using mostly open source code. Work in
 open source world where there are other
+things at play, which is more important.
+Like how well is this adopted by the
+majority of the open source world, and how much
+maintenance is it, and so on. And I was a;
+Historically it's not there; the
+developer; the manager's primary
+knowledge.
 
-things that play which is more important
+C
+Mm
 
-like how well is this adopted by the
-
-majority of local sort word and how much
-
-maintenance is it and so on and I was a
-
-historically it's not there the
-
-developer the manager's primary
-
-knowledge so here I depend a little
-
-moron architects women taking those
-
-decisions and maybe that's also why I
-
+J
+So here I depend a little
+more on architects by taking those
+decisions. And maybe that's also why I
 want to dig more into this because I
+need to understand.
 
-need to understand so I can be support
+C
+Mm
 
-when when we're taking such decisions
+J
+So I can be support
+when; when we're taking such decisions.
 
-mm-hmm
+C
+Mm! If we move over to release notes.
 
-if we move over to release notes how
+J
+Mm!
 
-often would you say that you look at
+C
+How often would you say that you look at
+release notes?
 
-release we're doing automatic upgrades
+J
+I actually do! [laughter]. The reason was last time
+ that I wanted to help out in the team when we
+ were doing automatic upgrades. I thought
+"Okay, I have to see how it's done.".
+So as I went into the "Ah okay, there's a failed test. Okay,
+I need to understand
+why", and then there was a link to the
+release notes where I can see why. And
+then I saw "Oh this is nothing I can fix" [laughter].
+"Okay, let's leave that [laughter] to a real developer".
+So that's; that's the thing. Otherwise it; I
+always say it's for my... If I'm doing a
+hobby product.
 
-okay okay you have to see how it's done
+C
+Mm
 
-so as I went into the other it's a
-
-failed test okay I need to understand
-
-why and then there was a link to the
-
-release notes where I can see why and
-
-that's all oh this is nothing
-
-so that's that's thing otherwise it I
-
-always say it's for my if I'm doing a
-
-hobby product I might do it if it's I
-
+J
+I might do it if it's a; I
 know it's zero point version because
+that might break; break my existing
+configuration.
 
-that might break break my way existing
+C
+Mm
 
-corporation mmm but it's hobby so yeah
+J
+But it's hobby. So, yeah.
 
-it's it's not that social well okay
-
-because once again it's interesting to
-
+C
+Okay. Because once again, it's interesting to
 see if release notes matter at all to
-
-managers because we'll get the
-
+managers. Because we'll get the
 perspective of architects and developers
+from other interviews. So do you think, general;
+ managers in general, or you, care
+about release notes?
 
-from other interviews so do you think
-
-general managers in general or you care
-
-about release notes I would say from
-
+J
+I would say from
 from a manager perspective I care if it
-
-breaks my stuff and if I need to add any
-
-resources to this then that's my
-
-perspective so nothing detailed like I
-
-said that's not something that we look
-
-into the furniture so if I'm going to if
-
-we only talk about okay should we
-
-upgrade to this solution I would post it
-
+breaks my stuff, and if I need to add any
+resources to this. That's my
+perspective. So nothing detailed, like I
+said that's not something I would look into as
+a manager. If I'm going to; if
+we only talk about "Okay should we
+upgrade to this solution", and I would proc;
 and I would participate in a meeting
+where we took the decision, then I would
+be interested.
 
-where we took the decision then I would
+C
+Mm
 
-be interested mmm because I want to know
+J
+Because I want to know
+how big of a change, and how much time do
+we need to invest in such a change.
 
-how big of a change and how much time do
+C
+Mm
 
-we need to invest in such a change so
+J
+So
+that's very important for me.
+And... So for major releases... That I think
+that's the most important for a manager.
+Small patches, I don't think...
 
-that's very important
+C
+Mm
 
-and so for major releases that I think
+J
+They are
+only important if something has broken and
+ you're looking for a fix.
 
-that's the most important for a manager
+C
+Mm... So
+in the material we had a... Two extremes.
+One very short version and one quite
+elaborate version.
 
-small patches I don't think they are
+J
+Mm
 
-only important if something has mmm so
-
-in the material we had a year two
-
-extremes
-
-one very short version and were quite
-
-elaborate version because it's when it
-
-comes to writing release notes it's a I
-
-mean you have to a company has to spend
-
+C
+Because it's... When it
+comes to writing release notes it's a... I
+mean, you have to... A company has to spend
 time and therefore money in order to
+have more thorough release notes, and
+it's a balance to... Between these two, how
+much should you write? Do you have any
+opinion on how much, how thorough should the release notes...
 
-have more thorough release notes and
+J
+I think the short
+one... For a manager I think that was
+enough. Because it said that there are changes in this area.
 
-it's a balance to between these two how
+C
+Mm
 
-much should you write do you have any
+J
+And I wouldn't look into it [laughter].
+"Okay there are changes, and it looks like
+ like they they've added some
+stuff, and deprecated some stuff, and
+oh shit, they have deprecated something, and
+then I would ask my developers
+'Are we using the deprecated stuff?'" [laughter]
+And then they would say yes or no, and I would know
+that "Okay, we have to put in resources here".
 
-opinion on how much I think the short
+---- 22.28
 
-one for imaginary I think that was
-
-enough that there changes in this area
-
-okay there we are
-
-it looks like they they've added some
-
-stuff and are we using the differ kg
+we using the differ kg
 
 stuff so so from a manic perspective I
 

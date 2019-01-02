@@ -1,0 +1,694 @@
+C
+Okay! So today's date is the 19th of
+December 2018 and I'm here at the Qlik's
+offices and this is Christoffer MacFie talking. And I'm here with...
+
+A
+Håkan Axelsson
+
+C
+And you work here at Qlik
+
+A
+Yeah
+
+C
+And what is your job title?
+
+A
+I think it's quality architect but I'm
+not sure exactly what that title means
+it has been changing over time so... Mainly
+it's just getting high quality products
+To keep an eye on that so we have a test
+and build system and stuff in place.
+
+C
+So it's a quality assurance and also
+architect? Somewhere...?
+
+A
+Yes something like
+that. Architect when it comes to
+test structure and those aspects.
+
+C
+Okay! So
+we're going to talk about some APIs in general and then we're gonna talk
+about release notes and then we're gonna
+talk about online communities around
+software platforms. So if we start off;
+start off with talking about APIs and
+API documentation, how important would
+you say that API documentation is to a
+software platform?
+
+A
+I think it's very
+important, especially when you use
+third-party, like open source code.
+
+C
+Mm
+
+A
+If
+you've been writing there all your code
+yourself it's not that important if you
+are build a consumer.
+
+C
+Mm
+
+A
+But if you are
+providing it to external customers or
+using external libraries it's important.
+
+C
+Mm. So when you look at API
+documentation...
+
+A
+And it's also important for
+testability! To check if you have a bias... Then you're main focus
+should be testing APIs so they are intact for every release.
+
+C
+Ehm... So if we take it from the perspective that you're looking for a
+software platform to use. When you look at the documentation, what are you usually
+looking for?
+
+A
+The first thing... If there is any documentation. And also their structure, is it...
+Can I easily find classes, functions, methods... To read on specific cases. And in your
+quiz here I found that I looked the examples. I started by looking at the examples, before
+reading each syntax.
+
+C
+Mm. Is that normally how you would do it?
+
+A
+I think so yeah. Because that was my first intuition. To look at the example here.
+
+C
+Mm. To get a... Why did you look at the example?
+
+A
+Getting a overview of the structure, how to use the APIs.
+
+C
+Mm.
+
+A
+It's mainly a summary. The example is a summary without comments.
+
+C
+Mm. Yeah. So that's... Are API examples important to you then?
+
+A
+I think I found out that they are. I haven't been... It's hard to figure out you use documentation, but this was good
+with a... exercise quiz to... And then I thought about how I use the APIs or the documentation of the APIs.
+
+C
+Mm. Cause that's one of the things we're trying to figure out is, what is good documentation, what do people want? Ehm..
+. So you said, so you use the API examples to kind of get an understanding?
+
+A
+Yeah.
+
+C
+Is that... Is there something else you would use the API examples for? Mainly just understand or how it works or...?
+
+A
+I think for getting started I use the examples. And if I get an error I start looking at that specific method or class
+or something.
+
+C
+Is it important to get started quickly, to you?
+
+A
+Yeah, it is.
+
+C
+Mm.
+
+A
+I think so. Best is runnable examples.
+
+C
+Mm.
+
+A
+Like you could run them in the browser, and do some changes. I think I, I mainly start with pasting the example into my
+own code. And then changing things to suit it.
+
+C
+Mm. Ehm... So is there any time where you're willing to not have working code quickly?
+
+A
+[pause] It could be, but I can't figure out... a time right now.
+
+C
+Most of the time you really want...
+
+A
+I would prefer, 100%.
+
+C
+Ehm... Maybe using this [pointing at material] or just thinking in general, ehm... Is there anything that, when looking
+at the API documentation that, "you always want this". Or... Ehm, something you saw that was missing here that you
+usually...
+
+A
+It's not specific to this but I found out that if you use VSCode they are scraping, what it's... The types of different
+libraries.
+
+C
+Mm
+
+A
+And also the JSDot-comments so you get the documentation inside the code.
+
+C
+Mm
+
+A
+Even if you don't use TypeScript now. So I think that is really good. Or else you have to flick to browser and start
+looking for the documentation.
+
+C
+Mm okay.
+
+A
+So in-line documentation, if you do an important of the libraries. It's really nice to have.
+
+C
+Mm! Are there usually any, when you come across a new documentation. Are there red flags that you... "Okay this is not
+good"?
+
+A
+You should easily... There's two ways to come to a third-party library. First is a demo-site or something, like an
+example, and there's also the github-repo.
+
+C
+Mm
+
+A
+So if you come to the demo you want to easily come to the github, and the other way around. So you can just get the
+example and the code. And in the github you look at, is it starred, how many has downloaded it, and stuff. Is it used?
+Is it up-to-date? That's the first thing. If it hasn't been updated in three years, I usually look for something else.
+Either; Or now it's included, like an old polyfill or something, so you don't need it anymore. Or it's something that
+had come along.
+
+C
+Mm. So if you come across something that you may want to use, but you're not sure, and the documentation is not very
+good, what are the consequences of that for you?
+
+A
+I think it's harder to evaluate it.
+
+C
+Mm
+
+A
+So you have to put more effort into something you don't believe in right now, so... It's a higher step to get it... To
+it. So if there is several different alternatives, I think I start out with another.
+
+C
+Mm. You drop that alternative?
+
+A
+For now. And if I see the others, I can come back to that.
+
+C
+You mentioned earlier with the code examples, that it's nice to have runnable examples. Ehm... How big should usually
+the examples be in your opinion? Should it be just a snippet, or something runnable, or something in big context, or how
+ much...
+
+A
+Ehm... As small as possible.
+
+C
+Mm.
+
+A
+Or as isolated as possible. So you just show one small feature or something like that.
+
+C
+Mm. Should it always be runnable, or should it just be...
+
+A
+It's nice to... No, it's not that important. But you should be able to understand it, like... Maybe, discover one-liners
+ and do like; you assign a variable and you use that in the next step. So, small steps in the example code as well.
+
+C
+Mm. Ehm... We can move over to talk about release notes. Ehm... How often do you read release notes?
+
+A
+[pause] Not very often.
+
+C
+But it happens?
+
+A
+I think I've mainly been reading what has happened in VSCode. Because it's pretty nice, they have some, since it's a UI
+they have some animated GIFs as well. And you can get some glimpse there. And if it looks like something you read more
+about it. So... Some animations is nice to have to catch the eye.
+
+C
+Yeah. A quick overview?
+
+A
+Yeah.
+
+C
+So, ehm... In what circumstances do you read release notes?
+
+A
+[pause] Almost never, I can say.
+
+C
+Mm
+
+A
+They are not that important to me. Maybe if... I use it when a version is stepped into a new m-major, and something has
+breaked in our integration test.
+
+C
+Mm
+
+A
+Then I start looking at the; the release notes to see what change could have br; broken our test or the usage of it.
+
+C
+Mm
+
+A
+In that case it's important. But to evaluate something I don't use it. So they are good if something breaks, in a patch
+of minor / major.
+
+C
+Okay, so... When you... What you're looking for in release notes is not so much...
+
+A
+Not new features and stuff, just breaking changes.
+
+C
+Mm. Ehm... Cause, in the material I gave you, there's one very concise release note version, and one very long one.
+
+A
+Yeah.
+
+C
+How detailed should the release notes be in you opinion?
+
+A
+I know I write the short. But I like the almost storytelling release note here, it was more interesting to read if I
+were to read it. But I mainly use it as a dictionary to look some stuff up. Then I just want some header, and what
+happened.
+
+C
+Mm
+
+A
+So, eh... It depends.
+
+C
+Yeah. Cause it's, like all things, if a company were to release more thorough release notes, they have to spend time and
+ therefor money on that. So it's a balance. So in your opinion, ehm... Should a company spend a lot of time on release
+ notes or should that time be spent somewhere on the company?
+
+A
+[pause] I would say some where else. But, if you want to use it as a promotion material then you have to put it
+somewhere. I know, we use; we put out a blog, or blog post, each month with new features. And it would be nice to be
+using this format as a change log. So... I can't say 100% which is the right way. It's how you want to use it. That's...
+
+C
+Yeah! So, what are the consequences for you if the release notes are poorly written? Does it affect you a lot?
+
+A
+Just when trying to figure out what has broken our builds.
+
+C
+Mm
+
+A
+I usually start out by reading change logs, if I can't find it there I open the commit between two versions. And that's
+harder, to get an overview.
+
+C
+Mm. So you have other means of getting that information, other than release notes? Cause, you say it's...
+
+A
+Yeah. But then it's up to, how good is the commit messages? So... [laughter] And I know we have some discussing to have
+some syntax checking and stuff on the commit messages as well. So... I think, if you use; just start working with it.
+It's not that cumbersome to write good commit messages.
+
+C
+Mm.
+
+A
+And those are really good as a baseline for writing the release notes later, so...
+
+C
+Mm.
+
+A
+It could be that the release notes is, or the change log is, is auto-generated on the commit messages.
+
+C
+Ehm... Because, ehm... Because in the survey, release notes is listed as one of the least important aspects. Ehm... Do
+you; When you're coming across a new platform you want; may want to use, ehm... You look at the documentation as you
+said, and the examples and all that.
+
+A
+Yeah.
+
+C
+Do you; do you ever look at the release notes before deciding? Is that..?
+
+A
+I don't think I do. It's the README, the first thing that pops up on github that I read.
+
+C
+Ehm... So that... You may decide to use a software platform and then a few months later realize that the release notes
+were'nt that good. So you don't check that before?
+
+A
+I don't think I have.
+
+C
+Ehm... Because release notes, as I said, was ranked as not very important. But when you talk to people they usually say
+that release notes is very important.
+
+A
+Mm.
+
+C
+So there seems to be a clash there where people don't use release notes, they don't really care for them, but they also
+say that it's very important to have good release notes. Ehm... Why do you think; do you have any theory around why
+there's a clash there?
+
+A
+[pause] No... I think it's... Do they think it's very important for themselves or for their customers, that are going to
+ use it? Is it for their usage, or other usage?
+
+C
+Ehm... People tend to talk about... It's the people writing the release notes who say they are very important, but then
+they don't use release notes themselves. It's more that they... They've been taught that it's important it seems like
+. Ehm... But yeah.
+
+A
+I'm not sure.
+
+C
+No, it's..!
+
+A
+It could be streamlined, to make them efficient. Like use the commit message. And if they are, it's not that cumbersome
+to have them. And they could be used as a promotion, like sending out to existing customers or something like...
+"Here's a version, check it out".
+
+C
+Mm. Ehm... Mm!
+
+A
+But I know that we use like Renovate, that bumps our dependencies. So... If there's a new, we take it. And then the
+release notes, not important. Unless, the new bump breaks something. Then you have to try to figure out what has
+changed.
+
+C
+But you said... You're not in a position where... Because release notes are often used when deciding if we should
+upgrade or not.
+
+A
+Mm.
+
+C
+Are you in a position where you make that decision?
+
+A
+Yeah, I think we mainly rely on our tests. We think they are so good so, if our pipeline is green, we merge to master.
+And... Yeah. It has been working.
+
+C
+Mm. You make; I assume you use some third-party software in your line of work, when you're testing.
+
+A
+We do.
+
+C
+And maybe they occasionally release a new version, "Should we upgrade or not?". Do you use the release notes then, or
+how do you decide if you should upgrade?
+
+A
+Yeah. I think that's the same. If our pipeline is green, we usually merge. But, that's to master. And then, when we do
+release, we do some external... Or more testing on that before releasing it.
+
+C
+Mm
+
+A
+So to get the new code into master, we rely on the green builds. Our test on the CircleCI.
+
+C
+Mm
+
+A
+But before release, we do some regression testing and manual testing. Before putting in that as a new version.
+
+C
+But that's internal in Qlik, if you should upgrade to the new...
+
+A
+Yeah, like AfterWorks is the test framework that we build internally. But it's also open-source. But we rely on like
+Mocha and [inaudible] and those. And if we get a new version of that, we use it. But we also use it in all of our
+repositories, so we could make like a pre-build. We've done that. If we ain't sure on a new major, we do a pre-release.
+And try that on all our repos internally. So we get a pretty good status if there is anything breaking.
+
+C
+Mm. Okay. So there might be a new version of a third-party software. If it didn't break any of the tests, you upgrade.
+
+A
+Yeah.
+
+C
+So you don't really use release notes even then.
+
+A
+No.
+
+C
+Okay. Ehm...
+
+A
+I think it's mainly if something breaks, you have to figure out what has been changed. And then release notes is good.
+
+C
+Okay. Ehm... We can move over to talk about online communities. Ehm... So, when I say that a software platform has an
+online community. What is that to you? What is an online community?
+
+A
+Mm... I mainly look at the github pages. And the issues there. I've seen some using, what's it called. Gitte? Or Shatte?
+ Or something. Like that's Slack for github, or something like that. Where you can post questions. But I don't use that
+ very much. I know I have been into some of those discussions, but mainly look at github pages.
+
+C
+Mm. So how often... So let's take broad definition of like... Github and Stack Overflow, and there might be some
+internal, that the company hosts themselves.
+
+A
+Yeah, cause I look at Stack Overflow, but I have never written anything on there.
+
+C
+Mm. But often would you say that you take help from online communities?
+
+A
+Eh, that's very often. Like... But... It could be that you copy-paste, but you always have to massage the code to fit it
+ into yours. But, sure, it's very good. Because I think it's... Again, you get the examples. I think I look at the
+ examples on code snippets on Stack Overflow. Not just some specification for something. I want to use some code.
+
+C
+Ehm... So if you can think of a communities that you like. What do they usually have in common?
+
+A
+[pause]
+
+C
+Or rather, what do you use online communities for?
+
+A
+Yeah... I think it's mainly APIs. Like, how to use it. I know that I always have to look up [inaudible] and how to muck
+stuff. And it could be mainly that it's a third-party that is evolving a lot. They have been breaking changes, changes
+to their APIs. Then you have come in there again. Else you, it's a bit repetitive, the testing. You have already done
+it, so you have your own examples in your code, and you just want to write a new test case. So you could use an old one,
+and tweak that. But if they change the API, you always have to go out and find what they changed, and how you should do
+ it now.
+
+C
+Mm. But is it more of simply... questions and answers, or is it like trying to get a deeper understanding of the
+software..?
+
+A
+Mm... I think it's for third-party, or for libraries, it's for how to use it. But if it's a new technique I think it's
+Medium, is very good there. Then I just, I get an email each morning I think. And if there's anything interesting, it
+could check that out.
+
+C
+Mm. Medium is, is that blog posts, or...?
+
+A
+Yeah. That's a platform for blog posts. And if I get something interesting in the email, like I could read up about it.
+But I don't use it directly. So it's just a... Getting an understanding of a new techniques. And if I have to use it I
+know what to google for later.
+
+C
+Mm. But it is mainly google you reach the communities through, you don't go; or do you go directly to a website?
+
+A
+No. No. Google.
+
+C
+So, ehm... To get a grip on what qualities a community should have, ehm... Like, have you encountered communities that
+you didn't like?
+
+A
+I'm sure I have. But I don't remember them. So, so if you remember a community, you're more likely to choose or use that
+ what they say... is the best solution. Like... They get a good reputation if you get in there. Several times.
+
+C
+Mm. So, the community... should it.. Feel alive? Is that important to you?
+
+A
+Yeah, it should!
+
+C
+To feel helpful?
+
+A
+But also... Alive with important stuff for me. I don't want to be searching for the answers, like for... a lot of
+information. It's better to have small pieces, than a long blog post or something. "Indexible" solutions.
+
+C
+Do you...
+
+A
+Ï should say that our webpage, the core... qlik.com the search there is a lot better than the help for Qlik Sense. So I
+go there all the time to find sol; or the APIs for Qlik. So... Searchable is also...
+
+C
+Mm. Is it important for you to feel apart of a community?
+
+A
+No. I don't think so.
+
+C
+So you simply just go and find what you
+
+A
+I just [laughter]
+
+C
+You find what you need and you leave?
+
+A
+Yeah!
+
+C
+Ehm... Is it important for a community that the company behind a software is part of the community?
+
+A
+Yeah, I think so. And that you see who is answering what question. If it's the company or it's a user.
+
+C
+Mm. Ehm... So, if we take the overall question again, just to put it concise. What is it that you want from a community?
+
+A
+[pause] Structured, indexible solutions.
+
+C
+Mm. So when you're coming; looking for a new software platform, a solution to a problem you, and as you said you look at
+ the API's documentation and all that. Do you also check what the online community is like before you decide?
+
+A
+[pause] Not if I find good information on the github page or something. Then I don't have any reason to check out the
+community.
+
+C
+So the community is more of a help when you're stuck?
+
+A
+I think so yeah.
+
+C
+So if the documentation was really good, almost flawless, would you still need an online community?
+
+A
+No, not for my purposes, I don't think so.
+
+C
+Would you still want an online community?
+
+A
+I want entry point for when I don't find my information on the web page. Where could I post? And if that is a community,
+ then the answer is yes.
+
+C
+But do you usually post any questions? Or is it simply going in and try to find if someone has asked what you wondered,
+earlier?
+
+A
+I start by searching. I've been posting some questions. I think it was when we were using DockerMachine and stuff. It
+was pretty... It wasn't very well documented and there were some issues. I started out by asking, and then I was putting
+ some issues on the github repo.
+
+C
+Ehm... [pause] If we have some very big software platform, like React or Angular or something, that has a very big
+company behind it, with a lot of man hours on the documentation. And then we have something small like a library, which
+doesn't have a big team behind it. Ehm... Is it more important for either one of these to have an online community? Or
+is it equally important, or...? Which one...
+
+A
+Yeah, good question... Eh... Can't say. I think... With the big company you get a community there that wants to discuss
+architectural changes, there's always some clever... that's been studying things and found problems. And in the small
+company, I think it's help they need. So I think that both need the community, or some interaction with the people
+behind the library.
+
+C
+Mm. Cause in the... In the first survey, the question was stated as not specifically software platforms but software
+tooling as well and the size of the software was kind of vague. And then communities was listed as the second most
+important aspect. Whereas in the second survey, where we explicitly said software platforms, it was listed somewhere in
+the middle in importance. Do you personally have any theory why people would want...
+
+A
+So, what was the first one?
+
+C
+First one, it was the second most important aspect of all. Ehm, and I'm not sure why it listed differently. The only
+difference I can see is that in the second one it was explicitly software platform whereas in the first one it was kind
+of vague how the software; the size of the software we were talking about. Ehm... That's a bit weird to me. I'm just
+asking if you have any theory?
+
+A
+Yeah... [pause] Yeah, it could be software, generally it could be closed-source. So you don't have; could look at
+issues, maybe on github and stuff. Then... Then it's more important maybe with a community, the support is...
+
+C
+For which one?
+
+A
+If it's small, general software. Closed-source. Like... Spotify, I'm guessing. Their community is important to ask
+questions. But if it's a third-party or library on github, it's not important because you could look at the code. You
+could understand it, and you could post the issues there. It could be if it's open-source or closed-source. I think it's
+... Open-source is the communication on github. That's a lot like, with the issues. Several issues could actually be
+questions. So...
+
+C
+Mm! Ehm... Okay. So... Do you have any questions for me?
+
+A
+No.
+
+C
+In that case, thank you very much.

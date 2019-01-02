@@ -1,0 +1,750 @@
+C
+Okay so today's date is the 19th of
+December 2018 and I'm here at Qlik's
+offices with...
+
+H
+Helene
+
+C
+And this is
+Christoffer MacFie talking. Ehm... So we're
+gonna talk about three subjects mainly,
+APIs in general and release notes and
+online communities.
+
+H
+Yes.
+
+C
+So we if we start
+with APIs and API documentation, how
+important would you say that API
+documentation is?
+
+H
+It's very important. If
+you get an API you need to; you need to know
+how to use it. And then you will go to the API
+documentation.
+
+C
+Mm. So, ehm... Generally, when you're looking at the API
+documentation... what are some thing you're looking for?
+
+H
+Ehm... Often I look for examples.
+
+C
+Mm.
+
+H
+Small
+snippets... Where you can see how to use methods and
+what parameters and so on. When I have an example, then I can go the
+methods and see more in detail what you can do with the methods.
+
+C
+Mm
+
+H
+So I like examples.
+
+C
+Mm. Ehm... For the examples... you said you wanted snippets?
+
+H
+Yeah. To see how the method can be put together.
+
+C
+Mm. So is that mainly why you look at examples?
+You want to see... what do you want from an example?
+Why do you go to them?
+
+H
+Ehm... To see how you can do simple things. Mainly.
+
+C
+Ehm, so is it...
+
+H
+It's an easy start, to use the API, I think.
+
+C
+Is it important for you to get started quickly?
+
+H
+Yes. [laughter] It is. I hate to look at the documentation and to
+put a lot of time to put into looking at the documentation before I even know
+how to start. Then I get bored. And that's why examples are so good. It's easy to see
+how to get started.
+
+C
+Ehm, so it's mainly, ehm... So that's one aspect then, looking at the API examples to get started quickly.
+Maybe have some copy and paste and then modify that.
+
+H
+Yeah.
+
+C
+Are there any other things you go to the examples for?
+
+H
+Maybe not examples,
+but the API documentation also; is also good
+for error codes, to see what errors
+you need to to handle and to fetch. And
+that's often hard to see in the examples.
+
+C
+Mm
+
+H
+Just snippets doesn't show the error handling.
+So then you need to look at the methods,
+and what errors they might return.
+
+C
+Is there any time
+where your; you are willing to accept
+that you don't have working code quickly?
+
+H
+In the examples?
+
+C
+In general when you are using a
+software platform, you said you wanted to
+have working code quickly to get started.
+Are there any times where you're willing
+to work with a software platform where
+you won't have working code quickly or
+is that a must?
+
+H
+I think it depends on
+what product you're working on. If it's a
+long-term product then maybe it's not so import to get started
+quickly.
+
+C
+Mm
+
+H
+In my daily work I write a lot of examples
+ for Qlik Core. So we're not putting a lot of months into the project.
+And then you... We need; we need small stuffs, small examples stuffs, and then you
+really need to get up and started quickly.
+
+C
+Mm. Ehm... So what we're trying to get a hold of is mostly, how you...
+what is "good" API documentation exactly. So of if we for example look
+at the material I gave you...
+
+H
+Mm
+
+C
+Is there anything you see like "Okay, this should always exist" or something
+that you thought of that you're missing, that you usually find. Or...
+
+H
+Ehm... Actually I think the examples are really good in the API docs. 'cause I look
+at the examples to find the... [pause]
+
+C
+Or if we take it more generally, are there any; when you... When you come across an API
+documentation, are there any red flags for you? For like, "Okay this. I didn't get this, this is a
+bad warning".
+
+H
+Mm... Not sure. Maybe if you... If you only list the methods, you know when it's a... auto-generated docs.
+That might be quite bad. I like when you see that it's, that they've actually put some time into the documentation,
+manually.
+
+C
+We should also say by the way... What is your job title here?
+
+H
+I'm a senior developer.
+
+C
+Mm. Ehm... So how does it affect you're working with an API documentation, or API examples,
+that are not good. How does it affect you in your work?
+
+H
+I think, eh... You get a little bit of... Irritated maybe? And then you start googling,
+cause most of the APIs we're using are used a lot. So there are communities surrounding it.
+So if I find something hard to do, then probably someone else has found it hard too.
+Then you google it and you find; found some help.
+
+C
+Mm. Ehm... Do you spend... Do you quickly abandon a software platform if the examples and
+documentation are poor?
+
+H
+No... Not; probably not.
+
+C
+You try to solve it still?
+
+H
+Yeah.
+
+C
+Mm. Ehm...
+
+H
+Or, it actually depends on what you need to do. Cause if you're using
+JavaScript there's a lot of APIs and packages and stuff, and doing the same thing almost.
+So if you go to the... to one API and you found it quite bad. Then you skip and go to the next API.
+
+C
+Mm. Ehm... [pause] Mm! But you; as you said, you use the examples a lot to get an understanding of the
+software platform rather than reading the documentation...
+
+H
+Yeah
+
+C
+So it's both for copy-pasting but also for understanding the underlying structure maybe?
+
+H
+Yes.
+
+C
+And try to see how things are linked up?
+
+H
+Yes.
+
+C
+Ehm... Are you in a position where you also can influence if... for example Qlik is going to use a software
+platform that you; are you in those meetings and all that?
+
+H
+Hm... I haven't really been. But I... My role is that I should be. But we haven't really been in such
+a situation.
+
+C
+Mhm.
+
+H
+Or we... I kind of... Cause we are... We are not having meetings about this cause you only;
+you have an assignment and you console with... in the way you want. So kind of yeah, I use my own
+software platforms, libraries...
+
+C
+But, ehm... But you're way of deciding if you want to use a software platform is... quickly get started with
+the examples and...
+
+H
+Yeah. Yeah.
+
+C
+Not read through a lot of...
+
+H
+No. No. And googling a lot. See what others are using.
+
+C
+Mm! Ehm... We can go over and talk about release notes.
+
+H
+Mm!
+
+C
+Ehm... How often do you look at release notes?
+
+H
+Never.
+
+C
+Never?
+
+H
+Never. Or actually I did with this material.
+
+C
+Mm!
+
+H
+Cause I printed the papers, and then I saw there was a release notes. So I actually read them.
+
+C
+Mm.
+
+H
+And I... It was really good! [laughter]
+
+C
+So, eh... Cause, eh... We have... As you say, we have... There's two versions,
+one very short one and one quite long one.
+
+H
+Yeah.
+
+C
+And, ehm... You said you don't need to; you never look at release notes in, probably not in your
+work but not otherwise either?
+
+H
+Nope. [laughter]
+
+C
+Ehm... Why do you; why is that then?
+
+H
+I don't know. I think the news; I think if you need to do something...
+Maybe if I'm waiting for something new to appear on the API...
+
+C
+Mm
+
+H
+But most often it's... I can read it from blogs or the community, rather than
+release; release notes. And if something gets deprecated, you often get a warning.
+
+C
+So you're... But when you; What interests you in release notes would be new methods and, ehm... deprecated
+rather than...
+
+H
+Yeah, and bug fixings as well. But in the short version here, ehm.. "The egg bug is fixed". That doesn't tell me
+anything, if I don't know anything about the egg bug.
+
+C
+Mm...
+
+H
+Then the info is... Kind of... useless.
+
+C
+Yeah. So poorly written release notes wouldn't really affect you then, if you don't... use them.
+
+H
+No.
+
+C
+Ehm... Do you think that's the general case for developers? That they're not interested in release notes?
+
+H
+Mm... No. Because my colleagues wants us to write release notes. So I think the... Others are actually reading them.
+
+C
+Yeah. So they're... They're still important? Even though you don't personally...
+
+H
+Yeah, yeah. I think so. And I... Actually I looked at the release notes this time, in the material. And
+then I saw the deprecated methods, and the new methods. So I could find the errors in the code. And yeah, the long
+version is, ehm... I prefer the long version.
+
+C
+So, ehm... Like all things... If a company needs to write the long version, they have to take; spend time and
+therefor money to do that. Would you say it's worth that time for a company, rather than auto-generating the short one?
+
+H
+I think so, yeah. Auto-generated stuff is... I wouldn't say useless.
+
+C
+Mm.
+
+H
+But I think it's... It looks a bit bad. I think. It's a lot better feeling when you get the manually written stuff.
+
+C
+Yeah.
+
+H
+But of course it takes time.
+
+C
+So when you say bad... bad for who?
+
+H
+Maybe not bad, but a bit, ehm... Like you don't actually care about the release notes.
+Just auto-generate stuff.
+
+C
+It reflects poorly on the company behind the software?
+
+H
+Yeah.
+
+C
+Ehm... But you said you had other ways of obtaining this information. Through blogs and all that.
+
+H
+Yeah. But as I said, if I'm using an API a lot and I'm actually waiting for something, I will probably
+read the release notes.
+
+C
+Mm.
+
+H
+But if it's just about the new ways of doing things, or... Like the react or something, then...
+You can go along just fine without doing these changes.
+
+C
+Mm.
+
+H
+But the new features... You need to know about new features.
+
+C
+Ehm... cause, release notes, in these surveys, one of the least important aspects to people.
+
+H
+Mm.
+
+C
+But when you talk to people, they still say that it's very important.
+
+H
+Mm [laughter]. Yeah.
+
+C
+Why do you think there's a mismatch there?
+
+H
+Least important? I mean if you... if you compare it to the
+API documentation that is a lot more important. Cause you can't use an API
+without an API documentation, basically. And you can use an API without the release notes.
+But again, it's maybe more... you get a more serious feeling about the API if you have
+release notes.
+
+C
+Mm. But you then... When you use; looking for a software platform, you never look at the release
+notes to figure out "Okay, I want to use this.".?
+
+H
+No.
+
+C
+No. Ehm... Mm! We can move over to talk about online communities.
+
+H
+Mm.
+
+C
+Ehm... So, when I say that a software platform has an online community. Ehm...
+What does that mean to you? How would you describe that.
+
+H
+A community? Maybe, ehm... You mean like, specific for the platform?
+
+C
+Yeah, what exactly is an online community?
+
+H
+If; you... My online community is [inaudblie]
+
+C
+Is what?
+
+H
+Is Google.
+
+C
+Mm.
+
+H
+But then of course, there are specific communities. For, ehm... I'm not even sure, maybe Docker community and, ehm, we
+have some Qlik community
+
+C
+Mm
+
+H
+Where you find the specific; platform specific stuff. But then you have Stack Overflow, where you can find a lot of
+different issues, different APIs, and...
+
+C
+But, ehm... But yeah, let's take that broad definition, how often do you take help from online communities?
+
+H
+Daily.
+
+C
+Daily. And, ehm... Online communities that you like, ehm... What do they usually have in common?
+
+H
+In common? A question and an answer [laughter] Hopefully.
+
+C
+Yeah, it's a very straight forward..?
+
+H
+Yeah.
+
+C
+Ehm... Did; Do you usually ask questions yourself?
+
+H
+Nope.
+
+C
+You just look for the answer.
+
+H
+Yes. Yes. And I actually; actually feel a bit bad about that, cause in Stack Overflow, you can actually; you can
+at least like an answer. So I think I should really get started [laughter] doing that. Cause I'm using Stack Overflow a
+lot.
+
+C
+Yeah.
+
+H
+So maybe put in something as well.
+
+C
+And, ehm... Does the community have to feel... Ehm, alive in a way, in order for you to like it?
+
+H
+Yeah. Definitely.
+
+C
+If it doesn't feel alive, can you still like that software platform?
+
+H
+Mm... Eh, yeah of course if it fulfills my needs. But it gets a little bit bad feeling when something is... old.
+
+C
+Yeah
+
+H
+Like questions asked four years ago.
+
+C
+Yeah. So, ehm, when you're... When you're looking for a new software platform, and trying to decide if you're going to
+use
+this, is an online; is; are you looking at the online community before getting started, to see...
+
+H
+Actually no. I don't.
+
+C
+You just go to, when you're stuck?
+
+H
+Yeah. Yeah.
+
+C
+Ehm... And, so you don't; do you have the need to, in order for you to like the software platform, do you need like
+you're apart of the community yourself?
+
+H
+No. [pause] [laughter]
+
+C
+No! This is... Ehm...
+
+H
+But it's great that others want to be part of the community because otherwise I wouldn't find my answers [laughter].
+
+C
+Yeah! But it's important the community feels helpful.
+
+H
+Yeah. Yeah.
+
+C
+Do you care what kind of, ehm... Tone people use in the... When they're helping people. Positive or negative, happy or
+sad, or... Those kinds of things. Or is it more, "If the question is answered I don't care".
+
+H
+Ehm... [hesitation] Yeah. I think so. If I get an answer, then it's fine. And I think that; I actually haven't... I
+haven't seen any bad tone, or noticed a bad tone. But maybe I don't put any effort in noticing that.
+
+C
+Ehm... Is it important to you that the company behind the software are part of the online discussions.
+
+H
+[pause] Not really. Cause I mean the Qlik community, a lot of... our users are answering the questions.
+
+C
+Mm.
+
+H
+Which feels... I think that's really good. That others are taking responsibility for answering the questions that others
+ have...
+
+C
+So what is your... If the company is part of the online discussion, what are your thoughts on that, how does it reflect
+on them?
+
+H
+That you actually take your responsibility for, for your users. For the community.
+
+C
+So if we flip it, if they're not part, does it have the same affect other way around.
+
+H
+Actually, I don't think I care who answers the question. If there are questions that are not answered, that you know
+that a Qlik-person or a Docker-person can answer, and don't do that, that's not... no good.
+
+C
+Mm.
+
+H
+But often you don't know who is answering the question. You don't know if he or she works at the company.
+
+C
+Mm. So if we take the overall question again, what is it that you want from an online community?
+
+H
+Answers.
+
+C
+Answers. Simple as that.
+
+H
+Yeah.
+
+C
+Ehm, because in the two surveys, ehm... Or we can say... If we have some very big product, like Angular och React, or
+something with a huge community or... With a big serious company behind it. A lot of documentation and all that,
+we have the official website and all that.
+
+H
+Mm
+
+C
+And then on the opposite side you had a small library on github made by one person.
+
+H
+Mm
+
+C
+Ehm, which of these is, or is it equal, more important to have an online community behind it?
+
+H
+Yes it is.
+
+C
+It is equally important?
+
+H
+No, ehm... Okay. Ehm... [pause] I'm not sure actually.
+
+C
+Mm.
+
+H
+Cause often you don't have a big online community with a small... small libraries.
+
+C
+Mm. Ehm... Because in the first and second survey, ehm... In the first survey, online communities was listed as the
+second most important aspect of all. Whereas in the second survey it's somewhere in the middle.
+
+H
+Mm.
+
+C
+Ehm... Do you have any personal theory behind why people, ehm... Thought it was very important and then just somewhat
+important.
+
+H
+[laughter] [pause] No. Not really.
+
+C
+Mm. Ehm...
+
+H
+Was is the same... The other alternatives was the same?
+
+C
+Yeah. The questions leading up to the; that question were different, so people might have been in a different mindset.
+
+H
+Mm.
+
+C
+But the question were the same.
+
+H
+Interesting.
+
+C
+Mm... Ehm...
+
+H
+Maybe it's about the timing. Eh... What you've used lately. If you... If you had some problem that were solved by the
+community, you might find it very important.
+
+C
+Mm... So, if the documentation was really good, almost flawless. Would you still want an online community?
+
+H
+Mm... Maybe it's not that important when you have great documentation.
+
+C
+Mm.
+
+H
+But I mean, you almost always get stuck on things. So then it's good with a community.
+
+C
+Mm. So would it be a viable way for a company to, if they have the issue of... They can either try increase activity in
+online community, or they can spend time on fixing the documentation even more, which one would you recommend the
+company did?
+
+H
+Both.
+
+C
+Mm. But...
+
+H
+But I think even if you had an online community, the documentation needs to be flawless.
+
+C
+But ehm...
+
+H
+So documentation is prior one.
+
+C
+You would say that it's more import to have;
+
+H
+Yeah.
+
+C
+Ehm... Cause one theory I have behind, the question I asked about big companies versus; big software platforms versus
+small libraries. In the first survey, it was phrased as... Or rather in the second survey it was phrased as working with
+ software platforms, so something quite big. Whereas in the first one it was a little bit more vague, it could be
+ software platforms, it could be libraries.
+
+H
+Mm
+
+C
+So people might have been thinking of different levels of scale.
+
+H
+Mm
+
+C
+So I don't know, maybe if it is a small library, you need to ask people rather than... cause you can't go to the company
+.
+
+H
+Yeah. Yeah.
+
+C
+I don't know... Is there anything you want to ask me?
+
+H
+Mm... No not really. I think the material was really good! Cause then you actually looked at the documentation, and you
+need to... needed to start thinking about what you actually want from a documentation. What you like, and what you don't
+ like.
+
+C
+Mm!
+
+H
+So, eh... It's really good!
+
+C
+Okay! Thank you!

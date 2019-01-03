@@ -1,0 +1,756 @@
+1
+Interviewer:
+Okay! So today's date is the 19th of December 2018 and I'm here at the Qlik's offices and this is Christoffer MacFie talking. And I'm here with...
+
+2
+Interviewee - Quality Architect:
+[DEDUCTED]
+
+3
+Interviewer:
+And you work here at Qlik
+
+4
+Interviewee - Quality Architect:
+Yeah
+
+5
+Interviewer:
+And what is your job title?
+
+6
+Interviewee - Quality Architect:
+I think it's quality architect but I'm not sure exactly what that title means it has been changing over time so... Mainly it's just getting high quality products To keep an eye on that so we have a test and build system and stuff in place.
+
+7
+Interviewer:
+So it's a quality assurance and also architect? Somewhere...?
+
+8
+Interviewee - Quality Architect:
+Yes something like that. Architect when it comes to test structure and those aspects.
+
+9
+Interviewer:
+Okay! So we're going to talk about some APIs in general and then we're gonna talk about release notes and then we're gonna talk about online communities around software platforms. So if we start off; start off with talking about APIs and API documentation, how important would you say that API documentation is to a software platform?
+
+10
+Interviewee - Quality Architect:
+I think it's very important, especially when you use third-party, like open source code.
+
+11
+Interviewer:
+Mm
+
+12
+Interviewee - Quality Architect:
+If you've been writing there all your code yourself it's not that important if you are build a consumer.
+
+13
+Interviewer:
+Mm
+
+14
+Interviewee - Quality Architect:
+But if you are providing it to external customers or using external libraries it's important.
+
+15
+Interviewer:
+Mm. So when you look at API documentation...
+
+16
+Interviewee - Quality Architect:
+And it's also important for testability! To check if you have a bias... Then you're main focus should be testing APIs so they are intact for every release.
+
+17
+Interviewer:
+Ehm... So if we take it from the perspective that you're looking for a software platform to use. When you look at the documentation, what are you usually looking for?
+
+18
+Interviewee - Quality Architect:
+The first thing... If there is any documentation. And also their structure, is it... Can I easily find classes, functions, methods... To read on specific cases. And in your quiz here I found that I looked the examples. I started by looking at the examples, before reading each syntax.
+
+19
+Interviewer:
+Mm. Is that normally how you would do it?
+
+20
+Interviewee - Quality Architect:
+I think so yeah. Because that was my first intuition. To look at the example here.
+
+21
+Interviewer:
+Mm. To get a... Why did you look at the example?
+
+22
+Interviewee - Quality Architect:
+Getting a overview of the structure, how to use the APIs.
+
+23
+Interviewer:
+Mm.
+
+24
+Interviewee - Quality Architect:
+It's mainly a summary. The example is a summary without comments.
+
+25
+Interviewer:
+Mm. Yeah. So that's... Are API examples important to you then?
+
+26
+Interviewee - Quality Architect:
+I think I found out that they are. I haven't been... It's hard to figure out you use documentation, but this was good with a... exercise quiz to... And then I thought about how I use the APIs or the documentation of the APIs.
+
+27
+Interviewer:
+Mm. Cause that's one of the things we're trying to figure out is, what is good documentation, what do people want? Ehm.. . So you said, so you use the API examples to kind of get an understanding?
+
+28
+Interviewee - Quality Architect:
+Yeah.
+
+29
+Interviewer:
+Is that... Is there something else you would use the API examples for? Mainly just understand or how it works or...?
+
+30
+Interviewee - Quality Architect:
+I think for getting started I use the examples. And if I get an error I start looking at that specific method or class or something.
+
+31
+Interviewer:
+Is it important to get started quickly, to you?
+
+32
+Interviewee - Quality Architect:
+Yeah, it is.
+
+33
+Interviewer:
+Mm.
+
+34
+Interviewee - Quality Architect:
+I think so. Best is runnable examples.
+
+35
+Interviewer:
+Mm.
+
+36
+Interviewee - Quality Architect:
+Like you could run them in the browser, and do some changes. I think I, I mainly start with pasting the example into my own code. And then changing things to suit it.
+
+37
+Interviewer:
+Mm. Ehm... So is there any time where you're willing to not have working code quickly?
+
+38
+Interviewee - Quality Architect:
+[pause] It could be, but I can't figure out... a time right now.
+
+39
+Interviewer:
+Most of the time you really want...
+
+40
+Interviewee - Quality Architect:
+I would prefer, 100%.
+
+41
+Interviewer:
+Ehm... Maybe using this [pointing at material] or just thinking in general, ehm... Is there anything that, when looking at the API documentation that, "you always want this". Or... Ehm, something you saw that was missing here that you usually...
+
+42
+Interviewee - Quality Architect:
+It's not specific to this but I found out that if you use VSCode they are scraping, what it's... The types of different libraries.
+
+43
+Interviewer:
+Mm
+
+44
+Interviewee - Quality Architect:
+And also the JSDot-comments so you get the documentation inside the code.
+
+45
+Interviewer:
+Mm
+
+46
+Interviewee - Quality Architect:
+Even if you don't use TypeScript now. So I think that is really good. Or else you have to flick to browser and start looking for the documentation.
+
+47
+Interviewer:
+Mm okay.
+
+48
+Interviewee - Quality Architect:
+So in-line documentation, if you do an important of the libraries. It's really nice to have.
+
+49
+Interviewer:
+Mm! Are there usually any, when you come across a new documentation. Are there red flags that you... "Okay this is not good"?
+
+50
+Interviewee - Quality Architect:
+You should easily... There's two ways to come to a third-party library. First is a demo-site or something, like an example, and there's also the github-repo.
+
+51
+Interviewer:
+Mm
+
+52
+Interviewee - Quality Architect:
+So if you come to the demo you want to easily come to the github, and the other way around. So you can just get the example and the code. And in the github you look at, is it starred, how many has downloaded it, and stuff. Is it used? Is it up-to-date? That's the first thing. If it hasn't been updated in three years, I usually look for something else. Either; Or now it's included, like an old polyfill or something, so you don't need it anymore. Or it's something that had come along.
+
+53
+Interviewer:
+Mm. So if you come across something that you may want to use, but you're not sure, and the documentation is not very good, what are the consequences of that for you?
+
+54
+Interviewee - Quality Architect:
+I think it's harder to evaluate it.
+
+55
+Interviewer:
+Mm
+
+56
+Interviewee - Quality Architect:
+So you have to put more effort into something you don't believe in right now, so... It's a higher step to get it... To it. So if there is several different alternatives, I think I start out with another.
+
+57
+Interviewer:
+Mm. You drop that alternative?
+
+58
+Interviewee - Quality Architect:
+For now. And if I see the others, I can come back to that.
+
+59
+Interviewer:
+You mentioned earlier with the code examples, that it's nice to have runnable examples. Ehm... How big should usually the examples be in your opinion? Should it be just a snippet, or something runnable, or something in big context, or how much...
+
+60
+Interviewee - Quality Architect:
+Ehm... As small as possible.
+
+61
+Interviewer:
+Mm.
+
+62
+Interviewee - Quality Architect:
+Or as isolated as possible. So you just show one small feature or something like that.
+
+63
+Interviewer:
+Mm. Should it always be runnable, or should it just be...
+
+64
+Interviewee - Quality Architect:
+It's nice to... No, it's not that important. But you should be able to understand it, like... Maybe, discover one-liners and do like; you assign a variable and you use that in the next step. So, small steps in the example code as well.
+
+65
+Interviewer:
+Mm. Ehm... We can move over to talk about release notes. Ehm... How often do you read release notes?
+
+66
+Interviewee - Quality Architect:
+[pause] Not very often.
+
+67
+Interviewer:
+But it happens?
+
+68
+Interviewee - Quality Architect:
+I think I've mainly been reading what has happened in VSCode. Because it's pretty nice, they have some, since it's a UI they have some animated GIFs as well. And you can get some glimpse there. And if it looks like something you read more about it. So... Some animations is nice to have to catch the eye.
+
+69
+Interviewer:
+Interviewee - Quality Architect:
+
+
+70
+Interviewee - Quality Architect:
+Yeah.
+
+71
+Interviewer:
+So, ehm... In what circumstances do you read release notes?
+
+72
+Interviewee - Quality Architect:
+[pause] Almost never, I can say.
+
+73
+Interviewer:
+Mm
+
+74
+Interviewee - Quality Architect:
+They are not that important to me. Maybe if... I use it when a version is stepped into a new m-major, and something has breaked in our integration test.
+
+75
+Interviewer:
+Mm
+
+76
+Interviewee - Quality Architect:
+Then I start looking at the; the release notes to see what change could have br; broken our test or the usage of it.
+
+77
+Interviewer:
+Mm
+
+78
+Interviewee - Quality Architect:
+In that case it's important. But to evaluate something I don't use it. So they are good if something breaks, in a patch of minor / major.
+
+79
+Interviewer:
+Okay, so... When you... What you're looking for in release notes is not so much...
+
+80
+Interviewee - Quality Architect:
+Not new features and stuff, just breaking changes.
+
+81
+Interviewer:
+Mm. Ehm... Cause, in the material I gave you, there's one very concise release note version, and one very long one.
+
+82
+Interviewee - Quality Architect:
+Yeah.
+
+83
+Interviewer:
+How detailed should the release notes be in you opinion?
+
+84
+Interviewee - Quality Architect:
+I know I write the short. But I like the almost storytelling release note here, it was more interesting to read if I were to read it. But I mainly use it as a dictionary to look some stuff up. Then I just want some header, and what happened.
+
+85
+Interviewer:
+Mm
+
+86
+Interviewee - Quality Architect:
+So, eh... It depends.
+
+87
+Interviewer:
+Yeah. Cause it's, like all things, if a company were to release more thorough release notes, they have to spend time and therefor money on that. So it's a balance. So in your opinion, ehm... Should a company spend a lot of time on release notes or should that time be spent somewhere on the company?
+
+88
+Interviewee - Quality Architect:
+[pause] I would say some where else. But, if you want to use it as a promotion material then you have to put it somewhere. I know, we use; we put out a blog, or blog post, each month with new features. And it would be nice to be using this format as a change log. So... I can't say 100% which is the right way. It's how you want to use it. That's...
+
+89
+Interviewer:
+Yeah! So, what are the consequences for you if the release notes are poorly written? Does it affect you a lot?
+
+90
+Interviewee - Quality Architect:
+Just when trying to figure out what has broken our builds.
+
+91
+Interviewer:
+Mm
+
+92
+Interviewee - Quality Architect:
+I usually start out by reading change logs, if I can't find it there I open the commit between two versions. And that's harder, to get an overview.
+
+93
+Interviewer:
+Mm. So you have other means of getting that information, other than release notes? Cause, you say it's...
+
+94
+Interviewee - Quality Architect:
+Yeah. But then it's up to, how good is the commit messages? So... [laughter] And I know we have some discussing to have some syntax checking and stuff on the commit messages as well. So... I think, if you use; just start working with it. It's not that cumbersome to write good commit messages.
+
+95
+Interviewer:
+Mm.
+
+96
+Interviewee - Quality Architect:
+And those are really good as a baseline for writing the release notes later, so...
+
+97
+Interviewer:
+Mm.
+
+98
+Interviewee - Quality Architect:
+It could be that the release notes is, or the change log is, is auto-generated on the commit messages.
+
+99
+Interviewer:
+Ehm... Because, ehm... Because in the survey, release notes is listed as one of the least important aspects. Ehm... Do you; When you're coming across a new platform you want; may want to use, ehm... You look at the documentation as you said, and the examples and all that.
+
+100
+Interviewee - Quality Architect:
+Yeah.
+
+101
+Interviewer:
+Do you; do you ever look at the release notes before deciding? Is that..?
+
+102
+Interviewee - Quality Architect:
+I don't think I do. It's the README, the first thing that pops up on github that I read.
+
+103
+Interviewer:
+Ehm... So that... You may decide to use a software platform and then a few months later realize that the release notes were'nt that good. So you don't check that before?
+
+104
+Interviewee - Quality Architect:
+I don't think I have.
+
+105
+Interviewer:
+Ehm... Because release notes, as I said, was ranked as not very important. But when you talk to people they usually say that release notes is very important.
+
+106
+Interviewee - Quality Architect:
+Mm.
+
+107
+Interviewer:
+So there seems to be a clash there where people don't use release notes, they don't really care for them, but they also say that it's very important to have good release notes. Ehm... Why do you think; do you have any theory around why there's a clash there?
+
+108
+Interviewee - Quality Architect:
+[pause] No... I think it's... Do they think it's very important for themselves or for their customers, that are going to use it? Is it for their usage, or other usage?
+
+109
+Interviewer:
+Ehm... People tend to talk about... It's the people writing the release notes who say they are very important, but then they don't use release notes themselves. It's more that they... They've been taught that it's important it seems like . Ehm... But yeah.
+
+110
+Interviewee - Quality Architect:
+I'm not sure.
+
+111
+Interviewer:
+No, it's..!
+
+112
+Interviewee - Quality Architect:
+It could be streamlined, to make them efficient. Like use the commit message. And if they are, it's not that cumbersome to have them. And they could be used as a promotion, like sending out to existing customers or something like... "Here's a version, check it out".
+
+113
+Interviewer:
+Mm. Ehm... Mm!
+
+114
+Interviewee - Quality Architect:
+But I know that we use like Renovate, that bumps our dependencies. So... If there's a new, we take it. And then the release notes, not important. Unless, the new bump breaks something. Then you have to try to figure out what has changed.
+
+115
+Interviewer:
+But you said... You're not in a position where... Because release notes are often used when deciding if we should upgrade or not.
+
+116
+Interviewee - Quality Architect:
+Mm.
+
+117
+Interviewer:
+Are you in a position where you make that decision?
+
+118
+Interviewee - Quality Architect:
+Yeah, I think we mainly rely on our tests. We think they are so good so, if our pipeline is green, we merge to master. And... Yeah. It has been working.
+
+119
+Interviewer:
+Mm. You make; I assume you use some third-party software in your line of work, when you're testing.
+
+120
+Interviewee - Quality Architect:
+We do.
+
+121
+Interviewer:
+And maybe they occasionally release a new version, "Should we upgrade or not?". Do you use the release notes then, or how do you decide if you should upgrade?
+
+122
+Interviewee - Quality Architect:
+Yeah. I think that's the same. If our pipeline is green, we usually merge. But, that's to master. And then, when we do release, we do some external... Or more testing on that before releasing it.
+
+123
+Interviewer:
+Mm
+
+124
+Interviewee - Quality Architect:
+So to get the new code into master, we rely on the green builds. Our test on the CircleCI.
+
+125
+Interviewer:
+Mm
+
+126
+Interviewee - Quality Architect:
+But before release, we do some regression testing and manual testing. Before putting in that as a new version.
+
+127
+Interviewer:
+But that's internal in Qlik, if you should upgrade to the new...
+
+128
+Interviewee - Quality Architect:
+Yeah, like AfterWorks is the test framework that we build internally. But it's also open-source. But we rely on like Mocha and [inaudible] and those. And if we get a new version of that, we use it. But we also use it in all of our repositories, so we could make like a pre-build. We've done that. If we ain't sure on a new major, we do a pre-release. And try that on all our repos internally. So we get a pretty good status if there is anything breaking.
+
+129
+Interviewer:
+Mm. Okay. So there might be a new version of a third-party software. If it didn't break any of the tests, you upgrade.
+
+130
+Interviewee - Quality Architect:
+Yeah.
+
+131
+Interviewer:
+So you don't really use release notes even then.
+
+132
+Interviewee - Quality Architect:
+No.
+
+133
+Interviewer:
+Okay. Ehm...
+
+134
+Interviewee - Quality Architect:
+I think it's mainly if something breaks, you have to figure out what has been changed. And then release notes is good.
+
+135
+Interviewer:
+Okay. Ehm... We can move over to talk about online communities. Ehm... So, when I say that a software platform has an online community. What is that to you? What is an online community?
+
+136
+Interviewee - Quality Architect:
+Mm... I mainly look at the github pages. And the issues there. I've seen some using, what's it called. Gitte? Or Shatte? Or something. Like that's Slack for github, or something like that. Where you can post questions. But I don't use that very much. I know I have been into some of those discussions, but mainly look at github pages.
+
+137
+Interviewer:
+Mm. So how often... So let's take broad definition of like... Github and Stack Overflow, and there might be some internal, that the company hosts themselves.
+
+138
+Interviewee - Quality Architect:
+Yeah, cause I look at Stack Overflow, but I have never written anything on there.
+
+139
+Interviewer:
+Mm. But often would you say that you take help from online communities?
+
+140
+Interviewee - Quality Architect:
+Eh, that's very often. Like... But... It could be that you copy-paste, but you always have to massage the code to fit it into yours. But, sure, it's very good. Because I think it's... Again, you get the examples. I think I look at the examples on code snippets on Stack Overflow. Not just some specification for something. I want to use some code.
+
+141
+Interviewer:
+Ehm... So if you can think of a communities that you like. What do they usually have in common?
+
+142
+Interviewee - Quality Architect:
+[pause]
+
+143
+Interviewer:
+Or rather, what do you use online communities for?
+
+144
+Interviewee - Quality Architect:
+Yeah... I think it's mainly APIs. Like, how to use it. I know that I always have to look up [inaudible] and how to muck stuff. And it could be mainly that it's a third-party that is evolving a lot. They have been breaking changes, changes to their APIs. Then you have come in there again. Else you, it's a bit repetitive, the testing. You have already done it, so you have your own examples in your code, and you just want to write a new test case. So you could use an old one, and tweak that. But if they change the API, you always have to go out and find what they changed, and how you should do it now.
+
+145
+Interviewer:
+Mm. But is it more of simply... questions and answers, or is it like trying to get a deeper understanding of the software..?
+
+146
+Interviewee - Quality Architect:
+Mm... I think it's for third-party, or for libraries, it's for how to use it. But if it's a new technique I think it's Medium, is very good there. Then I just, I get an email each morning I think. And if there's anything interesting, it could check that out.
+
+147
+Interviewer:
+Mm. Medium is, is that blog posts, or...?
+
+148
+Interviewee - Quality Architect:
+Yeah. That's a platform for blog posts. And if I get something interesting in the email, like I could read up about it. But I don't use it directly. So it's just a... Getting an understanding of a new techniques. And if I have to use it I know what to google for later.
+
+149
+Interviewer:
+Mm. But it is mainly google you reach the communities through, you don't go; or do you go directly to a website?
+
+150
+Interviewee - Quality Architect:
+No. No. Google.
+
+151
+Interviewer:
+So, ehm... To get a grip on what qualities a community should have, ehm... Like, have you encountered communities that you didn't like?
+
+152
+Interviewee - Quality Architect:
+I'm sure I have. But I don't remember them. So, so if you remember a community, you're more likely to choose or use that what they say... is the best solution. Like... They get a good reputation if you get in there. Several times.
+
+153
+Interviewer:
+Mm. So, the community... should it.. Feel alive? Is that important to you?
+
+154
+Interviewee - Quality Architect:
+Yeah, it should!
+
+155
+Interviewer:
+To feel helpful?
+
+156
+Interviewee - Quality Architect:
+But also... Alive with important stuff for me. I don't want to be searching for the answers, like for... a lot of information. It's better to have small pieces, than a long blog post or something. "Indexible" solutions.
+
+157
+Interviewer:
+Do you...
+
+158
+Interviewee - Quality Architect:
+Ï should say that our webpage, the core... qlik.com the search there is a lot better than the help for Qlik Sense. So I go there all the time to find sol; or the APIs for Qlik. So... Searchable is also...
+
+159
+Interviewer:
+Mm. Is it important for you to feel apart of a community?
+
+160
+Interviewee - Quality Architect:
+No. I don't think so.
+
+161
+Interviewer:
+So you simply just go and find what you
+
+162
+Interviewee - Quality Architect:
+I just [laughter]
+
+163
+Interviewer:
+You find what you need and you leave?
+
+164
+Interviewee - Quality Architect:
+Yeah!
+
+165
+Interviewer:
+Ehm... Is it important for a community that the company behind a software is part of the community?
+
+166
+Interviewee - Quality Architect:
+Yeah, I think so. And that you see who is answering what question. If it's the company or it's a user.
+
+167
+Interviewer:
+Mm. Ehm... So, if we take the overall question again, just to put it concise. What is it that you want from a community?
+
+168
+Interviewee - Quality Architect:
+[pause] Structured, indexible solutions.
+
+169
+Interviewer:
+Mm. So when you're coming; looking for a new software platform, a solution to a problem you, and as you said you look at the API's documentation and all that. Do you also check what the online community is like before you decide?
+
+170
+Interviewee - Quality Architect:
+[pause] Not if I find good information on the github page or something. Then I don't have any reason to check out the community.
+
+171
+Interviewer:
+So the community is more of a help when you're stuck?
+
+172
+Interviewee - Quality Architect:
+I think so yeah.
+
+173
+Interviewer:
+So if the documentation was really good, almost flawless, would you still need an online community?
+
+174
+Interviewee - Quality Architect:
+No, not for my purposes, I don't think so.
+
+175
+Interviewer:
+Would you still want an online community?
+
+176
+Interviewee - Quality Architect:
+I want entry point for when I don't find my information on the web page. Where could I post? And if that is a community, then the answer is yes.
+
+177
+Interviewer:
+But do you usually post any questions? Or is it simply going in and try to find if someone has asked what you wondered, earlier?
+
+178
+Interviewee - Quality Architect:
+I start by searching. I've been posting some questions. I think it was when we were using DockerMachine and stuff. It was pretty... It wasn't very well documented and there were some issues. I started out by asking, and then I was putting some issues on the github repo.
+
+179
+Interviewer:
+Ehm... [pause] If we have some very big software platform, like React or Angular or something, that has a very big company behind it, with a lot of man hours on the documentation. And then we have something small like a library, which doesn't have a big team behind it. Ehm... Is it more important for either one of these to have an online community? Or is it equally important, or...? Which one...
+
+180
+Interviewee - Quality Architect:
+Yeah, good question... Eh... Can't say. I think... With the big company you get a community there that wants to discuss architectural changes, there's always some clever... that's been studying things and found problems. And in the small company, I think it's help they need. So I think that both need the community, or some interaction with the people behind the library.
+
+181
+Interviewer:
+Mm. Cause in the... In the first survey, the question was stated as not specifically software platforms but software tooling as well and the size of the software was kind of vague. And then communities was listed as the second most important aspect. Whereas in the second survey, where we explicitly said software platforms, it was listed somewhere in the middle in importance. Do you personally have any theory why people would want...
+
+182
+Interviewee - Quality Architect:
+So, what was the first one?
+
+183
+Interviewer:
+First one, it was the second most important aspect of all. Ehm, and I'm not sure why it listed differently. The only difference I can see is that in the second one it was explicitly software platform whereas in the first one it was kind of vague how the software; the size of the software we were talking about. Ehm... That's a bit weird to me. I'm just asking if you have any theory?
+
+184
+Interviewee - Quality Architect:
+Yeah... [pause] Yeah, it could be software, generally it could be closed-source. So you don't have; could look at issues, maybe on github and stuff. Then... Then it's more important maybe with a community, the support is...
+
+185
+Interviewer:
+For which one?
+
+186
+Interviewee - Quality Architect:
+If it's small, general software. Closed-source. Like... Spotify, I'm guessing. Their community is important to ask questions. But if it's a third-party or library on github, it's not important because you could look at the code. You could understand it, and you could post the issues there. It could be if it's open-source or closed-source. I think it's ... Open-source is the communication on github. That's a lot like, with the issues. Several issues could actually be questions. So...
+
+187
+Interviewer:
+Mm! Ehm... Okay. So... Do you have any questions for me?
+
+188
+Interviewee - Quality Architect:
+No.
+
+189
+Interviewer:
+In that case, thank you very much.

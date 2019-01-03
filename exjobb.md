@@ -1111,103 +1111,93 @@ The questions for the interviews are constructed to be able to answer this quest
 Since the interview is semi-constructed, all questions will not necessarily be asked.
 Depending on how the interviewee answer, some questions may already have been answered,
 some questions may be uninteresting to dive into, etc.
+#### A - APIs
+For the API documentation, API examples and to have working code quickly, we
+already know that is important. It's also not very surprising that it is.
+For this, we are rather trying to understand how we define 'Good' API related
 
-#### Release Notes
+**AA - General**
+
+* AA1 - How important would you say API documentation and examples are?
+
+**AB - Api Documentation**
+
+*	AB1 - When you look at API documentation, what are you usually looking for?
+    *	Is there anything in the material you always look for, or something that is missing?
+    *   When you come across an API documentation, are there any red flags you look for?
+*	AB2 - How does the API documentation quality affect you in your work?
+    * Do you abandon a software platform if the documentation is poor?
+
+**AC - Api Examples**
+
+*	AC1 - What is your goal when looking at API examples?
+    * For copy-pasting?
+    * To understand underlying structure?
+    * To simply see how it's used?
+*   AC2 - What should API examples look like?
+    * Short examples or long examples?
+    * Should it be runnable or concise?
+    * Within a big context or concise?
+*	AC3 - How does the API examples quality affect you in your work?
+
+**AD - Working Code Quickly**
+
+*	AD1 - Is it important for you to have working code quickly?
+    *	Why is it/is it not?
+*	AD2 - When can you accept to not have working code quickly?
+*	AD3 - Can you have working code quickly if the API examples and documentation is bad?
+
+#### B - Release Notes
 For release notes, we know through the survey that they are *not* considered.
 The questions have been divided into three groups: 'When are [release notes] needed",
 "What should [release notes] look like?" and "[What are the] consequences [of good/bad release notes]?"
 
 
-**When are they used?**
+**BA - When are they used?**
 
-* How often do you look at release notes?
-* In what circumstances do you look at release notes?
-* What do you look for when looking at release notes?
+* BA1 - How often do you look at release notes?
+* BA2 - In what circumstances do you look at release notes?
+* BA3 - What do you look for when looking at release notes?
 
-**What should they look like?**
+**BB - What should they look like?**
 
-* Would you say it is important that software platforms have release notes?
-* Do they need to be detailed? [USE RELEASE NOTES MATERIAL]
-    * Why/Why don't they need to be detailed?
-* How important is it for you that the release notes are thoroughly written?
-* Is there anything in particular you like about the different release notes? [USE RELEASE NOTES MATERIAL]
-* Is there anything in particular you DON’T like about the different release notes? [USE RELEASE NOTES  MATERIAL]
+* BB1 - Would you say it is important that software platforms have release notes?
+* BB2 - How detailed should they be? [USE RELEASE NOTES MATERIAL]
+    * How important is it for you that the release notes are thoroughly written?
+* BB3 - Is it worth a company's time to make thorough release notes?
+* BB4 - How do poor release notes affect you?
 
-**Final Question**
-* Release notes is ranked as the least, or amongst the least important aspect for all groups. Why do you think that is?
+**BC - Survey Anomaly**
+* BC1 - Release notes is ranked as the least, or amongst the least important aspect for all groups. Why do you think that is?
 
-#### APIs
-For the API documentation, API examples and to have working code quickly, we
-already know that is important. It's also not very surprising that it is.
-For this, we are rather trying to understand how we define 'Good' API related
 
-**General**
 
-* How important would you say API documentation and examples are?
-
-**Api Documentation**
-
-*	What do you look for in API documentation?
-    *	What constitutes a good and bad API documentation to you? [USE MATIERAL]
-        *	What do you like about these API documents?
-        *	Is there something you don’t like about these API documents?
-        *	Is there something in it that can be removed without any big effects?
-        *	Is there something that is missing?
-        *	Is there something that is very essential?
-*	How does the API documentation quality affect you in your work?
-
-**Api Examples**
-
-*	What is your goal when looking at API examples?
-    *	[Potential answers, is it one of these? Don’t ask too leading questions though.]
-        *	[Copy/Paste code?]
-        *	[Simply see how they are to be used?]
-        *	[Understand the underlying structure?]
-        *	[I just want working code quickly?]
-*	How does the API examples quality affect you in your work?
-
-**Working Code Quickly**
-
-*	Is it important for you to have working code quickly?
-    *	Why is it/is it not?
-    *	When do you want working code quickly?
-    *	When can you accept to not have working code quickly?
-    *	Can you have working code quickly if the API examples and documentation is bad?
-
-#### Online Communities
+#### C - Online Communities
 For online community, we are trying to understand why it was ranked
 so differently in the two surveys. We also try to understand why, in general,
 an online community matters.
 
-**General**
-*	When talking about software platforms, what is an online community to you?
+**CA - General**
+*	CA1 - When talking about software platforms, what is an online community to you?
+*	CA2 - If the documentation was flawless, would you not need an online community?
 
-**When are they used?**
-*	Do you often take help from online communities when using software platforms?
-*	How important is an online community around software to you?
-*	When do you usually take help from online communities?
-*	If we compare software platforms to something smaller, such as a library. Would you say it is more important or less important to have a software community around it?
+**CB - When are they used?**
+*	CB1 - How often would you say you take help from online communities?
+
+
+**CC - What should it look like?**
+
+*	CC1 - What do you want from an online community / what should it look like?
+    * What do communities that you like have in common?
+    * Is it important that a community feels alive?
+    * Is it important the community feels helpful?
+    * Is it important that the tone used in the community is positive?
+    * Is it important that the company behind the software are part of the community?
+*	CC2 - If we compare software platforms to something smaller, such as a library. Would you say it is more important or less important to have a software community around it?
     *	Why is it more/less important?
-*	Do you use any software platforms where there is no online community, or you don’t take advantage of the online community?
-*	If the documentation was flawless, would you not need an online community?
 
-**What should it look like?**
-
-*	Can you think of an online community connected to a software platform you like?
-    *	Why do you like this community?
-        *	[Does the community feel alive?]
-        *	[Does the community feel helpful?]
-    *	Do you feel like you are part of this community?
-        *	Is it important to feel part of the community to like it?
-    *	Is the company behind the software connected to this community a big part of it too?
-        *	Is it important that the company is a part of it?
-        *	Why/Why not is it important?
-    *	Can you think of an online community connected to a software platform you like?
-        *	What don’t you like about this community?
-    *	So, overall, what do you want from an online community?
-
-**Final question**
-* In the first survey, having an online community was ranked as the second most important aspect. In the second one, it’s ranked in the middle. Why do you think that is?
+**CD - Survey Anomaly**
+* CD1 - In the first survey, having an online community was ranked as the second most important aspect. In the second one, it’s ranked in the middle. Why do you think that is?
 
 
 

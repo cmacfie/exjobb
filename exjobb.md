@@ -45,28 +45,28 @@ standard for Developer Experience. There are however other standards from ISO
 
 Characteristic | Ref | Sub-characteristic | Explanation |
 |--------------|----------------|--------------------|-------------|
-|Functionality|F1|Suitability |Can software perform the tasks required?
-||F2|Accurateness |Is the result as expected?
-||F3|Interoperability| Can the system interact with another system?
-||F4|Security| Does the software prevent unauthorised access?
-|Reliability|R1|Maturity| Have most of the faults in the software been eliminated over time?
-||R2|Fault tolerance | Is the software capable of handling errors?
-||R3|Recoverability| Can the software resume working and restore lost data after failure?
-|Usability|U1|Understandability | Does the user comprehend how to use the system easily?
-||U2|Learnability | Can the user learn to use the system easily?
-||U3|Operability | Can the user use the system without much effort?
-||U4|Attractiveness| Does the interface look good?
-|Efficiency | E1|Time Behaviour | How quickly does the system respond?
-||E2|Resource Utilisation | Does the system utilise resources efficiently?
-|Maintainability|M1|Analysability | Can faults be easily diagnosed?
-||M2|Changeability | Can the software be easily modified?
-||M3|Stability | Can the software continue functioning if changes are made?
-||M4|Testability |Can the software be tested easily?
-|Portability|P1| Adaptability |Can the software be moved to other environments?
-||P2|Installability| Can the software be installed easily?
-||P3|Conformance |Does the software comply with portability standards?
-||P4|Replaceability |Can the software easily replace other software?
-|All characteristics |AC|Compliance | Does the software comply with laws or regulations?
+|Functionality|F1|Suitability |The capability of the software product to provide an appropriate set of functions to specified tasks and objectives
+||F2|Accurateness |The cap... / / ... to provide the right or agreed results or effects with the needed degree of precision
+||F3|Interoperability| The cap... / / ... to interact with one or more specified systems
+||F4|Security| The cap... / / ... to protect information and data so that unauthorised persons or systems cannot read or modify them and authrised persons or systems are not denied access to them
+|Reliability|R1|Maturity| The cap... / / ... to avoid failure as a result of faults in the software
+||R2|Fault tolerance | The cap... / / ... to maintain a specified level of performance in cases of the software faults or of infringement of its specified interface
+||R3|Recoverability| The cap... / / ... to re-establish a specified level of performance and recover the data directly affected in the case of a failure
+|Usability|U1|Understandability | The cap... / / ... to enable the user to understand whether the software is suitable, and how it can be used for particular tasks and conditions of use
+||U2|Learnability | The cap... / / ... to enable the user to learn it application
+||U3|Operability | The cap... / / ... to operate and control it
+||U4|Attractiveness| The cap... / / ... to be attractive to the user \[visually\]
+|Efficiency | E1|Time Behaviour | The cap... / / ... to provide appropriate response and processing times and throughput rates when performing its function, under stated conditions
+||E2|Resource Utilisation | The cap... / / ... to use appropriate amounts and types of resources when the software performs its function under stated conditions
+|Maintainability|M1|Analysability | The cap... / / ... to be diagnosed for deficiencies or causes of failures in the software, or for the parts to be modified to be identified
+||M2|Changeability | The cap... / / ... to enable a specified modification to be implemented
+||M3|Stability | The cap... / / ... to avoid unexpected effects from modifications of the software
+||M4|Testability |The cap... / / ... to enable modified software to be validated
+|Portability|P1| Adaptability |The cap... / / ... to be adapted for different specified enviroments without applying actions or means other than tose provided for this purpose for the software considered
+||P2|Installability| The cap... / / ... to be installed in a specified environment
+||P3|Co-existence |The cap... / / ... to co-exist with other independent software in a common enviroment sharing common resources
+||P4|Replaceability |The cap... / / ... to be used in a place of another specified software product for the same purpose in the same environment
+|All characteristics |AC|Compliance | The cap... / / ... to adhere to standards and conventions relating to the characteristic
 
 
 
@@ -366,11 +366,31 @@ to see if the importance of several language was solely based on the fact that
 people wanted their favorite programming language.
 
 
-### Linking considerations to ISO-9241
+### Linking considerations to ISO-9216-1
 
-As said before, there is no standard for DX. ISO-9421 is however a standard
+As said before, there is no standard for DX. ISO-9216-1 is however a standard
 to measure the quality of software, so comparing the aspects to this list can
-be interesting.
+be interesting. In the table below, the aspects are linked to characteristics they relate to.
+
+|		|	Functionality	|	Reliability	|	Usability 	|	Efficiency	|	Maintainability	|	Portability	|
+|	----------------	|	----------------	|	----------------	|	----------------	|	----------------	|	----------------	|	----------------	|
+|	How often the software is updated	|		|	R1	|		|		|	M3	|	P4	|
+|	I can have working code quickly	|	F1, F2	|		|	U1, U2, U3	|		|	M2	|		|
+|	The API documentation gives thorough explanations on how it works	|	F1, F2, AC	|	AC	|	U1, U2, U3, AC	|	AC	|	M1, AC	|	AC	|
+|	The API has code examples	|	F1, F2, AC	|	AC	|	U1, U2, U3, AC	|	AC	|	M1, AC	|	AC	|
+|	The documentation doesn't assume any prior expertise	|	AC	|	AC	|	U1, U2, U3, AC	|	AC	|	AC	|	AC	|
+|	The documentation has consistent language	|	AC	|	AC	|	U1, U2, U3, AC	|	AC	|	AC	|	AC	|
+|	The documentation is easy to navigate	|		|		|	U1, U2, U3, AC	|		|		|		|
+|	The official website looks professional	|		|		|	U4	|		|		|		|
+|	The pricing of the software	|		|		|	U1	|		|		|		|
+|	The release- and change notes are thorough	|	F1	|	R1	|	U1	|		|		|	P4	|
+|	The software has the same features on all different platforms	|		|		|		|		|		|	P4	|
+|	The software is compatible with different platforms	|	F3	|		|		|		|		|	P1, P2	|
+|	The software is offered in more than one programming language	|		|		|	U2	|		|		|		|
+|	The software is open source	|	AC	|	AC	|	AC	|	AC	|	M1, M2, M4, AC	|	AC	|
+|	The software uses the programming language I am most comfortable with	|	F1, F2	|		|	U1, U2, U3	|		|		|		|
+|	There exists an active online community around the software	|		|		|	U1, U2	|		|		|		|
+
 
 ### Initial Survey
 

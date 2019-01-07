@@ -797,456 +797,466 @@ then I would ask my developers
 And then they would say yes or no, and I would know
 that "Okay, we have to put in resources here".
 
----- 22.28
+C
+Mm
 
-we using the differ kg
+J
+So... So from a manger's perspective I
+think that's; that's enough for me.
 
-stuff so so from a manic perspective I
+C
+Mm.
 
-think that's that's enough for me if a
-
+J
+If we; we go a
 little bit further I think when I read
-
 the more detailed version I think that
+it was good, but I suspected that to be
+in the real documentation instead.
 
-it was good but I suspected that to be
+C
+Mm
 
-in the real documentation is there so
+J
+So for me it would be:
+"We have added these
+stuff, here's a link to the... to the documentation,
+where it's added now."
 
-for me it would be we have added these
+C
+Mm
 
-stuff here's a link to the documentation
+J
+I think that had been better for me.
 
-where it's I don't know mmm I think okay
+C
+Okay
 
-so maybe more like okay you can't use
+J
+So maybe more like: "Okay, you can't use
+this one, or use this new..." and then all the
+information on how you use an example stays in
+the real documentation.
 
-this form or use this new them all the
+C
+Mm
 
-if not how you use an example states in
+J
+Otherwise
+you duplicate it.
 
-the region documentation mmm otherwise
-
-you delicate so again from a manager
-
-perspective when you decided to use a
-
-new platform then it has to be approved
-
-its release that's something that will
-
+C
+So... Again, from a manager
+perspective, when you decided to use a
+new platform, then it has to be approved.
+Is release that's something that will
 be looked at
+before... as part of the "Are we gonna use
+this?"
 
-before as part of the are we gonna use
-
-this yeah I think that matiee the patch
-
-ones I think being your changes like
-
-that sometimes have other presentations
-
-not in the release notes section it's
-
-more like this new feature to have all
-
-these many features and I'm sure would
-
+J
+Yeah I think the... Then it wouldn't be the patch
+ones. I think bigger changes like that
+sometimes have other presentations, it's
+not in the release notes section. It's
+more like "This new feature to have all
+these [sound with hand gesture, referencing a list]
+many features and I would
 probably look at that and see if it
+matches their needs.
 
-matches their need and then probably
+C
+Mm
 
-also architects and developers to tell
-
+J
+And then the manager would probably
+ask the architects and developers to tell
 how much work they needed to put in to
+fulfill the rest of the stuff, the
+deprecated stuff. So I don't
+think the manager himself would look into that.
 
-fulfill the rest of the stuff the
+C
+Even; even before...
+Like even before something has been
+adopted... You probably; probably check
+like the pricing, you'll
+check the like... the laws surrounding it
+and
+maybe you'll check out how is the
+documentation, how is it support.
 
-deprecated stuff was known so I don't
+J
+Yeah
 
-think the manager it's even even before
-
-like even before something has been
-
-adopted you probably all probably check
-
-ok that it's like the pricing you'll
-
-infect II like lore surrounding it and
-
-maybe it'll check out how is the
-
-permutation how is it support but you
-
-probably not check ok are the release
-
+C
+But you'll
+probably not check "Ok, are the release
 notes gonna be good when we're gonna
+need them in one year"?
 
-need them in one year probably not
+J
+Probably not.
+I think that's... Unfortunately not. I would say...
+It's; I probably should. But I would rely on the
+ architects and developers to tell me if they were good enough.
 
-I think that's unfortunately not to say
+C
+Okay.
 
-it's I probably should and then I have
-
-to back a little bit on one thing since
-
-I also have a scrum master role as a
-
-manager which is not normal but in this
-
-company we have it I would be interested
-
+J
+And then... I have to back a little bit on
+one thing. Since I also have a scrum master role as a
+manager, which is not normal, but in this
+company we have it. I would be interested
 in what has actually changed when I came
+into that solution. So first I would take
+the decision on a manager level, but if I get
+into scrum master and then are more in
+an operative mode. And then I need to
+know "Okay what; what type has changed,
+what deprecated parts; and so on". Then I would
+probably read it together with the developers.
 
-into that solution so first I would take
+C
+Mm
 
-the decision on a modular but if I get
-
-into scrum master and then are more into
-
-an operative mode and then I need to
-
-know okay what what type has chance do
-
-what deprecated Partizan then I would
-
-probably read it together office it's a
-
+J
+So it's a
 little bit of a mixed role that's why
+maybe it's mixed answers.
 
-maybe it's mixed
+C
+Mm. Ehm... [pause]. Mm. We can move over to online
+community now. Ehm. So in general, when I just say that a
+software has an online community...
 
-mmm we can move over to a white
+J
+Mm
 
-community night
+C
+What
+does that mean to you?
 
-so in general when I just say that a
-
-software has an online community what
-
-does that mean to you active discussions
-
-that people are asking question and
-
+J
+Active discussions. [laughter].
+That people are asking question and
 they're getting answers quickly and
+preferably not only... An active is; answers are
+not only given by the main developer or developers.
 
-preferably not an active there are
+C
+Mm.
 
-people out there helping so in
+J
+But there are people out there helping, that's an active community.
 
-communities that you like what did they
+C
+So in communities that you like, what do they
+have in common?
 
-have in common that they are polite
-
-first and they're there they are
-
-elaborate answers to questions if
-
-someone comes with a problem also on
-
+J
+That they are polite answers [laughter]
+and they are
+elaborate answers to questions. So if
+someone comes with an... a problem, or so on,
 there are people answering to the right
+level.
 
-level because sometimes it could be
+C
+Mm
 
-people who misuse this but I have to
+J
+Because sometimes it could be
+people who misuse this. Like "Oh, I have to
+show something to my manager, please do this for me"
 
-show something to my manager please do
+C
+Yeah.
 
-this for me I don't think those but you
+J
+I don't think that's; you don't need to answer
+ those but you
+should at least support; "Ah, here's some
+help to get you started".
 
-should at least support out here some
+C
+Mm
 
-help but to get you stormed here you
+J
+And not only like... "Read the fucking manual" [laughter]
+But "Here you have the things"
 
-have this thing yeah so is it important
+C
+Yeah
 
-that the community feels alive that's a
+J
+"You can get started here".
 
-very and also as you said they take
+C
+So is it important that community feels alive?
 
-immunity must be helpful then it helpful
+J
+That's
+very important. There should be things lying around
+for a lot of time.
 
-and but also polite yeah Politis that
+C
+Yeah
 
-I've seen some communities they are an
+J
+Then it's a dead community.
 
-exception but they could be like yeah as
+C
+And also, as you said... And; and the community
+must be helpful, then?
 
-I said read the fucking that people are
+J
+Yeah, helpful and alive.
 
-trying and I think that's scaring people
+C
+But also polite, as you said?
 
-away yeah supposed to be very complex
+J
+Yeah, polite is... I've seen some communities [laughter]
+They are an exception. They could be like, as I said, "Read
+the fucking manual".
 
-and cool but it's not helping if you're
+C
+Yeah
 
-inviting we
+J
+That's when people are trying... I think that's scaring people away.
 
-like that with that turn you away from
+C
+Yeah
 
-if you'll just stop me I was using a
+J
+I know it's more like tools that's suppose to be very complex and cool,
+but it's not helping if you're inviting with the elbow like that.
 
-software platform I need to Google
+C
+Would that turn you away from; if you're just starting out using platf; software platform
+and need to Google something.
 
-something and you realize okay this is
+J
+Mm
 
-the kind of yeah it's a decision which
+C
+And you realize "Okay, this is the kind of..."
 
-goes a lot of indicators even if it's
+J
+Yeah it would lower by thoughts about it. It's a... It's a decision that
+goes through a lot of indicators. If it's like that and bad documentation then it's
+a no go directly, and it has to be a really really good tool to get started without one.
 
-like that then you have bad communicator
+C
+Ehm... And, because... As a community could either be, like for Qlik we have Qlik Branch,
+or that kind of community that's managed by Qlik. And then you have communities that only exist
+on Stack Overflow, for example.
 
-documentation that needs to know that
+J
+Mm
 
-really and because as community it could
+C
+For the
+Stack Overflow one where, it has its own
+life, is it important that the; the
+company behind the software, that they
+are a part of that community?
 
-be either be like for a click we have to
-
-branch or comma community that's managed
-
-by clique themselves and then you have
-
-like a communities that only exist on
-
-Stack Overflow for example for they is
-
-Stack Overflow one where it has its own
-
-life is it important that the the
-
-company behind the software that they
-
-are a part of that community not
-
-necessarily if taking if it's so famous
-
+J
+Not
+necessarily, if they can; if it's so famous
 that people are there and answering all
-
-the questions and they are correct to
-
-sponsors then I think the company has
-
-succeeded in something really cool so
-
-for me it would just tell me that yeah
-
-this is a really good product people are
-
+the questions and they are correct, then I think the company has
+succeeded in something really cool. So
+for me it would just tell me that, yeah
+this is a really good product. People are
 helping each other just because they
+like it. That's good.
 
-like it that's good this has also a
+C
+This has also a
+thing that's; that's a time effort, and
+therefore money, by the company that they
+spend a lot of time on answering
+community questions. How important is it
+that the company answers questions?
 
-thing that's that's a time I first and
-
-therefore money by the company that they
-
-spend a lot of time I'm answering
-
-community questions how important is it
-
-that the company answers questions I
-
-think it goes down to money question
-
-area if it's if you can get I get by
-
+J
+I think it goes down to money question, actually.
+If it's; if you can get I; get by
 without because there's a lot of people
-
-are saying these things for you then
-
-you're lucky you're a lucky company and
-
-you don't need to do that
-
-if it's not it's a niche product or if
-
+answering the things for you, then
+you're lucky, you're a lucky company, and
+you don't need to do that.
+If it's not, it's a niche product or if
 it's you're struggling to get people to
-
-work with and so on I think you have to
-
-help people are get going if you're
-
-going to create the community I think a
-
-lot about what you you probably need to
-
-have a seed the community strategy and
-
+work with it and so on, I think you have to
+help people there, to get going. If you're
+going to create the community. I think a
+lot about what... You you probably need to
+have a seed; the community strategy... And
 then you can back away if you think that
-
-the communities is working by itself in
-
+the communities is working by itself. But in
 the beginning you probably need to be
+there.
 
-there hmm so like just overall to put it
+C
+Mm. [pause] So like just overall, to put it
+concise, what what do you want from an
+online community?
 
-concise what what do you want from an
+J
+I think it's... I want
+answers to my questions, I think that's
+it. So if I'm; if; for; but; if I'm
+looking for different... If I'm evaluating
+different products. What I want for my
+community is an active community. I want
+to see that's live, there's good answers
+to questions and it feels like... Then
+it's a plus in my decision.
 
-online community I think it's I want
+C
+Mm
 
-answers to my questions I think that's
+J
+If I have
+already decided or there's only one, then
+of course I have to make due with what I
+have. But then I have the same needs but
+maybe I can have less... requirements on it.
+More or less because
+I have to. I have to use it,
 
-it so if I'm if further but if I'm
-
-looking for different from evaluating
-
-different products what I want for my
-
-community is an active community I want
-
-to see that's live there's good answers
-
-to questions and it feels like then then
-
-it's a plus in my decision mmm if I have
-
-already decided or there's only one then
-
-of course I have to make do with what I
-
-have but then I have the same needs but
-
-maybe I can have less more less because
-
-I have to I have to use it so so let's
-
+C
+So let's
 say that there was such a thing as a
+flawless documentation, would you still
+need an online community?
 
-flawless documentation would you still
+J
+Not if I didn't
+have any questions... A flawless documentation gives all the answers I need.
 
-need an online community not if I didn't
+C
+Mm
 
-have any documentation gives all I need
+J
+So no, no community needed.
 
-mmm okay so yes that's also a any
-
-company could invest energy in making
-
+C
+'cause that's also a... A company could
+invest energy in making
 the community more alive or making API
+documentation better. So... Making the
+documentation better could replace a
+community, the need for a community, you'd say?
 
-documentation better so making the
-
-documentation better it could replace a
-
-community the need for a community you
-
-say yeah
-
-but the I think that is it's a little
-
-bit dependent that area because it could
-
+J
+Yeah. I would say that.
+But I think that... It's a little
+bit dependent that area, because it could
 be really hard to provide examples which
-
 are good enough for most people who
+comes and enters the area
 
-comes an interest area mm-hmm
+C
+Mm
 
-while a community or more maybe if
-
-they're willing they can put the
-
-solution in perspective to the question
-
-which a documentation couldn't do so if
-
-you have an area which are very generic
-
-for example you can do whatever with it
-
-and then people come in are able to do
-
-this fun stuff then I guess a community
-
+J
+While a community are more... Maybe, if
+they're willing, they can put the
+solution in perspective to the question,
+which a documentation couldn't do. So if
+you have an area which are very generic,
+for example you can do whatever with it,
+and then people come in "Ah I want to do
+this fun stuff", then I guess a community
 could catch that person easier than our
+documentation, which would be very generic.
+"Okay, I don't know if I can do this or not".
 
-documentation we should be very generic
+C
+Mm
 
-in them okay don't really know if I can
-
-do this or not
-
-mmm the communique yeah of course you
-
-can you just use these four or five
-
+J
+And the community says "Yeah of course you
+can! You just use these four or five
 different calls and then something like
+this, and here's a very easy..."
 
-this and here's a very easy to see it so
+C
+So in; in reality they're do there is a need
+of... For an online community?
 
-in in reality they're do there is a need
-
-of for an online community yeah if it's
-
-a very generic product because you said
-
-the perfect or perfect augmentation
-
-would have a solution for requesting
-
-you're kidding okay so so if but if you
-
-step down to a more realistic approach
-
-yes I think that our it exists there
-
+J
+Yeah if it's
+a very generic product. Because you said
+the perfect; the perfect documentation
+would have a solution for every question you can have.
+So; so... But if you
+step down to a more realistic approach,
+yes, I think there are, there exists; there
 exists companies and solutions which
+would require a community.
 
-would require community have any
+C
+Ehm... Do you have any
+questions for me, or something you
+thought I would ask that I didn't?
 
-questions for me or something you
+J
+No I think it was good that
+you asked what my
+role was I think it's very important here, since I'm a hobby...
 
-thought I would ask that I didn't know I
+C
+Yeah!
 
-think it was good at the Oscar what my
+J
+...interest and...
 
-role was I think it's very important to
+C
+Yeah I felt like I needed to steer it more towards having that perspective.
 
-to steer it yeah but now getting that
-
-perspective I think when I started
-
-thinking here different actually so I
-
-started answering for two different
-
-perspective we just might be a little
-
-bit confusing so maybe I should just
-
-describe my previous row
-
+J
+I think when I started
+thinking here my two roles in this company here
+and another company is a little bit different actually so I
+started answering from two different
+perspectives, which might be a little
+bit confusing. So maybe I should just
+describe that in my previous role,
 I was a product owner and a little bit
-
-of response over purchasing in my
-
-current we're working purely know the
-
-source more my role is more technical so
-
-I have a large interest in solutions but
-
+of response over purchasing. In my
+current we're working purely in open
+source. More... my role is more technical so
+I have a large interest in the solutions but
 not purchasing decision since most
+things are for free in open source.
+And it's the technology which rules. So
+they are different somehow,
+these different roles.
 
-things are for free you know the source
+C
+Ehm... Mm.
 
-and it's the technology which rules so
+J
+The "open-source"-word is actually complicating it a
+little bit there, you don't have this
+historically "Ok, the manager stands for
+the money and and the developers for the technology".
+It's a little bit new world.
 
-they are different somehow
+C
+Yeah...
 
-these different roles mmm open-source
+J
+So that's something you might pick up here.
 
-bird is actually complicating it a
-
-little bit you don't have this
-
-historically ok the manager stands for
-
-the money and and the developers for
-
-their so that might be something you can
-
-pick up here yeah yes what I made it
-
-clear your role as India we had a good
-
-perspective from the nominal okay thanks
+C
+Yeah... When I made that clear, you're role, I think the...
+We had a good perspective from then on. Ehm... Okay! Thank you.

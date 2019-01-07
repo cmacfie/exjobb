@@ -1,0 +1,835 @@
+1
+Interviewer:
+Okay today's date is the 14th of December 2018 and we are here at Qlik offices and this is Christoffer MacFie talking. And I'm here with...
+
+2
+Interviewee - Development Manager:
+[DEDUCTED]
+
+3 - AA1
+Interviewer:
+Eh... And we're gonna talk a little bit about mainly three topics: APIs in general and release notes and online communities around software platforms. Ehm... So, in general how important would you say that API documentation is?
+
+4 - AA1
+Interviewee - Development Manager:
+If I start working with something I think it's really important actually because I've started with different products and... when; and you thought about the products; quality of the projects; the fun item in it... it's hard connection to the API documentation. I have a home assistant fresh in mind [laughter] which I'm using right now which I don't like at all after a couple of hours in it. It's really hard to find some stuff.
+
+5 - AA1
+Interviewer:
+Because the documentation is...
+
+6 - AA1
+Interviewee - Development Manager:
+Yeah I think it was scattered and it was... I couldn't find everything I wanted so it; it seems to be around in blogs and posts everywhere.
+
+7
+Interviewer:
+Mm
+
+8 - AA1
+Interviewee - Development Manager:
+But they are one date in time, and since it's not a stable product it's 0.8 something something. Ehh... they might not work, and the; then I want to go to the main page and I could find stuff there... but I think they were were lacking examples or lacking the full picture to really get what I wanted.
+
+9
+Interviewer:
+Mm
+
+10 - AA1
+Interviewee - Development Manager:
+So that's a problem I think.
+
+11 - AB1
+Interviewer:
+So when you look at API documentation... What are you generally looking for, what do you want from a documentation?
+
+12 - AB1
+Interviewee - Development Manager:
+I'm lazy so first of all examples. [laughter]. Just like a lot of people. And then... So first examples, then it's the more broader picture. Does it look like something I would understand or is it.. is it scattered a lot of different areas and so on.
+
+13
+Interviewer:
+Mm.
+
+14 - AB1
+Interviewee - Development Manager:
+And I think the reason for that... You're looking at so many different small products in the word so before you want to invest a lot of time in it you try to or you... Maybe you do it without knowing, but you assess the quality based on what you see the first five minutes or something.
+
+15
+Interviewer:
+Mm.
+
+16 - AB1
+Interviewee - Development Manager:
+So you; you start looking into it and yes you shouldn't play down by look and feel on that because that; if it's fresh in you and updated, yes it's good and it's positive, if it looks like they are asking others to continue; I think that's a positive thing as well...
+
+17
+Interviewer:
+Mm.
+
+18 - AB1
+Interviewee - Development Manager:
+But I think it goes down to examples and then, does it feel full is it; is there enough things? Can I see in the beginning that all it looks like it's covers the ideas I had about this. So it's not; if I click on something it's like "Yeah there's; you have to look into this repo to find this; to find this".
+
+19
+Interviewer:
+Mm.
+
+20 - AB1
+Interviewee - Development Manager:
+Or even worse, it's in French. [laughter] Like one of the things I saw. "It's; it's pending translation, can you do the use Google Translate". And me like: "No? Sorry."
+
+21 - AB1
+Interviewer:
+You mentioned API examples, they were very important to you.
+
+22 - AB1 - AD1
+Interviewee - Development Manager:
+They are because... Since I'm lazy [laughter] I want to get something started fast and then I want to invest, and I think that's; the the reason is for me to get caught up in something. If I... If I want to invest, I can invest as much time as I can, depending priority... But; but to know if I should do it I tend to look at examples and ideas on how to accomplish something, because I want to know do I need to write like 20 lines of code to do it, or is it three? And if it's three, is it's actually doing what I want to,  or do I need to do a lot of weird stuff with the three lines to make it work
+
+23 - AD1
+Interviewer:
+Mm. So do you, as it... Having working out quickly is important to you.
+
+24 - AD1
+Interviewee - Development Manager:
+Mm
+
+25 - AC1
+Interviewer:
+Do you use the... That's; Is that the main thing you use the examples for, to just copy paste to have something going, or...
+
+26 - AC1
+Interviewee - Development Manager:
+I think it's to get started.
+
+27
+Interviewer:
+Mm
+
+28 - AC1
+Interviewee - Development Manager:
+Because I like the idea of having something and build up on that. And I very rarely think about "Okay let's use this bakery" and then I read through the whole API, and then I start working. No. I go to the first example I can find. I type in the example, copy paste it, and then I look at; I run it.
+
+29
+Interviewer:
+Mm.
+
+30 - AC1
+Interviewee - Development Manager:
+"Ahh, cool it looks like this, fun.", and then "Okay what does this method do?" and then I go and look at that meth; "Okay, ahh, that's how it..." and then I do something more and then I realized that maybe I should know a little bit more [laughter] because I'm just patching here. Then I tend to read a little bit more about it, maybe how we should do it.
+
+31
+Interviewer:
+Okay
+
+32 - AC1
+Interviewee - Development Manager:
+But I like to play around before I... I guess I'm not; I'm not like a senior developer working on a feature I go to release somewhere so... It's also because I'm; it's hobby project I'm looking..
+
+33 - AD2
+Interviewer:
+Mm. So when are you willing to accept not having working code quickly?
+
+34 - AD2
+Interviewee - Development Manager:
+If; if I have an assignment I really want; need; know what to do and I have some time, I know... put for this.
+
+35
+Interviewer:
+Mm.
+
+36 - AD2
+Interviewee - Development Manager:
+And maybe it's; it's a more complex task I... I know that I need to solve and I have already thought in my mind that I need to invest more than like... "Here's two hours for this to get started"
+
+37
+Interviewer:
+Mm.
+
+38 - AD2
+Interviewee - Development Manager:
+Maybe I understand "This is; I'm going to do a new scheduling system for this and that" and I know; I know that it requires a lot of... writing a state machine or something... Then I know: Okay I already know that I need to that's quite a long time and I've heard that this is a good API or this is a good project,, then I would start to work, um, you know...
+
+39
+Interviewer:
+So one of the things we're trying to understand is... what exactly is good documentation?
+
+40
+Interviewee - Development Manager:
+Mm.
+
+41 - AB1
+Interviewer:
+So if we use the examples, is there something there that you thought of "Okay this is something I'll always expect from a good documentation"? Is there something missing? Something made that made you react?
+
+42 - AB1
+Interviewee - Development Manager:
+I think there was a class or something where it; there was not an explanation if it was a baker, or I don't remember the one. There was one which only had information in; about... See here... I think it was Baker API, where they; it doesn't say... Let me check here. [flips through papers] Where it was; it was the super engine. I read; I could get  more from the release notes than I could from the real documentation
+
+43
+Interviewer:
+Mm
+
+44 - AB1
+Interviewee - Development Manager:
+And I don't like that because, eh.. It's good with a release note but it's one item in time. So I want the real documentation to, eh... To actually mirror that. And I think it was when you created an engine, the super engine. Or something like that. There was no information about that in the real... I think it was only create engine...
+
+45 - AB1
+Interviewer:
+Yeah... I don't think there's any... thing that's actually is dedicated to the super engine here.
+
+46 - AB1
+Interviewee - Development Manager:
+[flips through papers] Yeah, I wanted to know, because I had to use it in the... [laughter] So i thought "Was does that do, what is it?". And I thought like... But then you caught my intention; attention apparently because I was looking more; for more information
+
+47
+Interviewer:
+Yeah.
+
+48 - AB1
+Interviewee - Development Manager:
+...just example. But that was one thing. I think it was getting a... When you created a new Baker, what... you; you're supplying the engine but there's no explanation of the constructor of the baker. So I was missing that.
+
+49 - AB1
+Interviewer:
+But if we talk more in general about how we can could; should construct a documentation. Is there anything; Is; Are there any red flags when you see; you encounter a new software platform and read the documentation. Are there any red flags that you think "Ok this is..."
+
+50 - AB1
+Interviewee - Development Manager:
+Yeah, if you have a lot of properties, parameters or something which are list; just listed without any description on it I think that's bad. I also don't like if there is no examples, as I said before. I really like to have some example in the beginning of a class showing... Or whatever it is, a library or something. Just showing: "This is a simple example", and then you can use that to navigate down. So a simple one, maybe an advanced one as well, but have something like that in the beginning is really important for me.
+
+51 - AC2
+Interviewer:
+How much of a should they... Should the example be more of a snippet or should, it be put in a context. More... How much of a context is needed?
+
+52 - AC2
+Interviewee - Development Manager:
+I think it's depends on what type of area it is. If it's, uh, if it's a utility library, I mean... That's; A snippet is good enough. And if it's an item doing someth; If it's; Let's say, ehh, we have those projects which are, eh... Let's reading statistics from github for example. I just looked at that today [laughter].
+
+53
+Interviewer:
+Mm
+
+54 - AC2
+Interviewee - Development Manager:
+And they; they had an example: "This is how you should do it" and like "Okay that's a good example". "I have two factor authentication, what do i do?" Nothing in example, but it's good enough! I can understand how big the, the... The library looks like based on example of what I can do. Then I search further from my special case which is outside example. So that was good for that one. If; if there would be a full solution where I had to install something to get it going, then I would assume that there was an example somewhere. Because if; if the first thing is to... I think that is the speed to run something, which are determining it. So in our case in Qlik Core it would be that if there wouldn't be any easy way to set up the engine, and quickly pull it down... I wouldn't bother, because it's too long time for me to... "Okay now I have to download something or fill in a form".
+
+55
+Interviewer:
+Mm
+
+56 - AC2
+Interviewee - Development Manager:
+I don't know. A lot of stuff before I can even get it running, the small snippet I have here. That's dangerous, I think. Then you're into this, that... prob; I have to assign a lot of time on it and make sure that I make it methodically and set up my IDE, so that's...
+
+57 - AC2
+Interviewer:
+Okay so... The... The size of the example depends on the context of the...
+
+58 - AC2
+Interviewee - Development Manager:
+Yes. So I would say in most cases it's how fast I can get something up and running. I will have a lot better feeling about the stuff if a; if someone has made a very fast guide on just getting something up.
+
+59
+Interviewer:
+Mm
+
+60 - AC2
+Interviewee - Development Manager:
+Then I can evaluate if I would like to take this, or one of the three other items I found for this area. I mean, if it's like a helper library for example. Is it crucial? I would say. If it would be an XML parser or something. If I had, I don't know, there was hundreds of them on the web. Which one should I choose? Probably the one which is the most popular. And then there is three which are popular. Then it needs to be very quick.
+
+61
+Interviewer:
+Mm
+
+62 - AC2
+Interviewee - Development Manager:
+Easy way to get it running for me to understand, "Okay I should use this one".
+
+63
+Interviewer:
+Mm. I didn't mention him before we started the interview, what is your role here at Qlik?
+
+64
+Interviewee - Development Manager:
+I'm a development manager for the Qlik core team. I'm not developer per say, here. Wannabe! [laughter]. Hobby dev, eh... But my education is...
+
+65
+Interviewer:
+So what is your, eh... Tasks during the day as a...
+
+66
+Interviewee - Development Manager:
+So I... I would say in this; in this form here it's, eh... I'm a people manager and I'm, a... I think the roles of scrum master or triad... one part of a triad which means that I'm part of the... planning the work but also about suggesting solutions or priorities in the team. A little bit of product [inaudible] together with architect and a product designer. So it's a mix of those things. And development is, I would say, it's a minimal part.
+
+67
+Interviewer:
+Mm
+
+68
+Interviewee - Development Manager:
+I use it because I like to understand what we're doing in the team, and of interest. I think in my role you could get out; get a away without knowing anything, but you had to work in a different way.
+
+69
+Interviewer:
+Mm. So in as part of your role you don't have to read a lot of documentation, it's more when you're working on side projects?
+
+70
+Interviewee - Development Manager:
+Yes. So it's... If I'm doing something in the code here, I'm trying to do sometimes [laughter], I do it of course but it's not my main... No it's not my part of the work.
+
+71
+Interviewer:
+Mm. So... But you're... Like if Qlik were to use a new software platform you're still part of the decision-making to use that platform? Or are you taking; listening to for example architects and what they want to use and you approve that, or what's your roll?
+
+72
+Interviewee - Development Manager:
+Yeah I'm part of it, but I will rely; If an architect told that "I want this because of that" I would yield. Because I would never, like, say anything against them if it's; if I don't have any [inaudble laughter]. So no, that's true. I would probably suggest, and based on my experience, suggest what I believe... My idea of a good platform.
+
+73 - AD3
+Interviewer:
+Mm... [pause] Do you think it; is working card quickly just a consequence of good documentation and API examples, or is it a separate aspect?
+
+74 - AD3
+Interviewee - Development Manager:
+No I think it's the same actually. Yeah, I think it's there's; every library needs to sell itself and prove its use.
+
+75
+Interviewer:
+Mm
+
+76 - AD3
+Interviewee - Development Manager:
+And I think one way is to do it like that. You could have the most simple one and that will be a lot harder to sell to people if it's not easily set up and done.
+
+77 - AA1
+Interviewer:
+Mm. Ehm... [pause]. Because we if we... It would be interesting to get a... In these interviews I'm talking directly to architects and developers and such. But now we have a manager role here which isn't, as you say, directly involved in the documentation reading in its work role. So would you say that you... How much of an interest in your work role do you take in API documentation of a software platform that would be used in the product, for example?
+
+78 - AA1
+Interviewee - Development Manager:
+The platform for how we write documentation, or..?
+
+79 - AA1
+Interviewer:
+We could take; we could take both examples. Like if Qlik were to use another software platform in in its product, and it had to be approved and all that.
+
+80
+Interviewee - Development Manager:
+Mm
+
+81 - AA1
+Interviewer:
+How much of an interest you take in your working role for that?
+
+82 - AA1
+Interviewee - Development Manager:
+I think take... It's hard to say how much, but I take interest in it.
+
+83
+Interviewer:
+Mm
+
+84 - AA1
+Interviewee - Development Manager:
+Because I... Let's say a simple one like a UI framework, or something like that. I want to know why we're choosing a special framework.
+
+85
+Interviewee - Development Manager:
+Mm
+
+86 - AA1
+Interviewer:
+And I think it's; it's twofold. One is of course the one which are important to my role. Will this be something which is valuable... Not just today, but in two years or something like that.
+
+87
+Interviewer:
+Mm
+
+88 - AA1
+Interviewee - Development Manager:
+Which is something that works well with competence we have in the team and in the surroundings. Did we choose something weird because it's fun? We have to have a really good reason for that. So those are the... And then of course how live that one is. If we're ever starting to, maybe not in the my current role, but in my previous role where we bought... Software platforms then it was very important that they are maintained correctly and that... they are cost efficient and that we get the support we need.
+
+89
+Interviewer:
+Mm
+
+90 - AA1
+Interviewee - Development Manager:
+So all those questions are very important to me. And then I would say the rest is just my technical interest. I feel... It's not obliged, but it's fun to know about those things, so that's the other part. But not so specific.
+
+91 - AA1
+Interviewer:
+So it's... Those things you mentioned is that something that... Is there some things that only managers care about that developers or architects wouldn't care about when using a... When it comes to documentation?
+
+92 - AA1
+Interviewee - Development Manager:
+I think that developers tend to... Play down the need for production worthy code. [laughter] It could be that... It's not that it's missed out, but at least in some places it's; it's... It looks good, if they it's fun to work with, it's good. And I totally understand that, but sometimes it could be that you also have... Have it a factory environment and if something breaks down in that factory you will lose a lot of money each minutes or so. Then you have to look into a lot of other stuff like is there any... Support contracts here which make sure that this can't happen, or there is a percentage of times they're going to happen because that's going to be a discussion I have if I buy that sort of support contract. I would think developers don't really want to talk about those things. They're; It's their deal, it's more or less purchase; purchasing discussion and like support discussion. And that, me as a developer [manager], I think you know I'm more responsible for those.
+
+93
+Interviewer:
+Mm
+
+94 - AA1
+Interviewee - Development Manager:
+So in my current role we don't have that many of those, because we're using mostly open source code. Work in open source world where there are other things at play, which is more important. Like how well is this adopted by the majority of the open source world, and how much maintenance is it, and so on. And I was a; Historically it's not there; the developer; the manager's primary knowledge.
+
+95
+Interviewer:
+Mm
+
+96 - AA1
+Interviewee - Development Manager:
+So here I depend a little more on architects by taking those decisions. And maybe that's also why I want to dig more into this because I need to understand.
+
+97
+Interviewer:
+Mm
+
+98 - AA1
+Interviewee - Development Manager:
+So I can be support when; when we're taking such decisions.
+
+99
+Interviewer:
+Mm! If we move over to release notes.
+
+100
+Interviewee - Development Manager:
+Mm!
+
+101 - BA1
+Interviewer:
+How often would you say that you look at release notes?
+
+102 - BA1
+Interviewee - Development Manager:
+I actually do! [laughter]. The reason was last time  that I wanted to help out in the team when we  were doing automatic upgrades. I thought "Okay, I have to see how it's done.". So as I went into the "Ah okay, there's a failed test. Okay, I need to understand why", and then there was a link to the release notes where I can see why. And then I saw "Oh this is nothing I can fix" [laughter]. "Okay, let's leave that [laughter] to a real developer". So that's; that's the thing. Otherwise it; I always say it's for my... If I'm doing a hobby product.
+
+103
+Interviewer:
+Mm
+
+104 - BA1
+Interviewee - Development Manager:
+I might do it if it's a; I know it's zero point version because that might break; break my existing configuration.
+
+105
+Interviewer:
+Mm
+
+106 - BA1
+Interviewee - Development Manager:
+But it's hobby. So, yeah.
+
+107 - BA1 - BA2 - BA3
+Interviewer:
+Okay. Because once again, it's interesting to see if release notes matter at all to managers. Because we'll get the perspective of architects and developers from other interviews. So do you think, general;  managers in general, or you, care about release notes?
+
+108 - BA1 - BA2 - BA3
+Interviewee - Development Manager:
+I would say from from a manager perspective I care if it breaks my stuff, and if I need to add any resources to this. That's my perspective. So nothing detailed, like I said that's not something I would look into as a manager. If I'm going to; if we only talk about "Okay should we upgrade to this solution", and I would proc; and I would participate in a meeting where we took the decision, then I would be interested.
+
+109
+Interviewer:
+Mm
+
+110 - BA1 - BA2 - BA3
+Interviewee - Development Manager:
+Because I want to know how big of a change, and how much time do we need to invest in such a change.
+
+111
+Interviewer:
+Mm
+
+112 - BA1 - BA2 - BA3
+Interviewee - Development Manager:
+So that's very important for me. And... So for major releases... That I think that's the most important for a manager. Small patches, I don't think...
+
+113
+Interviewer:
+Mm
+
+114 - BA1 - BA2 - BA3
+Interviewee - Development Manager:
+They are only important if something has broken and  you're looking for a fix.
+
+115 - BB2 - BB3
+Interviewer:
+Mm... So in the material we had a... Two extremes. One very short version and one quite elaborate version.
+
+116
+Interviewee - Development Manager:
+Mm
+
+117 - BB2 - BB3
+Interviewer:
+Because it's... When it comes to writing release notes it's a... I mean, you have to... A company has to spend time and therefore money in order to have more thorough release notes, and it's a balance to... Between these two, how much should you write? Do you have any opinion on how much, how thorough should the release notes...
+
+118 - BB2 - BB3
+Interviewee - Development Manager:
+I think the short one... For a manager I think that was enough. Because it said that there are changes in this area.
+
+119
+Interviewer:
+Mm
+
+120 - BB2 - BB3
+Interviewee - Development Manager:
+And I wouldn't look into it [laughter]. "Okay there are changes, and it looks like  like they they've added some stuff, and deprecated some stuff, and oh shit, they have deprecated something, and then I would ask my developers 'Are we using the deprecated stuff?'" [laughter] And then they would say yes or no, and I would know that "Okay, we have to put in resources here".
+
+121
+Interviewer:
+Mm
+
+122 - BB2 - BB3
+Interviewee - Development Manager:
+So... So from a manger's perspective I think that's; that's enough for me.
+
+123
+Interviewer:
+Mm.
+
+124 - BB2
+Interviewee - Development Manager:
+If we; we go a little bit further I think when I read the more detailed version I think that it was good, but I suspected that to be in the real documentation instead.
+
+125
+Interviewer:
+Mm
+
+126 - BB2
+Interviewee - Development Manager:
+So for me it would be: "We have added these stuff, here's a link to the... to the documentation, where it's added now."
+
+127
+Interviewer:
+Mm
+
+128 - BB2
+Interviewee - Development Manager:
+I think that had been better for me.
+
+129
+Interviewer:
+Okay
+
+130 - BB2
+Interviewee - Development Manager:
+So maybe more like: "Okay, you can't use this one, or use this new..." and then all the information on how you use an example stays in the real documentation.
+
+131
+Interviewer:
+Mm
+
+132 - BB2
+Interviewee - Development Manager:
+Otherwise you duplicate it.
+
+133 - BA2
+Interviewer:
+So... Again, from a manager perspective, when you decided to use a new platform, then it has to be approved. Is release that's something that will be looked at before... as part of the "Are we gonna use this?"
+
+134 - BA2
+Interviewee - Development Manager:
+Yeah I think the... Then it wouldn't be the patch ones. I think bigger changes like that sometimes have other presentations, it's not in the release notes section. It's more like "This new feature to have all these [sound with hand gesture, referencing a list] many features and I would probably look at that and see if it matches their needs.
+
+135
+Interviewer:
+Mm
+
+136 - BA2
+Interviewee - Development Manager:
+And then the manager would probably ask the architects and developers to tell how much work they needed to put in to fulfill the rest of the stuff, the deprecated stuff. So I don't think the manager himself would look into that.
+
+137 - BA2
+Interviewer:
+Even; even before... Like even before something has been adopted... You probably; probably check like the pricing, you'll check the like... the laws surrounding it and maybe you'll check out how is the documentation, how is it support.
+
+138
+Interviewee - Development Manager:
+Yeah
+
+139 - BA2
+Interviewer:
+But you'll probably not check "Ok, are the release notes gonna be good when we're gonna need them in one year"?
+
+140 - BA2
+Interviewee - Development Manager:
+Probably not. I think that's... Unfortunately not. I would say... It's; I probably should. But I would rely on the  architects and developers to tell me if they were good enough.
+
+141
+Interviewer:
+Okay.
+
+142 - BA2
+Interviewee - Development Manager:
+And then... I have to back a little bit on one thing. Since I also have a scrum master role as a manager, which is not normal, but in this company we have it. I would be interested in what has actually changed when I came into that solution. So first I would take the decision on a manager level, but if I get into scrum master and then are more in an operative mode. And then I need to know "Okay what; what type has changed, what deprecated parts; and so on". Then I would probably read it together with the developers.
+
+143
+Interviewer:
+Mm
+
+144 - BA2
+Interviewee - Development Manager:
+So it's a little bit of a mixed role that's why maybe it's mixed answers.
+
+145 - CA1
+Interviewer:
+Mm. Ehm... [pause]. Mm. We can move over to online community now. Ehm. So in general, when I just say that a software has an online community...
+
+146
+Interviewee - Development Manager:
+Mm
+
+147 - CA1
+Interviewer:
+What does that mean to you?
+
+148 - CA1
+Interviewee - Development Manager:
+Active discussions. [laughter]. That people are asking question and they're getting answers quickly and preferably not only... An active is; answers are not only given by the main developer or developers.
+
+149
+Interviewer:
+Mm.
+
+150 - CA1
+Interviewee - Development Manager:
+But there are people out there helping, that's an active community.
+
+151 - CC1
+Interviewer:
+So in communities that you like, what do they have in common?
+
+152 - CC1
+Interviewee - Development Manager:
+That they are polite answers [laughter] and they are elaborate answers to questions. So if someone comes with an... a problem, or so on, there are people answering to the right level.
+
+153
+Interviewer:
+Mm
+
+154 - CC1
+Interviewee - Development Manager:
+Because sometimes it could be people who misuse this. Like "Oh, I have to show something to my manager, please do this for me"
+
+155
+Interviewer:
+Yeah.
+
+156 - CC1
+Interviewee - Development Manager:
+I don't think that's; you don't need to answer those but you should at least support; "Ah, here's some help to get you started".
+
+157
+Interviewer:
+Mm
+
+158 - CC1
+Interviewee - Development Manager:
+And not only like... "Read the fucking manual" [laughter] But "Here you have the things"
+
+159
+Interviewer:
+Yeah
+
+160 - CC1
+Interviewee - Development Manager:
+"You can get started here".
+
+161 - CC1
+Interviewer:
+So is it important that community feels alive?
+
+162 - CC1
+Interviewee - Development Manager:
+That's very important. There should be things lying around for a lot of time.
+
+163
+Interviewer:
+Yeah
+
+164 - CC1
+Interviewee - Development Manager:
+Then it's a dead community.
+
+165 - CC1
+Interviewer:
+And also, as you said... And; and the community must be helpful, then?
+
+166 - CC1
+Interviewee - Development Manager:
+Yeah, helpful and alive.
+
+167 - CC1
+Interviewer:
+But also polite, as you said?
+
+168 - CC1
+Interviewee - Development Manager:
+Yeah, polite is... I've seen some communities [laughter] They are an exception. They could be like, as I said, "Read the fucking manual".
+
+169
+Interviewer:
+Yeah
+
+170 - CC1
+Interviewee - Development Manager:
+That's when people are trying... I think that's scaring people away.
+
+171
+Interviewer:
+Yeah
+
+172 - CC1
+Interviewee - Development Manager:
+I know it's more like tools that's suppose to be very complex and cool, but it's not helping if you're inviting with the elbow like that.
+
+173 - CC1
+Interviewer:
+Would that turn you away from; if you're just starting out using platf; software platform and need to Google something.
+
+174
+Interviewee - Development Manager:
+Mm
+
+175 - CC1
+Interviewer:
+And you realize "Okay, this is the kind of..."
+
+176 - CC1
+Interviewee - Development Manager:
+Yeah it would lower by thoughts about it. It's a... It's a decision that goes through a lot of indicators. If it's like that and bad documentation then it's a no go directly, and it has to be a really really good tool to get started without one.
+
+177 - CC1
+Interviewer:
+Ehm... And, because... As a community could either be, like for Qlik we have Qlik Branch, or that kind of community that's managed by Qlik. And then you have communities that only exist on Stack Overflow, for example.
+
+178
+Interviewee - Development Manager:
+Mm
+
+179 - CC1
+Interviewer:
+For the Stack Overflow one where, it has its own life, is it important that the; the company behind the software, that they are a part of that community?
+
+180 - CC1
+Interviewee - Development Manager:
+Not necessarily, if they can; if it's so famous that people are there and answering all the questions and they are correct, then I think the company has succeeded in something really cool. So for me it would just tell me that, yeah this is a really good product. People are helping each other just because they like it. That's good.
+
+181 - CC1
+Interviewer:
+This has also a thing that's; that's a time effort, and therefore money, by the company that they spend a lot of time on answering community questions. How important is it that the company answers questions?
+
+182 - CC1
+Interviewee - Development Manager:
+I think it goes down to money question, actually. If it's; if you can get I; get by without because there's a lot of people answering the things for you, then you're lucky, you're a lucky company, and you don't need to do that. If it's not, it's a niche product or if it's you're struggling to get people to work with it and so on, I think you have to help people there, to get going. If you're going to create the community. I think a lot about what... You you probably need to have a seed; the community strategy... And then you can back away if you think that the communities is working by itself. But in the beginning you probably need to be there.
+
+183 - CC1
+Interviewer:
+Mm. [pause] So like just overall, to put it concise, what what do you want from an online community?
+
+184 - CC1
+Interviewee - Development Manager:
+I think it's... I want answers to my questions, I think that's it. So if I'm; if; for; but; if I'm looking for different... If I'm evaluating different products. What I want for my community is an active community. I want to see that's live, there's good answers to questions and it feels like... Then it's a plus in my decision.
+
+185
+Interviewer:
+Mm
+
+186 - CC1
+Interviewee - Development Manager:
+If I have already decided or there's only one, then of course I have to make due with what I have. But then I have the same needs but maybe I can have less... requirements on it. More or less because I have to. I have to use it,
+
+187 - CA2
+Interviewer:
+So let's say that there was such a thing as a flawless documentation, would you still need an online community?
+
+188 - CA2
+Interviewee - Development Manager:
+Not if I didn't have any questions... A flawless documentation gives all the answers I need.
+
+189
+Interviewer:
+Mm
+
+190 - CA2
+Interviewee - Development Manager:
+So no, no community needed.
+
+191 - CA2
+Interviewer:
+'cause that's also a... A company could invest energy in making the community more alive or making API documentation better. So... Making the documentation better could replace a community, the need for a community, you'd say?
+
+192 - CA2
+Interviewee - Development Manager:
+Yeah. I would say that. But I think that... It's a little bit dependent that area, because it could be really hard to provide examples which are good enough for most people who comes and enters the area
+
+193
+Interviewer:
+Mm
+
+194 - CA2
+Interviewee - Development Manager:
+While a community are more... Maybe, if they're willing, they can put the solution in perspective to the question, which a documentation couldn't do. So if you have an area which are very generic, for example you can do whatever with it, and then people come in "Ah I want to do this fun stuff", then I guess a community could catch that person easier than our documentation, which would be very generic. "Okay, I don't know if I can do this or not".
+
+195
+Interviewer:
+Mm
+
+196 - CA2
+Interviewee - Development Manager:
+And the community says "Yeah of course you can! You just use these four or five different calls and then something like this, and here's a very easy..."
+
+197 - CA2
+Interviewer:
+So in; in reality they're do there is a need of... For an online community?
+
+198 - CA2
+Interviewee - Development Manager:
+Yeah if it's a very generic product. Because you said the perfect; the perfect documentation would have a solution for every question you can have. So; so... But if you step down to a more realistic approach, yes, I think there are, there exists; there exists companies and solutions which would require a community.
+
+199
+Interviewer:
+Ehm... Do you have any questions for me, or something you thought I would ask that I didn't?
+
+200
+Interviewee - Development Manager:
+No I think it was good that you asked what my role was I think it's very important here, since I'm a hobby...
+
+201
+Interviewer:
+Yeah!
+
+202
+Interviewee - Development Manager:
+...interest and...
+
+203
+Interviewer:
+Yeah I felt like I needed to steer it more towards having that perspective.
+
+204
+Interviewee - Development Manager:
+I think when I started thinking here my two roles in this company here and another company is a little bit different actually so I started answering from two different perspectives, which might be a little bit confusing. So maybe I should just describe that in my previous role, I was a product owner and a little bit of response over purchasing. In my current we're working purely in open source. More... my role is more technical so I have a large interest in the solutions but not purchasing decision since most things are for free in open source. And it's the technology which rules. So they are different somehow, these different roles.
+
+205
+Interviewer:
+Ehm... Mm.
+
+206
+Interviewee - Development Manager:
+The "open-source"-word is actually complicating it a little bit there, you don't have this historically "Ok, the manager stands for the money and and the developers for the technology". It's a little bit new world.
+
+207
+Interviewer:
+Yeah...
+
+208
+Interviewee - Development Manager:
+So that's something you might pick up here.
+
+209
+Interviewer:
+Yeah... When I made that clear, you're role, I think the... We had a good perspective from then on. Ehm... Okay! Thank you.

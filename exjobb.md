@@ -1123,8 +1123,9 @@ For this, we are rather trying to understand how we define 'Good' API related
 **AB - Api Documentation**
 
 *	AB1 - When you look at API documentation, what are you usually looking for?
-    *	Is there anything in the material you always look for, or something that is missing?
-    *   When you come across an API documentation, are there any red flags you look for?
+    * What should the documentation look like?
+    * Is there anything in the material you always look for, or something that is missing?
+    * When you come across an API documentation, are there any red flags you look for?
 *	AB2 - How does the API documentation quality affect you in your work?
     * Do you abandon a software platform if the documentation is poor?
 
@@ -1139,6 +1140,7 @@ For this, we are rather trying to understand how we define 'Good' API related
     * Should it be runnable or concise?
     * Within a big context or concise?
 *	AC3 - How does the API examples quality affect you in your work?
+    * Do you abandon a software if the examples are poor?
 
 **AD - Working Code Quickly**
 
@@ -1157,12 +1159,14 @@ The questions have been divided into three groups: 'When are [release notes] nee
 
 * BA1 - How often do you look at release notes?
 * BA2 - In what circumstances do you look at release notes?
+    * Do you look at release notes before deciding to use a platform?
 * BA3 - What do you look for when looking at release notes?
 
 **BB - What should they look like?**
 
 * BB1 - Would you say it is important that software platforms have release notes?
-* BB2 - How detailed should they be? [USE RELEASE NOTES MATERIAL]
+    * Do you find that information in some other way?
+* BB2 - How detailed should they be? / What should they look like?
     * How important is it for you that the release notes are thoroughly written?
 * BB3 - Is it worth a company's time to make thorough release notes?
 * BB4 - How do poor release notes affect you?
@@ -1183,11 +1187,12 @@ an online community matters.
 
 **CB - When are they used?**
 *	CB1 - How often would you say you take help from online communities?
-
+*   CB2 - Do you check out the online community before choosing a platform?
 
 **CC - What should it look like?**
 
 *	CC1 - What do you want from an online community / what should it look like?
+    * How important are online communities?
     * What do communities that you like have in common?
     * Is it important that a community feels alive?
     * Is it important the community feels helpful?

@@ -14,31 +14,31 @@ And this is Christoffer MacFie talking. Ehm... So we're gonna talk about three s
 Interviewee - Senior Developer:
 Yes.
 
-5
+5 - AA1
 Interviewer:
 So we if we start with APIs and API documentation, how important would you say that API documentation is?
 
-6
+6 - AA1
 Interviewee - Senior Developer:
 It's very important. If you get an API you need to; you need to know how to use it. And then you will go to the API documentation.
 
-7
+7 - AB1
 Interviewer:
 Mm. So, ehm... Generally, when you're looking at the API documentation... what are some thing you're looking for?
 
-8
+8 - AB1
 Interviewee - Senior Developer:
 Ehm... Often I look for examples.
 
-9
+9 - AB1
 Interviewer:
 Mm.
 
-10
+10 - AB1 - AC2
 Interviewee - Senior Developer:
 Small snippets... Where you can see how to use methods and what parameters and so on. When I have an example, then I can go the methods and see more in detail what you can do with the methods.
 
-11
+11 - AB1 - AC2
 Interviewer:
 Mm
 
@@ -46,83 +46,83 @@ Mm
 Interviewee - Senior Developer:
 So I like examples.
 
-13
+13 - AC2
 Interviewer:
 Mm. Ehm... For the examples... you said you wanted snippets?
 
-14
+14 - AC2
 Interviewee - Senior Developer:
 Yeah. To see how the method can be put together.
 
-15
+15 - AC1
 Interviewer:
 Mm. So is that mainly why you look at examples? You want to see... what do you want from an example? Why do you go to them?
 
-16
+16 - AC1
 Interviewee - Senior Developer:
 Ehm... To see how you can do simple things. Mainly.
 
-17
+17 - AC1
 Interviewer:
 Ehm, so is it...
 
-18
+18 - AC1
 Interviewee - Senior Developer:
 It's an easy start, to use the API, I think.
 
-19
+19 - AD1
 Interviewer:
 Is it important for you to get started quickly?
 
-20
+20 - AD1
 Interviewee - Senior Developer:
 Yes. [laughter] It is. I hate to look at the documentation and to put a lot of time to put into looking at the documentation before I even know how to start. Then I get bored. And that's why examples are so good. It's easy to see how to get started.
 
-21
+21 - AC1
 Interviewer:
-Ehm, so it's mainly, ehm... So that's one aspect then, looking at the API examples to get started quickly. Maybe have some copy and paste and then modify that.
+Ehm, so it's mainly, ehm... So that's one aspect then, looking at the API examples to get started quickly. Maybe have some copy and paste and then modify that?
 
-22
+22 - AC1
 Interviewee - Senior Developer:
 Yeah.
 
-23
+23 - AC1
 Interviewer:
 Are there any other things you go to the examples for?
 
-24
+24 - AB1
 Interviewee - Senior Developer:
 Maybe not examples, but the API documentation also; is also good for error codes, to see what errors you need to to handle and to fetch. And that's often hard to see in the examples.
 
-25
+25 - AB1
 Interviewer:
 Mm
 
-26
+26 - AB1
 Interviewee - Senior Developer:
 Just snippets doesn't show the error handling. So then you need to look at the methods, and what errors they might return.
 
-27
+27 - AD2
 Interviewer:
 Is there any time where your; you are willing to accept that you don't have working code quickly?
 
-28
+28 - AD2
 Interviewee - Senior Developer:
 In the examples?
 
-29
+29 - AD2
 Interviewer:
 In general when you are using a software platform, you said you wanted to have working code quickly to get started. Are there any times where you're willing to work with a software platform where you won't have working code quickly or is that a must?
 
-30
+30 - AD2
 Interviewee - Senior Developer:
 I think it depends on what product you're working on. If it's a long-term product then maybe it's not so import to get started quickly.
 
-31
+31 - AD2
 Interviewer:
 Mm
 
-32
+32 - AD2 - AC2
 Interviewee - Senior Developer:
 In my daily work I write a lot of examples for Qlik Core. So we're not putting a lot of months into the project. And then you... We need; we need small stuffs, small examples stuffs, and then you really need to get up and started quickly.
 
@@ -134,19 +134,19 @@ Mm. Ehm... So what we're trying to get a hold of is mostly, how you... what is "
 Interviewee - Senior Developer:
 Mm
 
-35
+35 - AC2 - AB1
 Interviewer:
 Is there anything you see like "Okay, this should always exist" or something that you thought of that you're missing, that you usually find. Or...
 
-36
+36 - AC2 - AB1
 Interviewee - Senior Developer:
 Ehm... Actually I think the examples are really good in the API docs. 'cause I look at the examples to find the... [pause]
 
-37
+37 - AB1
 Interviewer:
 Or if we take it more generally, are there any; when you... When you come across an API documentation, are there any red flags for you? For like, "Okay this. I didn't get this, this is a bad warning".
 
-38
+38 - AB1
 Interviewee - Senior Developer:
 Mm... Not sure. Maybe if you... If you only list the methods, you know when it's a... auto-generated docs. That might be quite bad. I like when you see that it's, that they've actually put some time into the documentation, manually.
 
@@ -158,59 +158,59 @@ We should also say by the way... What is your job title here?
 Interviewee - Senior Developer:
 I'm a senior developer.
 
-41
+41 - AB2 - AC3
 Interviewer:
 Mm. Ehm... So how does it affect you're working with an API documentation, or API examples, that are not good. How does it affect you in your work?
 
-42
+42 - AB2 - AC3
 Interviewee - Senior Developer:
 I think, eh... You get a little bit of... Irritated maybe? And then you start googling, cause most of the APIs we're using are used a lot. So there are communities surrounding it. So if I find something hard to do, then probably someone else has found it hard too. Then you google it and you find; found some help.
 
-43
+43 - AB2 - AC3
 Interviewer:
 Mm. Ehm... Do you spend... Do you quickly abandon a software platform if the examples and documentation are poor?
 
-44
+44 - AB2 - AC3
 Interviewee - Senior Developer:
 No... Not; probably not.
 
-45
+45 - AB2 - AC3
 Interviewer:
 You try to solve it still?
 
-46
+46 - AB2 - AC3
 Interviewee - Senior Developer:
 Yeah.
 
-47
+47 - AB2 - AC3
 Interviewer:
 Mm. Ehm...
 
-48
+48 - AB2 - AC3
 Interviewee - Senior Developer:
 Or, it actually depends on what you need to do. Cause if you're using JavaScript there's a lot of APIs and packages and stuff, and doing the same thing almost. So if you go to the... to one API and you found it quite bad. Then you skip and go to the next API.
 
-49
+49 - AB2 - AC3 - AC1
 Interviewer:
 Mm. Ehm... [pause] Mm! But you; as you said, you use the examples a lot to get an understanding of the software platform rather than reading the documentation...
 
-50
+50 - AB2 - AC3 - AC1
 Interviewee - Senior Developer:
 Yeah
 
-51
+51 - AC1
 Interviewer:
 So it's both for copy-pasting but also for understanding the underlying structure maybe?
 
-52
+52 - AC1
 Interviewee - Senior Developer:
 Yes.
 
-53
+53 - AC1
 Interviewer:
 And try to see how things are linked up?
 
-54
+54 - AC1
 Interviewee - Senior Developer:
 Yes.
 
@@ -246,7 +246,7 @@ Not read through a lot of...
 Interviewee - Senior Developer:
 No. No. And googling a lot. See what others are using.
 
-63
+63 - B
 Interviewer:
 Mm! Ehm... We can go over and talk about release notes.
 
@@ -254,35 +254,35 @@ Mm! Ehm... We can go over and talk about release notes.
 Interviewee - Senior Developer:
 Mm!
 
-65
+65 - BA1
 Interviewer:
 Ehm... How often do you look at release notes?
 
-66
+66 - BA1
 Interviewee - Senior Developer:
 Never.
 
-67
+67 - BA1
 Interviewer:
 Never?
 
-68
+68 - BA1
 Interviewee - Senior Developer:
 Never. Or actually I did with this material.
 
-69
+69 - BA1
 Interviewer:
 Mm!
 
-70
+70 - BA1
 Interviewee - Senior Developer:
 Cause I printed the papers, and then I saw there was a release notes. So I actually read them.
 
-71
+71 - BA1
 Interviewer:
 Mm.
 
-72
+72 - BA1
 Interviewee - Senior Developer:
 And I... It was really good! [laughter]
 
@@ -294,35 +294,35 @@ So, eh... Cause, eh... We have... As you say, we have... There's two versions, o
 Interviewee - Senior Developer:
 Yeah.
 
-75
+75 - BA1 - BA2
 Interviewer:
 And, ehm... You said you don't need to; you never look at release notes in, probably not in your work but not otherwise either?
 
-76
+76 - BA1 - BA2
 Interviewee - Senior Developer:
 Nope. [laughter]
 
-77
+77 - BA2
 Interviewer:
 Ehm... Why do you; why is that then?
 
-78
+78 - BA2 - BA3
 Interviewee - Senior Developer:
 I don't know. I think the news; I think if you need to do something... Maybe if I'm waiting for something new to appear on the API...
 
-79
+79 - BA2 - BA3
 Interviewer:
 Mm
 
-80
+80 - BA2 - BA3
 Interviewee - Senior Developer:
 But most often it's... I can read it from blogs or the community, rather than release; release notes. And if something gets deprecated, you often get a warning.
 
-81
+81 - BA3
 Interviewer:
 So you're... But when you; What interests you in release notes would be new methods and, ehm... deprecated rather than...
 
-82
+82 - BA3 - BB2
 Interviewee - Senior Developer:
 Yeah, and bug fixings as well. But in the short version here, ehm.. "The egg bug is fixed". That doesn't tell me anything, if I don't know anything about the egg bug.
 
@@ -330,39 +330,39 @@ Yeah, and bug fixings as well. But in the short version here, ehm.. "The egg bug
 Interviewer:
 Mm...
 
-84
+84 - BB2
 Interviewee - Senior Developer:
 Then the info is... Kind of... useless.
 
-85
+85 - BB4
 Interviewer:
 Yeah. So poorly written release notes wouldn't really affect you then, if you don't... use them.
 
-86
+86 - BB4
 Interviewee - Senior Developer:
 No.
 
-87
+87 - BB1
 Interviewer:
 Ehm... Do you think that's the general case for developers? That they're not interested in release notes?
 
-88
+88 - BB1
 Interviewee - Senior Developer:
 Mm... No. Because my colleagues wants us to write release notes. So I think the... Others are actually reading them.
 
-89
+89 - BB1
 Interviewer:
 Yeah. So they're... They're still important? Even though you don't personally...
 
-90
+90 - BB1 - BB2
 Interviewee - Senior Developer:
 Yeah, yeah. I think so. And I... Actually I looked at the release notes this time, in the material. And then I saw the deprecated methods, and the new methods. So I could find the errors in the code. And yeah, the long version is, ehm... I prefer the long version.
 
-91
+91 - BB3
 Interviewer:
 So, ehm... Like all things... If a company needs to write the long version, they have to take; spend time and therefor money to do that. Would you say it's worth that time for a company, rather than auto-generating the short one?
 
-92
+92 - BB3
 Interviewee - Senior Developer:
 I think so, yeah. Auto-generated stuff is... I wouldn't say useless.
 
@@ -370,7 +370,7 @@ I think so, yeah. Auto-generated stuff is... I wouldn't say useless.
 Interviewer:
 Mm.
 
-94
+94 - BB3 - BB4
 Interviewee - Senior Developer:
 But I think it's... It looks a bit bad. I think. It's a lot better feeling when you get the manually written stuff.
 
@@ -378,19 +378,19 @@ But I think it's... It looks a bit bad. I think. It's a lot better feeling when 
 Interviewer:
 Yeah.
 
-96
+96 - BB3
 Interviewee - Senior Developer:
 But of course it takes time.
 
-97
+97 - BB4
 Interviewer:
 So when you say bad... bad for who?
 
-98
+98 - BB4
 Interviewee - Senior Developer:
 Maybe not bad, but a bit, ehm... Like you don't actually care about the release notes. Just auto-generate stuff.
 
-99
+99 - BB4
 Interviewer:
 It reflects poorly on the company behind the software?
 
@@ -398,11 +398,11 @@ It reflects poorly on the company behind the software?
 Interviewee - Senior Developer:
 Yeah.
 
-101
+101 - BB1
 Interviewer:
 Ehm... But you said you had other ways of obtaining this information. Through blogs and all that.
 
-102
+102 - BB1
 Interviewee - Senior Developer:
 Yeah. But as I said, if I'm using an API a lot and I'm actually waiting for something, I will probably read the release notes.
 
@@ -410,7 +410,7 @@ Yeah. But as I said, if I'm using an API a lot and I'm actually waiting for some
 Interviewer:
 Mm.
 
-104
+104 - BB1
 Interviewee - Senior Developer:
 But if it's just about the new ways of doing things, or... Like the react or something, then... You can go along just fine without doing these changes.
 
@@ -418,11 +418,11 @@ But if it's just about the new ways of doing things, or... Like the react or som
 Interviewer:
 Mm.
 
-106
+106 - BA2 - BA3
 Interviewee - Senior Developer:
 But the new features... You need to know about new features.
 
-107
+107 - BC1
 Interviewer:
 Ehm... cause, release notes, in these surveys, one of the least important aspects to people.
 
@@ -430,7 +430,7 @@ Ehm... cause, release notes, in these surveys, one of the least important aspect
 Interviewee - Senior Developer:
 Mm.
 
-109
+109 - BC1
 Interviewer:
 But when you talk to people, they still say that it's very important.
 
@@ -438,19 +438,19 @@ But when you talk to people, they still say that it's very important.
 Interviewee - Senior Developer:
 Mm [laughter]. Yeah.
 
-111
+111 - BC1
 Interviewer:
 Why do you think there's a mismatch there?
 
-112
+112 - BC1
 Interviewee - Senior Developer:
 Least important? I mean if you... if you compare it to the API documentation that is a lot more important. Cause you can't use an API without an API documentation, basically. And you can use an API without the release notes. But again, it's maybe more... you get a more serious feeling about the API if you have release notes.
 
-113
+113 - BA2
 Interviewer:
 Mm. But you then... When you use; looking for a software platform, you never look at the release notes to figure out "Okay, I want to use this.".?
 
-114
+114 - BA2
 Interviewee - Senior Developer:
 No.
 
@@ -462,27 +462,27 @@ No. Ehm... Mm! We can move over to talk about online communities.
 Interviewee - Senior Developer:
 Mm.
 
-117
+117 - CA1
 Interviewer:
 Ehm... So, when I say that a software platform has an online community. Ehm... What does that mean to you? How would you describe that.
 
-118
+118 - CA1
 Interviewee - Senior Developer:
 A community? Maybe, ehm... You mean like, specific for the platform?
 
-119
+119 - CA1
 Interviewer:
 Yeah, what exactly is an online community?
 
-120
+120 - CA1
 Interviewee - Senior Developer:
 If; you... My online community is [inaudblie]
 
-121
+121 - CA1
 Interviewer:
 Is what?
 
-122
+122 - CA1
 Interviewee - Senior Developer:
 Is Google.
 
@@ -490,7 +490,7 @@ Is Google.
 Interviewer:
 Mm.
 
-124
+124 - CA1
 Interviewee - Senior Developer:
 But then of course, there are specific communities. For, ehm... I'm not even sure, maybe Docker community and, ehm, we have some Qlik community
 
@@ -498,27 +498,27 @@ But then of course, there are specific communities. For, ehm... I'm not even sur
 Interviewer:
 Mm
 
-126
+126 - CA1
 Interviewee - Senior Developer:
 Where you find the specific; platform specific stuff. But then you have Stack Overflow, where you can find a lot of different issues, different APIs, and...
 
-127
+127 - CB1
 Interviewer:
 But, ehm... But yeah, let's take that broad definition, how often do you take help from online communities?
 
-128
+128 - CB1
 Interviewee - Senior Developer:
 Daily.
 
-129
+129 - CC1
 Interviewer:
 Daily. And, ehm... Online communities that you like, ehm... What do they usually have in common?
 
-130
+130 - CC1
 Interviewee - Senior Developer:
 In common? A question and an answer [laughter] Hopefully.
 
-131
+131 - CC1
 Interviewer:
 Yeah, it's a very straight forward..?
 
@@ -526,19 +526,19 @@ Yeah, it's a very straight forward..?
 Interviewee - Senior Developer:
 Yeah.
 
-133
+133 - CC1
 Interviewer:
 Ehm... Did; Do you usually ask questions yourself?
 
-134
+134 - CC1
 Interviewee - Senior Developer:
 Nope.
 
-135
+135 - CC1
 Interviewer:
 You just look for the answer.
 
-136
+136 - CC1
 Interviewee - Senior Developer:
 Yes. Yes. And I actually; actually feel a bit bad about that, cause in Stack Overflow, you can actually; you can at least like an answer. So I think I should really get started [laughter] doing that. Cause I'm using Stack Overflow a lot.
 
@@ -546,23 +546,23 @@ Yes. Yes. And I actually; actually feel a bit bad about that, cause in Stack Ove
 Interviewer:
 Yeah.
 
-138
+138 - CC1
 Interviewee - Senior Developer:
 So maybe put in something as well.
 
-139
+139 - CC1
 Interviewer:
 And, ehm... Does the community have to feel... Ehm, alive in a way, in order for you to like it?
 
-140
+140 - CC1
 Interviewee - Senior Developer:
 Yeah. Definitely.
 
-141
+141 - CC1
 Interviewer:
 If it doesn't feel alive, can you still like that software platform?
 
-142
+142 - CC1
 Interviewee - Senior Developer:
 Mm... Eh, yeah of course if it fulfills my needs. But it gets a little bit bad feeling when something is... old.
 
@@ -570,63 +570,63 @@ Mm... Eh, yeah of course if it fulfills my needs. But it gets a little bit bad f
 Interviewer:
 Yeah
 
-144
+144 - CC1
 Interviewee - Senior Developer:
 Like questions asked four years ago.
 
-145
+145 - CB2
 Interviewer:
 Yeah. So, ehm, when you're... When you're looking for a new software platform, and trying to decide if you're going to use this, is an online; is; are you looking at the online community before getting started, to see...
 
-146
+146 - CB2
 Interviewee - Senior Developer:
 Actually no. I don't.
 
-147
+147 - CB2 - CC1
 Interviewer:
 You just go to, when you're stuck?
 
-148
+148 - CB2 - CC1
 Interviewee - Senior Developer:
 Yeah. Yeah.
 
-149
+149 - CC1
 Interviewer:
 Ehm... And, so you don't; do you have the need to, in order for you to like the software platform, do you need like you're apart of the community yourself?
 
-150
+150 - CC1
 Interviewee - Senior Developer:
 No. [pause] [laughter]
 
-151
+151 - CC1
 Interviewer:
 No! This is... Ehm...
 
-152
+152 - CC1
 Interviewee - Senior Developer:
 But it's great that others want to be part of the community because otherwise I wouldn't find my answers [laughter].
 
-153
+153 - CC1
 Interviewer:
 Yeah! But it's important the community feels helpful.
 
-154
+154 - CC1
 Interviewee - Senior Developer:
 Yeah. Yeah.
 
-155
+155 - CC1
 Interviewer:
 Do you care what kind of, ehm... Tone people use in the... When they're helping people. Positive or negative, happy or sad, or... Those kinds of things. Or is it more, "If the question is answered I don't care".
 
-156
+156 - CC1
 Interviewee - Senior Developer:
 Ehm... [hesitation] Yeah. I think so. If I get an answer, then it's fine. And I think that; I actually haven't... I haven't seen any bad tone, or noticed a bad tone. But maybe I don't put any effort in noticing that.
 
-157
+157 - CC1
 Interviewer:
 Ehm... Is it important to you that the company behind the software are part of the online discussions.
 
-158
+158 - CC1
 Interviewee - Senior Developer:
 [pause] Not really. Cause I mean the Qlik community, a lot of... our users are answering the questions.
 
@@ -634,23 +634,23 @@ Interviewee - Senior Developer:
 Interviewer:
 Mm.
 
-160
+160 - CC1
 Interviewee - Senior Developer:
 Which feels... I think that's really good. That others are taking responsibility for answering the questions that others have...
 
-161
+161 - CC1
 Interviewer:
 So what is your... If the company is part of the online discussion, what are your thoughts on that, how does it reflect on them?
 
-162
+162 - CC1
 Interviewee - Senior Developer:
 That you actually take your responsibility for, for your users. For the community.
 
-163
+163 - CC1
 Interviewer:
 So if we flip it, if they're not part, does it have the same affect other way around.
 
-164
+164 - CC1
 Interviewee - Senior Developer:
 Actually, I don't think I care who answers the question. If there are questions that are not answered, that you know that a Qlik-person or a Docker-person can answer, and don't do that, that's not... no good.
 
@@ -658,27 +658,27 @@ Actually, I don't think I care who answers the question. If there are questions 
 Interviewer:
 Mm.
 
-166
+166 - CC1
 Interviewee - Senior Developer:
 But often you don't know who is answering the question. You don't know if he or she works at the company.
 
-167
+167 - CC1
 Interviewer:
 Mm. So if we take the overall question again, what is it that you want from an online community?
 
-168
+168 - CC1
 Interviewee - Senior Developer:
 Answers.
 
-169
+169 - CC1
 Interviewer:
 Answers. Simple as that.
 
-170
+170 - CC1
 Interviewee - Senior Developer:
 Yeah.
 
-171
+171 - CC2
 Interviewer:
 Ehm, because in the two surveys, ehm... Or we can say... If we have some very big product, like Angular och React, or something with a huge community or... With a big serious company behind it. A lot of documentation and all that, we have the official website and all that.
 
@@ -686,7 +686,7 @@ Ehm, because in the two surveys, ehm... Or we can say... If we have some very bi
 Interviewee - Senior Developer:
 Mm
 
-173
+173 - CC2
 Interviewer:
 And then on the opposite side you had a small library on github made by one person.
 
@@ -694,19 +694,19 @@ And then on the opposite side you had a small library on github made by one pers
 Interviewee - Senior Developer:
 Mm
 
-175
+175 - CC2
 Interviewer:
 Ehm, which of these is, or is it equal, more important to have an online community behind it?
 
-176
+176 - CC2
 Interviewee - Senior Developer:
 Yes it is.
 
-177
+177 - CC2
 Interviewer:
 It is equally important?
 
-178
+178 - CC2
 Interviewee - Senior Developer:
 No, ehm... Okay. Ehm... [pause] I'm not sure actually.
 
@@ -714,11 +714,11 @@ No, ehm... Okay. Ehm... [pause] I'm not sure actually.
 Interviewer:
 Mm.
 
-180
+180 - CC2
 Interviewee - Senior Developer:
 Cause often you don't have a big online community with a small... small libraries.
 
-181
+181 - CD1
 Interviewer:
 Mm. Ehm... Because in the first and second survey, ehm... In the first survey, online communities was listed as the second most important aspect of all. Whereas in the second survey it's somewhere in the middle.
 
@@ -726,11 +726,11 @@ Mm. Ehm... Because in the first and second survey, ehm... In the first survey, o
 Interviewee - Senior Developer:
 Mm.
 
-183
+183 - CD1
 Interviewer:
 Ehm... Do you have any personal theory behind why people, ehm... Thought it was very important and then just somewhat important.
 
-184
+184 - CD1
 Interviewee - Senior Developer:
 [laughter] [pause] No. Not really.
 
@@ -738,11 +738,11 @@ Interviewee - Senior Developer:
 Interviewer:
 Mm. Ehm...
 
-186
+186 - CD1
 Interviewee - Senior Developer:
 Was is the same... The other alternatives was the same?
 
-187
+187 - CD1
 Interviewer:
 Yeah. The questions leading up to the; that question were different, so people might have been in a different mindset.
 
@@ -750,11 +750,11 @@ Yeah. The questions leading up to the; that question were different, so people m
 Interviewee - Senior Developer:
 Mm.
 
-189
+189 - CD1
 Interviewer:
 But the question were the same.
 
-190
+190 - CD1
 Interviewee - Senior Developer:
 Interesting.
 
@@ -762,15 +762,15 @@ Interesting.
 Interviewer:
 Mm... Ehm...
 
-192
+192 - CD1
 Interviewee - Senior Developer:
 Maybe it's about the timing. Eh... What you've used lately. If you... If you had some problem that were solved by the community, you might find it very important.
 
-193
+193 - CA2
 Interviewer:
 Mm... So, if the documentation was really good, almost flawless. Would you still want an online community?
 
-194
+194 - CA2
 Interviewee - Senior Developer:
 Mm... Maybe it's not that important when you have great documentation.
 
@@ -778,63 +778,63 @@ Mm... Maybe it's not that important when you have great documentation.
 Interviewer:
 Mm.
 
-196
+196 - CA2
 Interviewee - Senior Developer:
 But I mean, you almost always get stuck on things. So then it's good with a community.
 
-197
+197 - CA2
 Interviewer:
 Mm. So would it be a viable way for a company to, if they have the issue of... They can either try increase activity in online community, or they can spend time on fixing the documentation even more, which one would you recommend the company did?
 
-198
+198 - CA2
 Interviewee - Senior Developer:
 Both.
 
-199
+199 - CA2
 Interviewer:
 Mm. But...
 
-200
+200 - CA2
 Interviewee - Senior Developer:
 But I think even if you had an online community, the documentation needs to be flawless.
 
-201
+201 - CA2
 Interviewer:
 But ehm...
 
-202
+202 - CA2
 Interviewee - Senior Developer:
 So documentation is prior one.
 
-203
+203 - CA2
 Interviewer:
 You would say that it's more import to have;
 
-204
+204 - CA2
 Interviewee - Senior Developer:
 Yeah.
 
-205
+205 - CD1
 Interviewer:
 Ehm... Cause one theory I have behind, the question I asked about big companies versus; big software platforms versus small libraries. In the first survey, it was phrased as... Or rather in the second survey it was phrased as working with software platforms, so something quite big. Whereas in the first one it was a little bit more vague, it could be software platforms, it could be libraries.
 
-206
+206 - CD1
 Interviewee - Senior Developer:
 Mm
 
-207
+207 - CD1
 Interviewer:
 So people might have been thinking of different levels of scale.
 
-208
+208 - CD1
 Interviewee - Senior Developer:
 Mm
 
-209
+209 - CD1
 Interviewer:
 So I don't know, maybe if it is a small library, you need to ask people rather than... cause you can't go to the company .
 
-210
+210 - CD1
 Interviewee - Senior Developer:
 Yeah. Yeah.
 

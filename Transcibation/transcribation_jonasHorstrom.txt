@@ -7,7 +7,7 @@ talking. And I'm here with...
 J:
 Jonas Hörström.
 
-C
+C:
 Eh... And we're gonna talk a
 little bit about mainly three topics: APIs
 in general and release notes and online
@@ -16,7 +16,7 @@ Ehm... So, in general
 how important would you say that API
 documentation is?
 
-J
+J:
 If I start working with
 something I think it's really important
 actually because I've started with
@@ -29,20 +29,20 @@ using right now which I don't like at
 all after a couple of hours in it. It's
 really hard to find some stuff.
 
-C
+C:
 Because the documentation is...
 
-J
+J:
 Yeah I
 think it was scattered and it was... I
 couldn't find everything I wanted so it;
 it seems to be around in blogs and posts
 everywhere.
 
-C
+C:
 Mm
 
-J
+J:
 But they are one date in time,
 and since it's not a stable product it's
 0.8 something something. Ehh... they might not
@@ -52,19 +52,19 @@ think they were were lacking examples or
 lacking the full picture to really get
 what I wanted.
 
-C
+C:
 Mm
 
-J
+J:
 So that's a problem I think.
 
-C
+C:
 So
 when you look at API documentation...
 What are you generally looking for, what
 do you want from a documentation?
 
-J
+J:
 I'm lazy so first of all examples. [laughter].
 Just like a lot of people. And then... So
 first examples, then it's the more
@@ -72,10 +72,10 @@ broader picture. Does it look like
 something I would understand or is it.. is it
 scattered a lot of different areas and so on.
 
-C
+C:
 Mm.
 
-J
+J:
 And I think the reason for that...
 You're looking at so many different
 small products in the word so before you
@@ -85,10 +85,10 @@ knowing, but you assess the quality based
 on what you see the first five minutes
 or something.
 
-C
+C:
 Mm.
 
-J
+J:
 So you; you start looking
 into it and yes you shouldn't play down by
 look and feel on that because that; if
@@ -97,10 +97,10 @@ good and it's positive, if it looks like
 they are asking others to continue; I
 think that's a positive thing as well...
 
-C
+C:
 Mm.
 
-J
+J:
 But I think it goes down to examples and
 then, does it feel full is it; is there
 enough things? Can I see in the beginning
@@ -110,22 +110,22 @@ click on something it's like "Yeah
 there's; you have to look into this
 repo to find this; to find this".
 
-C
+C:
 Mm.
 
-J
+J:
 Or even
 worse, it's in French. [laughter]
 Like one of the things I saw. "It's; it's pending
 translation, can you do the use
 Google Translate". And me like: "No? Sorry."
 
-C
+C:
 You
 mentioned API examples, they were very
 important to you.
 
-J
+J:
 They are because... Since
 I'm lazy [laughter] I want to get something started
 fast and then I want to invest, and I
@@ -143,29 +143,29 @@ it's actually doing what I want to,
 stuff with the three lines to make it
 work
 
-C
+C:
 Mm.
 So do you,
 as it... Having working out quickly is
 important to you.
 
-J
+J:
 Mm
 
-C
+C:
 Do you use the... That's;
 Is that the main thing you use the
 examples for, to just copy paste to have
 something going, or...
 
-J
+J:
 I think it's to get
 started.
 
-C
+C:
 Mm
 
-J
+J:
 Because
 I like the idea of having something and
 build up on that. And I very rarely think
@@ -176,10 +176,10 @@ first example I can find. I type in the example,
 copy paste it, and then I look at;
 I run it.
 
-C
+C:
 Mm.
 
-J
+J:
 "Ahh, cool it looks
 like this, fun.", and then "Okay what does this
 method do?" and then I go and look at
@@ -190,10 +190,10 @@ because I'm just patching here. Then
 I tend to read a little bit
 more about it, maybe how we should do it.
 
-C
+C:
 Okay
 
-J
+J:
 But I like to play around
 before I... I guess I'm not; I'm not
 like a senior developer working on a
@@ -201,30 +201,30 @@ feature I go to release somewhere so... It's
 also because I'm; it's hobby project I'm
 looking..
 
-C
+C:
 Mm. So when are you willing to accept not
 having working code quickly?
 
-J
+J:
 If if I have
 an assignment I really want; need; know
 what to do and I have some time, I know...
 put for this.
 
-C
+C:
 Mm.
 
-J
+J:
 And maybe it's; it's a more
 complex task I... I know that I need to
 solve and I have already thought in my mind
 that I need to invest more than like...
 "Here's two hours for this to get started"
 
-C
+C:
 Mm.
 
-J
+J:
 Maybe I understand "This is; I'm going to
 do a new scheduling system for this and
 that" and I know; I know that it
@@ -235,15 +235,15 @@ a long time and I've heard that this is
 a good API or this is a good project,,
 then I would start to work, um, you know...
 
-C
+C:
 So one of the things we're trying to
 understand is... what exactly is good
 documentation?
 
-J
+J:
 Mm.
 
-C
+C:
 So if we use the examples,
 is there something there that you
 thought of "Okay this is something I'll
@@ -251,7 +251,7 @@ always expect from a good documentation"?
 Is there something missing? Something
 made that made you react?
 
-J
+J:
 I think there
 was a class or something where it; there
 was not an explanation
@@ -266,10 +266,10 @@ Where it was; it was the super engine. I read; I could get
 release notes than I could from the real
 documentation
 
-C
+C:
 Mm
 
-J
+J:
 And I don't like that
 because, eh.. It's good with a release
 note
@@ -281,12 +281,12 @@ There was no information about
 that in the real... I think it was only
 create engine...
 
-C
+C:
 Yeah... I don't think there's any...
 thing that's actually is dedicated to the
 super engine here.
 
-J
+J:
 [flips through papers]
 Yeah, I wanted to know, because I had to use it in the... [laughter]
 So i thought "Was does that do, what is it?". And
@@ -295,10 +295,10 @@ caught my intention; attention apparently
 because I was looking more; for more
 information
 
-C
+C:
 Yeah.
 
-J
+J:
 ...just example. But that was one thing.
 I think it was
 getting a... When you created a new Baker,
@@ -307,7 +307,7 @@ there's no explanation of the
 constructor of the baker. So I was missing
 that.
 
-C
+C:
 But if we talk more in general
 about how we can could; should construct a
 documentation. Is there anything; Is; Are there
@@ -316,7 +316,7 @@ encounter a new software platform and
 read the documentation. Are there any red
 flags that you think "Ok this is..."
 
-J
+J:
 Yeah, if you
 have a lot of properties, parameters or
 something which are list; just listed
@@ -332,13 +332,13 @@ simple one, maybe an advanced one
 as well, but have something like that in
 the beginning is really important for me.
 
-C
+C:
 How much of a should they... Should the example be
 more of a snippet or should, it be put in
 a context. More... How much of a context is
 needed?
 
-J
+J:
 I think it's depends on what type of
 area it is. If it's, uh, if it's a utility
 library, I mean... That's; A snippet is good
@@ -348,10 +348,10 @@ projects which are, eh... Let's reading
 statistics from github for example. I just looked at that
 today [laughter].
 
-C
+C:
 Mm
 
-J
+J:
 And they; they had an example: "This
 is how you should do it" and like "Okay that's a
 good example". "I have two factor
@@ -374,10 +374,10 @@ down... I wouldn't bother, because it's too
 long time for me to... "Okay now I have to
 download something or fill in a form".
 
-C
+C:
 Mm
 
-J
+J:
 I
 don't know. A lot of stuff before I can
 even get it running, the small snippet I
@@ -387,11 +387,11 @@ into this, that... prob; I have to assign a
 lot of time on it and make sure that I make
 it methodically and set up my IDE, so that's...
 
-C
+C:
 Okay so... The... The size of the example
 depends on the context of the...
 
-J
+J:
 Yes. So I
 would say in most cases it's how fast I
 can get something up and running. I will
@@ -400,10 +400,10 @@ stuff if a; if someone has made a
 very fast guide on just getting
 something up.
 
-C
+C:
 Mm
 
-J
+J:
 Then I can evaluate if I
 would like to take this, or one of the
 three other items I found for this area.
@@ -416,31 +416,31 @@ And then there is three
 which are popular. Then it needs to be
 very quick.
 
-C
+C:
 Mm
 
-J
+J:
 Easy way to get it running
 for me to understand, "Okay I should use
 this one".
 
-C
+C:
 Mm. I didn't mention him before
 we started the interview, what is your role
 here at Qlik?
 
-J
+J:
 I'm a development manager
 for the Qlik core team. I'm not
 developer per say, here. Wannabe! [laughter].
 Hobby dev, eh...
 But my education is...
 
-C
+C:
 So what is your, eh... Tasks
 during the day as a...
 
-J
+J:
 So I... I would say in
 this; in this form here it's, eh... I'm a people
 manager and I'm, a... I think the roles of
@@ -454,10 +454,10 @@ designer. So it's a mix of those things.
 And development is, I would say, it's a
 minimal part.
 
-C
+C:
 Mm
 
-J
+J:
 I use it because I like to
 understand what we're doing in the team,
 and of interest. I think in my role you
@@ -465,20 +465,20 @@ could get out; get a away without
 knowing anything, but you had to work in
 a different way.
 
-C
+C:
 Mm. So in as part of your role you
 don't have to read a lot of
 documentation, it's more when you're
 working on side projects?
 
-J
+J:
 Yes. So it's... If
 I'm doing something in the code here,
 I'm trying to do sometimes [laughter], I do it of
 course but it's not my main... No it's not
 my part of the work.
 
-C
+C:
 Mm. So... But you're...
 Like if Qlik were to use a new software
 platform you're still part of the
@@ -487,7 +487,7 @@ are you taking; listening to for example
 architects and what they want to use and
 you approve that, or what's your roll?
 
-J
+J:
 Yeah I'm part of it, but I will rely; If an
 architect told that "I want this because
 of that" I would yield. Because I would never, like,
@@ -497,27 +497,27 @@ true. I would probably suggest, and based
 on my experience, suggest what I believe...
 My idea of a good platform.
 
-C
+C:
 Mm... [pause] Do you
 think it; is working card quickly just a
 consequence of good documentation and
 API examples, or is it a separate aspect?
 
-J
+J:
 No I think it's the same actually. Yeah, I
 think it's there's; every library needs to
 sell itself and prove its use.
 
-C
+C:
 Mm
 
-J
+J:
 And I think one way is to do it like that.
 You could have the most simple one and
 that will be a lot harder to sell to
 people if it's not easily set up and done.
 
-C
+C:
 Mm. Ehm... [pause]. Because we if we... It would be interesting
 to get a... In these interviews I'm talking
 directly to architects and
@@ -531,51 +531,51 @@ documentation of a software platform
 that would be used in the product, for
 example?
 
-J
+J:
 The platform for how we write
 documentation, or..?
 
-C
+C:
 We could take; we could
 take both examples. Like if Qlik were to
 use another software platform in in its
 product, and it had to be approved and
 all that.
 
-J
+J:
 Mm
 
-C
+C:
 How much of an interest you
 take in your working role for that?
 
-J
+J:
 I think take... It's hard to say how much,
 but I take interest in it.
 
-C
+C:
 Mm
 
-J
+J:
 Because I... Let's say a simple one like a
 UI framework, or something like that. I
 want to know why we're choosing a
 special framework.
 
-J
+J:
 Mm
 
-C
+C:
 And I think it's; it's
 twofold. One is of course the one which
 are important to my role. Will this be
 something which is valuable... Not just
 today, but in two years or something like that.
 
-C
+C:
 Mm
 
-J
+J:
 Which is something that works well with competence we have in
 the team and in the surroundings. Did we choose
 something weird because it's fun? We
@@ -589,10 +589,10 @@ important that they are maintained
 correctly and that... they are cost efficient
 and that we get the support we need.
 
-C
+C:
 Mm
 
-J
+J:
 So all those questions are very
 important to me. And then I would say
 the rest is just my technical interest. I
@@ -600,7 +600,7 @@ feel... It's not obliged, but it's fun to
 know about those things, so that's the
 other part. But not so specific.
 
-C
+C:
 So it's...
 Those things you mentioned is that
 something that... Is there some things
@@ -609,7 +609,7 @@ developers or architects wouldn't care
 about when using a... When it comes to
 documentation?
 
-J
+J:
 I think that developers tend
 to... Play down the need for production worthy code. [laughter]
 It could be that... It's not that it's missed
@@ -637,10 +637,10 @@ discussion. And that, me as a developer [manager], I
 think you know I'm more responsible for
 those.
 
-C
+C:
 Mm
 
-J
+J:
 So in my current role we don't
 have that many of those, because we're
 using mostly open source code. Work in
@@ -653,34 +653,34 @@ Historically it's not there; the
 developer; the manager's primary
 knowledge.
 
-C
+C:
 Mm
 
-J
+J:
 So here I depend a little
 more on architects by taking those
 decisions. And maybe that's also why I
 want to dig more into this because I
 need to understand.
 
-C
+C:
 Mm
 
-J
+J:
 So I can be support
 when; when we're taking such decisions.
 
-C
+C:
 Mm! If we move over to release notes.
 
-J
+J:
 Mm!
 
-C
+C:
 How often would you say that you look at
 release notes?
 
-J
+J:
 I actually do! [laughter]. The reason was last time
  that I wanted to help out in the team when we
  were doing automatic upgrades. I thought
@@ -695,22 +695,22 @@ So that's; that's the thing. Otherwise it; I
 always say it's for my... If I'm doing a
 hobby product.
 
-C
+C:
 Mm
 
-J
+J:
 I might do it if it's a; I
 know it's zero point version because
 that might break; break my existing
 configuration.
 
-C
+C:
 Mm
 
-J
+J:
 But it's hobby. So, yeah.
 
-C
+C:
 Okay. Because once again, it's interesting to
 see if release notes matter at all to
 managers. Because we'll get the
@@ -719,7 +719,7 @@ from other interviews. So do you think, general;
  managers in general, or you, care
 about release notes?
 
-J
+J:
 I would say from
 from a manager perspective I care if it
 breaks my stuff, and if I need to add any
@@ -733,42 +733,42 @@ and I would participate in a meeting
 where we took the decision, then I would
 be interested.
 
-C
+C:
 Mm
 
-J
+J:
 Because I want to know
 how big of a change, and how much time do
 we need to invest in such a change.
 
-C
+C:
 Mm
 
-J
+J:
 So
 that's very important for me.
 And... So for major releases... That I think
 that's the most important for a manager.
 Small patches, I don't think...
 
-C
+C:
 Mm
 
-J
+J:
 They are
 only important if something has broken and
  you're looking for a fix.
 
-C
+C:
 Mm... So
 in the material we had a... Two extremes.
 One very short version and one quite
 elaborate version.
 
-J
+J:
 Mm
 
-C
+C:
 Because it's... When it
 comes to writing release notes it's a... I
 mean, you have to... A company has to spend
@@ -778,15 +778,15 @@ it's a balance to... Between these two, how
 much should you write? Do you have any
 opinion on how much, how thorough should the release notes...
 
-J
+J:
 I think the short
 one... For a manager I think that was
 enough. Because it said that there are changes in this area.
 
-C
+C:
 Mm
 
-J
+J:
 And I wouldn't look into it [laughter].
 "Okay there are changes, and it looks like
  like they they've added some
@@ -797,55 +797,55 @@ then I would ask my developers
 And then they would say yes or no, and I would know
 that "Okay, we have to put in resources here".
 
-C
+C:
 Mm
 
-J
+J:
 So... So from a manger's perspective I
 think that's; that's enough for me.
 
-C
+C:
 Mm.
 
-J
+J:
 If we; we go a
 little bit further I think when I read
 the more detailed version I think that
 it was good, but I suspected that to be
 in the real documentation instead.
 
-C
+C:
 Mm
 
-J
+J:
 So for me it would be:
 "We have added these
 stuff, here's a link to the... to the documentation,
 where it's added now."
 
-C
+C:
 Mm
 
-J
+J:
 I think that had been better for me.
 
-C
+C:
 Okay
 
-J
+J:
 So maybe more like: "Okay, you can't use
 this one, or use this new..." and then all the
 information on how you use an example stays in
 the real documentation.
 
-C
+C:
 Mm
 
-J
+J:
 Otherwise
 you duplicate it.
 
-C
+C:
 So... Again, from a manager
 perspective, when you decided to use a
 new platform, then it has to be approved.
@@ -854,7 +854,7 @@ be looked at
 before... as part of the "Are we gonna use
 this?"
 
-J
+J:
 Yeah I think the... Then it wouldn't be the patch
 ones. I think bigger changes like that
 sometimes have other presentations, it's
@@ -865,10 +865,10 @@ many features and I would
 probably look at that and see if it
 matches their needs.
 
-C
+C:
 Mm
 
-J
+J:
 And then the manager would probably
 ask the architects and developers to tell
 how much work they needed to put in to
@@ -876,7 +876,7 @@ fulfill the rest of the stuff, the
 deprecated stuff. So I don't
 think the manager himself would look into that.
 
-C
+C:
 Even; even before...
 Like even before something has been
 adopted... You probably; probably check
@@ -886,25 +886,25 @@ and
 maybe you'll check out how is the
 documentation, how is it support.
 
-J
+J:
 Yeah
 
-C
+C:
 But you'll
 probably not check "Ok, are the release
 notes gonna be good when we're gonna
 need them in one year"?
 
-J
+J:
 Probably not.
 I think that's... Unfortunately not. I would say...
 It's; I probably should. But I would rely on the
  architects and developers to tell me if they were good enough.
 
-C
+C:
 Okay.
 
-J
+J:
 And then... I have to back a little bit on
 one thing. Since I also have a scrum master role as a
 manager, which is not normal, but in this
@@ -918,44 +918,44 @@ know "Okay what; what type has changed,
 what deprecated parts; and so on". Then I would
 probably read it together with the developers.
 
-C
+C:
 Mm
 
-J
+J:
 So it's a
 little bit of a mixed role that's why
 maybe it's mixed answers.
 
-C
+C:
 Mm. Ehm... [pause]. Mm. We can move over to online
 community now. Ehm. So in general, when I just say that a
 software has an online community...
 
-J
+J:
 Mm
 
-C
+C:
 What
 does that mean to you?
 
-J
+J:
 Active discussions. [laughter].
 That people are asking question and
 they're getting answers quickly and
 preferably not only... An active is; answers are
 not only given by the main developer or developers.
 
-C
+C:
 Mm.
 
-J
+J:
 But there are people out there helping, that's an active community.
 
-C
+C:
 So in communities that you like, what do they
 have in common?
 
-J
+J:
 That they are polite answers [laughter]
 and they are
 elaborate answers to questions. So if
@@ -963,109 +963,109 @@ someone comes with an... a problem, or so on,
 there are people answering to the right
 level.
 
-C
+C:
 Mm
 
-J
+J:
 Because sometimes it could be
 people who misuse this. Like "Oh, I have to
 show something to my manager, please do this for me"
 
-C
+C:
 Yeah.
 
-J
+J:
 I don't think that's; you don't need to answer
  those but you
 should at least support; "Ah, here's some
 help to get you started".
 
-C
+C:
 Mm
 
-J
+J:
 And not only like... "Read the fucking manual" [laughter]
 But "Here you have the things"
 
-C
+C:
 Yeah
 
-J
+J:
 "You can get started here".
 
-C
+C:
 So is it important that community feels alive?
 
-J
+J:
 That's
 very important. There should be things lying around
 for a lot of time.
 
-C
+C:
 Yeah
 
-J
+J:
 Then it's a dead community.
 
-C
+C:
 And also, as you said... And; and the community
 must be helpful, then?
 
-J
+J:
 Yeah, helpful and alive.
 
-C
+C:
 But also polite, as you said?
 
-J
+J:
 Yeah, polite is... I've seen some communities [laughter]
 They are an exception. They could be like, as I said, "Read
 the fucking manual".
 
-C
+C:
 Yeah
 
-J
+J:
 That's when people are trying... I think that's scaring people away.
 
-C
+C:
 Yeah
 
-J
+J:
 I know it's more like tools that's suppose to be very complex and cool,
 but it's not helping if you're inviting with the elbow like that.
 
-C
+C:
 Would that turn you away from; if you're just starting out using platf; software platform
 and need to Google something.
 
-J
+J:
 Mm
 
-C
+C:
 And you realize "Okay, this is the kind of..."
 
-J
+J:
 Yeah it would lower by thoughts about it. It's a... It's a decision that
 goes through a lot of indicators. If it's like that and bad documentation then it's
 a no go directly, and it has to be a really really good tool to get started without one.
 
-C
+C:
 Ehm... And, because... As a community could either be, like for Qlik we have Qlik Branch,
 or that kind of community that's managed by Qlik. And then you have communities that only exist
 on Stack Overflow, for example.
 
-J
+J:
 Mm
 
-C
+C:
 For the
 Stack Overflow one where, it has its own
 life, is it important that the; the
 company behind the software, that they
 are a part of that community?
 
-J
+J:
 Not
 necessarily, if they can; if it's so famous
 that people are there and answering all
@@ -1076,7 +1076,7 @@ this is a really good product. People are
 helping each other just because they
 like it. That's good.
 
-C
+C:
 This has also a
 thing that's; that's a time effort, and
 therefore money, by the company that they
@@ -1084,7 +1084,7 @@ spend a lot of time on answering
 community questions. How important is it
 that the company answers questions?
 
-J
+J:
 I think it goes down to money question, actually.
 If it's; if you can get I; get by
 without because there's a lot of people
@@ -1103,12 +1103,12 @@ the communities is working by itself. But in
 the beginning you probably need to be
 there.
 
-C
+C:
 Mm. [pause] So like just overall, to put it
 concise, what what do you want from an
 online community?
 
-J
+J:
 I think it's... I want
 answers to my questions, I think that's
 it. So if I'm; if; for; but; if I'm
@@ -1119,10 +1119,10 @@ to see that's live, there's good answers
 to questions and it feels like... Then
 it's a plus in my decision.
 
-C
+C:
 Mm
 
-J
+J:
 If I have
 already decided or there's only one, then
 of course I have to make due with what I
@@ -1131,23 +1131,23 @@ maybe I can have less... requirements on it.
 More or less because
 I have to. I have to use it,
 
-C
+C:
 So let's
 say that there was such a thing as a
 flawless documentation, would you still
 need an online community?
 
-J
+J:
 Not if I didn't
 have any questions... A flawless documentation gives all the answers I need.
 
-C
+C:
 Mm
 
-J
+J:
 So no, no community needed.
 
-C
+C:
 'cause that's also a... A company could
 invest energy in making
 the community more alive or making API
@@ -1155,7 +1155,7 @@ documentation better. So... Making the
 documentation better could replace a
 community, the need for a community, you'd say?
 
-J
+J:
 Yeah. I would say that.
 But I think that... It's a little
 bit dependent that area, because it could
@@ -1163,10 +1163,10 @@ be really hard to provide examples which
 are good enough for most people who
 comes and enters the area
 
-C
+C:
 Mm
 
-J
+J:
 While a community are more... Maybe, if
 they're willing, they can put the
 solution in perspective to the question,
@@ -1179,20 +1179,20 @@ could catch that person easier than our
 documentation, which would be very generic.
 "Okay, I don't know if I can do this or not".
 
-C
+C:
 Mm
 
-J
+J:
 And the community says "Yeah of course you
 can! You just use these four or five
 different calls and then something like
 this, and here's a very easy..."
 
-C
+C:
 So in; in reality they're do there is a need
 of... For an online community?
 
-J
+J:
 Yeah if it's
 a very generic product. Because you said
 the perfect; the perfect documentation
@@ -1203,26 +1203,26 @@ yes, I think there are, there exists; there
 exists companies and solutions which
 would require a community.
 
-C
+C:
 Ehm... Do you have any
 questions for me, or something you
 thought I would ask that I didn't?
 
-J
+J:
 No I think it was good that
 you asked what my
 role was I think it's very important here, since I'm a hobby...
 
-C
+C:
 Yeah!
 
-J
+J:
 ...interest and...
 
-C
+C:
 Yeah I felt like I needed to steer it more towards having that perspective.
 
-J
+J:
 I think when I started
 thinking here my two roles in this company here
 and another company is a little bit different actually so I
@@ -1241,22 +1241,22 @@ And it's the technology which rules. So
 they are different somehow,
 these different roles.
 
-C
+C:
 Ehm... Mm.
 
-J
+J:
 The "open-source"-word is actually complicating it a
 little bit there, you don't have this
 historically "Ok, the manager stands for
 the money and and the developers for the technology".
 It's a little bit new world.
 
-C
+C:
 Yeah...
 
-J
+J:
 So that's something you might pick up here.
 
-C
+C:
 Yeah... When I made that clear, you're role, I think the...
 We had a good perspective from then on. Ehm... Okay! Thank you.

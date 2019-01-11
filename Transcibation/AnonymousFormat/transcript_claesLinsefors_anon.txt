@@ -388,7 +388,7 @@ Mm.
 
 98 - AC2
 Interviewee - Architect:
-I think there are some in the things you have. Ad then I would like this more like the snippet one's more connected to "This is the function" and put it in a context as an example.
+I think there are some in the things you have. And then I would like this more like the snippet one's more connected to "This is the function" and put it in a context as an example.
 
 99 - AC2
 Interviewer:

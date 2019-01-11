@@ -43,13 +43,17 @@ standard for Developer Experience. There are however other standards from ISO
  portability. Each of these characteristics have sub-characteristics. The definition of each
  characteristic is listed, and some their sub-characteristics, is in the table below:
 
-Characteristic | Ref | Sub-characteristic | Explanation |
+|Characteristic | Ref | Sub-characteristic | Explanation |
 |--------------|----------------|--------------------|-------------|
 |Functionality|F1|Suitability |The capability of the software product to provide an appropriate set of functions to specified tasks and objectives
 ||F2|Accurateness |The cap... / / ... to provide the right or agreed results or effects with the needed degree of precision
 ||F3|Interoperability| The cap... / / ... to interact with one or more specified systems
 ||F4|Security| The cap... / / ... to protect information and data so that unauthorised persons or systems cannot read or modify them and authrised persons or systems are not denied access to them
-|Reliability|R1|Maturity| The cap... / / ... to avoid failure as a result of faults in the software
+|Reliability|R1|Maturity
+
+
+
+| The cap... / / ... to avoid failure as a result of faults in the software
 ||R2|Fault tolerance | The cap... / / ... to maintain a specified level of performance in cases of the software faults or of infringement of its specified interface
 ||R3|Recoverability| The cap... / / ... to re-establish a specified level of performance and recover the data directly affected in the case of a failure
 |Usability|U1|Understandability | The cap... / / ... to enable the user to understand whether the software is suitable, and how it can be used for particular tasks and conditions of use
@@ -1224,7 +1228,40 @@ an online community matters.
 **CD - Survey Anomaly**
 * CD1 - In the first survey, having an online community was ranked as the second most important aspect. In the second one, it’s ranked in the middle. Why do you think that is?
 
+### Interview Results
 
+All of the interviews can be found in their full form in appendix X. In this section however
+we will discuss some interesting findings in the interviews.
+
+#### API Documentation and Examples
+
+Just like the surveys suggested, API documentation and examples are very important
+to everyone. It turns out that API examples are actually the first thing most people
+look for when encountering new documentation. Most of the interview subjects, when
+encounter with the question "AB1 - When you look at API documentation, what are you usually looking for?"
+answered in some shape or form that they first of all look for examples, or quoted them as very important.
+[Architect - 24, Quality Architect - 20, Developer Manager - 12, Software Developer - 8, Software Engineer - 13]
+
+API examples is cited as a kick-off point, for people to get started, but also get an
+understanding of what this particular document section is trying to convey.
+[QA - 22; M - 26; SD - 20, 51]
+It's also cited as being used for copy-pasting and modifying to be used in their own code.
+
+The more generic an API is, the more examples you need, according to the Architect [Architect - 30], since
+more there are more applications of the API.
+
+When it comes to how the examples should look, the answers naturally differs depending on their context.
+The interview objects want both getting-started-examples [Q - 96, SE - 40] and short snippets [Q - 98; SD - 10; SE - 40].
+The opinions differ on the how big these snippets should be, and if they should be runnable
+on their own. The architect said that these snippets that are not in the getting-started part should be as concise as possible and not
+runnable on their own [Q - 100]. The Quality Architect however says it's nice to have runnable examples [QA - 34],
+but it's not that important [QA - 63-64]. He goes on to say that the key is that they are as small as possible [QA - 60].
+The software engineer extends on this, saying that the snippet should be as
+short as possible, as long as you don't need prerequisite knowledge. If you do need prior knowledge, the
+example should give a broader context with explanations. [SE - 34-66].
+
+Key seems to be however to get started quickly, to be able to evaluate the product, and that
+examples are key here. [DM - 60; A - 44]
 
 ## Good Sources
 

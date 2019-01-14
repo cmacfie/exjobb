@@ -98,8 +98,8 @@ if something gives a good DX. He for example puts emphasis on
 communication between the product provider and the developer.\cite{jarman} The dialog
 between the product provider and the community needs to be authentic,
 open and honest in order the give a good developer experience, according
-to Jarman. He also states that ...
-
+to Jarman.
+\\ \\
 It has been researched what makes a developer
 happy and unhappy\cite{unhappy}, and found several indicators. They found both
 internal- and external factors, where external are the most interesting
@@ -124,37 +124,38 @@ engine.
 
 \subsection{Standardisation}
 International Organisation for Standardization (ISO) has yet to present a
-standard for Developer Experience. There are however other standards from ISO
+standard for developer experience. There are however other standards from ISO
 that are interesting to have a look at. One is \textit{ISO 9126 Software engineering - Product Quality}.
 One part of the ISO-standard concerns quality. This part of the ISO standardizes how to measure the quality of software.
 It has six different characteristics: functionality, reliability, usability, efficiency, maintainability and
 portability. Each of these characteristics have sub-characteristics. The definition of each
-characteristic is listed, and some their sub-characteristics, is in the table below:
+characteristic is listed, and their sub-characteristics, is in table \ref{tabl:standard1} and table \ref{tabl:standard2}
+
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|p{0.05\linewidth}|p{0.2\linewidth}|p{0.55\linewidth}|}
+\begin{tabularx}{\columnwidth}{|l|l|X|}
 \hline
 
 \multicolumn{3}{c}{\textbf{Functionality}} \\ \hline
-F1 & Suitability &The capability of the software product to provide an appropriate set of
+F1  &   Suitability &The capability of the software product to provide an appropriate set of
 functions to specified tasks and objectives \\ \hline
-F2 & Accurateness & The cap... / / ... to provide the right or agreed results or effects with the needed
+F2  &   Accurateness &  The cap... / / ... to provide the right or agreed results or effects with the needed
 degree of precision \\ \hline
-F3 & Interoperability& The cap... / / ... to interact with one or more specified systems \\ \hline
-F4  & Security& The cap... / / ... to protect information and data so that unauthorised persons or systems
+F3  &   Interoperability& The cap... / / ... to interact with one or more specified systems \\ \hline
+F4  &   Security& The cap... / / ... to protect information and data so that unauthorised persons or systems
 cannot read or modify them and authorised persons or systems are not denied access to them \\ \hline
 
 \multicolumn{3}{c}{\textbf{Reliability}} \\ \hline
-R1 & Maturity & The cap... / / ... to avoid failure as a result of faults in the software \\
+R1  & Maturity    & The cap... / / ... to avoid failure as a result of faults in the software \\
 \hline
-R2 & Fault tolerance & The cap... / / ... to maintain a specified level of performance in cases of the
+R2  &   Fault tolerance & The cap... / / ... to maintain a specified level of performance in cases of the
 software faults or of infringement of its specified interface \\ \hline
-R3 & Recoverability & The cap... / / ... to re-establish a specified level of performance and recover the
+R3  &   Recoverability  & The cap... / / ... to re-establish a specified level of performance and recover the
 data directly affected in the case of a failure \\ \hline
 
 \multicolumn{3}{c}{\textbf{Usability}} \\ \hline
-U1 & Understandability & The cap... / / ... to enable the user to understand whether the
+U1  &   Understandability   &   The cap... / / ... to enable the user to understand whether the
 software is suitable, and how it can be used for particular tasks and conditions of use \\ \hline
 U2&Learnability & The cap... / / ... to enable the user to learn it application \\ \hline
 U3&Operability & The cap... / / ... to operate and control it \\ \hline
@@ -165,12 +166,14 @@ E1&Time Behaviour & The cap... / / ... to provide appropriate response and proce
 throughput rates when performing its function, under stated conditions \\ \hline
 E2&Resource Utilisation & The cap... / / ... to use appropriate amounts and types of resources when the software
 performs its function under stated conditions \\ \hline
-\end{tabular}
+\end{tabularx}
+\caption{Part 1: ISO-9216}
+\label{tabl:standard1}
 \end{table}
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|p{0.05\linewidth}|p{0.2\linewidth}|p{0.55\linewidth}|}
+\begin{tabularx}{\columnwidth}{|l|l|X|}
 \hline
 \multicolumn{3}{c}{\textbf{Maintainability}} \\ \hline
 M1&Analysability & The cap... / / ... to be diagnosed for deficiencies or causes of failures in the
@@ -191,7 +194,9 @@ purpose in the same environment \\ \hline
 \multicolumn{3}{c}{\textbf{All characteristics}} \\ \hline
 AC&Compliance & The cap... / / ... to adhere to standards and conventions relating to the
 characteristic \\ \hline
-\end{tabular}
+\end{tabularx}
+\caption{Part 2: ISO-9216}
+\label{tabl:standard2}
 \end{table}
 
 
@@ -203,36 +208,39 @@ More text here ...
 \subsection{Kinds of APIs}
 
 Application Program Interfaces (APIs) are, simply put, a software that
-lets one application interact with another applications inner data and
-services. It's the link between the two pieces of software that let's
-them communicate. Because of APIs broad nature, there are many types of
-APIs. Applications are in need of an interface to interact with it's
+lets one application interact with another application's inner data and
+services. Applications are in need of an interface to interact with it's
 inner parts to create, read, update and read (CRUD) as well as execute
-commands.
+commands. APIs provide this link between the two pieces of software that let's
+them communicate.Because of APIs broad nature, there are many types of
+APIs.
 
 \subsubsection{Internal, Public and Partner APIs}
-
+APIs have different level of openness, depending on who is going to access them. They are
+usually divided into three groups: Internal APIs, Public APIs and Partner APIs. These
+three groups are explained below.
+\paragraph{Internal APIs}
 Internal APIs are APIs that har meant to be used in production and
 within an organisation or company. They are often developed to be used
 between different teams in the company to be able to connect software
 components in the application, without having to actually know the code
-of component. The benefit of this is that the team can open up certain
+of the component. The benefit of this is that the team can open up certain
 needed functionality of the software to other teams while still being in
 control of their own code. This kind of APIs are protected and require
 internal API keys to access to ensure that people outside of the company
 are not able to access them.
-
+\paragraph{Public APIs}
 Public APIs is another kind of API. This is a way for the company to
 open up functionality of the software's inner workings to the world so
 that anyone may build new applications that are built upon the original
 software. This kind of interface often only has a small percentage of
 the functionality that the internal API has, since the circuitry of the
-software must be protected for security reasons as well as business
+software must be protected for security reasons as well as from business
 intelligence theft. If the internal API was open to the public anyone
-could build their own copy of the program. This kind of APIs either do
+could build their own copy of the program. These kind of APIs either do
 not require any API key to access, or have an API key that is open for
 anyone to acquire (either through payment or for free).
-
+\paragraph{Partner APIs}
 Partner APIs are a third interface that can be shared
 business-to-business (B2B), with strategic partners to the company.
 Partner APIs often put some restraints on what can be exposed so that
@@ -247,7 +255,7 @@ When using services over the internet, there are many different protocols that c
 And just like with many other things in computer science, there are many valid approaches whom all have their
 pros and cons. The world wide web (WWW) is largely built upon the application protocol
 hypertext-transfer-protocol (HTTP) which, amongst other things, provides CRUD (Create, Retrieve, Update, Delete)
-methods to applied on resources. Resources in this context is refers to any \textit{thing}: file, object, document,
+methods to be applied on resources. Resources in this context is refers to any \textit{thing}: file, object, document,
 text, etc, that is provided by a web service. There are however many ways of utilizing this protocol to let a
 client access and manipulate server-side data, as well as execute commands. Below we describe two methods.
 
@@ -255,11 +263,11 @@ client access and manipulate server-side data, as well as execute commands. Belo
 
 Representational State Transfer (REST) is a software architectural style
 that is used in web services which acts as a communication bridge
-between computer systems and the internet that let's the system interact
+between computer systems and the internet. It let's the system interact
 and manipulate the service it's interacting with. REST solves many
 issues that had been present in previous implementations of
 communication between computer systems and the web.
-
+\\ \\
 One of the key factors in REST is that it's stateless. Statelessness in
 this context means that the two communicating parties does not need to
 know anything about each other or have seen previous messages to
@@ -267,21 +275,21 @@ understand future ones. This feature is possible by limiting it to the
 use of resources instead of commands. REST-APIs can therefor not ask the
 server side to execute a specific custom command, but is limited to
 using CRUD methods.
-
+\\ \\
 A REST request consists of an HTTP method, a header containing
 information about the request, the path to the resource and lastly and
 optional message body consisting of data.\cite{rest1}\cite{rest2}
-
+\\ \\
 Statelessness makes it possible to separate the client and the server.
 Code changes to the server will not require changes to the client's
 code, and vice versa, as long as the message format between the two are
 kept the same.
-
+\\ \\
 Since REST does not use sessions, but simply responds to any incoming
 requests, it's easy to scale up. It simply requires more bandwidth and
 processing power to be able to handle more requests per second.
-
-If you want, for example, post a message as a user with the userID 1, it
+\\ \\
+If you want to for example post a message as a user with the \texttt{userID 1}, it
 could look something like this when using REST:
 
 \begin{lstlisting}
@@ -296,7 +304,7 @@ new message is created and put there. The server does not work in
 sessions and cannot tell clients that a new message is available. The
 clients has to periodically ask the server if there are any new messages
 to retrieve.
-
+\\ \\
 REST may be appropriate to use when you mostly want to do CRUD-commands
 or manipulate data.
 
@@ -305,23 +313,23 @@ or manipulate data.
 %    https://en.wikipedia.org/wiki/Remote_procedure_call
 %    https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/
 Remote Procedure Call (RPC) is a protocol used to execute commands on remote systems. RPC is, like REST, also
-built on \texttt{HTTP}, but uses mostly just the \texttt{GET} and \texttt{POST} commands. RPC is a request-response protocol and is, unlike
+built on HTTP, but uses mostly just the \texttt{GET} and \texttt{POST} commands. RPC is a request-response protocol and is, unlike
 REST, stateful. Ergo, the protocol works with sessions between a client and a server, and previous messages may
 be needed in order to understand future ones.
-
+\\ \\
 An upside of RPC is that it let's a client request the server to execute
 a custom command. Making an RPC-call is much like making a normal
 function call, in that you simply provide the name of the method and the
 parameters. A consequence of this is that code changes on server-side,
 such as method-name or parameter input, may require code changes on the
 client side as well.
-
+\\ \\
 Since RPC has two-way communication, the server can tell the client when
 something has changed, whereas in REST-based communication the client
 has to ping the server to check if there are any changes. An RPC based
 server needs to have a unique session for each client, which can cause
 problems with scalability.
-
+\\ \\
 If we go back to example used in the previous section: posting a message
 may look something like this:
 
@@ -339,7 +347,7 @@ timeout. Since RPC uses sessions and custom commands, the method can be
 implemented as such that other sessions should be notified that a new
 message has been sent, and the server can send it out to appropriate
 clients.
-
+\\ \\
 RPC may be appropriate to use when you have functionality that can
 benefit from two-way communication or is mainly command-oriented.
 
@@ -353,7 +361,6 @@ insights about their data. Mira is a REST-API, since this is a about
 retrieving data and not performing actions.\cite{qlikwebsite}
 
 \subsection{API User Personas}
-
 There are many types of people using platforms, whom all have different
 requirements. They can be roughly divided into two important groups:
 'Decision makers' and 'Users'. These both need to be catered to in order
@@ -361,45 +368,75 @@ to have a successful platform: if the decision makers are ignored the
 platform will not be implemented by companies in the first place. If the
 users are ignored, the platform will be quickly dropped since it's usage
 is not good enough.
-
+\\ \\
 Mark Nottingham lists 11 personas for HTTP-based APIs\cite{personas}.
 
 More text here ...
 
-\section{Methodology}
+\section{Methodology and Preparations}
+
+There could have been many approaches to this thesis to try to find what was needed in order to find out
+what people require from software platforms in order to get a good developer experience. The process we chose was to make
+a survey followed by interviews to triangulate the results.
+
+First of all we decided what aspects we were going to consider. This was followed by an inital test survey to find what
+parts we wanted to investigate further. We then conducted the major survey. After that we analyzed the results and tried to find
+patterns and interesting aspects. This lead to a series of questions, which we used when conducting interviews with people with
+different experience and job titles. The result from the interviews were put together and related to the finding in the survey.
+This finally resulted in a list of recommendation on what is needed by a software platform in order to give a good DX.
+
+Lastly, this listed was used to analyze how well Qlik Core follow these recommendations.
+
 \subsection{Deciding consideration aspects}
 
 There are a lot of aspects we could have considered as requirements for
-good DX. We had to limit them down however, and ended up with 14 aspects.
-For the second survey, we added two more aspects, namely aspect 13 and 14 in the list below.
-The reasoning for adding this is
+good DX. We had to limit them down however, and ended up with 14 aspects relating to software, and six aspects relating ot the
+creators of software.
+For the second survey, we added two more aspects, namely aspect 13 and 14 in the list below. Aspects relting to
+creators of software were not part of the second survey.
+The reasoning for adding two new aspects and removing aspects relating to creators is
 discussed later in the paper. The fourteen original aspects were decided in a combination
 of reading literature, our own experience of what we would consider when
 picking software platforms, and a brainstorm meeting with more experienced
-people at Qlik, consisting of architects and developers.
-The list we ended up with is the following:
+people at Qlik, consisting of an architect and developers.
+The list we ended up with can be seen in table \ref{tab:aspects}.
+\begin{table}[H]
+\centering
+\begin{tabularx}{\columnwidth}{l X}
+\multicolumn{2}{c}{\textbf{List of Aspects}} \\
+\hline
+1    & How often the software is updated    \\
+2    & I can have working code quickly  \\
+3    & The API documentation gives thorough explanations on how it works    \\
+4    & The API has code examples    \\
+5    & The documentation doesn't assume any prior expertise \\
+6    & The documentation has consistent language    \\
+7    & The documentation is easy to navigate    \\
+8    & The official website looks professional  \\
+9    & The pricing of the software  \\
+10    &  The release- and change notes are thorough \\
+11   &  The software has the same features on all different platforms   \\
+12    &  The software is compatible with different platforms    \\
+13  &  The software is offered in more than one programming language    \\
+14*    &  The software is open source    \\
+15*    &  The software uses the programming language I am most comfortable with  \\
+16    &  There exists an active online community around the software    \\
+\hline \hline
+17** & The creator of the software has good communication with it's users \\
+18** & The creator of the software has high transparency with it's issues, ways of working, future plans, etc. \\
+19** & The creator of the software seems professional \\
+20** & The creator of the software has a good reputation online \\
+21** & I have heard of the creator of the software before \\
+22** & I have heard of other software the creator of the software has made
+& \\
+\multicolumn{2}{l}{\textit{*Not part of the first survey, **Not part of the second survey}}
+\end{tabularx}
+\caption{List of aspects considered to give good DX}
+\label{tab:aspects}
+\end{table}
 
-\begin{enumerate}
-\item How often the software is updated
-\item I can have working code quickly
-\item The API documentation gives thorough explanations on how it works
-\item The API has code examples
-\item The documentation doesn't assume any prior expertise
-\item The documentation has consistent language
-\item The documentation is easy to navigate
-\item The official website looks professional
-\item The pricing of the software
-\item  The release- and change notes are thorough
-\item  The software has the same features on all different platforms
-\item  The software is compatible with different platforms
-\item  The software is offered in more than one programming language
-\item  The software is open source
-\item  The software uses the programming language I am most comfortable with
-\item  There exists an active online community around the software
-\end{enumerate}
-
-<cite>[Sam Jarman][1]</cite>'s article is the source for some of these
-aspects. One of the points he makes is the importance of a great documentation.
+Sam Jarman's article is the source for some of these
+aspects.\cite{jarman} One of the points he makes is the importance of a great documentation.
 He says the documentation should always be written as if the developer is
 a beginner, which lead to aspect `5 - The documentation doesn't assume any prior expertise` in the list.
 He also says great documentation is consistent, ergo it does not use different
@@ -415,7 +452,7 @@ updated, deprecated, fixed, etc, but also point out possible risks of the new re
 such as things that might break with it. Although these sub-features of release notes
 might be interesting to list as their own aspects, we had to keep the list short
 and ended up with the general aspect of `10 - The release- and change notes are thorough`.
-
+\\ \\
 Jarman also talks about pricing. He puts emphasis on that pricing of the software
 should be easy to find for the developer. During the brainstorming, this
 aspect was also discussed, and we ended up with the somewhat vague
@@ -425,73 +462,99 @@ consider around the pricing, and we simply wanted to know if pricing is somethin
 that is often considered in general. In hindsight, it might have been better to have
 divided this into several aspects, since it's difficult to know how the
 survey taker interpreted the aspect.
-
+\\ \\
 When we had this short list, we sat down and thought of things that we
-consider ourself when picking software. The list was extended further,
-with aspects related to API examples, online community and platform compatibility.
-We then had a brainstorming meeting, where did not present our list, and people
-were free to present things they usually considered. After the people present
-at the meeting had presented their ideas, we showed our list and compared.
-The aspects on the list were discussed, the phrasing of it and the importance
-of them. Finally we ended up with the list of fourteen aspects.
-Being open source was discussed, but after some hesitance dropped. It
-was pointed out as important by Sam Jarman. And after the first survey, when it was
-also pointed out by survey takers as an aspect that they considered, it was
-added to the list in the second survey.
-Aspect number 15 on the list, which was added for the second survey, was
+consider our self when picking software. The list was extended further,
+with aspects related to API examples, online community and  platform compatibility.
+\\ \\
+After this, we had a brainstorming meeting with two senior developers and a
+senior architect to further extend the list of aspects. The meeting attendees can arguably be considered
+to have expertise within the field, having worked for many years within the field.
+Firstly, all three
+were given five minutes to write down as many aspects as they could think of.
+These aspects were then presented in turn and written on a whiteboard. Any further ideas
+that the three experts got when they saw the others' ideas were also added.
+We then presented the list we had created ourselves earlier and the aspects not yet listed
+as well on the whiteboard. The list was then discussed, as well as the phrasing of each aspect and the importance
+of them.
+\\ \\
+Finally we ended up with the list of fourteen aspects, as seen in table \ref{tab:aspects}.
+Being open source is pointed out as important by Sam Jarman, and was discussed in the meeting.
+It was however not included in the final list. After the first survey was conducted, it was
+also pointed out by survey takers as an aspect that they considered. It was then
+added to the list to be used in the second survey.
+
+Aspect number 15 on the list was
 added for the second survey as well. The reasoning here being that the aspect
 `13 - The software is offered in more than one programming language` felt
 like it needed a parallel question: `15 - The software uses the programming language I am most comfortable with`,
 to see if the importance of several language was solely based on the fact that
-people wanted their favorite programming language.
+people wanted their favourite programming language.
 
 
 \subsection{Linking considerations to ISO-9216-1}
 
 As said before, there is no standard for DX. ISO-9216-1 is however a standard
 to measure the quality of software, so comparing the aspects to this list can
-be interesting. In the table below, the aspects are linked to characteristics they relate to.
+be interesting. In table \ref{tabl:iso}, the aspects are linked to characteristics they relate to. The aspect ID's can
+be found in table \ref{tab:aspects} and the references to the sub-characteristics can be seen in table \ref{tabl:standard1} and \ref{tabl:standard2}.
 
-
-\begin{table}
-\caption{Relation between ISO-9216-1 and DX-aspects}
+\begin{table}[H]
 \centering
 \begin{tabularx}{\columnwidth}{r|l:l:l:l:l:l}
-\rotatebox{90}{\textbf{Aspect}}& \rotatebox{90}{\textbf{Functionality}} & \rotatebox{90}{\textbf{Reliability}} & \rotatebox{90}{\textbf{Usability}} &
+\rotatebox{90}{\textbf{Aspect ID}}& \rotatebox{90}{\textbf{Functionality}} & \rotatebox{90}{\textbf{Reliability}} & \rotatebox{90}{\textbf{Usability}} &
 \rotatebox{90}{\textbf{Efficiency}} & \rotatebox{90}{\textbf{Maintainability}} & \rotatebox{90}{\textbf{Portability}} \\ \hline
-1 & & R1 &        & & M3 & P4\\ \hline
-2 & F1, F2 & & U1, U2, U3 & & M2 &        \\ \hline
-3 & F1, F2, AC & AC &    U1, U2, U3, AC & AC & M1, AC &    AC    \\ \hline
-4 & F1, F2, AC & AC    & U1, U2, U3, AC & AC & M1, AC    & AC    \\ \hline
-5 & AC & AC &    U1, U2, U3, AC & AC & AC & AC    \\ \hline
-6 & AC & AC & U1, U2, U3, AC & AC & AC & AC    \\ \hline
-7 & & & U1, U2, U3, AC & &        &        \\ \hline
-8 & & & U4 & &        &        \\ \hline
-9 & & & U1 & &        &        \\ \hline
-10 & F1 & R1 & U1    & & & P4    \\ \hline
-11 & & &        & & & P4    \\\hline
-12 & F3 &        & & & & P1, P2    \\ \hline
-13 &        & & U2 & & &        \\\hline
-14 &    AC & AC & AC & AC & M1, M2, M4, AC & AC    \\ \hline
-15 & F1, F2    & & U1, U2, U3 & & &        \\ \hline
-16 & & & U1, U2 & & &        \\\hline
+1	&		&	R1	&		&		&	M3	&	P4\\ \hline
+2	&	F1, F2	&		&	U1, U2, U3	&		&	M2	&		\\ \hline
+3	&	F1, F2, AC	&	AC	&	U1, U2, U3, AC	&	AC &	M1, AC	&	AC	\\ \hline
+4	&	F1, F2, AC	&	AC	&	U1, U2, U3, AC	&	AC	&	M1, AC	&	AC	\\ \hline
+5	&	AC	&	AC	&	U1, U2, U3, AC	&	AC	&	AC	&	AC	\\ \hline
+6	&	AC	&	AC	&	U1, U2, U3, AC	&	AC	&	AC	&	AC	\\ \hline
+7	&		&		&	U1, U2, U3, AC	&		&		&		\\ \hline
+8	&		&		&	U4	&		&		&		\\ \hline
+9	&		&		&	U1	&		&		&		\\ \hline
+10	&	F1	&	R1	&	U1	&		&		&	P4	\\ \hline
+11	&		&		&		&		&		&	P4	\\\hline
+12	&	F3	&		&		&		&		&	P1, P2	\\ \hline
+13	&		&		&	U2	&		&		&		\\\hline
+14	&	AC	&	AC	&	AC	&	AC	&	M1, M2, M4, AC	&	AC	\\ \hline
+15	&	F1, F2	&		&	U1, U2, U3	&		&	&		\\ \hline
+16	&		&		&	U1, U2	&		&		&		\\\hline
 \end{tabularx}
+\caption{Relation between ISO-9216-1 and DX-aspects}
+\label{tabl:iso}
 \end{table}
 
-\subsection{Initial Survey}
+\subsection{Surveys}
+
+\subsubsection{Reasons To Do Surveys}
+
+\subsubsection{Survey Decisions}
+Do first survey
+Only send internally in Qlik
+
+\subsubsection{Survey Subjects}
+
+\subsubsection{Survey Questions}
+
+\subsubsection{Survey 1}
+
+\subsubsection{Survey 2}
 
 After gathering potential factors, through litterateur and
 brainstorming, on what would lead to good DX, it was concluded that a
 smaller, initial survey would be relevant to conduct to test the waters
 on the potential factors that had been found. It also intended to find
-more potential factors that had not been thought of. The small survey
-got 38 responses, mostly from Qlik employees. The survey confirmed some
-initial assumtions but also raised some questions. It also highlighted
-that some questions may need to be added, some rephrased and some
-removed for the main survey. The survey questions can be seen in
+more potential factors that had not been thought of. The survey had intentionally
+a too broad of a scope.
+The intentions with the survey was to get a grip on what part of DX would be most interesting
+to get a deeper grip on. It also intended to see if there are any issues in the
+phrasing of the aspects, as well as find any aspects we had not thought of.
+
+The survey questions can be seen in
 Appendix X.
 
-\subsubsection{Survey structure}
+\subsubsection{Survey Structure}
 
 The survey consisted of three parts. The first part was a small screener
 to gather some information about the person taking the survey. The
@@ -502,15 +565,284 @@ Qlik Sense. Although the data set was too small to make any direct
 affirmations, it gave some indications. In the part about the DX
 factors, the user were to rank each factor depending on how often they
 considered the factor when finding new software. To able to rank the
-answers, each answer was given a value: 'Always Consider' (+4), 'Often
-Consider' (+3), 'Sometimes Consider' (+2), 'Rarely Consider' (+1),
-'Never Consider' (0). After summing them up, I was able to give each
-question a score between 0 and 1, where a 1.0 score would mean that
+answers, each answer was given a value: 'Always Consider' (1.00), 'Often
+Consider' (0.75), 'Sometimes Consider' (0.50), 'Rarely Consider' (0.25),
+'Never Consider' (0.00). After summing them up and taking the average score, we were able to give each
+aspect a score between 0 and 1, where a 1.0 score would mean that
 everyone answered 'Always consider' and 0 would mean that everyone
-answered 'Never consider'. The result of the survey can be seen in
-Appendix Y.
+answered 'Never consider'.
 
-\subsubsection{Indications of survey results}
+\subsection{Interviews}
+
+\subsubsection{Reasons to do interviews}
+There are several reasons why interviews is a suitable method use in this reasearch project.
+The quantitative data collected
+by the two survey gives a good idea of what is needed, does not answer *why* it is needed.
+Interviews will therefor give a depth to the quantitative data that has been collected.
+Denscombe[9] recommends using interviews as a follow-up to questionnaires. As he puts it,
+questionnaires can generate some interesting results that interviews can pursue
+in greater detail and depth. He also states that interviews should be seen as a good way
+to corroborate data found with other methods. By using interviews, we can triangulate data
+collected by the questionnaires to confirm the facts once more with another approach.
+Furthermore, Dencsombe talks about interviews being well-suited for certain kinds of data.
+He gives three main data types when interviews are a good method,
+two of which are applicable to this research project. The first reason is
+when data is based on emotions. DX is, as described before, based on the *feeling*
+of a good interaction, something that is hard to get a understanding of through
+surveys. The second reason given by Denscombe is when you have access to 'key players'
+with in a field. That is, when you have the possibility to interview people
+that have great insight into a field, interviews are a good way to collect that data.
+With these interviews, we have access to people of different experience, job titles
+and level of decision power. By doing interviews, we can get an understanding
+of why different job titles desire different things, why more experienced people
+want certain aspects and why persons with a lot of power within a company
+have needs that others don't.
+
+\paragraph{Interview instead of Observation Study}
+We also talked about doing
+
+\subsubsection{Interview Decisions}
+\paragraph{Interview Style}
+There are many different ways of conducting interviews. Denscombe groups it into
+three different approaches: one-on-one interviews, group interviews and focus groups.
+These methods all have pros and cons, described by Denscombe[9].
+
+One-on-one interviews are easy to arrange, since
+only two people's (Interviewer and interviewee) schedules have to coincide.
+Compared to group interviews and focus groups, it's also easy to control the interview,
+dive deeper into questions when needed and it's easy to link the results
+to the specific person.
+
+Group interviews have advantages as well. It helps to find what a consensus around
+a topic is, where people's opinions can be challenged right away by other group members.
+There are also risks of group interviews, where 'quieter' people may be silenced by
+members of the group who are more dominant. Group interviews are also less suited
+for topics where answers that are more 'accepted' than others.
+
+Finally, focus groups have the same issues as group interviews does. It also
+requires a more skilled moderator, since focus groups is more of an ongoing
+discussion of experts within a field, that can easily get out of hand if the
+moderator does not know how to steer the group.  Transcribing focus groups are also
+more challenging since it is natural that people talk over each other. Linking opinions
+to certain people may also be harder when everyone's statements are blurred together.
+
+For this research project we chose to go ahead with one-on-one interviews.
+The disadvantages of them are small, and one the most challenging things
+about the interviews is finding time to arrange them. It was not feasible
+to try to find enough people for a group interview where everyone's schedules
+could coincide.
+
+\paragraph{Interview Structure}
+Dencsombe describes three different types of interviews: structured, semi-structured and
+unstructured interviews. Structured interviews are much like questionnaires, where
+the interviewer holds a tight grip on the interview and does not expect free form answers.
+Structured interviews looks to standardize the results for easy comparison.
+This interview structure is more for 'checking' rather than 'discovery' and is
+therefor more of a quantitative data collection rather than qualitative.
+
+Semi-constructed interviews has, just like constructed interviews, a clear set
+list of questions. However, in a semi-structured interview, the interviewee
+is not presented with yes or no questions, or questions with alternatives.
+The questions are instead open-ended. As described by Denscombe, the interviewee
+is expected to develop their own ideas and speak widely about the given issue or question.
+Here, the emphasis is more on 'discovery' than checking.
+
+Unstructured interviews is the third alternative and is the loosest of the three styles.
+With this structure, the interviewer wants to get the interviewees general thoughts
+on a subject or issue and tries to be as unobtrusive as possible. As described by Denscombe,
+the interviewer presents a specific issue or subject and hopes to get a ball rolling.
+Semi-constructed and unstructured exist on a continuum. The more open-ended the questions
+are, the more you move from semi-structured to to unstructured.
+
+For this research project we are using the style of semi-constructed.
+We are trying to discover things rather than check, which removes the option
+of a structured interview. We however have a very clear set of questions
+we want answers on.
+
+\subsubsection{Interview Subjects}
+There are many things that be explored for these interviews. Due to limited
+time, we had to narrow it down to a few subjects. The three subjects
+we chose are related to release notes, APIs and online community.
+
+Release notes is noted as a very important aspect by literature, but
+the survey results show that this is one of the least considered aspects.
+Whereas this is something that maybe could be expected (people don't look
+at release notes until they are needed, and don't usually consider this
+when choosing platforms), the more surprising part is that it does *not*
+affect them negatively DX-wise either if the release notes are poorly written.
+To get a deeper understanding on why this is, we chose this as a subject
+for the interviews.
+
+The API documentation and examples are pointed as very important by the
+surveys. In the survey we used the vague term of 'Good' and 'Bad', and
+the survey takers applied their own definition of these two terms. We
+are interested of how we can define 'Good' and 'Bad'. One of the most important
+aspects according the survey is also to have working code quickly. Upon exploring
+possible aspects to explore, we found ourself asking if working code quickly
+is jus ta consequence of good API documentation and examples. Maybe it's not
+its own aspect at all? So this question also got merged into this question subject.
+
+The last subject we chose to explore is online communities. An anomaly found
+between the first and second survey is that online community was very important
+to people in the first survey, but only somewhat important in the second one.
+We want to understand the shift in this ranking.
+
+\subsubsection{Interview material}
+We concluded that it would be good to have reference points during the interview,
+that there should be some material that the interviewee could use when talking.
+We discussed using some API documentation and release notes from existing software platforms,
+more precisely Qlik Core. However, Qlik Core is a very advanced platform which takes a long time
+to grasp. Since the interviewees have limited time to put aside for the interviews, it seemed
+like making them read and understand documentation of a whole new software platform was too much to ask.
+Instead we created some API documentation and release notes for a made up software platform
+called 'MyBakery'. Everyone already have a good mental picture of how a bakery works,
+so even if you give them limited amount of documentation they still have a mental picture
+of what this software platform does. To make the request of making them read documentation less boring,
+we tried to make a gamification of the task. The interviewees were given the material, and
+three questions they needed to answer. This forced them to read and understand the material, rather
+than just read through it. The material can be seen in appendix X.
+
+\subsubsection{Interview Questions}
+
+Ultimately, we want to answer "Why are the aspects needed or not needed
+to give a good DX and what happens if they (don’t) exist or are poorly/well implemented?"
+The questions for the interviews are constructed to be able to answer this question.
+Since the interview is semi-constructed, all questions will not necessarily be asked.
+Depending on how the interviewee answer, some questions may already have been answered,
+some questions may be uninteresting to dive into, etc.
+\paragraph{A - APIs}
+For the API documentation, API examples and to have working code quickly, we
+already know that is important. It's also not very surprising that it is.
+For this, we are rather trying to understand how we define 'Good' API related.
+
+\begin{enumerate}[label={A\Alph*}]
+\item \textbf{General}
+\begin{enumerate}[label={AA\arabic*}]
+\item How important would you say API documentation and examples are?
+\end{enumerate}
+\item \textbf{Api Documentation}
+\begin{enumerate}[label=AB\arabic*]
+\item When you look at API documentation, what are you usually looking for?
+\begin{itemize}[label={-}]
+\item What should the documentation look like?
+\item Is there anything in the material you always look for, or something that is missing?
+\item When you come across an API documentation, are there any red flags you look for?
+\end{itemize}
+\item	How does the API documentation quality affect you in your work?
+\begin{itemize}[label={-}]
+\item Do you abandon a software platform if the documentation is poor?
+\end{itemize}
+\end{enumerate}
+\item \textbf{Api Examples}
+\begin{enumerate}[label={AC\arabic*}]
+\item	What is your goal when looking at API examples?
+\begin{itemize}[label={-}]
+\item For copy-pasting?
+\item To understand underlying structure?
+\item To simply see how it's used?
+\end{itemize}
+\item   What should API examples look like?
+\begin{itemize}[label={-}]
+\item Short examples or long examples?
+\item Should it be runnable or concise?
+\item Within a big context or concise?
+\end{itemize}
+\item	How does the API examples quality affect you in your work?
+\begin{itemize}[label={-}]
+\item Do you abandon a software if the examples are poor?
+\end{itemize}
+\end{enumerate}
+
+\item\textbf{Working Code Quickly}
+\begin{enumerate}[label={AD\arabic*}]
+\item Is it important for you to have working code quickly?
+\begin{itemize}[label={-}]
+\item Why is it/is it not?
+\end{itemize}
+\item When can you accept to not have working code quickly?
+\item Can you have working code quickly if the API examples and documentation is bad?
+\end{enumerate}
+\end{enumerate}
+
+\paragraph{B - Release Notes}
+For release notes, we know through the survey that they are *not* considered.
+The questions have been divided into three groups: 'When are [release notes] needed",
+"What should [release notes] look like?" and "[What are the] consequences [of good/bad release notes]?"
+
+\begin{enumerate}[label=B\Alph*]
+\item \textbf{BA - When are they used?}
+\begin{enumerate}[label=BA\arabic*]
+\item How often do you look at release notes?
+\item In what circumstances do you look at release notes?
+\begin{itemize}[label={-}]
+\item Do you look at release notes before deciding to use a platform?
+\end{itemize}
+\item What do you look for when looking at release notes?
+\end{enumerate}
+\item \textbf{What should they look like?}
+
+\begin{enumerate}[label=BB\arabic*]
+\item Would you say it is important that software platforms have release notes?
+\begin{itemize}[label={-}]
+\item Do you find that information in some other way?
+\end{itemize}
+\item How detailed should they be? / What should they look like?
+\begin{itemize}[label={-}]
+\item How important is it for you that the release notes are thoroughly written?
+\end{itemize}
+\item Is it worth a company's time to make thorough release notes?
+\item How do poor release notes affect you?
+\end{enumerate}
+\item \textbf{Survey Anomaly}
+\begin{enumerate}[label=BC\arabic*]
+\item Release notes is ranked as the least, or amongst the least important aspect for all groups. Why do you think that is?
+\end{enumerate}
+\end{enumerate}
+
+
+\paragraph{C - Online Communities}
+For online community, we are trying to understand why it was ranked
+so differently in the two surveys. We also try to understand why, in general,
+an online community matters.
+
+\begin{enumerate}[label=C\Alph*]
+\item \textbf{General}
+\begin{enumerate}[label={CA\arabic*}]
+\item	When talking about software platforms, what is an online community to you?
+\item	If the documentation was flawless, would you not need an online community?
+\end{enumerate}
+\item \textbf{When are they used?}
+\begin{enumerate}[label={CB\arabic*}]
+\item	How often would you say you take help from online communities?
+\item   Do you check out the online community before choosing a platform?
+\end{enumerate}
+\item \textbf{What should it look like?}
+
+\begin{enumerate}[label=CC\arabic*]
+\item	What do you want from an online community / what should it look like?
+\begin{itemize}[label={-}]
+\item How important are online communities?
+\item What do communities that you like have in common?
+\item Is it important that a community feels alive?
+\item Is it important the community feels helpful?
+\item Is it important that the tone used in the community is positive?
+\item Is it important that the company behind the software are part of the community?
+\end{itemize}
+\item	If we compare software platforms to something smaller, such as a library. Would you say it is more important or less important to have a software community around it?
+\begin{itemize}[label={-}]
+\item Why is it more/less important?
+\end{itemize}
+\end{enumerate}
+\item \textbf{Survey Anomaly}
+\begin{enumerate}[label={CD\arabic*}]
+\item In the first survey, having an online community was ranked as the second most important aspect. In the second one, it’s ranked in the middle. Why do you think that is?
+\end{enumerate}
+\end{enumerate}
+
+\section{Results}
+
+\subsection{Survey 1 Results}
+
 
 The results were evaluated through initially three different filters,
 which were compared to the overall group, to see if there were any
@@ -529,7 +861,7 @@ It should be noted that there is quite a lot of overlap between the
 experienced group and the developer group. 13 people are developers with
 more than five years experience in the industry.
 
-\paragraph{Software factors}
+\subsubsection{Software factors}
 
 Overall, all but 3 factors scored a positive score, meaning that they
 are all factors are more often considered than not. The most important
@@ -563,7 +895,7 @@ about release notes and cross-platform compatibility.
 \label{fig:scopresByPoints}
 \end{figure}
 
-\paragraph{Creator behind the software factors}
+\subsubsection{Creator behind the software factors}
 
 Overall, the creator behind the software seem to be not non-important,
 but not very important, with all factors scoring close to 0/10. The most
@@ -581,7 +913,7 @@ before, with the one exception that 'I have heard of the creator of the
 software before' had an increase by 10\%. It is however still the least
 considered factor.
 
-\paragraph{Follow-up interview}
+\subsubsection{Follow-up interview}
 
 After the results had been evaluated, two follow-up interviews were
 conducted in order to get some insights if there were any issues with
@@ -779,9 +1111,9 @@ the table below.
 3 & The software is compatible with different platforms              \\
 \hline\hline
 \multicolumn{2}{c}{\textbf{Single}} \\ \hline
-1 & The API has code examples                                         \\
-2 & The API documentation gives thorough explanations on how it works  \\
-3 & I can have working code quickly                                   \\
+1 &  The API has code examples                                         \\
+2 &  The API documentation gives thorough explanations on how it works  \\
+3 &  I can have working code quickly                                   \\
 \hline\hline
 \multicolumn{2}{c}{\textbf{Hobby}} \\ \hline
 1 & The pricing of the software    \\
@@ -846,10 +1178,10 @@ be seen in the table below.
 \centering
 \begin{tabularx}{\columnwidth}{r l l}
 \textbf{Grouped Job Titles} &    \textbf{\# of answers} &     \textbf{\% of total} \\\hline
-Architects & 10 & 25.6\%  \\ \hline
-Developer and Engineers & 21 & 53.8\%  \\\hline
-Managers & 4 & 10.3\%  \\\hline
-Other                   & 4 & 10.3\%  \\\hline
+Architects              & 10           & 25.6\%  \\ \hline
+Developer and Engineers & 21           & 53.8\%  \\\hline
+Managers                & 4            & 10.3\%  \\\hline
+Other                   & 4            & 10.3\%  \\\hline
 \end{tabularx}
 \caption{Second survey responses grouped by job titles}
 \label{tab:my_label}
@@ -861,23 +1193,23 @@ it's rank.
 \begin{table}[H]
 \centering
 \begin{tabular}{r|l}
-\textbf{Question ID} & \textbf{Question} \\ \hline
-1 & How often the software is updated                                         \\
-2 & I can have working code quickly                                           \\
-3 & The API documentation gives thorough explanations on how it works         \\
-4 & The API has code examples                                                 \\
-5 & The documentation doesn't assume any prior expertise                      \\
-6 & The documentation has consistent language                                 \\
-7 & The documentation is easy to navigate                                         \\
+\textbf{Aspect ID} & \textbf{Aspect} \\ \hline
+1   & How often the software is updated                                         \\
+2   & I can have working code quickly                                           \\
+3   & The API documentation gives thorough explanations on how it works         \\
+4   & The API has code examples                                                 \\
+5   & The documentation doesn't assume any prior expertise                      \\
+6   & The documentation has consistent language                                 \\
+7   & The documentation is easy to navigate                                         \\
 8   & The official website looks professional\\
-9 & The pricing of the software\\
-10 & The release- and change notes are thorough\\
-11 & The software has the same features on all different platforms\\
-12 & The software is compatible with different platforms\\
-13 & The software is offered in more than one programming language\\
-14 & The software is open source\\
+9   & The pricing of the software\\
+10  & The release- and change notes are thorough\\
+11  & The software has the same features on all different platforms\\
+12  & The software is compatible with different platforms\\
+13  & The software is offered in more than one programming language\\
+14  & The software is open source\\
 15  & The software uses the programming language I am most comfortable with\\
-16 & There exists an active online community around the software\\ \hline
+16  & There exists an active online community around the software\\ \hline
 \end{tabular}
 \caption{Question ID and questions}
 \label{tab:questionID}
@@ -887,23 +1219,23 @@ it's rank.
 \centering
 \begin{tabular}{|c|c:c|c:c|c:c|c:c|c:c|} \hline
 
-\rotatebox{90}{Question ID}                                & \rotatebox{90}{Everyone Rank} & \rotatebox{90}{Avg Everyone} & \rotatebox{90}{Architects Rank} &\rotatebox{90}{Architects Score} & \rotatebox{90}{Dev\&Eng Rank} & \rotatebox{90}{Devs\&Eng Score} &  \rotatebox{90}{Man Rank} & \rotatebox{90}{Managers Score} & \rotatebox{90}{Other Rank} & \rotatebox{90}{Other Score}\\ \hline
-4 & 1 & 0.90         & 1 & 0.92 & 1 & 0.91 & 1 & 0.79 & 1-2 & 0.94  \\ \hline
-3 &             2 & 0.82 & 3 & 0.82 & 2 & 0.87 & 3 & 0.73 & 4 & 0.74  \\ \hline
-2 & 3 & 0.80 & 2 & 0.85       & 4 & 0.80 & 4-5 & 0.71 & 1-2 & 0.94  \\ \hline
-9 & 4 & 0.80 &         5 & 0.76 & 3 & 0.84 & 2 & 0.75 & 3 & 0.85  \\ \hline
-15 & 5 & 0.68 & 6 & 0.69 & 5 & 0.73       & 6-7 & 0.63 & 5 & 0.69  \\ \hline
-14 & 6 & 0.68 & 4 & 0.77 &            6 & 0.69 & 8 & 0.60 & 8 & 0.58  \\ \hline
-16 & 7 & 0.65 & 8 & 0.63 & 7 & 0.67 & 9-11 & 0.54     & 6 & 0.65  \\ \hline
-7 & 8 & 0.60 & 7 & 0.66 & 8 & 0.61 &       12 & 0.52 & 10 & 0.52  \\ \hline
-8                               & 9 & 0.60 & 9 & 0.63 & 10 & 0.56 & 4-5 & 0.71 & 12 & 0.44  \\ \hline
-12 & 10 & 0.58 & 10 &   0.58 & 11 & 0.52 & 9-11 & 0.54 &          7 & 0.59  \\ \hline
-1 & 11 & 0.58         & 11 & 0.52 & 9 & 0.57 & 6-7 & 0.63 & 11 & 0.51  \\ \hline
-5 &            12 & 0.47 & 13 & 0.47 & 13 & 0.44 & 9-11 & 0.54 & 9 & 0.52  \\ \hline
-11 & 13 & 0.46 & 14 & 0.41       & 12 & 0.45 & 13-15 & 0.44 & 13 & 0.42  \\ \hline
-6 & 14 & 0.41 &        12 & 0.49 & 14 & 0.34 & 16 & 0.42 & 14 & 0.39  \\ \hline
-13 & 15 & 0.36 & 15 & 0.37 & 15 & 0.31       & 13-15 & 0.44 & 16 & 0.23  \\ \hline
-10 & 16 & 0.33 & 16 & 0.26 &           16 & 0.29 & 13-15 & 0.44 & 15 & 0.35  \\ \hline
+\rotatebox{90}{Aspect ID}                                & \rotatebox{90}{Everyone Rank} & \rotatebox{90}{Avg Everyone} & \rotatebox{90}{Architects Rank} &\rotatebox{90}{Architects Score} & \rotatebox{90}{Dev\&Eng Rank} & \rotatebox{90}{Devs\&Eng Score} &  \rotatebox{90}{Man Rank} & \rotatebox{90}{Managers Score} & \rotatebox{90}{Other Rank} & \rotatebox{90}{Other Score}\\ \hline
+4                                             &             1 & 0.90         &         1 &   0.92       &            1 & 0.91       &        1 & 0.79     &        1-2 & 0.94  \\ \hline
+3     &             2 & 0.82         &         3 &   0.82       &            2 & 0.87       &        3 & 0.73     &          4 & 0.74  \\ \hline
+2                                       &             3 & 0.80         &         2 &   0.85       &            4 & 0.80       &      4-5 & 0.71     &        1-2 & 0.94  \\ \hline
+9                                           &             4 & 0.80         &         5 &   0.76       &            3 & 0.84       &        2 & 0.75     &          3 & 0.85  \\ \hline
+15 &             5 & 0.68         &         6 &   0.69       &            5 & 0.73       &      6-7 & 0.63     &          5 & 0.69  \\ \hline
+14                                           &             6 & 0.68         &         4 &   0.77       &            6 & 0.69       &        8 & 0.60     &          8 & 0.58  \\ \hline
+16           &             7 & 0.65         &         8 &   0.63       &            7 & 0.67       &     9-11 & 0.54     &          6 & 0.65  \\ \hline
+7                                 &             8 & 0.60         &         7 &   0.66       &            8 & 0.61       &       12 & 0.52     &         10 & 0.52  \\ \hline
+8                               &             9 & 0.60         &         9 &   0.63       &           10 & 0.56       &      4-5 & 0.71     &         12 & 0.44  \\ \hline
+12                   &            10 & 0.58         &        10 &   0.58       &           11 & 0.52       &     9-11 & 0.54     &          7 & 0.59  \\ \hline
+1                                    &            11 & 0.58         &        11 &   0.52       &            9 & 0.57       &      6-7 & 0.63     &         11 & 0.51  \\ \hline
+5                  &            12 & 0.47         &        13 &   0.47       &           13 & 0.44       &     9-11 & 0.54     &          9 & 0.52  \\ \hline
+11         &            13 & 0.46         &        14 &   0.41       &           12 & 0.45       &    13-15 & 0.44     &         13 & 0.42  \\ \hline
+6                             &            14 & 0.41         &        12 &   0.49       &           14 & 0.34       &       16 & 0.42     &         14 & 0.39  \\ \hline
+13         &            15 & 0.36         &        15 &   0.37       &           15 & 0.31       &    13-15 & 0.44     &         16 & 0.23  \\ \hline
+10                            &            16 & 0.33         &        16 &   0.26       &           16 & 0.29       &    13-15 & 0.44     &         15 & 0.35  \\ \hline
 \end{tabular}
 \caption{Caption}
 \label{tab:my_label}
@@ -932,23 +1264,23 @@ important, for Architects and Developers and Engineers.
 \centering
 \begin{tabularx}{\columnwidth}{X|c:c|c:c|c}
 
-\textbf{Question}                                                    & \rotatebox{90}{\textbf{Architects Rank}}    &\rotatebox{90}{\textbf{Architects Score}} & \rotatebox{90}{\textbf{Dev\&Eng Rank}}  & \rotatebox{90}{\textbf{Devs\&Eng Score}}& \rotatebox{90}{\textbf{Diff}}\\ \hline
-The API has code examples &         1 & 0.92 & 1 & 0.91 & 0.01  \\ \hline
-The API documentation gives thorough explanations on how it works & 3 & 0.82 & 2 & 0.87 & 0.05  \\ \hline
-The pricing of the software & 5 & 0.76 & 3 & 0.84 & 0.08  \\ \hline
-I can have working code quickly & 2 & 0.85             & 4 & 0.80 & 0.05  \\ \hline
-The software is open source & 4 & 0.77 & 6 & 0.69 & 0.08  \\ \hline
-The software uses the programming language I am most comfortable with & 6 & 0.69             & 5 & 0.73 & 0.05  \\ \hline
-There exists an active online community around the software & 8 & 0.63 & 7 & 0.67 & 0.03  \\ \hline
-The documentation is easy to navigate & 7 & 0.66 &               8 & 0.61 & 0.05  \\ \hline
-The official website looks professional & 9 & 0.63 & 10 & 0.56             & 0.07  \\ \hline
-The software is compatible with different platforms & 10 & 0.58 & 11 & 0.52 & 0.06  \\ \hline
-How often the software is updated &        11 & 0.52 & 9 & 0.57 & 0.05  \\ \hline
-The software has the same features on all different platforms & 14 & 0.41 & 12 & 0.45 & 0.04  \\ \hline
-The documentation doesn't assume any prior expertise                  & 13 & 0.47 & 13 & 0.44 & 0.03  \\ \hline
-The documentation has consistent language & 12 & 0.49 & 14 & 0.34 & 0.15  \\ \hline
-The software is offered in more than one programming language &        15 & 0.37 & 15 & 0.31 & 0.06  \\ \hline
-The release- and change notes are thorough & 16 & 0.26 & 16 & 0.29 & 0.04  \\ \hline
+\textbf{Aspect}                                                    & \rotatebox{90}{\textbf{Architects Rank}}    &\rotatebox{90}{\textbf{Architects Score}} & \rotatebox{90}{\textbf{Dev\&Eng Rank}}  & \rotatebox{90}{\textbf{Devs\&Eng Score}}& \rotatebox{90}{\textbf{Diff}}\\ \hline
+The API has code examples                                             &         1 & 0.92             &               1 & 0.91             & 0.01  \\ \hline
+The API documentation gives thorough explanations on how it works     &         3 & 0.82             &               2 & 0.87             & 0.05  \\ \hline
+The pricing of the software                                           &         5 & 0.76             &               3 & 0.84             & 0.08  \\ \hline
+I can have working code quickly                                       &         2 & 0.85             &               4 & 0.80             & 0.05  \\ \hline
+The software is open source                                           &         4 & 0.77             &               6 & 0.69             & 0.08  \\ \hline
+The software uses the programming language I am most comfortable with &         6 & 0.69             &               5 & 0.73             & 0.05  \\ \hline
+There exists an active online community around the software           &         8 & 0.63             &               7 & 0.67             & 0.03  \\ \hline
+The documentation is easy to navigate                                 &         7 & 0.66             &               8 & 0.61             & 0.05  \\ \hline
+The official website looks professional                               &         9 & 0.63             &              10 & 0.56             & 0.07  \\ \hline
+The software is compatible with different platforms                   &        10 & 0.58             &              11 & 0.52             & 0.06  \\ \hline
+How often the software is updated                                     &        11 & 0.52             &               9 & 0.57             & 0.05  \\ \hline
+The software has the same features on all different platforms         &        14 & 0.41             &              12 & 0.45             & 0.04  \\ \hline
+The documentation doesn't assume any prior expertise                  &        13 & 0.47             &              13 & 0.44             & 0.03  \\ \hline
+The documentation has consistent language                             &        12 & 0.49             &              14 & 0.34             & 0.15  \\ \hline
+The software is offered in more than one programming language         &        15 & 0.37             &              15 & 0.31             & 0.06  \\ \hline
+The release- and change notes are thorough                            &        16 & 0.26             &              16 & 0.29             & 0.04  \\ \hline
 \end{tabularx}
 \caption{The ranking and scores of architects, compared with developers and engineers}
 \label{tab:arch-devs}
@@ -969,23 +1301,23 @@ is more important to Managers.
 \centering
 \begin{tabularx}{\columnwidth}{X|c:c|c:c|c}
 
-\textbf{Question}                                                    & \rotatebox{90}{\textbf{Architects Rank}}    &\rotatebox{90}{\textbf{Architects Score}} & \rotatebox{90}{\textbf{Manager Rank}}  & \rotatebox{90}{\textbf{Manager Score}}& \rotatebox{90}{\textbf{Diff}}\\ \hline
-The API has code examples & 1 & 0.92 & 1 & 0.79 & 0.13  \\ \hline
-The API documentation gives thorough explanations on how it works     & 2 & 0.82 & 4-5 & 0.71 & 0.14  \\ \hline
-The pricing of the software & 3 & 0.76 & 3 & 0.73 & 0.09  \\ \hline
-I can have working code quickly & 5 & 0.85 &            2 & 0.75 & 0.01  \\ \hline
-The software is open source & 4 & 0.77 & 8 & 0.60           & 0.16  \\ \hline
-The software uses the programming language I am most comfortable with & 6 & 0.69 &          6-7 & 0.63 & 0.06  \\ \hline
-There exists an active online community around the software & 9 & 0.63       & 4-5 & 0.71 & 0.08  \\ \hline
-The documentation is easy to navigate & 8 & 0.66 & 9-11 & 0.54 & 0.09  \\ \hline
-The official website looks professional & 7 & 0.63 & 12 & 0.52 & 0.14  \\ \hline
-The software is compatible with different platforms                   & 10 & 0.58 & 9-11 & 0.54 & 0.04  \\ \hline
-How often the software is updated & 11 & 0.52 & 6-7 & 0.63 & 0.11  \\ \hline
-The software has the same features on all different platforms         & 13 & 0.41 & 9-11 & 0.54 & 0.07  \\ \hline
-The documentation doesn't assume any prior expertise &        12 & 0.47 & 16 & 0.42 & 0.07  \\ \hline
-The documentation has consistent language & 14 & 0.49       & 13-15 & 0.44 & 0.03  \\ \hline
-The software is offered in more than one programming language & 15 & 0.37 & 13-15 & 0.44 & 0.07  \\ \hline
-The release- and change notes are thorough & 16 & 0.26 & 13-15 & 0.44 & 0.18  \\ \hline
+\textbf{Aspect}                                                    & \rotatebox{90}{\textbf{Architects Rank}}    &\rotatebox{90}{\textbf{Architects Score}} & \rotatebox{90}{\textbf{Manager Rank}}  & \rotatebox{90}{\textbf{Manager Score}}& \rotatebox{90}{\textbf{Diff}}\\ \hline
+The API has code examples                                             &         1 & 0.92       &            1 & 0.79           & 0.13  \\ \hline
+The API documentation gives thorough explanations on how it works     &         2 & 0.82       &          4-5 & 0.71           & 0.14  \\ \hline
+The pricing of the software                                           &         3 & 0.76       &            3 & 0.73           & 0.09  \\ \hline
+I can have working code quickly                                       &         5 & 0.85       &            2 & 0.75           & 0.01  \\ \hline
+The software is open source                                           &         4 & 0.77       &            8 & 0.60           & 0.16  \\ \hline
+The software uses the programming language I am most comfortable with &         6 & 0.69       &          6-7 & 0.63           & 0.06  \\ \hline
+There exists an active online community around the software           &         9 & 0.63       &          4-5 & 0.71           & 0.08  \\ \hline
+The documentation is easy to navigate                                 &         8 & 0.66       &         9-11 & 0.54           & 0.09  \\ \hline
+The official website looks professional                               &         7 & 0.63       &           12 & 0.52           & 0.14  \\ \hline
+The software is compatible with different platforms                   &        10 & 0.58       &         9-11 & 0.54           & 0.04  \\ \hline
+How often the software is updated                                     &        11 & 0.52       &          6-7 & 0.63           & 0.11  \\ \hline
+The software has the same features on all different platforms         &        13 & 0.41       &         9-11 & 0.54           & 0.07  \\ \hline
+The documentation doesn't assume any prior expertise                  &        12 & 0.47       &           16 & 0.42           & 0.07  \\ \hline
+The documentation has consistent language                             &        14 & 0.49       &        13-15 & 0.44           & 0.03  \\ \hline
+The software is offered in more than one programming language         &        15 & 0.37       &        13-15 & 0.44           & 0.07  \\ \hline
+The release- and change notes are thorough                            &        16 & 0.26       &        13-15 & 0.44           & 0.18  \\ \hline
 \end{tabularx}
 \caption{The ranking and scores of architects, compared with managers}
 \label{tab:arch-devs}
@@ -999,27 +1331,27 @@ points. Their biggest differ in points is for 'The official website
 looks professional', where they differ by 0.15 points, which is also
 their biggest differ in ranking: 6 spots different.
 
-\begin{table}[]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\columnwidth}{X|c:c|c:c|c|}
 
-\textbf{Question}                                                    & \rotatebox{90}{\textbf{Devs\&Eng Rank}}    &\rotatebox{90}{\textbf{Devs\&Eng Score}} & \rotatebox{90}{\textbf{Manager Rank}}  & \rotatebox{90}{\textbf{Manager Score}}& \rotatebox{90}{\textbf{Diff}}\\ \hline
-The API has code examples & 1 & 0.91       & 1 & 0.79 & 0.13  \\ \hline
-The API documentation gives thorough explanations on how it works & 2 & 0.87 & 4-5 & 0.71 & 0.14  \\ \hline
-The pricing of the software & 3 & 0.84 &            3 & 0.73 & 0.09  \\ \hline
-I can have working code quickly & 4 & 0.80 & 2 & 0.75 & 0.01  \\ \hline
-The software is open source                                           & 5 & 0.73 & 8 & 0.60 & 0.16  \\ \hline
-The software uses the programming language I am most comfortable with & 6 & 0.69 & 6-7 & 0.63 & 0.06  \\ \hline
-There exists an active online community around the software & 7 & 0.67 & 4-5 & 0.71 & 0.08  \\ \hline
-The documentation is easy to navigate & 9 & 0.57 & 9-11 & 0.54           & 0.09  \\ \hline
-The official website looks professional &              10 & 0.56 & 12 & 0.52 & 0.14  \\ \hline
-The software is compatible with different platforms & 8 & 0.61 & 9-11 & 0.54 & 0.04  \\ \hline
-How often the software is updated & 11 & 0.52       & 6-7 & 0.63 & 0.11  \\ \hline
-The software has the same features on all different platforms & 12 & 0.45 & 9-11 & 0.54 & 0.07  \\ \hline
-The documentation doesn't assume any prior expertise & 13 & 0.44 & 16 & 0.42 & 0.07  \\ \hline
-The documentation has consistent language & 14 & 0.34 & 13-15 & 0.44 & 0.03  \\ \hline
-The software is offered in more than one programming language & 15 & 0.31       & 13-15 & 0.44 & 0.07  \\ \hline
-The release- and change notes are thorough & 16 & 0.29 &        13-15 & 0.44 & 0.18  \\ \hline
+\textbf{Aspect}                                                    & \rotatebox{90}{\textbf{Devs\&Eng Rank}}    &\rotatebox{90}{\textbf{Devs\&Eng Score}} & \rotatebox{90}{\textbf{Manager Rank}}  & \rotatebox{90}{\textbf{Manager Score}}& \rotatebox{90}{\textbf{Diff}}\\ \hline
+The API has code examples                                             &               1 & 0.91       &            1 & 0.79           & 0.13  \\ \hline
+The API documentation gives thorough explanations on how it works     &               2 & 0.87       &          4-5 & 0.71           & 0.14  \\ \hline
+The pricing of the software                                           &               3 & 0.84       &            3 & 0.73           & 0.09  \\ \hline
+I can have working code quickly                                       &               4 & 0.80       &            2 & 0.75           & 0.01  \\ \hline
+The software is open source                                           &               5 & 0.73       &            8 & 0.60           & 0.16  \\ \hline
+The software uses the programming language I am most comfortable with &               6 & 0.69       &          6-7 & 0.63           & 0.06  \\ \hline
+There exists an active online community around the software           &               7 & 0.67       &          4-5 & 0.71           & 0.08  \\ \hline
+The documentation is easy to navigate                                 &               9 & 0.57       &         9-11 & 0.54           & 0.09  \\ \hline
+The official website looks professional                               &              10 & 0.56       &           12 & 0.52           & 0.14  \\ \hline
+The software is compatible with different platforms                   &               8 & 0.61       &         9-11 & 0.54           & 0.04  \\ \hline
+How often the software is updated                                     &              11 & 0.52       &          6-7 & 0.63           & 0.11  \\ \hline
+The software has the same features on all different platforms         &              12 & 0.45       &         9-11 & 0.54           & 0.07  \\ \hline
+The documentation doesn't assume any prior expertise                  &              13 & 0.44       &           16 & 0.42           & 0.07  \\ \hline
+The documentation has consistent language                             &              14 & 0.34       &        13-15 & 0.44           & 0.03  \\ \hline
+The software is offered in more than one programming language         &              15 & 0.31       &        13-15 & 0.44           & 0.07  \\ \hline
+The release- and change notes are thorough                            &              16 & 0.29       &        13-15 & 0.44           & 0.18  \\ \hline
 \end{tabularx}
 \caption{The ranking and scores of architects, compared with developers and engineers}
 \label{tab:arch-devs}
@@ -1038,23 +1370,23 @@ industry.
 \begin{table}[H]
 \centering
 \begin{tabularx}{\columnwidth}{X|c|c|c|c|c|c}
-\textbf{Question}    &\textbf{\rotatebox{90}{    \<5 years    }}&\textbf{\rotatebox{90}{    5-10 years    }}&\textbf{\rotatebox{90}{    10-15 years    }}&\textbf{\rotatebox{90}{    15-25 years    }}&\textbf{\rotatebox{90}{    25+ years}}    \\ \hline
-The API has code examples & 0.91 & 0.93 & 0.89 & 0.85    & 1.00    \\ \hline
-The API documentation gives thorough explanations on how it works & 0.91 & 0.86 & 0.87    & 0.72 & 0.83    \\ \hline
-I can have working code quickly & 0.79 & 0.86 & 0.82 & 0.77    & 0.92    \\ \hline
-The pricing of the software &    0.73 & 0.86 & 0.81 & 0.83 & 0.67    \\ \hline
-The software uses the programming language I am most comfortable with & 0.68 & 0.73 & 0.68 & 0.74    & 0.50    \\ \hline
-The software is open source &    0.67 & 0.62 & 0.74 & 0.71 & 0.67    \\ \hline
-There exists an active online community around the software    & 0.84 & 0.53 & 0.73 & 0.55 & 0.75    \\ \hline
-The documentation is easy to navigate & 0.60    & 0.68 & 0.64 & 0.48 & 0.71    \\ \hline
-The official website looks professional & 0.53 & 0.67 &    0.54 & 0.59 & 0.50    \\ \hline
-How often the software is updated & 0.66 & 0.52 & 0.52 &    0.58 & 0.50    \\ \hline
-The software is compatible with different platforms & 0.41 & 0.54 & 0.59 & 0.57    & 0.54    \\ \hline
-The documentation doesn't assume any prior expertise & 0.43 & 0.57 & 0.50 & 0.39 &    0.50    \\ \hline
-The software has the same features on all different platforms & 0.28 & 0.42 & 0.53 &    0.45 & 0.29    \\ \hline
-The documentation has consistent language    & 0.41 & 0.45 & 0.40 & 0.32 & 0.58    \\ \hline
-The software is offered in more than one programming language & 0.28 & 0.35 & 0.35 & 0.36    & 0.25    \\ \hline
-The release- and change notes are thorough & 0.26 & 0.34 & 0.33 & 0.30 &    0.25    \\ \hline
+\textbf{Aspect}	&\textbf{\rotatebox{90}{	\<5 years	}}&\textbf{\rotatebox{90}{	5-10 years	}}&\textbf{\rotatebox{90}{	10-15 years	}}&\textbf{\rotatebox{90}{	15-25 years	}}&\textbf{\rotatebox{90}{	25+ years}}	\\ \hline
+The API has code examples	&	0.91	&	0.93	&	0.89	&	0.85	&	1.00	\\ \hline
+The API documentation gives thorough explanations on how it works	&	0.91	&	0.86	&	0.87	&	0.72	&	0.83	\\ \hline
+I can have working code quickly	&	0.79	&	0.86	&	0.82	&	0.77	&	0.92	\\ \hline
+The pricing of the software	&	0.73	&	0.86	&	0.81	&	0.83	&	0.67	\\ \hline
+The software uses the programming language I am most comfortable with	&	0.68	&	0.73	&	0.68	&	0.74	&	0.50	\\ \hline
+The software is open source	&	0.67	&	0.62	&	0.74	&	0.71	&	0.67	\\ \hline
+There exists an active online community around the software	&	0.84	&	0.53	&	0.73	&	0.55	&	0.75	\\ \hline
+The documentation is easy to navigate	&	0.60	&	0.68	&	0.64	&	0.48	&	0.71	\\ \hline
+The official website looks professional	&	0.53	&	0.67	&	0.54	&	0.59	&	0.50	\\ \hline
+How often the software is updated	&	0.66	&	0.52	&	0.52	&	0.58	&	0.50	\\ \hline
+The software is compatible with different platforms	&	0.41	&	0.54	&	0.59	&	0.57	&	0.54	\\ \hline
+The documentation doesn't assume any prior expertise	&	0.43	&	0.57	&	0.50	&	0.39	&	0.50	\\ \hline
+The software has the same features on all different platforms	&	0.28	&	0.42	&	0.53	&	0.45	&	0.29	\\ \hline
+The documentation has consistent language	&	0.41	&	0.45	&	0.40	&	0.32	&	0.58	\\ \hline
+The software is offered in more than one programming language	&	0.28	&	0.35	&	0.35	&	0.36	&	0.25	\\ \hline
+The release- and change notes are thorough	&	0.26	&	0.34	&	0.33	&	0.30	&	0.25	\\ \hline
 \end{tabularx}
 \caption{The ranking and scores of architects, compared with developers and engineers}
 \label{tab:arch-devs}
@@ -1070,23 +1402,23 @@ the groups:
 \begin{table}[H]
 \centering
 \begin{tabularx}{\columnwidth}{X|c:c|c:c|}
-Question &\textbf{\rotatebox{90}{DM* Rank}}&\textbf{\rotatebox{90}{DM* Score}}&\textbf{\rotatebox{90}{NDM** Rank}}&\textbf{\rotatebox{90}{NDM** Score}}    \\ \hline
-The API has code examples & 1    & 0.91 & 1 & 0.86    \\ \hline
-The API documentation gives thorough explanations on how it works & 2-3    & 0.83 & 3 & 0.80    \\ \hline
-I can have working code quickly & 2-3 & 0.83 & 4    & 0.79    \\ \hline
-The pricing of the software &    4 & 0.80 & 2 & 0.83    \\ \hline
-The software uses the programming language I am most comfortable with    & 6 & 0.69 & 6 & 0.74    \\ \hline
-The software is open source & 5 & 0.70 &    8 & 0.63    \\ \hline
-There exists an active online community around the software & 7 & 0.62 & 5    & 0.75    \\ \hline
-The documentation is easy to navigate    & 8 & 0.59 & 7 & 0.66    \\ \hline
-The official website looks professional & 9 & 0.58 &    9-10 & 0.61    \\ \hline
-How often the software is updated & 11 & 0.53 & 9-10 & 0.61    \\ \hline
-The software is compatible with different platforms & 10    & 0.55 & 12 & 0.54    \\ \hline
-The documentation doesn't assume any prior expertise & 12 & 0.45 &    11 & 0.60    \\ \hline
-The software has the same features on all different platforms & 13 & 0.43 &    14 & 0.46    \\ \hline
-The documentation has consistent language    & 14 & 0.38 & 13 & 0.50    \\ \hline
-The software is offered in more than one programming language    & 15 & 0.32 & 15 & 0.38    \\ \hline
-The release- and change notes are thorough & 16 &    0.29 & 16 & 0.35    \\ \hline  \hline
+\textbf{Aspect}	&\textbf{\rotatebox{90}{DM* Rank}}&\textbf{\rotatebox{90}{DM* Score}}&\textbf{\rotatebox{90}{NDM** Rank}}&\textbf{\rotatebox{90}{NDM** Score}}	\\ \hline
+The API has code examples	&	1	&	0.91	&	1	&	0.86	\\ \hline
+The API documentation gives thorough explanations on how it works	&	2-3	&	0.83	&	3	&	0.80	\\ \hline
+I can have working code quickly	&	2-3	&	0.83	&	4	&	0.79	\\ \hline
+The pricing of the software	&	4	&	0.80	&	2	&	0.83	\\ \hline
+The software uses the programming language I am most comfortable with	&	6	&	0.69	&	6	&	0.74	\\ \hline
+The software is open source	&	5	&	0.70	&	8	&	0.63	\\ \hline
+There exists an active online community around the software	&	7	&	0.62	&	5	&	0.75	\\ \hline
+The documentation is easy to navigate	&	8	&	0.59	&	7	&	0.66	\\ \hline
+The official website looks professional	&	9	&	0.58	&	9-10	&	0.61	\\ \hline
+How often the software is updated	&	11	&	0.53	&	9-10	&	0.61	\\ \hline
+The software is compatible with different platforms	&	10	&	0.55	&	12	&	0.54	\\ \hline
+The documentation doesn't assume any prior expertise	&	12	&	0.45	&	11	&	0.60	\\ \hline
+The software has the same features on all different platforms	&	13	&	0.43	&	14	&	0.46	\\ \hline
+The documentation has consistent language	&	14	&	0.38	&	13	&	0.50	\\ \hline
+The software is offered in more than one programming language	&	15	&	0.32	&	15	&	0.38	\\ \hline
+The release- and change notes are thorough	&	16	&	0.29	&	16	&	0.35	\\ \hline  \hline
 \multicolumn{5}{l}{*DM: Decision Makers, **NDM: Non-Decision Makers}
 \end{tabularx}
 \caption{Caption}
@@ -1100,15 +1432,15 @@ by job title and level, it looks like this:
 \centering
 \begin{tabular}{l l l l}
 \textbf{Job Title} & \textbf{Level} & \textbf{DM*} & \textbf{NDM**} \\ \hline
-Architect & Middle & 0 & 0                   \\
-Architect               & Senior & 7 & 2                   \\ \hline
-Developer and Engineers & Middle & 3 & 4                   \\
-Developer and Engineers & Senior & 5 & 7                   \\ \hline
-Managers                & Middle & 1 & 0                   \\
-Managers & Senior & 3 & 0                   \\ \hline
-Other & Middle & 0 & 0                   \\
-Other & Senior & 3 & 1                   \\ \hdashline
-& &     \textbf{22}          & \textbf{14}              \\ \hline\hline
+Architect               & Middle & 0               & 0                   \\
+Architect               & Senior & 7               & 2                   \\ \hline
+Developer and Engineers & Middle & 3               & 4                   \\
+Developer and Engineers & Senior & 5               & 7                   \\ \hline
+Managers                & Middle & 1               & 0                   \\
+Managers                & Senior & 3               & 0                   \\ \hline
+Other                   & Middle & 0               & 0                   \\
+Other                   & Senior & 3               & 1                   \\ \hdashline
+&        &     \textbf{22}          & \textbf{14}              \\ \hline\hline
 \multicolumn{4}{l}{*DM: Decision Makers, **NDM: Non-Decision Makers}
 
 \end{tabular}
@@ -1140,12 +1472,12 @@ in this part. An interesting difference is the rank of 'The software is
 compatible with different platforms'. However, this aspect is very
 divided in the second survey depending on the situation. The rankings
 for this aspect look as following: Group ranks it as the third most
-important, whereas single ranks is at the 10th spot and finally hobby at
+important, whereas single ranks is at the 10\textsuperscript{th} spot and finally hobby at
 place number 13. Similarly, the question 'The software has the same
 features on all different platforms' has a big point difference when
 comparing the first and second survey. However, this is also a divided
 question depending on situation in the second survey. It's ranked by
-Group at #9, Single is tied between the 11th and 12th spot and for Hobby
+Group at \#9, Single is tied between the 11\textsuperscript{th} and 12\textsuperscript{th} spot and for Hobby
 it's #13. In the first survey, it's ranked as the #9 out of 14. The
 change in ranking in both these cases can therefor somewhat be explained
 by no context was given in the first survey.
@@ -1168,22 +1500,22 @@ been excluded, and the ranking for the second survey recalculated.
 \centering
 \begin{tabularx}{\columnwidth}{X|c:c|c:c|c:c|}
 \textbf{Aspect} & \textbf{\rotatebox{90}{S2* Rank}}&\textbf{\rotatebox{90}{S2* Points}}&\textbf{\rotatebox{90}{S1** Rank}}&\textbf{\rotatebox{90}{S1** Points}}&\textbf{\rotatebox{90}{Difference Points}} & \textbf{\rotatebox{90}{Difference Rank}} \\ \hline
-The API has code examples & 1 & 0.90 &                        1 & 0.87 & +0.03 & 0    \\ \hline
-The API documentation gives thorough explanations [on how it works] & 2 & 0.82 & 3 & 0.78 &       +0.05 & +1    \\ \hline
-I can have working code quickly & 3 & 0.80 & 4 & 0.76 &       -0.04 & +1    \\ \hline
-The pricing of the software                                           & 4 & 0.80 & 5 & 0.74 & +0.06 & +1    \\ \hline
-The software uses the programming language I am most comfortable with & 5 & 0.68 &                        7 & 0.68 & 0.00 & +2    \\ \hline
-\sout{The software is open source}                                    & - & 0.68 & - & - & - & -    \\ \hline
-There exists an active online community around the software           & 6 & 0.65 & 2 & 0.80 & -0.15 & -4    \\ \hline
-The documentation is easy to navigate                                 & 7 & 0.60 & 10 & 0.61 & 0.00 & +3    \\ \hline
-The official website looks professional &                        8 & 0.60 & 11 & 0.59 & +0.01 &        +3    \\ \hline
-The software is compatible with different platforms                   & 9 & 0.58 & 6 & 0.72 & -0.14 & -3    \\ \hline
-How often the software is updated                                     & 10 & 0.58 & 8 & 0.63 & -0.05 & -2    \\ \hline
-The documentation doesn't assume any prior expertise & 11 & 0.47 & 12 & 0.50 &       -0.03 & +1    \\ \hline
-The software has the same features on all different platforms & 12 & 0.46 &                        9 & 0.62 & -0.16 & -3    \\ \hline
-The documentation has consistent language & 13 & 0.41 & 13 & 0.45 & -0.04 & 0    \\ \hline
-\sout{The software is offered in more than one programming language}  & - & 0.36 & - & - &           - &              \\ \hline
-The release- and change notes are thorough & 14 & 0.33 & 14 & 0.41 &       -0.09 & 0    \\ \hline \hline
+The API has code examples                                             &                        1 & 0.90                      &                        1 & 0.87                       &       +0.03 &         0    \\ \hline
+The API documentation gives thorough explanations [on how it works] &                        2 & 0.82                      &                        3 & 0.78                       &       +0.05 &        +1    \\ \hline
+I can have working code quickly                                       &                        3 & 0.80                      &                        4 & 0.76                       &       -0.04 &        +1    \\ \hline
+The pricing of the software                                           &                        4 & 0.80                      &                        5 & 0.74                       &       +0.06 &        +1    \\ \hline
+The software uses the programming language I am most comfortable with &                        5 & 0.68                      &                        7 & 0.68                       &        0.00 &        +2    \\ \hline
+\sout{The software is open source}                                    &                        - & 0.68                      &                        - & -                          &           - &         -    \\ \hline
+There exists an active online community around the software           &                        6 & 0.65                      &                        2 & 0.80                       &       -0.15 &        -4    \\ \hline
+The documentation is easy to navigate                                 &                        7 & 0.60                      &                       10 & 0.61                       &        0.00 &        +3    \\ \hline
+The official website looks professional                               &                        8 & 0.60                      &                       11 & 0.59                       &       +0.01 &        +3    \\ \hline
+The software is compatible with different platforms                   &                        9 & 0.58                      &                        6 & 0.72                       &       -0.14 &        -3    \\ \hline
+How often the software is updated                                     &                       10 & 0.58                      &                        8 & 0.63                       &       -0.05 &        -2    \\ \hline
+The documentation doesn't assume any prior expertise                  &                       11 & 0.47                      &                       12 & 0.50                       &       -0.03 &        +1    \\ \hline
+The software has the same features on all different platforms         &                       12 & 0.46                      &                        9 & 0.62                       &       -0.16 &        -3    \\ \hline
+The documentation has consistent language                             &                       13 & 0.41                      &                       13 & 0.45                       &       -0.04 &         0    \\ \hline
+\sout{The software is offered in more than one programming language}  &                        - & 0.36                      &                        - & -                          &           - &              \\ \hline
+The release- and change notes are thorough                            &                       14 & 0.33                      &                       14 & 0.41                       &       -0.09 &         0    \\ \hline \hline
 \multicolumn{7}{l}{*S2: Survey 2, **S1: Survey 1}
 \end{tabularx}
 \caption{Caption}
@@ -1223,278 +1555,12 @@ senior level respectively can be seen in the table below.
 \label{tab:my_label}
 \end{table}
 
-\subsection{Interviews}
-
-\subsubsection{Reasons to do interviews}
-There are several reasons why interviews is a suitable method use in this reasearch project.
-The quantitative data collected
-by the two survey gives a good idea of what is needed, does not answer *why* it is needed.
-Interviews will therefor give a depth to the quantitative data that has been collected.
-Denscombe[9] recommends using interviews as a follow-up to questionnaires. As he puts it,
-questionnaires can generate some interesting results that interviews can pursue
-in greater detail and depth. He also states that interviews should be seen as a good way
-to corroborate data found with other methods. By using interviews, we can triangulate data
-collected by the questionnaires to confirm the facts once more with another approach.
-Furthermore, Dencsombe talks about interviews being well-suited for certain kinds of data.
-He gives three main data types when interviews are a good method,
-two of which are applicable to this research project. The first reason is
-when data is based on emotions. DX is, as described before, based on the *feeling*
-of a good interaction, something that is hard to get a understanding of through
-surveys. The second reason given by Denscombe is when you have access to 'key players'
-with in a field. That is, when you have the possibility to interview people
-that have great insight into a field, interviews are a good way to collect that data.
-With these interviews, we have access to people of different experience, job titles
-and level of decision power. By doing interviews, we can get an understanding
-of why different job titles desire different things, why more experienced people
-want certain aspects and why persons with a lot of power within a company
-have needs that others don't.
-
-\paragraph{Interview instead of Observation Study}
-We also talked about doing
-
-\subsubsection{Interview Decisions}
-\paragraph{Interview Style}
-There are many different ways of conducting interviews. Denscombe groups it into
-three different approaches: one-on-one interviews, group interviews and focus groups.
-These methods all have pros and cons, described by Denscombe[9].
-
-One-on-one interviews are easy to arrange, since
-only two people's (Interviewer and interviewee) schedules have to coincide.
-Compared to group interviews and focus groups, it's also easy to control the interview,
-dive deeper into questions when needed and it's easy to link the results
-to the specific person.
-
-Group interviews have advantages as well. It helps to find what a consensus around
-a topic is, where people's opinions can be challenged right away by other group members.
-There are also risks of group interviews, where 'quieter' people may be silenced by
-members of the group who are more dominant. Group interviews are also less suited
-for topics where answers that are more 'accepted' than others.
-
-Finally, focus groups have the same issues as group interviews does. It also
-requires a more skilled moderator, since focus groups is more of an ongoing
-discussion of experts within a field, that can easily get out of hand if the
-moderator does not know how to steer the group. Transcribing focus groups are also
-more challenging since it is natural that people talk over each other. Linking opinions
-to certain people may also be harder when everyone's statements are blurred together.
-
-For this research project we chose to go ahead with one-on-one interviews.
-The disadvantages of them are small, and one the most challenging things
-about the interviews is finding time to arrange them. It was not feasible
-to try to find enough people for a group interview where everyone's schedules
-could coincide.
-
-\paragraph{Interview Structure}
-Dencsombe describes three different types of interviews: structured, semi-structured and
-unstructured interviews. Structured interviews are much like questionnaires, where
-the interviewer holds a tight grip on the interview and does not expect free form answers.
-Structured interviews looks to standardize the results for easy comparison.
-This interview structure is more for 'checking' rather than 'discovery' and is
-therefor more of a quantitative data collection rather than qualitative.
-
-Semi-constructed interviews has, just like constructed interviews, a clear set
-list of questions. However, in a semi-structured interview, the interviewee
-is not presented with yes or no questions, or questions with alternatives.
-The questions are instead open-ended. As described by Denscombe, the interviewee
-is expected to develop their own ideas and speak widely about the given issue or question.
-Here, the emphasis is more on 'discovery' than checking.
-
-Unstructured interviews is the third alternative and is the loosest of the three styles.
-With this structure, the interviewer wants to get the interviewees general thoughts
-on a subject or issue and tries to be as unobtrusive as possible. As described by Denscombe,
-the interviewer presents a specific issue or subject and hopes to get a ball rolling.
-Semi-constructed and unstructured exist on a continuum. The more open-ended the questions
-are, the more you move from semi-structured to to unstructured.
-
-For this research project we are using the style of semi-constructed.
-We are trying to discover things rather than check, which removes the option
-of a structured interview. We however have a very clear set of questions
-we want answers on.
-
-\subsubsection{Interview Subjects}
-There are many things that be explored for these interviews. Due to limited
-time, we had to narrow it down to a few subjects. The three subjects
-we chose are related to release notes, APIs and online community.
-
-Release notes is noted as a very important aspect by literature, but
-the survey results show that this is one of the least considered aspects.
-Whereas this is something that maybe could be expected (people don't look
-at release notes until they are needed, and don't usually consider this
-when choosing platforms), the more surprising part is that it does *not*
-affect them negatively DX-wise either if the release notes are poorly written.
-To get a deeper understanding on why this is, we chose this as a subject
-for the interviews.
-
-The API documentation and examples are pointed as very important by the
-surveys. In the survey we used the vague term of 'Good' and 'Bad', and
-the survey takers applied their own definition of these two terms. We
-are interested of how we can define 'Good' and 'Bad'. One of the most important
-aspects according the survey is also to have working code quickly. Upon exploring
-possible aspects to explore, we found ourself asking if working code quickly
-is jus ta consequence of good API documentation and examples. Maybe it's not
-its own aspect at all? So this question also got merged into this question subject.
-
-The last subject we chose to explore is online communities. An anomaly found
-between the first and second survey is that online community was very important
-to people in the first survey, but only somewhat important in the second one.
-We want to understand the shift in this ranking.
-
-\subsubsection{Interview material}
-We concluded that it would be good to have reference points during the interview,
-that there should be some material that the interviewee could use when talking.
-We discussed using some API documentation and release notes from existing software platforms,
-more precisely Qlik Core. However, Qlik Core is a very advanced platform which takes a long time
-to grasp. Since the interviewees have limited time to put aside for the interviews, it seemed
-like making them read and understand documentation of a whole new software platform was too much to ask.
-Instead we created some API documentation and release notes for a made up software platform
-called 'MyBakery'. Everyone already have a good mental picture of how a bakery works,
-so even if you give them limited amount of documentation they still have a mental picture
-of what this software platform does. To make the request of making them read documentation less boring,
-we tried to make a gamification of the task. The interviewees were given the material, and
-three questions they needed to answer. This forced them to read and understand the material, rather
-than just read through it. The material can be seen in appendix X.
-
-\subsubsection{Interview Questions}
-
-Ultimately, we want to answer "Why are the aspects needed or not needed
-to give a good DX and what happens if they (don’t) exist or are poorly/well implemented?"
-The questions for the interviews are constructed to be able to answer this question.
-Since the interview is semi-constructed, all questions will not necessarily be asked.
-Depending on how the interviewee answer, some questions may already have been answered,
-some questions may be uninteresting to dive into, etc.
-\paragraph{A - APIs}
-For the API documentation, API examples and to have working code quickly, we
-already know that is important. It's also not very surprising that it is.
-For this, we are rather trying to understand how we define 'Good' API related.
-
-\begin{enumerate}[label={A\Alph*}]
-\item \textbf{General}
-\begin{enumerate}[label={AA\arabic*}]
-\item How important would you say API documentation and examples are?
-\end{enumerate}
-\item \textbf{Api Documentation}
-\begin{enumerate}[label=AB\arabic*]
-\item When you look at API documentation, what are you usually looking for?
-\begin{itemize}[label={-}]
-\item What should the documentation look like?
-\item Is there anything in the material you always look for, or something that is missing?
-\item When you come across an API documentation, are there any red flags you look for?
-\end{itemize}
-\item    How does the API documentation quality affect you in your work?
-\begin{itemize}[label={-}]
-\item Do you abandon a software platform if the documentation is poor?
-\end{itemize}
-\end{enumerate}
-\item \textbf{Api Examples}
-\begin{enumerate}[label={AC\arabic*}]
-\item    What is your goal when looking at API examples?
-\begin{itemize}[label={-}]
-\item For copy-pasting?
-\item To understand underlying structure?
-\item To simply see how it's used?
-\end{itemize}
-\item   What should API examples look like?
-\begin{itemize}[label={-}]
-\item Short examples or long examples?
-\item Should it be runnable or concise?
-\item Within a big context or concise?
-\end{itemize}
-\item    How does the API examples quality affect you in your work?
-\begin{itemize}[label={-}]
-\item Do you abandon a software if the examples are poor?
-\end{itemize}
-\end{enumerate}
-
-\item\textbf{Working Code Quickly}
-\begin{enumerate}[label={AD\arabic*}]
-\item Is it important for you to have working code quickly?
-\begin{itemize}[label={-}]
-\item Why is it/is it not?
-\end{itemize}
-\item When can you accept to not have working code quickly?
-\item Can you have working code quickly if the API examples and documentation is bad?
-\end{enumerate}
-\end{enumerate}
-
-\paragraph{B - Release Notes}
-For release notes, we know through the survey that they are *not* considered.
-The questions have been divided into three groups: 'When are [release notes] needed",
-"What should [release notes] look like?" and "[What are the] consequences [of good/bad release notes]?"
-
-\begin{enumerate}[label=B\Alph*]
-\item \textbf{BA - When are they used?}
-\begin{enumerate}[label=BA\arabic*]
-\item How often do you look at release notes?
-\item In what circumstances do you look at release notes?
-\begin{itemize}[label={-}]
-\item Do you look at release notes before deciding to use a platform?
-\end{itemize}
-\item What do you look for when looking at release notes?
-\end{enumerate}
-\item \textbf{What should they look like?}
-
-\begin{enumerate}[label=BB\arabic*]
-\item Would you say it is important that software platforms have release notes?
-\begin{itemize}[label={-}]
-\item Do you find that information in some other way?
-\end{itemize}
-\item How detailed should they be? / What should they look like?
-\begin{itemize}[label={-}]
-\item How important is it for you that the release notes are thoroughly written?
-\end{itemize}
-\item Is it worth a company's time to make thorough release notes?
-\item How do poor release notes affect you?
-\end{enumerate}
-\item \textbf{Survey Anomaly}
-\begin{enumerate}[label=BC\arabic*]
-\item Release notes is ranked as the least, or amongst the least important aspect for all groups. Why do you think that is?
-\end{enumerate}
-\end{enumerate}
-
-
-\paragraph{C - Online Communities}
-For online community, we are trying to understand why it was ranked
-so differently in the two surveys. We also try to understand why, in general,
-an online community matters.
-
-\begin{enumerate}[label=C\Alph*]
-\item \textbf{General}
-\begin{enumerate}[label={CA\arabic*}]
-\item    When talking about software platforms, what is an online community to you?
-\item    If the documentation was flawless, would you not need an online community?
-\end{enumerate}
-\item \textbf{When are they used?}
-\begin{enumerate}[label={CB\arabic*}]
-\item    How often would you say you take help from online communities?
-\item   Do you check out the online community before choosing a platform?
-\end{enumerate}
-\item \textbf{What should it look like?}
-
-\begin{enumerate}[label=CC\arabic*]
-\item    What do you want from an online community / what should it look like?
-\begin{itemize}[label={-}]
-\item How important are online communities?
-\item What do communities that you like have in common?
-\item Is it important that a community feels alive?
-\item Is it important the community feels helpful?
-\item Is it important that the tone used in the community is positive?
-\item Is it important that the company behind the software are part of the community?
-\end{itemize}
-\item    If we compare software platforms to something smaller, such as a library. Would you say it is more important or less important to have a software community around it?
-\begin{itemize}[label={-}]
-\item Why is it more/less important?
-\end{itemize}
-\end{enumerate}
-\item \textbf{Survey Anomaly}
-\begin{enumerate}[label={CD\arabic*}]
-\item In the first survey, having an online community was ranked as the second most important aspect. In the second one, it’s ranked in the middle. Why do you think that is?
-\end{enumerate}
-\end{enumerate}
-\subsubsection{Interview Results}
+\subsection{Interview Results}
 
 All of the interviews can be found in their full form in appendix X. In this section however
 we will discuss some interesting findings in the interviews.
 
-\paragraph{API Documentation and Examples}
+\subsection{API Documentation and Examples}
 
 Just like the surveys suggested, API documentation and examples are very important
 to everyone. It turns out that API examples are actually the first thing people
@@ -1502,7 +1568,6 @@ look for when encountering new documentation. All the interview subjects, when
 encounter with the question "AB1 - When you look at API documentation, what are you usually looking for?"
 answered in some shape or form that they first of all look for examples.
 
-\section{Results}
 
 \section{Discussion and Conclusions}
 

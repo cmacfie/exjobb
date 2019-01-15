@@ -16,6 +16,7 @@
 \usepackage{soul}
 \usepackage{amsmath}
 \usepackage{enumitem}
+\usepackage{natbib}
 
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
@@ -31,6 +32,7 @@
 \begin{center}\large\textit{#1}\end{center}
 \vskip0.5em}%
 }
+\bibliographystyle{agsm}
 
 
 \title{What is required by software platforms in order to give a good developer experience?}
@@ -373,6 +375,7 @@ Mark Nottingham lists 11 personas for HTTP-based APIs\cite{personas}.
 
 More text here ...
 
+
 \section{Methodology and Preparations}
 
 There could have been many approaches to this thesis to try to find what was needed in order to find out
@@ -525,52 +528,157 @@ be found in table \ref{tab:aspects} and the references to the sub-characteristic
 \label{tabl:iso}
 \end{table}
 
+
+\subsection{Quantitative vs. Qualitative data}
+More text here...
 \subsection{Surveys}
 
 \subsubsection{Reasons To Do Surveys}
+Surveys are a popular way to collect quantitative data.
+There are several situations when surveys, or questionnaires as they are also referred to, are a good
+method to use when one wants to collect quantitative data. \cite{denscombe} has described it as a good method when you are
+working data that is of non-sensitive subjects, when the data sources are spread out and when the data pool is big.
+He also states that questionnaires are a good way to collect data of both factual nature, as well as opinion-based.
+Denscombe goes on to say that a questionnaire is likely to contain collection of both of these kinds of data and that it is
+important to make it clear to the person taking the questionnaire whether or not the question is asking for an opinion, or a 'fact'.
+Since this research project concerns itself with a mixture of both factual data, such as people's work experience, job titles and responsibilites, as well as opinion-based data relating to developer experience, questionnaires are a good methodology to use.
 
-\subsubsection{Survey Decisions}
-Do first survey
-Only send internally in Qlik
+\subsubsection{Construction of a Questionnaire}
+\cite{denscombe} has a section where he lays out the vital parts of a questionnaire. According to him, a questionnaire should always contain the following parts.
 
-\subsubsection{Survey Subjects}
+\begin{itemize}
+\item \textbf{The Sponsor} - Clearly state who this questionnaire is from and for.
+\item \textbf{The Purpose} - Why is this questionnaire being made and for what will the data be used. He warns however that one should not go into to much detail, as to lead the questionnaire taker into answering in a certain way
+\item \textbf{Confidentiality} - Assert the questionnaire taker that the data collected will not be publically available or be directly linked to the him or her, if him or her so not wishes.
+\item \textbf{Voluntary Responses} - Convey that the questionnaire is completely voluntary to take
+\item \textbf{Thanks} - Make sure to extend your thanks to the questionnaire taker for voluntarily taking the questionnaire.
+\end{itemize}
 
-\subsubsection{Survey Questions}
+Denscombe also states that there is no good, defined number of questions that should exist in a questionnaire. However, it should be
+\textit{as brief as possible}. He warns of trying to ask too many questions, for anything that \textit{might} be important. This is not a good approach. A questionnaire constructor should always try to keep the scope as tight as possible. He gives four tips for when trying to do this.
+\begin{itemize}
+\item Only ask questions that are absolutely vital for the research
+\item Proof-read to make sure you do not ask any duplicate questions
+\item Make it as fast and easy as possible to answer the questionnaire
+\item Have a test-round for your questionnaire
+\end{itemize}
 
-\subsubsection{Survey 1}
+Furthermore, Denscombe talks about phrasing of questions and knowing your target audience. He gives a comprehensive list of things to think of when doing this. Some key parts are that using words that suitable for your target audience, avoid leading questions and make sure to include sufficent answers. He also puts emphasis on the ordering of questions. He states that 'easy' questions, that don't require much consideration from the questionnaire taker (Such as age) should come early in the questionnaire.
 
-\subsubsection{Survey 2}
+There are also pros and cons of using a variety of style for your questions, according to Denscombe. He suggests that using a variety of styles will stop the questionnaire taker from becoming bored, and also stops them from falling into a pattern, where they simply answer the same way every time without considering the question. The upside of using the same question style is that will make the questionnaire taker used to how the questions should be answered and limits the likelihood for confusion.
 
-After gathering potential factors, through litterateur and
-brainstorming, on what would lead to good DX, it was concluded that a
-smaller, initial survey would be relevant to conduct to test the waters
-on the potential factors that had been found. It also intended to find
-more potential factors that had not been thought of. The survey had intentionally
-a too broad of a scope.
-The intentions with the survey was to get a grip on what part of DX would be most interesting
-to get a deeper grip on. It also intended to see if there are any issues in the
-phrasing of the aspects, as well as find any aspects we had not thought of.
+\subsubsection{Making a Test Questionnaire - Survey 1}
+In this early stage of the research project, it was still not decided what part of DX should be thoroughly researched.
+We there for constructed a test-survey with what we knew was too broad of a scope. The goal of the survey was not to collect
+useful data per say, but rather to find what sub-field of DX we wanted to pursue. We also wanted see how well defined our list of aspects was (see table \ref{tab:aspects}), if we could better our way of phrasing questions and if people even knew what developer experience was. We were weary of Denscombes warning that people are hesitant to do more than one survey, but knew that the main survey would be much later. We also made sure, when the survey was sent out, to keep the tone casual to only catch people whom were actually interested in taking this survey, to "save" the more hesitant people for the main survey, hoping that the interested people might take the main survey later as well. A last step to prevent this feeling of "Only having one shot" was to only keep the survey open for 24 hours.
 
-The survey questions can be seen in
-Appendix X.
+\paragraph{Survey 1 Subjects, Questions and Takeaways}
+As stated before, the scope was kept very broad. The survey consisted of three main parts: Background information, how developers find new software and lastly their relationship to DX around software. We mixed both close- and open-ended questions in this survey. From this we learned to things:
+\begin{enumerate}
+\item We got suggestions for more aspects to consider around DX and how people find new software.
+\item We knew that we wanted to have a more streamlined process in the main survey with close-ended questions to more easily be able to compare the data.
+\end{enumerate}
 
-\subsubsection{Survey Structure}
+We also learned that dealing with how people find new software was interesting, but that the directly DX-related questions on what people want from a software was more interesting to research further. Lastly, we found out that the majority of developers had not heard of the concept of "Developer Experience" before, or could not define it.
 
-The survey consisted of three parts. The first part was a small screener
-to gather some information about the person taking the survey. The
-second part was about users usage of new software and the third and last
-part was about the DX factors, and how important they were to the user.
-After the survey was done, the data was gathered and evaluated using
-Qlik Sense. Although the data set was too small to make any direct
-affirmations, it gave some indications. In the part about the DX
-factors, the user were to rank each factor depending on how often they
-considered the factor when finding new software. To able to rank the
-answers, each answer was given a value: 'Always Consider' (1.00), 'Often
-Consider' (0.75), 'Sometimes Consider' (0.50), 'Rarely Consider' (0.25),
-'Never Consider' (0.00). After summing them up and taking the average score, we were able to give each
-aspect a score between 0 and 1, where a 1.0 score would mean that
-everyone answered 'Always consider' and 0 would mean that everyone
-answered 'Never consider'.
+\subsubsection{Follow-up Interview to Survey 1}
+
+After the results from the initial survey had been evaluated, two follow-up interviews were
+conducted in order to get some insights if there were any issues with
+the survey. The overall takeaway from the interviews was that
+mindset, context and definitions was a concern. The two interviewees realized during the interview that they had not given consistent answers, due to having thought of different situations for different survey questions. The survey also used technical jargon, that while it had been explained in the survey, had not been read by the interviewees. This leads to questioning the integrity of the data collected in the first survey, since one cannot know if the survey takers had used their own understanding of the jargon, or read the definition given in the survey. During the two interviews some questions were discussed as well as being too open-ended to be answered with close-ended alternatives. Lastly, the interviews had an issue with the questions having too little context. As stated by one of the interviewees, "Well, it depends on the context.", was the answer to a lot of the survey questions according to him. He stated that it depends if he's working on a hobby project, or professionally. He also stated that it depends on if he's the only one that will use the platform, or if his co-workers will as well.
+
+\paragraph{Takeaways from Follow-up interview}
+
+We learned that context is key to many of the questions we are trying to ask, and it needs to be clearly stated in the survey. We also learned that we need to make sure that the survey taker has read the definition we are using of certain jargon to give us comparable data. Lastly, an example to the context would be good to have, to put all the survey takers in the same mindset.
+
+\subsubsection{Making the Main Questionnaire - Survey 2}
+
+Having made a pilot survey and a follow-up interview, we felt like we were ready to make the main survey for the research project.
+The questionnaire can be seen in appendix \ref{}.
+
+\paragraph{Re-scoping and Changes}
+Overall, the width of the project had to be scoped down, and some
+things had to be dropped from exploration in the project. The
+first survey found that the creator behind a software was less
+considered than we had anticipated. Although it would have been interesting to explore, we chose to drop these questions for the main survey.
+The questions about how they find new software
+and how long time they spend on this will also be dropped from
+exploration. The re-scoped focus of the main survey instead became what developers are considering when looking at software platforms.
+\\ \\
+It was clear that most people had not heard of, or were not sure about,
+what developer experience was. For the main survey we therefor included an even more comprehensive definition of exactly what DX is.
+The follow-up interview made it clear that people may skip texts about definitions and context, which lead to the change of making these texts more in focus and even having confirmation questions that they had indeed read the text.
+\\ \\
+We also knew we had to give more of a context and ended up with three different situations. They are defined later in the paper.
+
+We also made as many of the questions as possible close-ended to give easily comparable data. In the first survey we also had the very broad phrase of referring to "Tools and Framework". This term felt too broad, and since Qlik Core is a software platform, we ended up pursuing people's thought around only this term.
+\\ \\
+Furthermore, when extending the questioning around software considerations, we split it into two parts: How often they consider something, as well as how it affects them emotionally, since this is more central to how DX is measured. Lastly, the first survey yielded two new concerns that we extended the list of aspects we were using (see table \ref{tab:aspects}).
+
+\paragraph{Survey 2 Structure}
+
+The survey consisted of three parts:
+\begin{itemize}[label={}]
+\item \textbf{Part 1: Background} - A screener around who the survey taker is.
+\item \textbf{Part 2: Software Considerations} - A three-part section around of how often they consider the different aspects when choosing a software platform
+\item \textbf{Part 3: Developer Experience} - A two-part section around how likely the different aspects are to cause a positive/negative feeling
+\end{itemize}
+\\ \\
+This first part of the survey contained definitions and explanations. It also consisted of a background-check of whom the respondent was, asking questions like job title, years of experience and size of the company he/she is working at. It also had a question on whether or not the respondent was in a position to make decisions on what software other people would use. This question was relevant out of two reasons. The first was to be able to have data on whether or not decision makers have other priorities. It also made sure that non-decision makers would not answer the questions surround Context 1: 'Group', since they did not have the authority to make those decisions anyway.
+\\ \\
+The second part of the survey focuses on what people consider when choosing a
+software platform. This part was divided into three categories, which
+from now on will be called 'Group', 'Single' and 'Hobby'.
+
+\begin{itemize}[label={}]
+\item \textbf{Group:} - When working professionally and choosing a software platform for a group of people.
+\item \textbf{Single:} - When professionally choosing a software platform solely for yourself.
+\item \textbf{Hobby:} - When working non-professionally on a hobby project.
+\end{itemize}
+The questions were the same in these three prats, the only
+different was the context given. The question was:
+
+\begin{quote}
+"When $<context>$, which of these traits or aspects do you usually consider when using a software platform?"
+\end{quote}
+The respondent would then rank each aspect (see table \ref{tab:aspects}) on a scale. They had the following alternatives.
+\begin{itemize}[label={-}]
+\item Never consider
+\item Rarely consider
+\item Sometimes consider
+\item Often consider
+\item Always consider
+\end{itemize}
+\\ \\
+The last part of the survey focused on developer experience. It had
+two sub-parts, how likely a factor is to cause them to leave an
+interaction with a software platform with a positive feeling, and how
+likely a factor is to cause them to leave an interaction with a software
+platform with a negative feeling. The question were closely linked to
+the questions asked in the consideration part, but focused on the
+\textit{feeling} rather than if they usually consider the factor when choosing
+a software platform.
+
+\paragraph{Data Pool and Implications}
+The survey was sent out internally to Qlik employees. It was also shared with customers of Qlik through their twitter account. This is a quite homogeneous group of people, all working with a certain type of software. While this could be seen as concerning for the data, it was decided that we would not try to reach a wider audience than this. The reasoning behind this was that we did not have a reliable and guaranteed way of widening the data pool by any big numbers. However, if were to try to share this online and ask 'random' people to answer, we would not know much about whom is answering. By keeping it limited to these two sources, we have control of who are in our data pool and take this into account when drawing conclusions.
+
+\paragraph{Analyzing Survey 2}
+With all the questions, a part from people's job title, being close-ended it was quite easy to streamline and compare the data collected from the survey. The data was loaded into Qlik Sense, a data visualisation program from Qlik which makes it easy to find patterns and insights of data. In order to compare the questions where people had to choose alternatives on a scale, we gave each answer a number, see table \ref{tabl:points}.
+This made it possible for us to get an average score between 0.00 and 1.00 of each aspect. This in turn made it possible to rank each aspect of how important or often considered it was.
+\begin{table}[H]
+\centering
+\begin{tabular}{l l|r}
+\multicolumn{2}{l}{\textbf{Answer}} & \textbf{Points} \\ \hline
+Never Consider & 1 - Not very important & 0.00  \\ \hline
+Rarely Consider & 2 & 0.25 \\ \hline
+Sometimes Consider & 3 - Neutral & 0.50 \\ \hline
+Often Consider & 4 & 0.75 \\ \hline
+Always Consider & 5 - Very important & 1.00 \\ \hline
+\end{tabular}
+\caption{Scaled answers and their given points when analyzing the data}
+\label{tabl:points}
+\end{table}
 
 \subsection{Interviews}
 
@@ -839,11 +947,11 @@ an online community matters.
 \end{enumerate}
 \end{enumerate}
 
+\subsection{Evaluating Qlik Core}
+
 \section{Results}
 
 \subsection{Survey 1 Results}
-
-
 The results were evaluated through initially three different filters,
 which were compared to the overall group, to see if there were any
 trends amongst certain groups. The groups that were filtered by were:
@@ -852,7 +960,7 @@ are developers within the industry' and 'People in companies with more
 than 200 employees'. The last filter with the larger companies was
 scrapped since the majority of all answers were from Qlik, and the group
 was therefor a too big majority of the whole group. When evaluating the
-data we also found that the people who had the jobtitle of architect
+data we also found that the people who had the job title of architect
 stood out quite a lot compared to the overall group. Even though the
 sample size was small, only 5 out of the 38, this group could be
 interesting to look at since they are a key group for this survey.
@@ -913,79 +1021,6 @@ before, with the one exception that 'I have heard of the creator of the
 software before' had an increase by 10\%. It is however still the least
 considered factor.
 
-\subsubsection{Follow-up interview}
-
-After the results had been evaluated, two follow-up interviews were
-conducted in order to get some insights if there were any issues with
-the survey. The two interviews resulted in some contradicting answers,
-with some things being an issue for interview subject one, and a
-non-issue for subject two.
-
-The first thing we wanted to see if the people conducting the survey
-read the description of our definition of 'Tools and frameworks'. The
-first subject had not seen this description, whereas the other one did.
-It's however paramount that all subjects use the same definition when
-answering, and in the next survey the definition will be clearly stated
-and made sure it's understood by the test subject.
-
-The general question if there were any confusion regarding the survey
-questions or alternatives, there did not seem to be much of an issue.
-The first interview subject found one alternative a bit confusing, and
-the second interview subject found no issues. The confusing alternative
-will be made more clear for the next survey.
-
-Both of the interview subjects were in a position to make decisions for
-a team of what software to use. We asked them if they put themselves in
-the context of making a group decision or a decision for self-use of
-software when they took the survey. We also asked them if they put
-themselves in the context of working professionally or on a 'hobby
-project'. They both took the survey in the context of making decisions
-for a group professionally. The first interview subject had the opinion
-that his survey answers would not differ depending on those contexts,
-whereas the second interview subject pointed out some differences he had
-depending on those two contexts. For the next survey we will explicitly
-tell the people taking the survey to put themselves in a certain
-subject, since it may affect the answers.
-
-One of the questions were “Which of these traits or aspects do you
-usually consider when deciding if you want to TRY a new tool or
-framework?”, with an emphasis on the word \textit{try}. We asked them is this
-emphasis affected their answer, of if their answers would have been the
-same if the question was stated in the form of: “Which of these traits
-or aspects do you usually consider when deciding to \textit{use} a new tool or
-framework?”. The first interview subject said he did not see a
-difference between the two questions, and it did not affect his answers.
-The second interview subject went on a side-tangent, talking more about
-the previous question about working professionally versus at home, and
-did not clearly answer if the emphasis did affect his answer. Our
-conclusion is that we should be cautious about drawing too many
-conclusions from this question, since the emphasis may have caused
-survey-takers to interpret the question differently, but that the
-results are still solid.
-
-We also had concerns around the question of "How quickly do you usually
-decide if the tool or framework is for you?". The interview subjects
-confirmed our concerns. They said that it depends on how complex the
-project and/or software is. This question will have to be rephrased
-and/or given a more specific context in the next survey.
-
-The first interview subject also had some survey answers that may be
-contradicting, and we asked him to explain his thinking around these
-answers. He had said that he \textit{always} considers weather or not he can
-have working code quickly. He did \textit{not} however say that it is a deal
-breaker for a software if he cannot have working code quickly. His
-reasoning around this was that sometimes you have no choice. A software
-may be the only available solution for your project, and then it does
-not matter if it takes a long time to have working code. He also checked
-that he often considers if documentation assumes any prior expertize,
-but it was not a deal breaker. He applied that same reasoning behind
-these choices.
-
-Our takeaway from this last part is that we may have to rephrase the
-question so that we exclude the extreme cases when developers have no
-choice but to settle for bad DX. We want to find what developers are
-looking for in a software, to find out what they consider to be good DX,
-not what they have to tolerate in bad DX.
 
 \subsubsection{Conclusions from survey}
 
@@ -1005,174 +1040,17 @@ developer, that only considers his own workflow. In the next survey we
 will make the context more specific so that the two groups are not mixed
 up.
 
-\subsection{Survey 2}
-
-\subsubsection{Changes from survey 1}
-
-It was clear that most people had not heard of, or were not sure about,
-what developer experience was. I will therefor in the next survey
-explain more what DX is about. The follow-up interview made it clear
-that people may have not read the information text in the first survey,
-so I will therefor in the next survey confirm that they have read it. It
-was also not clear in what mindset people were when they answered survey
-1, professional or non-professional. It was also unclear if they were
-taking into consideration that others may use the software. The next
-survey will therefor give a more precise context, so that we can be sure
-that the answers are consistent.
-
-Overall, the width of the project have to be scoped down, and some
-things will have to be dropped from exploration in this project. The
-first survey found that the creator behind a software was less
-considered than expected. The questions about how they find new software
-and how long time they spend on this will also be dropped from
-exploration.
-
-In the first survey, we also used the term 'Tools and frameworks'. This
-ended up being too broad of a concept. In the second survey, we solely
-focused on 'Software platform' instead, since Qlik Core is a software platform.
-
-The focus will be scoped down to solely focus on the software
-considerations required to give a good DX. Two new consideration
-questions were added as well, that did not exist in the first survey.
-The two new questions are 'The software is open source', after getting
-the suggestion from free form answers in the first survey. The second
-new question is 'The software is offered in more than one programming
-language'. The reasoning behind the question was to try to get more
-insight into the question 'The software uses the programming language I
-am most comfortable with', to see if offering more languages is
-something that is worth while for a software platform. The question 'The
-API gives thorough explanations' was also rewritten as 'The API
-documentation gives thorough explanations on how it works' to be less
-vague.
-
-\subsubsection{Survey 2 Structure}
-
-The second survey can be divided into two major parts. The first part,
-like in survey 1, focuses on what people consider when choosing a
-software platform. This part was divided into three categories, which
-from now on will be called 'Group', 'Single' and 'Hobby'. Group: When
-working professionally and choosing a software platform for a group of
-people, Single: When professionally choosing a software platform solely
-for yourself, and Hobby: When working non-professionally on a hobby
-project. The questions were the same in these three prats, the only
-different was the context given.
-
-The second part of the survey focused on developer experience. It had
-two sub-parts, how likely a factor is to cause them to leave an
-interaction with a software platform with a positive feeling, and how
-likely a factor is to cause them to leave an interaction with a software
-platform with a negative feeling. The question were closely linked to
-the questions asked in the consideration part, but focused on the
-\textit{feeling} rather than if they usually consider the factor when choosing
-a software platform.
-
-\subsubsection{Survey 2 results}
-
+\subsection{Survey 2 Results}.
+There are many ways you can view the results
 We got 39 responses in total. The results were loaded into Qlik Sense
 where we could find different groups and patterns. We looked at the
 results from three angels: The overall average result, result depending
 on your job title and result depending on how much experience you have
 in the industry.
-
-\paragraph{Overall Result}
-
-In general, people consider things more often when they are choosing for
-a group than for themselves. For the three categories, Single is the
-closest to the average result, with Group and Hobby existing as
-opposites on either side of Single. In all but one case, if it's often
-considered when choosing for a group, it's \textit{not} important when choosing
-for a hobby project, and vice versa.
-
-Overall it can be said that there is a direct correlation between if an
-aspect in it's good form has a positive impact, that same aspect in it's
-bad form will have about the same level of negative impact. However, in
-all but once case, the positive effect is greater than the negative
-effect, if only slightly. In general, it's closely related to how often
-something is considered. If something has a strong DX-impact, it is
-something that is often considered, and vice versa. There are some
-outliers to this, but in general it seems that people actually consider
-things that will cause them to have a good DX.
-
-The top three most important aspects for each category can be seen in
-the table below.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{r l}
-\hline\hline
-\multicolumn{2}{c}{\textbf{Average}} \\ \hline
-1 &The API has code examples \\
-2 & The API documentation gives thorough explanations on how it works \\
-3 &I can have working code quickly \\
-\hline\hline
-\multicolumn{2}{c}{\textbf{Group}} \\ \hline
-1 & The API has code examples                                        \\
-2 & The API documentation gives thorough explanations on how it works \\
-3 & The software is compatible with different platforms              \\
-\hline\hline
-\multicolumn{2}{c}{\textbf{Single}} \\ \hline
-1 &  The API has code examples                                         \\
-2 &  The API documentation gives thorough explanations on how it works  \\
-3 &  I can have working code quickly                                   \\
-\hline\hline
-\multicolumn{2}{c}{\textbf{Hobby}} \\ \hline
-1 & The pricing of the software    \\
-2 & The API has code examples       \\
-3 & I can have working code quickly\\ \hline
-\end{tabular}
-\caption{Top 3 ranked DX-aspects by each situation}
-\label{tab:my_label}
-\end{table}
-
-
-The overall result concluded that \textit{the} most considered aspect overall
-is 'The API has code examples'. For hobby, it's the second most
-important aspect, losing the first place by only 0.03 points. For
-everyone else, it's the most important aspect. Further, good code
-examples had the biggest positive impact on developer experience, and
-bad code examples had the biggest negative impact on DX. The negative
-impact if the examples are bad are not as extreme as the positive impact
-is if they are good however. In conclusion, API examples are a key
-factor for software platforms' quality.
-
-The thoroughness of the documentation is also one of the most important
-aspects, coming in as the second most important aspect for all
-categories except for Hobby. The positive DX-impact is as big as the
-negative one, and it's also reflected in that it's consideration points
-are as high as the DX-impact points.
-
-Having working code quickly is also in the top three for all but the
-group category, where it's in fourth place. The positive DX-impact if
-you can have working code quickly is slightly higher than the negative
-DX-impact if it takes a long time before you have working code. The
-positive impact is also stronger than if you compare it to how often
-it's considered.
-
-Having the software be compatible with different platforms is a big
-divider. It's the third most important aspect for Group, but one the
-least important aspects for Hobby, and somewhere in the middle for
-Single. The positive impact is lower than how often it's considered, and
-the negative DX-impact is even less. If you exclude the Group-category,
-it places itself on average as the 11<sup>th</sup> most important
-aspect, out of 16.
-
-The pricing of the software is important to everyone, placing itself on
-average as the 4<sup>th</sup> most important aspect overall, but \textit{the}
-most important aspect for Hobby. For group and single, it's both the
-5<sup>th</sup> and 4<sup>th</sup> most important aspect respectively.
-It's a little bit harder to make statements about the DX-impact since
-it's phrased a little differently. The question for consideration is
-simply how often they consider 'The pricing of the software'. In the
-DX-questions however, it's phrased as 'The pricing of the software was
-easy to find' and 'The pricing of the software has hard to find'. The
-positive and negative impact of those two are however less than how
-often it is considered.
-
-\paragraph{Job Title}
-
+\\ \\
 The job titles were divided into four groups: Architects, Developer and
 Engineers, Managers and Other. The quantity and percentage of total can
-be seen in the table below.
+be seen in the table \ref{tabl:jobs}.
 
 \begin{table}[H]
 \centering
@@ -1183,8 +1061,8 @@ Developer and Engineers & 21           & 53.8\%  \\\hline
 Managers                & 4            & 10.3\%  \\\hline
 Other                   & 4            & 10.3\%  \\\hline
 \end{tabularx}
-\caption{Second survey responses grouped by job titles}
-\label{tab:my_label}
+\caption{Main survey responses grouped by job titles}
+\label{tabl:jobs}
 \end{table}
 
 Below we can see all the aspects, what points each job title gave it and
@@ -1241,11 +1119,94 @@ it's rank.
 \label{tab:my_label}
 \end{table}
 
+
+\subsubsection{Overall Result}
+Overall, there were quite a lot of interesting finding when analyzing the results from the main survey.
+In general, people are more likely to consider things when they are choosing for
+a group rather than for themselves. For the three categories, Single is the
+closest to the average result, with Group and Hobby existing as
+opposites on either side of Single. In all but one case, if it's often
+considered when choosing for a group, it's \textit{not} often considered when choosing
+for a hobby project, and vice versa.
+
+For the part of the survey regarding DX and people's feelings around software platforms, it can be said that there is a direct correlation between if an aspect in it's good form has a positive impact, that same aspect in it's
+bad form will have about the same level of negative impact.
+However, in all but once case, the positive effect is greater than the negative
+effect, if only slightly. In general it is closely related to how often
+something is considered. That is to say, if something will cause someone to have a non-neutral feeling regarding an aspect, they will also consider it when choosing a platform. Ergo, there is no uncoupling between what causes them to have a good DX, and what they consider when choosing a platform. There are some
+outliers to this, but that is the general case.
+
+The top three most considered aspects for each context can be seen in
+the table \ref{tabl:top3}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{r l}
+\hline\hline
+\multicolumn{2}{c}{\textbf{Average}} \\ \hline
+1 &The API has code examples \\
+2 & The API documentation gives thorough explanations on how it works \\
+3 &I can have working code quickly \\
+\hline\hline
+\multicolumn{2}{c}{\textbf{Group}} \\ \hline
+1 & The API has code examples                                        \\
+2 & The API documentation gives thorough explanations on how it works \\
+3 & The software is compatible with different platforms              \\
+\hline\hline
+\multicolumn{2}{c}{\textbf{Single}} \\ \hline
+1 &  The API has code examples                                         \\
+2 &  The API documentation gives thorough explanations on how it works  \\
+3 &  I can have working code quickly                                   \\
+\hline\hline
+\multicolumn{2}{c}{\textbf{Hobby}} \\ \hline
+1 & The pricing of the software    \\
+2 & The API has code examples       \\
+3 & I can have working code quickly\\ \hline
+\end{tabular}
+\caption{Top 3 considered aspects by each context}
+\label{tabl:top3}
+\end{table}
+The overall result concluded that \textit{the} most considered aspect overall
+is 'The API has code examples'. For hobby, it's the second most
+important aspect, losing the first place by only 0.03 points.
+Further, good code
+examples had the biggest positive impact on developer experience, and
+bad code examples had the biggest negative impact on DX. The negative
+impact if the examples are bad are not as extreme as the positive impact
+is if they are good however. In conclusion, API examples are a key
+factor for software platforms' quality.
+\\ \\
+The thoroughness of the documentation is also one of the most important
+aspects, coming in as the second most important aspect for all
+categories except for Hobby. The positive DX-impact is as big as the
+negative one, and it's also reflected in that it's consideration points
+are as high as the DX-impact points.
+\\ \\
+Having working code quickly is also in the top three for all but the
+group category, where it's in fourth place. The positive DX-impact if
+you can have working code quickly is slightly higher than the negative
+DX-impact if it takes a long time before you have working code. The
+positive impact is also stronger than if you compare it to how often
+it's considered.
+\\ \\
+Having the software be compatible with different platforms is a big
+divider. It's the third most important aspect for Group, but one the
+least important aspects for Hobby, and somewhere in the middle for
+Single. The positive impact is lower than how often it's considered, and
+the negative DX-impact is even less. If you exclude the Group-category,
+it places itself on average as the 11\textsuperscript{th} most important
+aspect, out of 16.
+\\ \\
+The pricing of the software is important to everyone, placing itself on
+average as the 4\textsuperscript{th} most important aspect overall, but it is \textit{the}
+most important aspect for Hobby. For group and single, it's both the
+5\textsuperscript{th}  and 4\textsuperscript{th}  most important aspect respectively.
+
 ![consid_jobtitle2](./consid_jobtitle.png "Considerations grouped by different job titles")
 
 There are several angles you can view this at. Here we discuss a few.
 
-\paragraph{Developer and Engineers compared with Architects}
+\subsubsection{Developer and Engineers compared with Architects}
 
 For example, if we compare Architects and Developer and Engineers, they
 are quite similar. On average, the score differences is 0.06. The
@@ -1286,7 +1247,7 @@ The release- and change notes are thorough                            &        1
 \label{tab:arch-devs}
 \end{table}
 
-\paragraph{Architects compared with managers}
+\subsubsection{Architects compared with managers}
 
 If we compare Architects and Managers, the differences are bit more
 extreme. On average, they differ by 0.09 points. The biggest divider for
@@ -1323,7 +1284,7 @@ The release- and change notes are thorough                            &        1
 \label{tab:arch-devs}
 \end{table}
 
-\paragraph{Developer and Engineers compared with Managers}
+\subsubsection{Developer and Engineers compared with Managers}
 
 If we compare Developer and Engineer with Managers, we also find that
 they're quite different. On average, they differ in points by 0.10
@@ -1358,7 +1319,7 @@ The release- and change notes are thorough                            &         
 \end{table}
 
 
-\paragraph{Experience}
+\subsubsection{Experience}
 
 The responses were also divided into five groups, depending on how much
 experience in the software industry the had. There were 5 people with
@@ -1391,7 +1352,7 @@ The release- and change notes are thorough	&	0.26	&	0.34	&	0.33	&	0.30	&	0.25	\\
 \caption{The ranking and scores of architects, compared with developers and engineers}
 \label{tab:arch-devs}
 \end{table}
-\paragraph{Decision Makers}
+\subsubsection{Decision Makers}
 
 We divided the group into decision makers and non-decision makers. The
 groups are of comparable size: There are 22 decision makers for groups
@@ -1455,7 +1416,7 @@ that 50\% of Middle level people are decision makers, and 64\% of Senior
 level people are decision makers.
 
 
-\paragraph{Compared to Survey 1}
+\subsubsection{Compared to Survey 1}
 
 The sample size is almost exactly the same in the two surveys. The first
 survey had 38 responses, whereas the second one had 39. There are two
@@ -1522,7 +1483,7 @@ The release- and change notes are thorough                            &         
 \label{tab:my_label}
 \end{table}
 
-\paragraph{Not considered}
+\subsubsection{Not considered}
 
 Because of the way the data pool was shaped, we did not look at two
 groups, which could have been interesting. The first one is company
@@ -1560,7 +1521,7 @@ senior level respectively can be seen in the table below.
 All of the interviews can be found in their full form in appendix X. In this section however
 we will discuss some interesting findings in the interviews.
 
-\subsection{API Documentation and Examples}
+\subsubsection{API Documentation and Examples}
 
 Just like the surveys suggested, API documentation and examples are very important
 to everyone. It turns out that API examples are actually the first thing people
@@ -1568,8 +1529,24 @@ look for when encountering new documentation. All the interview subjects, when
 encounter with the question "AB1 - When you look at API documentation, what are you usually looking for?"
 answered in some shape or form that they first of all look for examples.
 
+More text here...
+
+\subsubsection{Release note}
+
+More text here...
+
+\subsubsection{Online Communities}
+
+More text here...
+
+\subsection{Evaluation of Qlik Core}
+
 
 \section{Discussion and Conclusions}
+\subsection{Surveys}
+\subsection{Interviews}
+\subsection{List of Recommendations for Software Platforms}
+\subsection{Evaluation of Qlik Core}
 
 \section{Acknowledgements}
 

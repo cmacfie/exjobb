@@ -957,10 +957,10 @@ an online community matters.
 
 More text here...
 
-\section{Results}
+\section{Results and Discussion}
 
-\subsection{Survey 1 Results}
-Although the first survey only was a pilot version, it can be interesting to evaluate the results of it. There were also things asked in the first survey, that wasn't in the main one.
+\subsection{Initial Survey}
+Although the first survey only was a pilot version, it can be interesting to evaluate the results of it. There were also things asked in the first survey, that wasn't in the main one. We got 38 responses in total.
 Initially we intended to look at the outcome from four different perspectives, and compare them to the overall group. The four perspectives were:
 \begin{itemize}[label={}]
 \item People with more than 5 years experience in the industry
@@ -972,7 +972,7 @@ The last perspective with the larger companies was
 scrapped since the majority of all answers were from Qlik, and the group
 was therefor a too big majority of the whole group.
 
-The survey found that the majority of people do not know what DX is. In table \ref{tab:knowdx} we can see how many people felt they could define DX. As we can see, it's quite an unknown term.
+The survey found that the majority of people do not know what DX is. In table \ref{tab:knowdx} we can see how many people felt they could define DX. As we can see, it's quite an unknown term. Almost half had not heard of it, and only 7.9\% felt they fully knew what it was.
 
 \begin{table}[H]
 \centering
@@ -990,10 +990,10 @@ I don't know & 5.3\% \\ \hline
 \end{table}
 
 \subsubsection{Consideration Factors}
-The scores from consideration question in the first survey in figure \ref{fig:scopresByPoints}. The table is divided into the different perspectives.
+The scores from consideration question in the first survey in figure \ref{fig:scopresByPoints}. The table is divided into the different perspectives. "Everyone" is simply the average result, "Experienced" is people with more than 5 years of experience in the industry, "Developers" are those who had the job title of developer or software engineer, and "Architects" are those who were some for of software architect.
 As we can see, all but 3 factors scored equal to or above 0.50 points, meaning that they
 were factors that were more often than not considered.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{ScoresByPoints.png}
 \caption{Scores from consideration aspects in survey 1, divided into different perspectives.}
@@ -1005,10 +1005,9 @@ active community around the software, and thirdly that the API
 explanations were thorough. The least two important factors were 'The
 documentation has consistent language' and 'The release- and change
 notes are thorough'.
-%This is an interesting find, since literature highlights these to factors as being very important. Many companies also spend a lot of resources to keep documentation up-to-date and release notes thorough. Here we see that most people, more often than not, do \textit{not} consider these factors. A potential explanation to this could be     that the question is phrased so that it puts the emphasis on \textit{try} a new software, whereas these two factors may be only relevant in long term use of a software.
+This is an interesting find, since literature highlights these to factors as being very important. Many companies also spend a lot of resources to keep documentation up-to-date and release notes thorough. Here we see that most people, more often than not, do \textit{not} consider this factor. A potential explanation to this could be that the question is phrased so that it puts the emphasis on \textit{try} a new software, whereas these two factors may be only relevant in long term use of a software. As we'll see in the main survey however, where the question was phrased as \textit{use a software platform}, release notes were once again listed as one of the least important aspects.
 \\ \\
-For the more experienced users, the result differ some when compared to the 'Everyone' group. They take less consideration to factors surrounding APIs,
-documentation and time to get started, and care more about pricing,
+For the more experienced users, the result differ some when compared to the 'Everyone' group. They take less consideration to factors surrounding APIs, documentation and time to get started, and care more about pricing,
 cross-platform compatibility and the thoroughness of release notes.
 \\ \\
 With the group consisting of mainly developers, we see almost the
@@ -1036,7 +1035,7 @@ considered factor.
 The first survey also had a section of what they considered to be a deal breaker for trying out a new software.
 In table \ref{tab:dealbreaker} we can see the result of this.
 
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\columnwidth}{r X}
 & \textbf{Aspect}	\\ \hline
@@ -1061,7 +1060,7 @@ In table \ref{tab:dealbreaker} we can see the result of this.
 As we can see much of the things that people consider when choosing a software is also a deal breaker if it's poorly implemented. A very clear result from this part is that most people are \textit{not} willing to pay for a software before they can try it out.
 
 \subsubsection{Ways of Finding New Software}
-In the test survey there was also a part about how people find new software. The answers can be seen in table \ref{tab:discover}. As we can see, the most common way of finding new software is either through people you know, or online discussions.
+In the test survey there was also a part about how people find new software. The answers can be seen in table \ref{tab:discover}. As we can see, the most common way of finding new software is either through people you know, or online discussions. Since people spend the majority of their working time online and with coworkers, this is quite a natural result. Conferences and online courses are not part of people's daily lives in the same way, and naturally it's not a common source of new discovering new software.
 
 \begin{table}[H]
 \centering
@@ -1081,8 +1080,8 @@ Online Courses	&	13.2\% \\ \hline
 \end{table}
 
 \subsection{Survey 2 Results}
-There are many ways you can view the results.
-We got 39 responses in total. The results were loaded into Qlik Sense
+There are many ways you can view the results. We've tried to look at it from many different angles, and compare it with different groups. \\
+In total, the main survey yielded 39 responses. The results were loaded into Qlik Sense
 where we could find different groups and patterns. We looked at the
 results from three angels: The overall average result, result depending
 on your job title and result depending on how much experience you have
@@ -1265,19 +1264,109 @@ In figure \ref{fig:dxandcosnid} you can see how the consideration points compare
 \end{figure}
 There are several angles you can view this at. Here we discuss a few.
 
+\subsubsection{Developer and Engineers}
+Developer and Engineers are the majority of people who are going to use a software platform, since they make out the majority of a development team. In the survey, they also made out the majority of the respondents. In table \ref{tab:devs} we can see how they ranked the considerations. According to this, they are people who want thorough documentation and API examples. They want to have working code quickly, and they care about the pricing of the software. They also more often than not care if a project is open-source, and also want to use the programming language they are most comfortable with. Even though they want thorough documentation, less often than not they don't care if the documentation uses inconsistent language or assumes prior expertise. They do not care if release notes are thorough. Developers and engineers have an average score of 0.60, with the difference between the most considered thing, and the least considered thing, being 0.62.
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\columnwidth}{ l X r}
+
+{\textbf{R}*} &   \textbf{Aspect}   & {\textbf{S}**} \\ \hline
+1 &      The API has code examples                                             &  0.91             \\ \hline
+2 &      The API documentation gives thorough explanations on how it works     &  0.87             \\ \hline
+3 &      The pricing of the software                                           &  0.84             \\ \hline
+4 &      I can have working code quickly                                       &  0.80             \\ \hline
+5 &      The software uses the programming language I am most comfortable with &  0.73             \\ \hline
+6 &      The software is open source                                           &  0.69             \\ \hline
+7 &      There exists an active online community around the software           &  0.67             \\ \hline
+8 &      The documentation is easy to navigate                                 &  0.61             \\ \hline
+9 &      How often the software is updated                                     &  0.57             \\ \hline
+10 &      The official website looks professional                               &  0.56             \\ \hline
+11 &      The software is compatible with different platforms                   &  0.52             \\ \hline
+12 &      The software has the same features on all different platforms         &  0.45             \\ \hline
+13 &      The documentation doesn't assume any prior expertise                  &  0.44             \\ \hline
+14 &      The documentation has consistent language                             &  0.34             \\ \hline
+15 &      The software is offered in more than one programming language         &  0.31             \\ \hline
+16 &      The release- and change notes are thorough                            &  0.29             \\ \hline \hline
+\multicolumn{3}{l}{*R: Rank, **S: Score}
+\end{tabularx}
+\caption{The ranking and scores of developers and engineers}
+\label{tab:devs}
+\end{table}
+
+\subsubsection{Architects}
+Architects are a key part of a development team. They are responsible for how the software will be structured and therefor also often have a say in, if the software will be using a software platform, what platform will be used. In table \ref{tab:arch} we can see how the architects ranked the aspects. According to this result, architects are (just like developers) people who want code examples and thorough documentation. They find it important that software platforms are open-source, and want to have working code quickly. They also, just like developers, do not care if the release notes are thorough. The average score for architects is 0.61, with the a difference between the most considered thing, and the least considered thing, of 0.66.
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\columnwidth}{l X r}
+
+\textbf{R}* &  \textbf{Aspect}        & \textbf{S}** \\ \hline
+1 &    The API has code examples                                             &         0.92             \\ \hline
+2 &    I can have working code quickly                                       &         0.85             \\ \hline
+3 &    The API documentation gives thorough explanations on how it works     &         0.82             \\ \hline
+4 &    The software is open source                                           &         0.77             \\ \hline
+5 &    The pricing of the software                                           &         0.76             \\ \hline
+6 &    The software uses the programming language I am most comfortable with &         0.69             \\ \hline
+7 &    The documentation is easy to navigate                                 &         0.66             \\ \hline
+8 &    There exists an active online community around the software           &         0.63             \\ \hline
+9 &    The official website looks professional                               &         0.63             \\ \hline
+10 &    The software is compatible with different platforms                   &         0.58             \\ \hline
+11 &    How often the software is updated                                     &         0.52             \\ \hline
+12 &    The documentation has consistent language                             &         0.49             \\ \hline
+13 &    The documentation doesn't assume any prior expertise                  &         0.47             \\ \hline
+14 &    The software has the same features on all different platforms         &         0.41             \\ \hline
+15 &    The software is offered in more than one programming language         &         0.37             \\ \hline
+16 &    The release- and change notes are thorough                            &         0.26             \\ \hline \hline
+\multicolumn{3}{l}{*R: Rank, **S: Score}
+\end{tabularx}
+\caption{The ranking and scores of architects}
+\label{tab:arch}
+\end{table}
+
+\subsubsection{Managers}
+Managers have responsibilities that differ quite much from developers, engineers and architects. They often have to think of legal aspects and are in contact with other departments, such as sales. They will often also not have the same level of competence when it comes to software development as architects, developers and engineers have. They are also not the key demographic for this research, since we are talking about \textit{developer} experience. They are however a key part for the selection of software platforms, since they will have the most authority and also are the person in control (or is the contact to the person in control) of the money. In table \ref{tab:managers} we can see how the managers ranked the aspects. There we can see that even managers care about API examples and that they can have working code quickly. The pricing of the software is, maybe not surprisingly, quite important to them. Managers have an average score of 0.59, with the biggest difference between the most considered thing, and the least considered thing, being just 0.37.
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\columnwidth}{l X r}
+
+\textbf{R}* &  \textbf{Aspect}        & \textbf{S}** \\ \hline
+1 &   The API has code examples                                             &      0.79  \\ \hline
+2 &   I can have working code quickly                                       &      0.75  \\ \hline
+3 &   The pricing of the software                                           &      0.73  \\ \hline
+4-5 &   The API documentation gives thorough explanations on how it works     &      0.71  \\ \hline
+4-5 &   There exists an active online community around the software           &      0.71  \\ \hline
+6-7 &   The software uses the programming language I am most comfortable with &      0.63  \\ \hline
+6-7 &   How often the software is updated                                     &      0.63  \\ \hline
+8 &   The software is open source                                           &      0.60  \\ \hline
+9-11 &   The documentation is easy to navigate                                 &      0.54  \\ \hline
+9-11 &   The software is compatible with different platforms                   &      0.54  \\ \hline
+9-11 &   The software has the same features on all different platforms         &      0.54  \\ \hline
+12 &   The official website looks professional                               &      0.52  \\ \hline
+13-15 &   The documentation has consistent language                             &      0.44  \\ \hline
+13-15 &   The software is offered in more than one programming language         &      0.44  \\ \hline
+13-15 &   The release- and change notes are thorough                            &      0.44  \\ \hline
+16 &   The documentation doesn't assume any prior expertise                  &      0.42  \\ \hline \hline
+\multicolumn{3}{l}{*R: Rank, **S: Score}
+\end{tabularx}
+\caption{The ranking and scores of managers}
+\label{tab:arch}
+\end{table}
+
 \subsubsection{Developer and Engineers compared with Architects}
 If we compare architects with developer and engineers, they
-are quite similar. On average, the score differences is 0.06. The
+are quite similar. On average, the score differences is only 0.06. The
 biggest difference for consideration questions is 'The documentation has
 consistent language', where Architects average out at 0.49/1.00 in
 points, making it 'Sometimes considered', whereas Developer and
 Engineers only score 0.34/1.00, placing it between 'Sometimes consider'
 and 'Rarely consider'. Their ranking does not differ much, with the
 biggest ranking difference being two spots.
+It can also be said that architects on average have a score of 0.61, and developers 0.60. So by a fine margin, architects consider more things than developers and engineers. Architects are also more extreme, where the most considered thing, and least considered thing have difference of 0.66 points, whereas developers and engineers have 0.62. They are however, like stated before, quite close and similiar.
 \\ \\
-Below we can see the different aspects, sorted by average most
+In table \ref{tab:arch-devs} we can see the different aspects, sorted by average most
 important, for Architects and Developers and Engineers.
-
 
 \begin{table}[H]
 \centering
@@ -1314,7 +1403,7 @@ by 0.18 points. The rank difference is only one spot though. Their
 biggest dividers in rank differ by five spots. They are 'The official
 website looks professional' and 'The documentation is easy to navigate'
 where the first one is more important to Architects, and the second one
-is more important to Managers.
+is more important to Managers. We can also see that managers are much less extreme in their opinions than architects, where the difference between the most considered thing, and the least considered thing, being just 0.37, whereas it's 0.66 for architects. Since architects will be working more directly with software platforms, they may have stronger opinions on what is needed, and not needed for them.
 
 \begin{table}[H]
 \centering
@@ -1339,7 +1428,7 @@ The software is offered in more than one programming language         &        1
 The release- and change notes are thorough                            &        16 & 0.26       &        13-15 & 0.44           & 0.18  \\ \hline
 \end{tabularx}
 \caption{The ranking and scores of architects, compared with managers}
-\label{tab:arch-devs}
+\label{tab:arch-man}
 \end{table}
 
 \subsubsection{Developer and Engineers compared with Managers}
@@ -1347,7 +1436,7 @@ If we compare Developer and Engineer with Managers, we also find that
 they're quite different. On average, they differ in points by 0.10
 points. Their biggest differ in points is for 'The official website
 looks professional', where they differ by 0.15 points, which is also
-their biggest differ in ranking: 6 spots different.
+their biggest differ in ranking: 6 spots difference. Just like with architects vs managers, they're differences between the extreme are very different. 0.37 difference for managers, and 0.62 for developers and engineers. Once again, this seems quite natural since developers and engineers will be working with the platform more and have stronger opinions on what they need.
 
 \begin{table}[H]
 \centering
@@ -1383,7 +1472,9 @@ experience in the software industry the had. There were 5 people with
 less than 5 years experience, 10 people with 5 - 10 years experience, 10
 people with 10 - 15 years experience, 12 people with 15 - 25 years
 experience and 2 people with 25+ years of experience in the software
-industry.
+industry. How people ranked the aspects, depnding on years of experience, can be seen in table \ref{exp}. In table \ref{tab:jobExp} we can see the division of how many years of experience related to job title.
+
+More text here...
 
 \begin{table}[H]
 \centering
@@ -1407,13 +1498,45 @@ The software is offered in more than one programming language	&	0.28	&	0.35	&	0.
 The release- and change notes are thorough	&	0.26	&	0.34	&	0.33	&	0.30	&	0.25	\\ \hline
 \end{tabularx}
 \caption{The ranking and scores of architects, compared with developers and engineers}
-\label{tab:arch-devs}
+\label{tab:exp}
 \end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\columnwidth}{l l X}
+\textbf{Experience} &  \textbf{Quantity}        & \textbf{Job Title} \\ \hline
+$< 5$ years	    &   5   &	Developers and Engineers \\
+&   0   &	Architects \\
+&   0   &	Managers \\ \
+	    &   0   &	Other \\ \hline
+$5 - 10$ years	&   5   &	Developers and Engineers \\
+&   3   &	Architects \\
+&   1   &	Managers \\
+&   1   &	Other \\ \hline
+$10 - 15$ years	&   6   &	Developers and Engineers \\
+&   2   &	Architects \\
+&   1   &	Managers \\
+&   1   &	Other \\ \hline
+$15 - 25$ years	&   5   &	Developers and Engineers \\
+&   3   &	Architects \\
+&   2   &	Managers \\ \
+	&   2   &	Other \\ \hline
+$25+$ years	&0&	Developers and Engineers \\
+&   2   &	Architects \\
+&   0   &	Managers \\
+&   0   &	Other \\ \hline
+\end{tabularx}
+\caption{Years of experience in relatation to people's job title}
+\label{tab:jobExp}
+\end{table}
+
 \subsubsection{Decision Makers}
 We divided the group into decision makers and non-decision makers. The
 groups are of comparable size: There are 22 decision makers for groups
 and 14 non-decision makers for groups, and 3 who answered that it is not
 applicable. In table \ref{tab:decision} we can see how decision makers and non-decision makers score differently.
+
+More text here...
 
 \begin{table}[H]
 \centering
@@ -1578,15 +1701,81 @@ All of the interviews can be found in their full form in appendix X. In this sec
 we will discuss some interesting findings in the interviews.
 
 \subsubsection{API Documentation and Examples}
-
-Just like the surveys suggested, API documentation and examples are very important
-to everyone. It turns out that API examples are actually the first thing people
-look for when encountering new documentation. All the interview subjects, when
-encounter with the question "AB1 - When you look at API documentation, what are you usually looking for?"
-answered in some shape or form that they first of all look for examples.
-
-More text here...
-
+Just like the survey suggested, API documentation and examples are extremely important. The first people look at, according to the interviews, is the examples. That seems to be the way people get started when encountering a documentation. This is, according to the interview subjects, to get an overview of the software platform. Examples give an insight into what the software can do, what it's applications are.
+\begin{quote}
+"The example is a summary without comments" \\
+--- Quality Architect
+\end{quote}
+So it's an easy way for them to quickly see if the platform is intended to do. Interview subjects also state that examples are a good way to see if it's something that quickly understand, if it's something they're used to. One of the interview subjects stated that the more generic an API is, e.g. the more applications it has, the more examples are needed.
+\begin{quote}
+"... which means that if it's a broad and generic API ... they will have to have a lot of examples" \\
+-- Architect
+\end{quote}
+The interview subjects also said they look at other things to determine if they want to use a software platform. When asked if there were any "red flags" for API documentation we got several different answers. One stated that language inconstancy was a big warning, another if the documentation felt auto-generated, and a third if the description of the methods were lacking. People also stated they usually look at things outside of documentation when they are deciding, namely how well-known and popular the software platform seems to be.
+\begin{quote}
+"In the github you look at, is it starred, how many has downloaded it, and stuff. Is it used? Is it up-to-date?" \\
+--- Quality Architect
+\end{quote}
+\begin{quote}
+"And googling a lot. See what others are using."\\
+--- Senior Developer \\
+\end{quote}
+\begin{quote}
+"I would look both at the API documentation but also how much it's used and how much it's maintained, what was the latest changes and things like that" \\
+--- Architect
+\end{quote}
+One of the interview subjects were a manager, which turned out to have quite other priorities when it came to API documentation when he was in his working role. His opinion was that developers tend to think about more what's fun to use, rather than what is useful.
+\begin{quote}
+"I think that developers tend to play down the need for production worthy code ... [if] it looks good, if [developers] think it's fun to work with, it's good [to the developers]" \\
+--- Development Manager
+\end{quote}
+The manager was more concerned with reliability of the software platform. How likely was it to break down? And if so, what support can the developers get? Should we buy a support contract?
+\\ \\
+All the interview subjects said that they want to have working code quickly. Some of them attributed this to them being impatient or lazy, but when you started to question a bit more you realized that this is actually their way of figuring out if a software is valuable. When question about why he wants to have working code quickly, the architect stated:
+\begin{quote}
+"I don't get the feeling of the API otherwise." \\
+--- Architect
+\end{quote}
+So examples were used both to understand the underlying structure, how different part of the platform are linked up. But also for copy-pasting into your project to try it out.
+\\ \\
+We also asked the interviewees if they could ever tolerate not having working code quickly. It turns out that it's acceptable if they already know that the software is valuable and is what they are looking for. This however had the prerequisite that they would work with the software platform for a long time, and they knew that the long time it took to get started would be worth it. It however caused irritation. Consensus was though that they would rather try to find an alternative rather than to spend time to get it working, if they had the option.
+\begin{quote}
+"So if there is several different alternatives, I think I start out with another."\\
+--- Quality Architect
+\end{quote}
+\begin{quote}
+"Well, if I have a choice to find something else to use then I would just do that." \\
+--- Software Engineer
+\end{quote}
+\begin{quote}
+"...if you go to ... one API and you found it quite bad, then you skip and go the next API." \\
+--- Senior Developer
+\end{quote}
+So it's quite clear that developers are impatient and not shy of dropping alternatives for something else, if they have the choice. It is therefor important for a software platform to get started quickly, and to quickly convey to the developer what it is that the software platform can do. Developer do not want to spend a lot of time to figure out if a software platform is useful for them.
+\\ \\
+In the interviews we also talked about what the examples should look like. Not surprisingly, most of the people said it depends on the situation. Two cases that were brought up by several interviewees was that there should be 'getting-started' kind of examples, where the example is runnable. The other case was for examples that exist in the API's method descriptions. These ones should be as isolated as possible, according to interview subjects.
+\begin{quote}
+"... as isolated as possible. So you just show one small feature..." \\
+--- Quality Architect
+\end{quote}
+It was also stated by many that if the concepts are complicated, it's preferable to have smaller, step-by-step examples rather than a big example that does the complicated thing. Especially if the example introduces a lot of new concepts that needs to be understood.
+\begin{quote}
+"...it's important to have more step-by-step things ... [if] you need some prerequisite knowledge in order to [understand] that" \\
+--- Software Engineer
+\end{quote}
+Preferably there should both exist a larger example within a bigger context, and a smaller snippet that just shows how specific methods of the API should be used. If there can only exist one of these, the concise example is preferred over the bigger ones.
+\begin{quote}
+"If I have to choose then it would be [the] more concise examples..."\\
+--- Software Engineer
+\end{quote}
+\\ \\
+One of the interview subjects had a warning on quick-working code and that it can be decieving. They had been working on a project where they found a software platform to use. They got started quickly, and it seemed to be a good platform to use for their purpose. However, once they started to try to do more advanced things using the platform, they realized that the documentation was severely lacking. To do the simple things, and get up and going was no issue. But the documentation was not well documented beyond it's simplest cases. They ended up doing and investigation, and decided it was easier to actually throw away months of work and use another platform with good documentation, rather than trying to use the platform with poor documentation.
+\begin{quote}
+"And you could do the basic things quickly and it worked well. But after a while every time you ran into a problem and you wanted to fix it and you look into the documentation it's like: it doesn't say anything here." \\ \\
+"...then we realized: 'Okay, if this continues happening you just keep losing time, every time you want to fix something'. So we kind of scraped it and did an investigation: 'Okay what are our other options?. And in this case, let's try to look at the documentation straight away and see if all of the problems we had with the older one are now gonna be fixed.'" \\
+--- Software Engineer
+\end{quote}
+The takeaway is that examples are \textit{very} important in documentation. There needs to be examples that explains what the software platform can do and give the developer a way to get started quickly. Developers are impatient, so if you cannot provide a way to quickly give these things, they will choose another alternative. The documentation needs to explain advanced concepts step-by-step. It's also important that there exists documentation for both how you do the simple things, as well as more special cases. The language needs to be consistent, the documentation needs to be manually written with care and the methods need to have thorough explanations.
 \subsubsection{Release note}
 
 More text here...
@@ -1597,15 +1786,6 @@ More text here...
 
 \subsection{Evaluation of Qlik Core}
 
-
-\section{Discussion}
-\subsection{Surveys}
-More text here...
-\subsection{Interviews}
-More text here...
-\subsection{List of Recommendations for Software Platforms}
-More text here...
-\subsection{Evaluation of Qlik Core}
 More text here...
 \section{Conclusion}
 More text here...

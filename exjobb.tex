@@ -10,21 +10,27 @@
 \usepackage{multicol}
 \usepackage{titling}
 \usepackage{graphicx}
-\usepackage{tabularx}
+\usepackage{tabularx,colortbl}
 \usepackage{float}
 \usepackage{arydshln}
-\usepackage{soul}
+\usepackage[normalem]{ulem}
 \usepackage{enumitem}
-\usepackage{natbib}
+\usepackage[round]{natbib}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
 %\usepackage{makeidx}
 \usepackage[titletoc, header, page]{appendix}
 \usepackage{transparent}
 \usepackage{pdfpages}
+\usepackage[table]{xcolor}
 \newcommand{\source}[1]{\caption*{Source: {#1}} }
+\definecolor{myRed}{RGB}{255,89,94}
+\definecolor{myGreen}{RGB}{159,2454,90}
 %\geometry{showframe}
 %better like this?
 \student{Christoffer MacFie}{dat13cma@student.lu.se}
@@ -39,7 +45,7 @@
 %twolinestitle
 \threelinestitle
 
-\subtitle{A Study in Qlik Core's Developer Experience}
+\subtitle{A Research Into Qlik Core's Developer Experience}
 \company{Qlik AB}
 \supervisors{Martin Höst, \href{mailto:martin.host@cs.lth.se}{\texttt{martin.host@cs.lth.se}}}{Andrée Hansson, \href{mailto:andree.hansson@qlik.com}{\texttt{andree.hansson@qlik.com}}}
 %\supervisor{John Deer, \href{mailto:jdeer@company.com}{\texttt{jdeer@company.com}}}
@@ -55,15 +61,14 @@ I want to thank Andrée Hansson and Johan Bjering, who both served as mentors fo
 }
 
 \theabstract{
-This document describes the Master's Thesis format for the theses carried out at
-the Department of Computer Science, Lund University.
+This research paper explores what aspects are needed by software platforms in order for software developers to enjoy using them. It's carried out by Christoffer MacFie in collaboration with Qlik AB. The results of the research were applied to the software platform Qlik Core in order to provide the company Qlik with recommendations on how it can improve.
 
-Your abstract should capture, in English, the whole thesis with focus on the problem and solution in 150 words. It should be placed on a separate right-hand page, with an additional \textit{1cm} margin on both left and right. Avoid acronyms, footnotes, and references in the abstract if possible.
+The research used online questionnaires, one-on-one interviews and data analysis using Qlik Sense. The research compared how different groupings of people had varying needs from software platforms. It also explored and got a got a deeper understanding of why some of these aspects were needed.
 
-Leave a \textit{2cm} vertical space after the abstract and provide a few keywords relevant for your report. Use five to six words, of which at most two should be from the title.
+The research found that the most important aspects of a software platform is API code examples, thorough documentation explanations and that you can have working code quickly. It also found that Qlik Core does not have these aspects.
 }
 
-\keywords{MSc, BSc, template, report, style, structure}
+\keywords{MSc, Developer Experience, DX, Software Platforms, Qlik Core}
 
 %% Only used to display font sizes
 \makeatletter
@@ -76,16 +81,22 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \chapter*{Preface}
     \addcontentsline{toc}{chapter}{Preface}
     To start this research paper off, I will tell you a story.\\\\
-    Some years ago I believed I was too dumb to understand thermodynamics. I was about 18 years old and was sitting in my class room trying to solve a problem surrounding thermodynamics. I just could not understand it. My classmates were doing fine, talking and joking with each other while they were solving one problem after another. Meanwhile I just sat there, scratching my head, struggling with the first task.\\
-    Then one day, I decided to go and sit by myself instead of in the classroom. I had brought a book, not the one given by the school, but another I had borrowed from the library. I sat in total silence and carefully read the chapter about thermodynamics. I stopped, reflected over the text, and then went back into it. And suddenly, I just understood what I could not understand before.\\
+    Some years ago I believed I was too dumb to understand thermodynamics. I was about 18 years old and was sitting in my class room trying to solve a problem surrounding that very subject. I just could not understand it. My classmates were doing fine, talking and joking with each other while they were solving one problem after another. Meanwhile I just sat there, scratching my head, struggling with the first task.\\
+    Then one day, I decided to go and sit by myself instead of in the classroom. I had brought a book, not the one given by the school, but another I had borrowed from the library. I sat in total silence and carefully read the chapter about thermodynamics. I stopped, reflected on the text, and then went back into it. And suddenly, I just understood what I could not understand before.\\
     I think about this from time to time whenever I feel too dumb to learn something. It is not that I was too dumb, it is that the needs I had to do it were not fulfilled. The lesson of the story is that people have different needs in order to have a good experience.\\\\
-    This story can be applied to a lot of things in life. Some time ago when trying to use a software platform when programming, I encountered the feeling off not being smart enough. But then I remembered this story, and realized that it is not that I am too dumb, it is that my needs are not fulfilled. And this is what this research paper will be about. What needs do different developers have from software platforms in order to have a good experience using them?
+    This story can be applied to a lot of things in life. Some time ago when trying to use a software platform when programming, I encountered the feeling off not being smart enough again. But then I remembered this story, and realized that it is not that I am too dumb, it is that my needs are not fulfilled. I needed another explanation, to not sit next to may classmates and to have some silence. And this is what this research paper will be about. What needs do different developers have from software platforms in order to have a good experience using them?
     \chapter{Background and Purpose}
     \section{Goal Of This Research Paper}
-    This research paper is done in collaboration with the company Qlik. The goal of it is to define the needs developers have from software platforms in order for them to have a good experience. It also evaluates how well Qlik's software platform Qlik Core satisfy these needs.
+    This research paper is done in collaboration with the company Qlik. The goal of it is to define the needs developers have from software platforms in order for them to have a good experience. It also evaluates how well Qlik's software platform Qlik Core satisfy these needs. The questions this research paper intends to answer is:
+    \begin{enumerate}
+        \item What aspects are needed by a software platform in order for people to enjoy using them, and how important are these aspects?
+        \item Do different groups of software platform users have different needs?
+        \item Why are some of these aspects needed in order for people to enjoy a software platform?
+        \item How enjoyable is Qlik's software platform Qlik Core to use for a user?
+    \end{enumerate}
     \section{What is User Experience?}
-    To start off we have to figure out how we can even measure experience. One field we can look into, that has been researched a lot, is User Experience (UX). UX is the collective term of many disciplines merged into one that evaluates the overall experience delivered to a user of a
-    system, product or service. The coining of the term is often attributed to \citet{norman}, who has who has a background in the fields of cognitive science and usability engineering. There isn't one definitive of what UX is. They one who created the term, Norman, defines UX as:
+    To start off we have to figure out how we can even measure experience. One field we can look into, that has been researched a lot, is User Experience (UX). UX is the collective term for many disciplines merged into one that evaluates the overall experience delivered to a user of a
+    system, product or service. The coining of the term is often attributed to \citet{norman}, who has a background in the fields of cognitive science and usability engineering. There isn't one definitive definition of what UX is. They one who created the term, Norman, defines UX as:
     \begin{quote}
         "All aspects of the end-user’s interaction with the company, its services, and its products. The first requirement for an exemplary user experience is to meet the exact needs of the customer, without fuss or bother. Next comes simplicity and elegance that produce products that are a joy to own, a joy to use. True user experience goes far beyond giving customers what they say they want, or providing checklist features. In order to achieve high-quality user experience in a company’s offerings there must be a seamless merging of the services of multiple disciplines, including engineering, marketing, graphical and industrial design, and interface design."
     \end{quote}
@@ -98,7 +109,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         "A set of material rendered by a user agent which may be perceived by a user and with which interaction may be possible."
     \end{quote}
     One common denominator is that UX is related to how something is \textit{perceived}. It can therefor be considered a somewhat
-    subjective quality of a product, system or service. Because of this it can be hard to measure with exact numbers. \citet{iso9241} has a four-part process how to evaluate a system or service. The process can be seen in figure \ref{fig:iso9241}. It's an iterative process, and depending if the design solution  meets the user requirements or not, an earlier phase in the process needs to be revisited.
+    subjective quality of a product, system or service. Because of this it can be hard to measure with exact numbers. \citet{iso9241} has a four-part process how to evaluate a system or service. The process can be seen in figure \ref{fig:iso9241}. It's an iterative process, and depending on if the design solution  meets the user requirements or not, an earlier phase in the process needs to be revisited.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\linewidth]{iso9241-210.png}
@@ -107,7 +118,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \end{figure}
     \section{What is Developer Experience?}
     Okay, so we now have a better understanding that experience can be measured. What we are interested however is the experience for one certain group: developers. This is where come across the concept of "Developer Experience". Developer Experience, or DX, is similar to the more well known User
-    Experience (UX), but with the user being a software developer. Developer Experience has yet to be defined by any standards organization. There is also limited peer-reviewed academic research around the subject. That doesn't however mean that there do not exist articles about it. DX is
+    Experience (UX), but with the user being a software developer. Developer Experience has yet to be defined by any standards organization. There is also limited peer-reviewed academic research around the subject. That doesn't however mean that there does not exist articles about it. DX is
     defined by \citet{jarman} as
     \begin{displayquote}
         "The experience developers have when they use your product, be it
@@ -145,22 +156,25 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     It has been researched by \citet{unhappy} what makes a developer
     happy and unhappy, and they found several indicators, both
     internal- and external factors. They pointed both to internal factors, the developers own well-being. These factors were things like stress, fatigue, low motivation, etc. They also pointed to external factors. These were things like low productivity, delays, broken flow, and more. According to their findings, low productivity is the most common cause of unhappiness among developers. This is something that may be improved by software giving better DX. This research shows that there is a clear need for good DX.
-    \section{Who are Qlik and what is Qlik Core?}\label{Qlik}
+    \section{Who are Qlik and what is Qlik Core?}\label{sec:Qlik}
     This reasearch paper is done in collaboration with the company Qlik.
-    Qlik is a software company in Lund, founded in 1993\cite{}. They offer several products, with two most popular ones being QlikView and Qlik Sense. These two programs are used for discovery of insights about data that the user has. The programs takes large quantities of data and link them together into a data-model, which then can be easily interacted with to help the user find insights, patterns and anomalies. This new information can then help companies make decisions for the next step for the company.\\ Let's take an example. A telemarketing company is trying to figure out what employee deserves a Christmas bonus. The company has several thousands of excel sheets of all sold products during the year and who sold what. Going through all these sheets would take many days, and would be very difficult. However, when they load it into Qlik Sense, they can within minutes see the sales per person and date, see figure \ref{fig:SenseExample}. They find that two employee has the same sale amount. However, one of the employees had zero days throughout the year where they had zero sales, whereas the other had 95 days. The company decides to give the Christmas bonus to the employee who had the most consistency in sales.
+    Qlik is a software company in Lund, founded in 1993\citep*{qlikBackground}. They offer several products, with the two most popular ones being QlikView and Qlik Sense. These two programs are used for discovery of insights about data that the user has. The programs takes large quantities of data and link them together into a data-model, which then can be easily interacted with to help the user find insights, patterns and anomalies. This new information can then help companies make decisions for the next step for the company.\\ Let's take an example. A telemarketing company is trying to figure out what employee deserves a Christmas bonus. The company has several thousands of excel sheets of all sold products during the year and who sold what. Going through all these sheets would take many days, and would be very difficult. However, when they load it into Qlik Sense, they can within minutes see the sales per person and date, see figure \ref{fig:SenseExample}. They find that two employee has the same sale amount. However, one of the employees had zero days throughout the year where they had no sales, whereas the other had 95 days. The company decides to give the Christmas bonus to the employee who had the most consistency in sales.
     \begin{figure}[H]
         \centering
         \includegraphics[width=\linewidth]{salesExample.png}
         \caption{An example of data presented in Qlik Sense}
         \label{fig:SenseExample}
+        \source{Christoffer MacFie}
     \end{figure}
     This is all possible because of the Qlik Associative Engine (QAE). The engine links all the data together and makes a data model, which can then be easily displayed in different ways. The target audience for QlikView and Qlik Sense are businesses.\\ \\
-    Qlik have now launched a new product called Qlik Core. The target for this product is developers, rather than "ordinary people". The main selling point of this new product is that it gives the powerful QAE to developers to use, and make their own products on top of it.
-    Qlik Core is, as described on the official website, "an analytics development platform built around Qlik Associative Engine and Qlik-authored open source libraries"\citep{qlikwebsite}. The Qlik Core platform consists of several components, with it's central part being the QAE. To protect intellectual property (IP), the QAE is close-source.\\ The Qlik Core platform also provides libraries to make it possible to use the QAE, which almost all of them are open-source. The libraries that are included with Qlik Core are "Mira", "Halyard", "Enigma" and a licensing service.\\
-    Mira is an open-source JavaScript library which is used to generate insights about the data. Halyard is a JavaScript library which makes loading data into the QAE easier. Enigma is an open-source service makes it possible to communicate with the QAE. This library is offered in both JavaScript and Go. Lastly, the licensing service is a close-source service that authenticates that the user has paid for the use of the platform.\\
-    It should be mentioned that QC takes use of a third-party software called Docker. As described by \cite{whatisdocker}, Docker works a bit like virtual machine, but instead of having a whole operating system run, it simulates just a folder-system. They work with something they call "Containers", which makes it possible to package an application with all its dependencies, libraries, etc, into one package. This can then be run anywhere.
+    Qlik has now launched a new product called Qlik Core (QC). The target for this product is developers, rather than "ordinary people". The main selling point of this new product is that it gives the powerful QAE to developers to use, and make their own products on top of it.
+    Qlik Core is, as described on the official website, "an analytics development platform built around Qlik Associative Engine and Qlik-authored open source libraries"\citep{qlikwebsite}. The Qlik Core platform consists of several components, with it's central part being the QAE. To protect intellectual property (IP), the QAE is close-source.\\ The Qlik Core platform also provides libraries and services to make it possible to use the QAE, which almost all of them are open-source. The libraries and services that are included with Qlik Core are "Mira", "Halyard", "Enigma" and a licensing service.\\
+    Mira is an open-source JavaScript service which is used to generate insights about the data. Halyard is a JavaScript library which makes loading data into the QAE easier. Enigma is an open-source service which makes it possible to communicate with the QAE. This library is offered in both JavaScript and Go. Lastly, the licensing service is a close-source service that authenticates that the user has paid for the use of the platform.\\
+    Furthermore, Qlik also offer a unified testing framework called "after-work.js" and visualisation library called "picasso.js". These are also open-source, but are still classified by Qlik as "experimental" as they are not yet stable, at time of writing.\\
+    \\
+    It should be mentioned that QC takes use of a third-party software called Docker. As described by \cite{whatisdocker}, Docker works a bit like virtual machine, but instead of having a whole operating system run, it simulates just a folder-system. Docker works with something they call "Containers", which makes it possible to package an application with all its dependencies, libraries, etc, into one package. By using Docker, Qlik has made QC very portable and runnable in most operating system.
     \section{Popularity of Programming Languages}\label{sec:popLang}
-    It should said a few things about the state of programming languages in 2019. There are new languages emerging all the time. Some disappear just as quickly as they appeared, while others are here to stay. \citet{github} releases a yearly review of peoples usage of the web-based hosting service. In their review the talk about, amongst other things, what languages are the most popular. In figure \ref{fig:githubLang} we can see the most popular languages from the end of 2014, to the end of 2018. As mentioned, some languages come and go. One example is Ruby, which has dropped from 5th place, to 10th in just three years. The undisputed winner however is JavaScript, which is also what Qlik Core mainly uses. It should also be mentioned that Go, which QC also offers one of their libraries in, is on the rise and saw an increase by 150\% during 2018.\citep{github}
+    It should said a few things about the state of programming languages in 2019. There are new languages emerging all the time. Some disappear just as quickly as they appeared, while others are here to stay. \citet{github} releases a yearly review of people's usage of the web-based hosting service. In their review they talk about, amongst other things, what languages are the most popular. In figure \ref{fig:githubLang} we can see the most popular languages from the end of 2014, to the end of 2018. As mentioned, some languages come and go. One example is Ruby, which has dropped from 5th place, to 10th in just three years. The undisputed winner however is JavaScript, which is also what Qlik Core mainly uses. It should also be mentioned that Go, which QC also offers one of their libraries in, is on the rise and saw an increase by 150\% during 2018\citep{github}.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\linewidth]{githubLang.png}
@@ -175,11 +189,11 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     services. Applications are in need of an interface to interact with it's
     inner parts to create, read, update and read (CRUD) as well as execute
     commands. APIs provide this link between the two pieces of software that let's
-    them communicate.Because of APIs broad nature, there are many types of
-    APIs.
+    them communicate. Because of APIs broad nature, there are many types of
+    APIs\citep{rest2}.
 
     \subsection{Internal, Public and Partner APIs}
-    APIs have different level of openness, depending on who is going to access them. They are
+    APIs have different level of openness, depending on who is going to access them, as described by \cite{levin}. They are
     usually divided into three groups: Internal APIs, Public APIs and Partner APIs. These
     three groups are explained below.
     \subsubsection{Internal APIs}
@@ -200,7 +214,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     the functionality that the internal API has, since the circuitry of the
     software must be protected for security reasons as well as from business
     intelligence theft. If the internal API was open to the public anyone
-    could build their own copy of the program. These kind of APIs either do
+    could build their own copy of the program or find vulnerabilities. These kind of APIs either do
     not require any API key to access, or have an API key that is open for
     anyone to acquire (either through payment or for free).
     \subsubsection{Partner APIs}
@@ -218,7 +232,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     And just like with many other things in computer science, there are many valid approaches whom all have their
     pros and cons. The world wide web (WWW) is largely built upon the application protocol
     hypertext-transfer-protocol (HTTP) which, amongst other things, provides CRUD (Create, Retrieve, Update, Delete)
-    methods to be applied on resources. Resources in this context is refers to any \textit{thing}: file, object, document,
+    methods to be applied on resources. Resources in this context refers to any \textit{thing}: file, object, document,
     text, etc, that is provided by a web service. There are however many ways of utilizing this protocol to let a
     client access and manipulate server-side data, as well as execute commands. Below there are two methods described.
 
@@ -229,7 +243,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     between computer systems and the internet. It let's the system interact
     and manipulate the service it's interacting with. REST solves many
     issues that had been present in previous implementations of
-    communication between computer systems and the web.
+    communication between computer systems and the web\citep{rest1, rest2}.
     \\ \\
     One of the key factors in REST is that it's stateless. Statelessness in
     this context means that the two communicating parties does not need to
@@ -241,7 +255,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \\ \\
     A REST request consists of an HTTP method, a header containing
     information about the request, the path to the resource and lastly and
-    optional message body consisting of data.\citet{rest1}\citet{rest2}
+    optional message body consisting of data.
     \\ \\
     Statelessness makes it possible to separate the client and the server.
     Code changes to the server will not require changes to the client's
@@ -249,18 +263,25 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     kept the same.
     \\ \\
     Since REST does not use sessions, but simply responds to any incoming
-    requests, it's easy to scale up. It simply requires more bandwidth and
+    requests, it's easy to scale up. It just requires more bandwidth and
     processing power to be able to handle more requests per second.
     \\ \\
     If you want to for example post a message as a user with the \texttt{userID 1}, it
     could look something like this when using REST:
 
-    \begin{lstlisting}
-        POST /users/1/messages HTTP/1.1
-        Host: example.com
-        Content-Type: application/json
-        {"msg": "Test123"}
-    \end{lstlisting}
+    \begin{center}
+        \lstset{%
+        caption=An example of how an API call can look using REST,
+        basicstyle=\ttfamily\footnotesize\bfseries,
+        frame=tb
+        }
+        \begin{lstlisting}
+            POST /users/1/messages HTTP/1.1
+            Host: example.com
+            Content-Type: application/json
+            {"msg": "Test123"}
+        \end{lstlisting}
+    \end{center}
 
     Here, the resource of \texttt{/users/1/messages} is fetched and then the
     new message is created and put there. The server does not work in
@@ -275,7 +296,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
 
     %    https://en.wikipedia.org/wiki/Remote_procedure_call
     %    https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/
-    Remote Procedure Call (RPC) is a protocol used to execute commands on remote systems. RPC is, like REST, also
+    Remote Procedure Call (RPC) is a also described by \citet{rest1, rest2} as a protocol used to execute commands on remote systems. RPC is, like REST, also
     built on HTTP, but uses mostly just the \texttt{GET} and \texttt{POST} commands. RPC is a request-response protocol and is, unlike
     REST, stateful. Ergo, the protocol works with sessions between a client and a server, and previous messages may
     be needed in order to understand future ones.
@@ -293,15 +314,22 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     server needs to have a unique session for each client, which can cause
     problems with scalability.
     \\ \\
-    If we go back to example used in the previous section: posting a message
+    If we go back to the example used in the previous section: posting a message
     may look something like this:
 
-    \begin{lstlisting}
-        POST /SendMessage HTTP/1.1
-        Host: example.com
-        Content-Type: application/json
-        {"userId": 1, "msg": "Test123"}
-    \end{lstlisting}
+    \begin{center}
+        \lstset{%
+        caption=An example of how an API call can look using RPC,
+        basicstyle=\ttfamily\footnotesize\bfseries,
+        frame=tb
+        }
+        \begin{lstlisting}
+            POST /SendMessage HTTP/1.1
+            Host: example.com
+            Content-Type: application/json
+            {"userId": 1, "msg": "Test123"}
+        \end{lstlisting}
+    \end{center}
 
     Here, the server has a custom method called \texttt{SendMessage}. If the
     method call is not made asynchronous, the client is put in wait until
@@ -316,23 +344,30 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
 
     \subsection{What Type of API is Qlik Core?}
 
-    Qlik Core consists of several components which utilizes different types
-    of APIs. Since Qlik Associative Engine is mostly action based, it uses
-    JSON-RPC: a remote procedure call protocol in JSON format. Qlik Core
-    also provides a discovery service called Mira, which let's the user make
-    insights about their data. Mira is a REST-API, since this is a about
-    retrieving data and not performing actions.\citet{qlikwebsite}
+    Qlik Core consists of several components which utilizes several libraries that has different types
+    of APIs. The QAE also has several different ways of communicating with its inner workings. These APIs also have different types of APIs, namely JSON-RPC, gRPC and REST. JSON-RPC is a variant of RPC that utilizes the JSON format and gRPC is Google's implementation of RPC\citep{qlikwebsite}.
+    \begin{itemize}[label={}]
+        \item \textbf{Mira} - Discovery service library included in QC, based on REST
+        \item \textbf{halyard.js} - Data loading service that works as a wrapper around the load scripts to make data loading easier for a user. This service does not use an API standard.
+        \item \textbf{enigma.js} - QAE communicating service included in QC, based on gRPC
+        \item \textbf{Qlik Associative Engine} - QAE has several different APIs offered for communication with it
+        \begin{itemize}[label={}]
+            \item \textbf{QIX API} - An API based on JSON-RPC
+            \item \textbf{Data Connector API} - An API based on gRPC
+            \item \textbf{Analyitical Connector API} - An API based on gRPC
+        \end{itemize}
+    \end{itemize}
 
     \section{API User Personas}
     There are many types of people using platforms, whom all have different
-    requirements. One of dividing people is into the two groups
-    'Decision makers' and 'Non-Decision Makers'. These both need to be catered to in order
+    requirements and personalities. One way of dividing people is into the two groups
+    "Decision makers" and "Non-Decision Makers". These both need to be catered to in order
     to have a successful platform: if the decision makers are ignored the
     platform will not be implemented by companies in the first place. If the
     users are ignored, the platform will be quickly dropped since it's usage
     is not good enough.
     \\ \\
-    \citet{personas} lists several personas that will affected by how HTTP-based APIs are developed. A persona in this context is a group of people who share certain characteristics. He tries to cover all thinkable personas that would be affected by APIs. He looks both for the perspective of how to satisfy the consumer of APIs, and the creator of APIs. For this research paper, the view is that of what makes consumers of software platforms satisfied, and it is therefore the viewpoint of the consumer that's interesting to us.
+    \citet{personas} lists several personas that will affected by how HTTP-based APIs are developed. A persona in this context is a group of people who share certain characteristics. He tries to cover all thinkable personas that would be affected by APIs. He looks both from the perspective of how to satisfy the consumer of APIs, and the creator of APIs. For this research paper, the view is that of what makes consumers of software platforms satisfied, and it is therefore the viewpoint of the consumer that's interesting to us.
     \begin{itemize}[label={}]
         \item \textbf{Established Company Employees} - These people are limited in their freedom of what they can adopt, prohibited by the company's policies, ways of working and legal requirements. They are more likely to use more established programming languages, rather than the latest fads or up-and-coming languages. They are more likely to demand good documentation with examples in their languages, and less likely to spend time trying to understand new ways of working.
         \item \textbf{Startup Company Employees} - This person is in many ways the opposite of the person described above. This person is more likely to use newer programming languages, closely following what's "hot and new". This person also prefers quick solutions, going for existing implementations rather than developing their own. They're pragmatic, looking for fast results and does not have time to spend too much time on "fancy" solutions.
@@ -342,13 +377,12 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
 
 
     \section{Standardisation}
-    International Organisation for Standardization (ISO) has yet to present a
-    standard for developer experience. There are however other standards from ISO
+    As mentioned in section \ref{sec:Qlik}, there is no standard for DX, not by the The International Organisation for Standardisation (ISO) either. There are however other standards from ISO
     that are interesting to have a look at. One is \textit{ISO 9126 Software engineering - Product Quality}.
-    One part of the ISO-standard concerns quality. This part of the ISO standardizes how to measure the quality of software.
+    One part of this ISO-standard concerns how to measure the quality of software.
     It has six different characteristics: functionality, reliability, usability, efficiency, maintainability and
-    portability. Each of these characteristics have sub-characteristics. The definition of each
-    characteristic is listed, and their sub-characteristics, is in table \ref{tabl:standard1} and table \ref{tabl:standard2}
+    portability. Each of these characteristics has sub-characteristics. The definition of each
+    characteristic is listed, and their sub-characteristics, is in table \ref{tabl:standard1} and table \ref{tabl:standard2}. This standardisation is presented as it will be used in section \ref{sec:linking} to relate the ISO-standard to the aspects that are to be considered in this research.
 
 
     \begin{table}[H]
@@ -420,30 +454,24 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
 
     \chapter{Methodology and Preparations}
 
-    There could have been many approaches to this thesis to try to find what was needed in order to find out
+    There could have been many approaches in this project to try to find out
     what people require from software platforms in order to get a good developer experience. The process chosen in this research paper was to make
     a survey followed by interviews to triangulate the results.
     \\ \\
-    First of all it was decided what aspects were going to considered. This was followed by an initial test survey to find what
-    parts to investigate further. Then the major survey was conducted. After that the results were analyzed to try and find
+    First of all it was decided what aspects were going to considered. This was followed by an initial pilot survey to find what
+    parts to investigate further. Then the main survey was conducted. After that the results were analyzed to find
     patterns and interesting aspects. This lead to a series of questions, which was then used when conducting interviews with people with
-    different experience and job titles. The result from the interviews were put together and related to the finding in the survey.
+    different experience and job titles. The result from the interviews were put together and related to the findings in the survey.
     This finally resulted in a list of recommendation on what is needed by a software platform in order to give a good DX.
     Lastly, this list was used to analyze how well Qlik Core follow these recommendations.\\ \\
     It should be emphasised that these surveys and interviews were of an exploratory nature. Rather than trying to confirm already proven things, new things were searched for.
     \section{Deciding consideration aspects}
-
     There are a lot of aspects that could have been considered as requirements for
-    good DX. It had to be limited down however, and ended up with 14 aspects relating to software, and six aspects relating ot the
-    creators of software.
-    For the second survey, two more aspects were added, namely aspect 13 and 14 in the list in talbe \ref{tab:aspects}. Aspects relating to
-    creators of software were not part of the second survey.
-    The reasoning for adding two new aspects and removing aspects relating to creators is
-    discussed later in the paper. The fourteen original aspects were decided in a combination
+    good DX. In this section I will first present the list of aspects used, followed by a description of how it was created. It should be said that this list of aspects was revised between the pilot survey, and the main survey. The list of aspects can be seen in table \ref{tab:aspects}.\\ \\
+    The original version of the list contained fourteen aspects. They were decided in a combination
     of reading literature, my own experience of what I would consider when
     picking software platforms, and a brainstorm meeting with more experienced
-    people at Qlik, consisting of an architect and developers.
-    The list that was ended up with can be seen in table \ref{tab:aspects}.
+    people at Qlik, consisting of an architect and developers. The revision of the list is discussed in section \ref{sec:rescoping}.
     \begin{table}[H]
         \centering
         \begin{tabularx}{\columnwidth}{l X}
@@ -471,14 +499,12 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
             19** & The creator of the software seems professional \\
             20** & The creator of the software has a good reputation online \\
             21** & I have heard of the creator of the software before \\
-            22** & I have heard of other software the creator of the software has made
-            & \\
+            22** & I have heard of other software the creator of the software has made\\ \hline \hline
             \multicolumn{2}{l}{\textit{*Not part of the first survey, **Not part of the second survey}}
         \end{tabularx}
         \caption{List of aspects considered to give good DX}
         \label{tab:aspects}
     \end{table}
-
     \citet{jarman} is the source for some of these
     aspects. One of the points he makes is the importance of a great documentation.
     He says the documentation should always be written as if the developer is
@@ -498,7 +524,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     and the aspect that was ended up with was "10 - The release- and change notes are thorough".
     \\ \\
     Jarman also talks about pricing. He puts emphasis on that pricing of the software
-    should be easy to find for the developer. During the brainstorming, this
+    should be easy to find for the developer. This was also listed by \cite{everydeveloper} as an aspect they consider. During the brainstorming, this
     aspect was also discussed. The aspect was ended up with was the somewhat vague
     "9 - The pricing of the software". This was deliberately chosen
     to be a somewhat open-ended aspect, since there's a lot of things that you can
@@ -511,7 +537,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     consider myself when picking software. The list was extended further,
     with aspects related to API examples, online community and  platform compatibility.
     \\ \\
-    After this, a had brainstorming meeting was had with two senior developers and a
+    After this, a brainstorming meeting was had with two senior developers and a
     senior architect to further extend the list of aspects. The meeting attendees can arguably be considered
     to have expertise within the field, having worked for many years within the industry.
     Firstly, all three
@@ -536,7 +562,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     people wanted their favourite programming language.
 
 
-    \section{Linking considerations to ISO-9216-1}
+    \section{Linking considerations to ISO-9216-1}\label{sec:linking}
 
     As said before, there is no standard for DX. ISO-9216-1 is however a standard
     to measure the quality of software, so comparing the aspects to this list can
@@ -608,10 +634,10 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \subsection{Making a Test Questionnaire - Survey 1}
     In the early stages of the research project, it was still not decided what part of DX should be thoroughly researched.
     A test-survey was therefor constructed with what was known to be too broad of a scope. The goal of the survey was not to collect
-    useful data per say, but rather to find what sub-field of DX was interesting to pursue. The goal was also to see how well defined the list of aspects was (see table \ref{tab:aspects}), if there were better way of phrasing the questions and if people even knew what developer experience was. I was weary of Denscombes warning that people are hesitant to do more than one survey, but knew that the main survey would be much later. I also made sure, when the survey was sent out, to keep the tone casual to only catch people whom were actually interested in taking this survey, to "save" the more hesitant people for the main survey, hoping that the interested people might take the main survey later as well. A last step to prevent this feeling of "Only having one shot" was to only keep the survey open for 24 hours.
+    useful data per say, but rather to find what sub-field of DX was interesting to pursue. The goal was also to see how well defined the list of aspects was (see table \ref{tab:aspects}), if there were better ways of phrasing the questions and if people even knew what developer experience was. I was weary of Denscombes warning that people are hesitant to do more than one survey, but knew that the main survey would be much later. I also made sure, when the survey was sent out, to keep the tone casual to only catch people whom were actually interested in taking this survey, to "save" the more hesitant people for the main survey, hoping that the interested people might take the main survey later as well. A last step to prevent this feeling of "Only having one shot" was to only keep the survey open for 24 hours. The survey can be found in appendix \ref{pilotsurvey}.
 
     \subsubsection{Survey 1 Subjects, Questions and Takeaways}
-    As stated before, the scope was kept very broad. The survey consisted of three main parts: Background information, how developers find new software and lastly their relationship to DX around software. Both close- and open-ended questions were mixed in this survey. From this, two things were learned:
+    As stated before, the scope was kept very broad. The survey consisted of three main parts: Background information, how developers find new software and lastly their relationship to DX around software. Both close- and open-ended questions were mixed in this survey. From this, two things were found:
     \begin{enumerate}
         \item More aspects suggestions of things to consider around DX and how people find new software.
         \item The process needs to be more streamlined in the main survey with close-ended questions to more easily be able to compare the data.
@@ -623,20 +649,20 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
 
     After the results from the initial survey had been evaluated, two follow-up interviews were
     conducted in order to get some insights if there were any issues with
-    the survey. Results from the research paper are not normally presented in this section. However, as the results of the follow-up interview affected how the main survey was constructed, some results will be presented here right away anyway.\\\\
+    the survey. Results from the research are not normally presented in this section. However, as the results of the follow-up interview affected how the main survey was constructed, some results will be presented here right away anyway.\\\\
     The overall takeaway from the interviews was that
     mindset, context and definitions was a concern. The two interviewees realized during the interview that they had not given consistent answers, due to having thought of different situations for different survey questions. The survey also used technical jargon, that while it had been explained in the survey, had not been read by the interviewees. This leads to questioning the integrity of the data collected in the first survey, since one cannot know if the survey takers had used their own understanding of the jargon, or read the definition given in the survey. During the two interviews some questions were discussed as well as being too open-ended to be answered with close-ended alternatives. Lastly, the interviewees had an issue with the questions having too little context. As stated by one of the interviewees, "Well, it depends on the context.", was the answer to a lot of the survey questions according to him. He stated that it depends if he's working on a hobby project, or professionally. He also stated that it depends on if he's the only one that will use the platform, or if his co-workers will as well.
 
     \subsubsection{Takeaways from Follow-up interview}
 
-    Some takeaways are that the context is key to many of the questions that are trying to be asked, and it needs to be clearly stated in the main survey. Another insights is that the survey taker it needs to be confirmed that the survey taker has read the definitions of certain jargon to give comparable data when analyzing the results. Lastly, an example to the context would be good to have, to put all the survey takers in the same mindset.
+    Some takeaways are that the context is key to many of the questions that are trying to be asked, and it needs to be clearly stated in the main survey. Another insights is that it needs to be confirmed that the survey taker has read the definitions of certain jargon to give comparable data when analyzing the results. Lastly, a context given by an example would be good to have, to put all the survey takers in the same mindset.
 
     \subsection{Making the Main Questionnaire - Survey 2}
 
     Having made a pilot survey and a follow-up interview, the main survey for the research project was ready to be constructed.
-    The questionnaire can be seen in appendix \ref{}.
+    The questionnaire can be seen in appendix \ref{mainsurvey}.
 
-    \subsubsection{Re-scoping and Changes}
+    \subsubsection{Re-scoping and Changes}\label{sec:rescoping}
     Overall, the width of the project had to be scoped down, and some
     things had to be dropped from exploration in the project. The
     first survey found that the creator behind a software was less
@@ -646,7 +672,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     exploration. The re-scoped focus of the main survey instead became what developers are considering when looking at software platforms.
     \\ \\
     It was clear that most people had not heard of, or were not sure about,
-    what developer experience was. The main survey therefor included even more comprehensive definition of exactly what DX is.
+    what developer experience was. The main survey therefor included an even more comprehensive definition of exactly what DX is.
     The follow-up interview made it clear that people may skip texts about definitions and context, which lead to the change of making these texts more in focus and even having confirmation questions, assuring that they had indeed read the text.
     \\ \\
     With the need for more context, three different situations were defined.
@@ -673,11 +699,10 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     This first part of the survey contained definitions and explanations. It also consisted of a background-check of whom the respondent was, asking questions like job title, years of experience and size of the company he/she is working at. It also had a question on whether or not the respondent was in a position to make decisions on what software other people would use. This question was relevant out of two reasons. The first was to be able to have data on whether or not decision makers have other priorities. It also made sure that non-decision makers would not answer the part about the context of 'Group', since they did not have the authority to make those decisions anyway.
     \\ \\
     The second part of the survey focuses on what people consider when choosing a
-    software platform. This part was divided into three categories, which
-    from now on will be called 'Group', 'Single' and 'Hobby'.
+    software platform. This part was divided into the three contexts Group, Single and Hobby.
     \\ \\
-    The questions were the same in these three prats, the only
-    different was the context given. The question was:
+    The questions were the same in these three parts, the only
+    difference was the context given. The question was:
 
     \begin{quote}
         "When $<context>$, which of these traits or aspects do you usually consider when using a software platform?"
@@ -698,13 +723,25 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     platform with a negative feeling. The question were closely linked to
     the questions asked in the consideration part, but focused on the
     \textit{feeling} rather than if they usually consider the factor when choosing
-    a software platform.
+    a software platform. For this section, the survey takers had to consider the following questions, with $<context>$ being either positive or negative.
+    \begin{quote}
+        On a scale from 1 - 5, how important is it that these aspects exist in order for you to leave the
+        interaction with the software platform with a $<context>$ FEELING?
+    \end{quote}
+    The survey taker was then presented with the following alternatives:
+    \begin{enumerate}[label={\arabic* - }]
+        \item Not very important
+        \item
+        \item Neutral
+        \item
+        \item Very important
+    \end{enumerate}
 
     \subsubsection{Data Pool and Implications}
     The survey was sent out internally to Qlik employees. It was also shared with customers of Qlik through their twitter account. This is a quite homogeneous group of people, all working with a certain type of software. While this could be seen as concerning for the data, it was decided that a wider audience than this should not tried to be reached. The reasoning behind this was that there were no reliable or guaranteed way of widening the data pool by any big numbers. However, if the survey was to be shared online and ask 'random' people to answer, one could not know who is answering. By keeping it limited to these two sources, one can have control of who are in the data pool and can take this into account when drawing conclusions.
 
     \subsubsection{Analyzing Survey 2}
-    With all the questions, a part from people's job title, being close-ended it was quite easy to streamline and compare the data collected from the survey. The data was loaded into Qlik Sense, a data visualisation program from Qlik which makes it easy to find patterns and insights of data. In order to compare the questions where people had to choose alternatives on a scale, each answer was given a number, see table \ref{tabl:points}.
+    With all the questions, a part from people's job title, being close-ended it was quite easy to streamline and compare the data collected from the survey. The data was loaded into Qlik Sense, which made it easy to find patterns and insights of the data. In order to compare the questions where people had to choose alternatives on a scale, each answer was given a number of points, see table \ref{tabl:points}.
     This made it possible for us to get an average score between 0.00 and 1.00 of each aspect. This in turn made it possible to rank each aspect of how important or often considered it was.
     \begin{table}[H]
         \caption{Scaled answers and their given points when analyzing the data}
@@ -721,7 +758,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \end{table}
 
     \subsubsection{Considerations Questions and DX Questions}\label{consisQuestions}
-    In the second survey there were one section with consideration questions, and one section with DX-related questions. These were closely related, but some differ in what they're asking. In table \ref{tab:allQPart1} and \ref{tab:allQPart2} you can see all the questions grouped together. The most noteworthy differences between DX-question and consideration question is the pricing of the software, where the consideration question is very broad whereas the DX-question specifically asks how easy it was to find the price. Another is the broad consideration question of how often the software is updated, whereas the DX-question specifically asks about how quickly the software addresses bugs.
+    In the main survey there was one section with consideration questions, and one section with DX-related questions. These were closely related, but some differ in what they're asking. In table \ref{tab:allQPart1} and \ref{tab:allQPart2} you can see all the questions grouped together. The most noteworthy differences between DX-question and consideration question is the pricing of the software, where the consideration question is very broad whereas the DX-question specifically asks how easy it was to find the price. Another is the broad consideration question of how often the software is updated, whereas the DX-question specifically asks about how quickly the software addresses bugs.
 
     \begin{table}[H]
         \centering
@@ -814,9 +851,9 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \section{Interviews}
 
     \subsection{Reasons To Do Interviews}
-    There are several reasons why interviews is a suitable method use in this research project.
+    There are several reasons why interviews are a suitable method use in this research project.
     The quantitative data collected
-    by the two survey gives a good idea of what is needed, does not answer \textit{why} it is needed.
+    by the two survey gives a good idea of what is needed, but does not answer \textit{why} it is needed.
     Interviews will therefor give a depth to the quantitative data that has been collected.
     \citet{denscombe} recommends using interviews as a follow-up to questionnaires. As he puts it,
     questionnaires can generate some interesting results that interviews can pursue
@@ -834,7 +871,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     With these interviews, one have access to people of different experience, job titles
     and level of decision power. By doing interviews, one can get an understanding
     of why different job titles desire different things, why more experienced people
-    want certain aspects and why persons with a lot of power within a company
+    want certain aspects and why persons with a lot of decision power within a company
     have needs that others don't.
 
     \subsubsection{Interview Instead of Observation Study}
@@ -862,7 +899,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     a topic is, where people's opinions can be challenged right away by other group members.
     There are also risks of group interviews, where 'quieter' people may be silenced by
     members of the group who are more dominant. Group interviews are also less suited
-    for topics where answers that are more 'accepted' than others.
+    for topics where some answers that are more 'accepted' than others.
     \\ \\
     Finally, focus groups have the same issues as group interviews does. It also
     requires a more skilled moderator, since focus groups is more of an ongoing
@@ -905,29 +942,18 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
 
     \subsection{Interview Subjects}
     There are many things that be explored for these interviews. Due to limited
-    time, it had to be narrowed down to a few subjects. The three subjects
-    that were chosen are related to release notes, APIs and online community.
+    time, it had to be narrowed down to a few subjects. The results of the survey will presented in section \ref{sec:results}, but they served as a basis for choosing interview subjects. The three subjects that were chosen are related to release notes, APIs and online community.
     \\ \\
     Release notes is noted as a very important aspect by literature, but
-    the survey results show that this is one of the least considered aspects.
-    My theory is that this is because people don't look
-    at release notes until they are needed, and don't usually consider this
-    when choosing platforms. However, a more surprising part is that it does \textit{not}
-    affect them negatively DX-wise either if the release notes are poorly written.
-    To get a deeper understanding on why this is, this subject was chosen for the interviews.
+    the survey results showed that this is one of the least considered aspects. It was therefor decided to be more explored.
     \\ \\
-    The API documentation and examples are pointed as very important by the
-    surveys. In the survey, the vague term of 'Good' and 'Bad' was used, and
-    the survey takers applied their own definition of these two terms. What is interesting here is how one can define 'Good' and 'Bad'. One of the most important
-    aspects according the survey is also to have working code quickly. Upon exploring
-    possible aspects to explore, I found myself asking if working code quickly
-    is just a consequence of good API documentation and examples. Maybe it's not
-    its own aspect at all? So this question also got merged into this question subject.
+    The API documentation, examples and quick-working code were pointed as the most important aspects by the
+    surveys. Therefor they were decided to be explored more.
     \\ \\
-    The last subject that was chosen to be explored is online communities.
+    The last subject that was chosen to be explored was online communities. This is personally a very important aspect, which I was interested in exploring more.
 
     \subsection{Interview material}
-    I concluded, after discussion with mentors, that it would be good to have reference points during the interview,
+    I concluded, after discussion with mentors, that it would be good to have reference points during the interviews,
     that there should be some material that the interviewee could use when talking.
     It was discussed using some API documentation and release notes from existing software platforms,
     more precisely Qlik Core. However, Qlik Core is a very advanced platform which takes a long time
@@ -938,8 +964,8 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     so even if you give them limited amount of documentation they still have a mental picture
     of what this software platform does. To make the request of making them read documentation less boring,
     I tried to make a gamification of the task. The interviewees were given the material, and
-    three questions they needed to answer. This forced them to read and understand the material, rather
-    than just read through it. The material can be seen in appendix X.
+    three questions they needed to answer. This forced them to understand the material, rather
+    than just read through it. The material can be seen in appendix \ref{interviewMaterial}.
 
     \subsection{Interview Questions}
 
@@ -950,7 +976,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     Depending on how the interviewee answer, some questions may already have been answered,
     some questions may be uninteresting to dive into, etc.
     \subsubsection{A - APIs}
-    For the API documentation, API examples and to have working code quickly, it was already known that was important. It wasn't very surprising that it was.
+    For the API documentation, API examples and to have working code quickly, it was already known that it was important. It wasn't very surprising that it was.
     For this, the goal was rather trying to understand how one can define "Good" API related things.
 
     \begin{enumerate}[label={A\Alph*}]
@@ -1078,11 +1104,14 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \end{enumerate}
 
     \section{Evaluating Qlik Core}
-    One of the goals for this research paper is to evaluate how good of a software platform Qlik Core is. In section \ref{sec:recommendations}, the recommendations I have for companies who provide a software platform is presented. These recommendations then served as a basis for evaluating Qlik Core. I went through each aspect and determined how well Qlik Core followed the recommendations given. I discussed in what ways QC does, or does not, follow the recommendations and what issues it had. Finally I gave a verdict of either "Pass" or "Failed". In the case of giving the verdict "Failed", I presented what needs to be done in order to get a passing grade.
+    One of the goals for this research paper is to evaluate how good of a software platform Qlik Core is. In section \ref{sec:recommendations}, the recommendations I have for companies who provide a software platform is presented. These recommendations served as a basis for evaluating Qlik Core. I went through each aspect and determined how well Qlik Core followed the recommendations given. I discussed in what ways QC does, or does not, follow the recommendations and what issues it had. Finally I gave a verdict of either "Pass" or "Failed". In the case of giving the verdict "Failed", I presented what needs to be done in order to get a passing grade. After it all a summation is given in table \ref{tab:qcScore}. If the aspect is passed, the score of aspect is counted, otherwise the aspect gets 0 points. The sum of points is divided by the total possible points to give a score between 0.00 and 1.00.
+    \[
+        \frac{\text{Sum of points from passed aspects}}{\text{Sum of points from all aspects}} = \text{Score}
+    \]
     \chapter{Results and Discussion}
 
     \section{Initial Survey}
-    Although the first survey only was a pilot version, it can be interesting to evaluate the results of it. There were also things asked in the first survey, that wasn't in the main one. The survey got 38 responses in total.
+    Although the first survey only was a pilot version, it can be interesting to briefly evaluate the results of it. There were also things asked in the first survey, that was not in the main one. The survey got 38 responses in total.
     Initially it was intended to look at the outcome from four different perspectives, and compare them to the overall group. The four perspectives were:
     \begin{itemize}[label={}]
         \item People with more than 5 years experience in the industry
@@ -1127,7 +1156,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     explanations were thorough. The least two important factors were 'The
     documentation has consistent language' and 'The release- and change
     notes are thorough'.
-    This is an interesting find, since literature highlights these to factors as being very important. Many companies also spend a lot of resources to keep documentation up-to-date and release notes thorough. Here we see that most people, more often than not, do \textit{not} consider this factor. A potential explanation to this could be that the question is phrased so that it puts the emphasis on \textit{try} a new software, whereas these two factors may be only relevant in long term use of a software. As we'll see in the main survey however, where the question was phrased as \textit{use a software platform}, release notes were once again listed as one of the least important aspects.
+    This is an interesting find, since literature highlights these to factors as being very important. Many companies also spend a lot of resources to keep documentation consistent and release notes thorough. Here we see that most people, more often than not, do \textit{not} consider this factor.
     \\ \\
     For the more experienced users, the result differ some when compared to the 'Everyone' group. They take less consideration to factors surrounding APIs, documentation and time to get started, and care more about pricing,
     cross-platform compatibility and the thoroughness of release notes.
@@ -1204,13 +1233,13 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \section{Survey 2 Results}
     There are many ways you can view the results. In the research it has been looked at from many different angles, and compared with different groups. \\
     In total, the main survey yielded 39 responses. The results were loaded into Qlik Sense
-    where one could find different groups and patterns. The results were looked from three angels: The overall average result, result depending
-    on your job title and result depending on how much experience you have
-    in the industry.
+    where one could find different groups and patterns. The results were looked from the overall average result, result depending
+    on your job title, result depending on how much experience you have in the industry and if you have the authority to make decisions of what software a group of people will use.
     \\ \\
     The job titles were divided into four groups: Architects, Developer and
     Engineers, Managers and Other. The quantity and percentage of total can
-    be seen in the table \ref{tabl:jobs}.
+    be seen in the table \ref{tabl:jobs}. The "Other" group consisted of a CTO, a Product Designer, a Head of Consulting and Development and a Principal Consultant. This group of people will not be investigated in the results. \\ \\
+    A summary of how the different job titles ranked the aspects can be seen in table \ref{tab:allPoints}.
 
     \begin{table}[H]
         \centering
@@ -1225,8 +1254,6 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         \end{tabularx}
     \end{table}
 
-    In table \ref{tab:allPoints} we can see all the aspects, what points each job title gave it and
-    their ranking.
 
     \begin{table}[H]
         \centering
@@ -1387,10 +1414,10 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
 
     \begin{table}[H]
         \centering
-        \caption{The average scoring, its positive DX impact and its negative DX impact and their difference, by each aspect category}
+        \caption{The average scoring for the consideration questions, its positive DX impact and its negative DX impact and their difference, by each aspect category}
         \label{tab:dx}
         \begin{tabularx}{\columnwidth}{l|X r r r r}
-            \textbf{\rotatebox{90}{Aspect ID}} & \textbf{Aspect Category}	&	\textbf{\rotatebox{90}{Average Score}}	&	\textbf{\rotatebox{90}{Negative DX}}	&	\textbf{\rotatebox{90}{Positive DX}}	&	\textbf{\rotatebox{90}{DX Diff}}	\\ \hline
+            \textbf{\rotatebox{90}{Aspect ID}} & \textbf{Aspect Category}	&	\textbf{\rotatebox{90}{CQ* Score}}	&	\textbf{\rotatebox{90}{NQ** Score}}	&	\textbf{\rotatebox{90}{PQ*** Score}}	&	\textbf{\rotatebox{90}{DX Score Diff}}	\\ \hline
             4   & Api Code Examples	&	0.89	&	0.85	&	0.89	&	\pm 0.04	\\ \hline
             3  & Working Code Quickly	&	0.85	&	0.83	&	0.82	&	\pm 0.01	\\ \hline
             2  & Documentation Thoroughness	&	0.83	&	0.80	&	0.81	&	\pm 0.01	\\ \hline
@@ -1406,7 +1433,10 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
             11 & Documentation Prior Expertise	&	0.57	&	0.47	&	0.43	&	\pm 0.03	\\ \hline
             6   & Platform Compatibility	&	0.47	&	0.42	&	0.41	&	\pm 0.01	\\ \hline
             13 & Release Notes	&	0.44	&	0.40	&	0.34	&	\pm 0.06	\\ \hline
-            10 & Number of Programming Languages	&	0.39	&	0.34	&	0.32	&	\pm 0.02	\\ \hline
+            10 & Number of Programming Languages	&	0.39	&	0.34	&	0.32	&	\pm 0.02	\\ \hline \hline
+            \multicolumn{5}{l}{*CQ: Consideration Question}\\
+            \multicolumn{5}{l}{**NQ: Negative DX Question}\\
+            \multicolumn{5}{l}{***PQ: Positive DX Question}\\
         \end{tabularx}
     \end{table}
 
@@ -1469,7 +1499,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \end{table}
 
     \subsection{Architects}
-    Architects are a key part of a development team. They are responsible for how the software will be structured and therefor also often have a say in, if the software will be using a software platform, what platform will be used. In table \ref{tab:arch} we can see how the architects ranked the aspects. According to this result, architects are (just like developers) people who want code examples and thorough documentation. They find it important that software platforms are open-source, and want to have working code quickly. They also, just like developers, do not care if the release notes are thorough. The average score for architects is 0.61, with the a difference between the most considered thing, and the least considered thing, of 0.66.
+    Architects are a key part of a development team. They are responsible for how the software will be structured and therefor also often have a say in if the software will be using a software platform, what platform will be used. In table \ref{tab:arch} we can see how the architects ranked the aspects. According to this result, architects are (just like developers) people who want code examples and thorough documentation. They find it important that software platforms are open-source, and want to have working code quickly. They also, just like developers, do not care if the release notes are thorough. The average score for architects is 0.61, with the a difference between the most considered thing, and the least considered thing, of 0.66.
 
     \begin{table}[H]
         \centering
@@ -1504,7 +1534,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \begin{table}[H]
         \centering
         \caption{The ranking and scores of managers}
-        \label{tab:arch}
+        \label{tab:managers}
         \begin{tabularx}{\columnwidth}{l X r}
 
             \textbf{R}* &  \textbf{Aspect}        & \textbf{S}** \\ \hline
@@ -1607,7 +1637,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
 
     \subsection{Developer and Engineers compared with Managers}
     If we compare Developer and Engineer with Managers, we also find that
-    they're quite different. On average, they differ in points by 0.10
+    their quite different. On average, they differ in points by 0.10
     points. Their biggest differ in points is for 'The official website
     looks professional', where they differ by 0.15 points, which is also
     their biggest differ in ranking: 6 spots difference. Just like with architects vs managers, they're differences between the extreme are very different. 0.37 difference for managers, and 0.62 for developers and engineers. Once again, this seems quite natural since developers and engineers will be working with the platform more and have stronger opinions on what they need.
@@ -1646,12 +1676,12 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     less than 5 years experience, 10 people with 5 - 10 years experience, 10
     people with 10 - 15 years experience, 12 people with 15 - 25 years
     experience and 2 people with 25+ years of experience in the software
-    industry. How people ranked the aspects, depending on years of experience, can be seen in table \ref{exp}. In table \ref{tab:jobExp} we can see the division of how many years of experience related to job title.
+    industry. How people ranked the aspects, depending on years of experience, can be seen in table \ref{tab:exp}. In table \ref{tab:jobExp} we can see the division of how many years of experience related to job title.
     The overall take away is that years of experience is \textit{not} a good indicator of people's needs. There doesn't seem to be any relationship with "The more/less experience you have, the more/less something is important".
     \begin{table}[H]
         \centering
         \caption{The scoring of the aspects, grouped by years of experience.}
-        \label{tab:jobExp}
+        \label{tab:exp}
         \begin{tabularx}{\columnwidth}{X|c|c|c|c|c|c}
             \textbf{Aspect}	&\textbf{\rotatebox{90}{	$<5$ years	}}&\textbf{\rotatebox{90}{	$5-10$ years	}}&\textbf{\rotatebox{90}{	$10-15$ years	}}&\textbf{\rotatebox{90}{	$15-25$ years	}}&\textbf{\rotatebox{90}{	$25+$ years}}	\\ \hline
             The API has code examples	&	0.91	&	0.93	&	0.89	&	0.85	&	1.00	\\ \hline
@@ -1765,13 +1795,13 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
 
     \subsection{Compared to Survey 1}
 
-    The sample size is almost exactly the same in the two surveys. The first
-    survey had 38 responses, whereas the second one had 39. There are two
+    The sample size is almost exactly the same in the two surveys. The pilot
+    survey had 38 responses, whereas the main one had 39. There are two
     major differences between the two surveys. The first one had mostly just
     Developer and Engineers, 74\%, only one manager, 3\%, and just five
     architects, 13\%. As a reminder, the second survey had 53.8\% developer
     and engineers, 10.3\% managers and 25.6\% architects. The second
-    difference is that in the second survey, the people were given a context
+    difference is that in the main survey, the people were given a context
     for when they were considering the aspects.
     \\ \\
     If we compare it to the first survey, we see some anomalies. To be able
@@ -1826,12 +1856,6 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     for Developer and Engineers, but only by 0.04 points, so the fact that
     the first survey had them as a majority cannot explain this either.
     There does not seem to be any obvious explanation for this shift.
-    \\ \\
-    Below we can see the average result from the two surveys, with the
-    rankings. The two questions that don't exist in the first survey have
-    been excluded, and the ranking for the second survey recalculated.
-
-
     \subsection{Not considered}
 
     Because of the way the data pool was shaped, two groups were not looked at, which could have been interesting. The first one is company
@@ -1866,8 +1890,16 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
 
     \section{Interview Results}
 
-    All of the interviews can be found in their full form in appendix X. In this section however
-    some interesting findings in the interviews will be discussed.
+    After the survey was done and analyzed, there were fives interviews conducted. The interviewees names are kept anonymous and will only be referred to by their job title. The interviewees were:
+    \begin{itemize}[label={-}]
+        \item The Architect, a person with over 25 years of experience in the industry
+        \item The Software Engineer, a person with four years of professional experience
+        \item The Quality Architect, a person with 20 - 25 years of professional experience
+        \item The Software Developer, a person with 10 - 15 years of professional experience
+        \item The Development Manager, a person with 10 - 15 years of professional experience
+    \end{itemize}
+
+    The following sections presents the results of the interviewees by each subject field.
 
     \subsection{API Documentation and Examples}
     Just like the survey suggested, API documentation and examples are extremely important. The first people look at, according to the interviews, is the examples. That seems to be the way people get started when encountering a documentation. This is, according to the interview subjects, to get an overview of the software platform. Examples give an insight into what the software can do, what it's applications are.
@@ -1875,7 +1907,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         "The example is a summary without comments" \\
         --- Quality Architect
     \end{quote}
-    So it's an easy way for them to quickly see if the platform is intended to do. Interview subjects also state that examples are a good way to see if it's something that quickly understand, if it's something they're used to. One of the interview subjects stated that the more generic an API is, e.g. the more applications it has, the more examples are needed.
+    So it's an easy way for them to quickly see what the platform is intended to do. Interview subjects also state that examples are a good way to see if it's something that they can quickly understand, if it's something they're used to. One of the interview subjects stated that the more generic an API is, e.g. the more applications it has, the more examples are needed.
     \begin{quote}
         "... which means that if it's a broad and generic API ... they will have to have a lot of examples" \\
         -- Architect
@@ -1920,7 +1952,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         "...if you go to ... one API and you found it quite bad, then you skip and go the next API." \\
         --- Senior Developer
     \end{quote}
-    So it's quite clear that developers are impatient and not shy of dropping alternatives for something else, if they have the choice. It is therefor important for a software platform to get started quickly, and to quickly convey to the developer what it is that the software platform can do. Developer do not want to spend a lot of time to figure out if a software platform is useful for them.
+    So it's quite clear that developers are impatient and not shy of dropping platforms for something else, if they have the choice. It is therefor important for a software platform to get started quickly, and to quickly convey to the developer what it is that the software platform can do. Developer do not want to spend a lot of time to figure out if a software platform is useful for them.
     \\ \\
     In the interviews it was also talked about what the examples should look like. Not surprisingly, most of the people said it depends on the situation. Two cases that were brought up by several interviewees was that there should be 'getting-started' kind of examples, where the example is runnable. The other case was for examples that exist in the API's method descriptions. These ones should be as isolated as possible, according to interview subjects.
     \begin{quote}
@@ -1968,7 +2000,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \end{quote}
     But he also said that managers more likely rely on developers and architects to take that roll in general.
     \begin{quote}
-        "The manager would probably ask teh architects and developers to tell how much work they needed to put in ... I don't think the manager himself would look into it"\\
+        "The manager would probably ask the architects and developers to tell how much work they needed to put in ... I don't think the manager himself would look into it"\\
         --- Developer Manager
     \end{quote}
     The architect however said that release notes are very important to him. Out of the interview subjects, he's the one with the most experience, over 25 years. He stated that he earlier in his career did not care much about release notes either. He says:
@@ -1978,7 +2010,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \end{quote}
     The architect says there are three different situation when he looks at release notes. The first is the initial situation, when he first encounters a software platform.
     \begin{quote}
-        "...getting the feeling of how well they are documentation things ... it also gives you a feeling [of] how mature or obsolete the function is. If the the last release note is five years old ... that's a bad thing. If there [are] new release notes every day that's also a warning sign, [it] means it's not mature" \\
+        "...getting the feeling of how well they are documentation things ... it also gives you a feeling [of] how mature or obsolete the platform is. If the the last release note is five years old ... that's a bad thing. If there [are] new release notes every day that's also a warning sign, [it] means it's not mature" \\
         --- Architect
     \end{quote}
     The second situation is the frustration phase, as he puts it.
@@ -1993,9 +2025,9 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \end{quote}
     When asked how important they think release notes are, most of the interviewees say that they \textit{are} important, even if they don't use them themselves. The senior developer stated that release notes is not important. But when asked about if they thought it was the general case for developers that they do not care about release notes, the senior developer stated:
     \begin{quote}
-        "No. Because my colleagues wants use to write release notes. So think ... others are actually reading them."\\ --- Senior Developer
+        "No. Because my colleagues wants us to write release notes. So I think ... others are actually reading them."\\ --- Senior Developer
     \end{quote}
-    The software engineer, how had as part of the duties to present Qlik Sense's changes between versions, stated:
+    The software engineer, who had as part of the duties to present Qlik Sense's changes between versions, stated:
     \begin{quote}
         "Looking at how much other people are interested in having us present that, then it seem like it's quite important" \\
         --- Software Engineer
@@ -2038,7 +2070,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         --- Senior Developer
     \end{quote}
     \subsubsection{Takeaway from Release Notes interviews}
-    The takeaway seems to be that most people don't use release notes, even people who "should" use release notes. People go to great lengths to not read them. They manager relies on others to read them and the quality architect relies on his tests. The senior developer and software engineer simply don't do it. The architect cares a lot about it, that is however something that years of experience has taught him. Release notes seem to be used more as a last resort when something breaks, as is to be avoided at every cost. The release notes are however thought of by people as something very important by the interviewees. The mentality is that they should be there, and the lack of them makes the software creator seem unprofessional.
+    The takeaway seems to be that most people don't use release notes, even people who "should" use release notes. People go to great lengths to not read them. The manager relies on others to read them and the quality architect relies on his tests. The senior developer and software engineer simply don't do it. The architect cares a lot about it, that is however something that years of experience has taught him. Release notes seem to be used more as a last resort when something breaks, as is to be avoided at every cost. The release notes are however thought of by the interviewees as something very important. The mentality is that they should be there, and the lack of them makes the software creator seem unprofessional.
     \subsection{Online Communities}
     Online communities are places on the internet where people can discuss issues or questions they have about software. They can exist on many places. Some software companies host their own forums, other communities naturally emerge on online forums such as Stack Overflow. Sometimes they exist on both of these places. Exactly \textit{what} defines an online community can be somewhat vague. When the interviewees where asked what an online community was to them, there were several different answers given.
     \begin{quote}
@@ -2054,11 +2086,11 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         --- Software Engineer
     \end{quote}
     \begin{quote}
-        "Well it's somewhere I can find something specific about [the software platform]. It could be their own community like Qlik community, [or] Stack Overflow or something where I can find a lot of information. A lively debate somewhere else where I would topically find discussions, I would say that they're pretty equal to me. In reality I don't care [where I find the information]."
+        "Well it's somewhere I can find something specific about [the software platform]. It could be their own community like Qlik community, [or] Stack Overflow or something where I can find a lot of information. A lively debate somewhere else where I would typically find discussions, I would say that they're pretty equal to me. In reality I don't care [where I find the information]."
         \\---Architect
     \end{quote}
     \begin{quote}
-        "I many look at the github pages ... I look at Stack Overflow [too]."\\
+        "I mainly look at the github pages ... I look at Stack Overflow [too]."\\
         --- Quality Architects
     \end{quote}
     So online communities can exist on many places, and it seems that it really doesn't matter where it exists. When asked how much they used online communities, it was clear that it was a very central part of their daily life.
@@ -2097,7 +2129,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \begin{quote}
         "That they are polite answers and they are elaborate answers to questions. [That] there are people answering to the right level. Sometimes there are people who misuse this, like 'I have to show something to my manager, please do this for me'. I don't think you need to answer those but you should least support: 'Here's some help to get you started'"\\--- Development Manager
     \end{quote}
-    When asked if they needed to feel like they're apart of the community themselves, there were mixed answers.
+    When asked if they needed to feel like they're apart of the community themselves, the answer seemed to be no from the interviewees.
     \begin{quote}
         "Generally no, I would say."\\ --- Architect
     \end{quote}
@@ -2107,9 +2139,6 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \begin{quote}
         "No. But it's great that others want to be part of the community because otherwise I wouldn't find my answers."\\--- Senior Developer
     \end{quote}
-    \begin{quote}
-        "Yeah! I would say so. Because then you see that people are actually using it. Like the documentation can be perfect but if no one using this, then why should I?"\\--- Software Engineer
-    \end{quote}
     The interviewees were also asked if they felt like it was important that the company behind the software was part of the community. Here, some mixed answers were given as well. The architect stated that if it's a big company, it's needed. But for smaller, open-source things, it was not needed.
     \begin{quote}
         "Not necessarily, if they can. [If] people are there answering all the questions and they are correct, then I think the company has succeeded in something really cool. So for me it would just tell me that, yeah this is a really good product."\\--- Development Manager
@@ -2118,7 +2147,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         "Yeah, I think so. And that you see who is answering what question. If it's the company or it's a user."\\--- Quality Architect
     \end{quote}
     \begin{quote}
-        "Yeah, I think that's always good. I don't think it's necessary that they're of the community but I think it would make the consumer feel better about using the product. Again, coming back to the trust and relationship between the product and the user."\\--- Software Engineer
+        "Yeah, I think that's always good. I don't think it's necessary that they're part of the community but I think it would make the consumer feel better about using the product. Again, coming back to the trust and relationship between the product and the user."\\--- Software Engineer
     \end{quote}
     The senior developer stated that if the company behind a software is part of the online community, it gives the feeling of the company actually caring about their users.
     \begin{quote}
@@ -2137,7 +2166,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         "Yes, I would say so. Because you will run in to other kind of problems like 'Why can't I do this?'. I would very [hesitant] if there wasn't some kind of community around it"\\---Architect
     \end{quote}
     \begin{quote}
-        "It would lower my thoughts about it. It has to be a really good tool to get started without [an online community]. [Online communities] can put the solution in perspective to the question, which a documentation couldn't do. If you have an area which is very generic, a community could catch that person easier than a documentation."\\--- Development Manager
+        "It would lower my thoughts about it. It has to be a really good [platform] to get started without [an online community]. [Online communities] can put the solution in perspective to the question, which a documentation couldn't do. If you have an area which is very generic, a community could catch that person easier than a documentation."\\--- Development Manager
     \end{quote}
     \begin{quote}
         "No, not for my purposes. [But] I want an an entry point for when I don't find my information on the web page. Where could I post? And if that is a community, then my answer is yes."\\ --- Quality Architect
@@ -2146,7 +2175,8 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         "Maybe it's not that important when you have great documentation. But I mean, you always get stuck on things. So then it's good with a community. [But] documentation is prior one."\\--- Senior Developer
     \end{quote}
     \begin{quote}
-        "Even when you have a documentation that's average or even good, it's always nice  to have online communities because you have then people that run into the same issues as you do." \\--- Software Engineer
+        "Yeah! I would say so. Because then you see that people are actually using it. Like the documentation can be perfect but if no one using this, then why should I? ...
+        Even when you have a documentation that's average or even good, it's always nice  to have online communities because you have then people that run into the same issues as you do." \\--- Software Engineer
     \end{quote}
     The software engineer also goes on to say that online communities are comforting, to know that others are using the platform as well.
     \\ \\
@@ -2161,7 +2191,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \begin{quote}
         "No I don't [check the online community before deciding]." \\--- Senior Developer
     \end{quote}
-    When finally asked to put concisely what they want from an online community, it was clear that they mostly just want answers to their problems solved easily.
+    When finally asked to put concisely what they want from an online community, it was clear that they mostly just want answers and their problems solved easily.
     \begin{quote}
         "Answers."\\
         --- Senior Developer
@@ -2178,6 +2208,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     \subsubsection{Takeaways from Online Communities interviews}
     The takeaway from the interviews around online communities shows a few things. One is that online communities is something primarily used by people when they're stuck and have a specific problem that the documentation may not cover. Where this community exists does not really matter to people, the priority is if the information they need exists or not. Most of them however don't care if \textit{they're} part of the community. It simply acts as a problem solver. They also point out that it's not necessary that the company behind the software is part of the community, but that it doesn't hurt and can build a trust between the company and the user. As much as it is a problem solver for when the documentation doesn't give them the answer, they still want an online community even with a very good documentation. The primary reason for this is that there is always problems and situations that are too specific for a documentation to cover. Online communities are used by the interviewees very often, and is therefor quite important to them. However, documentation is \textit{even more} important.
     \section{Recommendations For Software Platforms}\label{sec:recommendations}
+    Having presented the results I will now give my personal recommendation for companies who make software platforms. These are my personal recommendation, based on the results that the research yielded.
     \subsection{How often the software is updated}
     \begin{figure}[H]
         \centering
@@ -2198,7 +2229,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         \caption{Scoring for "I can have working code quickly"}
         \label{fig:aspect2}
     \end{figure}
-    Working code quickly has been shown to be important to developers. In figure \ref{fig:aspect2} we can see the scoring. With an average score of 0.80/1.00 for the job titles, this is an important aspect that should always be considered when creating a software platform. There's also no major difference depending on the context. We also see that it has a strong DX impact. Not only are developers impatient people that want results quickly overall, working code quickly is developers way to figure out if a software platform is useful. Software developers quickly abandon software if they don't see it's value. Because working code quickly is their way of evaluating new software, it's extremely important to be able to provide this. The recommendation is to easily show how to get started. It should both be front and centre when you visit the website, and the example should be quick without being too simple. The effort to have an example that is easy to follow  and makes the user understand can take time, and be a bit of an effort, but is definitely worth it.\\ \\
+    Working code quickly has been shown to be important to developers. In figure \ref{fig:aspect2} we can see the scoring. With an average score of 0.80/1.00 for the job titles, this is an important aspect that should always be considered when creating a software platform. There's also no major difference depending on the context. We also see that it has a strong DX impact. Not only are developers impatient people that want results quickly overall, working code quickly is developers way to figure out if a software platform is useful. Software developers quickly abandon software if they don't see its value. Because working code quickly is their way of evaluating new software, it's extremely important to be able to provide this. The recommendation is to easily show how to get started. It should both be front and centre when you visit the website, and the example should be quick without being too simple. The effort to have an example that is easy to follow  and makes the user understand can take time, and be a bit of an effort, but is definitely worth it.\\ \\
     \textbf{Very important, always keep in mind. Medium effort, high payoff.}
     \subsection{The API documentation gives thorough explanations on how it works}
     \begin{figure}[H]
@@ -2253,7 +2284,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         \caption{Scoring for "The documentation is easy to navigate"}
         \label{fig:aspect7}
     \end{figure}
-    As mentioned before, developers are impatient people. A documentation that is easy to navigate, means developers can find what they're looking for quicker. In figure \ref{fig:aspect7} we see that it scored close scored somewhere in between 'Sometimes consider' and 'Often consider' for both the job titles and the contexts. It also has a DX impact that is above neutral. The recommendation is therefor to have a clear navigation structure, with carefully chosen titles that makes the user understand what each link will lead them to. For larger pages, having a table of contents at the top that shows what sections it contains is also recommended. For smaller sub-pages a short paragraph could be good to explain to the user what he or she can expect to find on the page. This gives the possibility to the user to be more efficient when searching for specific things. The effort to do this can be somewhat high, especially the careful title naming. The titles can easily be too vague or ambivalent. Having an efficient search function for your documentation will also make the navigation more easy. To implement this is a higher effort than structuring the documentation. The recommendation is therefor to start with the structure, and after that work on the search function. \\ \\
+    As mentioned before, developers are impatient people. A documentation that is easy to navigate, means developers can find what they're looking for quicker. In figure \ref{fig:aspect7} we see that it scored somewhere in between 'Sometimes consider' and 'Often consider' for both the job titles and the contexts. It also has a DX impact that is above neutral. The recommendation is therefor to have a clear navigation structure, with carefully chosen titles that makes the user understand what each link will lead them to. For larger pages, having a table of contents at the top that shows what sections it contains is also recommended. For smaller sub-pages a short paragraph could be good to explain to the user what he or she can expect to find on the page. This gives the possibility to the user to be more efficient when searching for specific things. The effort to do this can be somewhat high, especially the careful title naming. The titles can easily be too vague or ambivalent. Having an efficient search function for your documentation will also make the navigation more easy. To implement this is a higher effort than structuring the documentation. The recommendation is therefor to start with the structure, and after that work on the search function. \\ \\
     \textbf{Verdict: Somewhat important, keep in mind. Medium-high effort, medium payoff.}
 
     \subsection{The official website looks professional}
@@ -2278,7 +2309,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         \caption{Scoring for "The pricing of the software"}
         \label{fig:aspect9}
     \end{figure}
-    Money always plays a roll in any company, and the price of a software cannot be ignored. You can make money from your software in many ways, through licensing, subscriptions, support contract, and more. It's out of the scope of this research paper on how one should make money from software platforms. In figure \ref{fig:aspect9} we see that it's quite important to people. It's especially important for people working on a hobby projects! This is another aspect, as mentioned in section \ref{consisQuestions}, where the DX-questions and considerations questions are a bit different, and one should be careful to draw parallels. We can see however in the consideration scoring that pricing is very important. We can tell by the DX-scoring that clearly showing the pricing of the software has a very strong positive impact, and hiding the pricing away has a strong negative impact. The recommendation for pricing, in order to give a good experience for developers, is to clearly state the pricing of the software platform. Especially if your target audience is people working on hobby projects. Whichever money making model the software platform uses, the cost to inquire it for a developer should not be hidden away. \\ \\
+    Money always plays a roll in any company, and the price of a software cannot be ignored. You can make money from your software in many ways, through licensing, subscriptions, support contract, and more. It's out of the scope of this research paper on how one should make money from software platforms. In figure \ref{fig:aspect9} we see that it's quite important to people. It's especially important for people working on a hobby projects. This is another aspect, as mentioned in section \ref{consisQuestions}, where the DX-questions and considerations questions are a bit different, and one should be careful to draw parallels. We can see however in the consideration scoring that pricing is very important. We can tell by the DX-scoring that clearly showing the pricing of the software has a very strong positive impact, and hiding the pricing away has a strong negative impact. The recommendation for pricing, in order to give a good experience for developers, is to clearly state the pricing of the software platform. Especially if your target audience is people working on hobby projects. Whichever money making model the software platform uses, the cost to inquire it for a developer should not be hidden away. \\ \\
     \textbf{Verdict: Important, keep in mind. Low effort, high payoff.}
 
     \subsection{The release- and change notes are thorough}
@@ -2290,7 +2321,7 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         \caption{Scoring for "The release- and change notes are thorough"}
         \label{fig:aspect10}
     \end{figure}
-    Release notes was shown to be a quite non-important aspect, as seen in figure \ref{fig:aspect10}, especially for the people who are supposedly using them: developers and architects. We can see by the DX-impact that poor release notes has a bit of a negative impact. It's however still below neutral. The interviews showed that release notes are a last resort for people, and ignored as much as possible. The recommendation is therefor to not spend too much time on release notes. But make sure to not ignore them. If you make sure to have good commit messages, these can act as a good base for writing the release notes. This minimises the time that has to be spent on writing the release notes.\\ \\
+    Release notes was shown to be a quite non-important aspect, as seen in figure \ref{fig:aspect10}, especially for the people who are supposedly using them: developers and architects. We can see by the DX-impact that poor release notes has a bit of a negative impact. It's however still below neutral. The interviews showed that release notes are a last resort for people, and ignored as much as possible. The recommendation is therefor to not spend too much time on release notes. But make sure to not ignore them since it reflects poorly on the company, according to the interviews. If you make sure to have good commit messages, these can act as a good base for writing the release notes. This minimises the time that has to be spent on writing the release notes.\\ \\
     \textbf{Verdict: Not important, but don't ignore. Medium effort, low payoff.}
 
     \subsection{The software has the same features on all different platforms}
@@ -2369,14 +2400,14 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
     Online communities is primarily used for questions and answers to help out when the documentation is not enough. The effort to make sure your online community has the answers they need is somewhat big. The recommendation is to take extra care of your online community when it's new and small, and less when it's big enough that it takes care of itself. Never ignore it though, pay attention to suggestions and issues that your online community has. \\ \\
     \textbf{Verdict: Important, keep in mind. Medium effort, medium-high payoff.}
     \section{Evaluation of Qlik Core}
-    Finally, it will be evaluated how well Qlik Core follow the recommendations given in \ref{sec:recommendations}. This is done aspect-by-aspdect, and given a verdict based on how important the aspect is compared with how well they follow the recommendation.
+    Finally, it will be evaluated how well Qlik Core follow the recommendations given in section \ref{sec:recommendations}. This is done aspect-by-aspect, and given a verdict based on how important the aspect is compared with how well they follow the recommendation.
     \subsection{How often the software is updated}
-    Qlik Core is a quite new product, which left beta in mid-fall of 2018. At the date of writing this paper, they've made four updates since they left beta. They follow the recommendations, where they don't release too often, but clump them together into major releases.\\ \\
-    \textbf{Importance: Somewhat Important.}\\
+    Qlik Core is a quite new product, which left beta in mid-fall of 2018. At the time of writing this paper, they've made four updates since they left beta. They follow the recommendations, where they don't release too often, but lump them together into major releases.\\ \\
+    \textbf{Effort: Medium. Payoff: Medium. Importance: Somewhat important.}\\
     \textbf{Verdict: Pass}
     \subsection{I can have working code quickly}\label{workincode}
-    When evaluating this aspect, I tried to visit the QC website as if I were new users. The following text is the process in doing so, and what issues I had.\\ \\
-    When first visiting the website, my first instinct was to look for the phrases 'Try' or 'Getting Started'. You're greeted by a 'Try For Free', which I assumed was going to lead me to a page how I get started trying it out. That however lead me to a page about licensing. After that I saw the 'Get Started' in the top menu, which was what I was looking for initially. I afterwards realised that there was a button for 'Start Tutorials' on the start page, which leads the me to the same place as 'Getting Started'. I somehow missed this button. While this may be a one-off mistake by just us, it indicates that there's room for improvement. Rephrasing of these buttons may be in order. The start page can be seen in figure \ref{fig:startpage}. \\ \\
+    When evaluating this aspect, I tried to visit the QC website as if I were a new user. The following text is the process of doing so, and what issues I had.\\ \\
+    When first visiting the website, my instinct was to look for the phrases 'Try' or 'Getting Started'. You're greeted by a 'Try For Free', which I assumed was going to lead me to a page how I get started trying it out. That however lead me to a page about licensing. After that I saw the 'Get Started' in the top menu, which was what I was looking for initially. I afterwards realised that there was a button for 'Start Tutorials' on the start page, which leads the me to the same place as 'Getting Started'. I somehow missed this button. While this may be a one-off mistake by just us, it indicates that there's room for improvement. Rephrasing of these buttons may be in order. The start page can be seen in figure \ref{fig:startpage}. \\ \\
     \begin{figure}[H]
         \centering
         \includegraphics[width=\linewidth]{qlikCoreWebsite20190124.png}
@@ -2390,19 +2421,18 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         \caption{The Qlik Core Getting Started page on the 24\textsuperscript{th} January 2019}
         \label{fig:gettingstarted}
     \end{figure}
-    Already one the first step I was at risk of being confused. They prompt you to run a command, but don't specify where. Clarifying that it should be in the newly cloned folder takes away that risk of confusion.\\
-    The first tutorial called 'Hello-Engine' simply sets up the possibility to communicate with the engine. It was not clearly explained in the tutorial what the goal of the tutorial was, so when I finished I did not fully understand what I had finished. I thought that I had done something wrong, my thoughts were "This can't be it?" when I had actually completed the tutorial. Overall I had a lack of achievement, and did not feel I had learned anything about what Qlik Core is or can do. The following tutorial 'Hello Data' suffered a bit from the same issues. The third tutorial 'Hello Visualisation' was the first tutorial where I felt I had learned something about what Qlik Core can do. A tutorial should give the user a sense of achievement, and make the user feel like he or she learned something they did not previously know. In my opinion, these tutorials could be merged into one longer tutorial, divided into three sections. \\\\
+    The first tutorial called 'Hello-Engine' simply sets up the possibility to communicate with the engine. Already on the first step I was at risk of being confused. They prompt you to run a command, but don't specify where. Clarifying that it should be in the newly cloned folder takes away that risk of confusion.\\It was not clearly explained in the tutorial what the goal of the tutorial was, so when I finished I did not fully understand what I had finished. I thought that I had done something wrong, my thoughts were "This can't be it?" when I had actually completed the tutorial. Overall I had a lack of achievement, and did not feel I had learned anything about what Qlik Core is or can do. The following tutorial 'Hello Data' suffered a bit from the same issues. The third tutorial 'Hello Visualisation' was the first tutorial where I felt I had learned something about what Qlik Core can do. A tutorial should give the user a sense of achievement, and make the user feel like he or she learned something they did not previously know. In my opinion, these tutorials could be merged into one longer tutorial, divided into three sections. \\\\
     For the next tutorial 'core-orchestration' I got stuck immediately. The tutorial prompts you to get a licence. Even though the process of obtaining one was fairly easy (just follow a link and give your name and email) this may scare users away since it stops the coding for administrative work. Furthermore, the process of figuring out how to configure the license was extremely cumbersome. I had to search for a long, long time on how I should do it, looking through lots of different links. In the end, I had to follow a total of five links away from the tutorial page until I found an example, inside a file in a GitHub project. Then I understood what it should look like. It was also very much a copy-paste way of doing it, without me understanding \textit{why} it should be configured this way. Afterwards, when I talked to the people whom had created the tutorial, it turns out that getting a license was only optional for the tutorial, even though it was stated that it was needed.\\\\
     The 'core-orchestration' tutorial also has a lot of prerequisites on knowledge, requiring the user to know the concept of "Swarm" in the third-party software Docker. I still tried to follow the guide, which ultimately did not work. When talking to the Qlik Core team, it turns out that this is a very special case for using Qlik Core, and will not be used by most people. The way it's presented, right after the simplest tutorials, is problematic. This will scare users away. It needs to be explained that this is a special and advanced case. \\\\
     The fourth tutorial was about authorisation. This was also a special, advanced case which did not teach the user about what Qlik Core can do. It was also hard to follow, with explanations that were brief and hard to understand.\\\\
-    The last tutorial is related to data loading. These tutorials did not require as much prerequisite knowledge. It however failed as well. When talking to the tutorial constructor, it turns out that the tutorial was out date with what commands that should be run. There were also errors in what versions should be run. Ultimately, this tutorial also failed to be completed.\\\\
+    The last tutorial is related to data loading. These tutorials did not require as much prerequisite knowledge. It however failed as well. When talking to the tutorial constructor, it turns out that the tutorial was out date with what commands should be run. Ultimately, this tutorial also failed to be completed.\\\\
     Overall, getting started felt difficult, cumbersome and irritating. I was stopped by errors, getting a licence that I did not actually need, setting up configurations and out-of-date tutorials. I also felt like I was was not actually learning anything about what Qlik Core can do. The tutorials need to be reworked in my opinion, with more simple use cases. And most importantly, tutorials where the user actually gets to change some code and feel like they learn something, rather than running downloaded scripts. The goal when making the tutorials should be "How do we get the users interested in Qlik Core, and make them feel like they are able to use it."\\\\
-    \textbf{Importance: Very important.}
-    \textbf{Verdict: Failed.} The tutorials needs to be both reworked, and probably extended with more simple examples. The tutorial needs to be created with the goal of getting new users to \texit{understand} how Qlik Core works and show that them that it solves problems in an easy and efficient way.
+    \textbf{Effort: Medium. Payoff: High. Importance: Important.}\\
+    \textbf{Verdict: Failed.} The tutorials needs to be both reworked, and probably extended with more simple examples. The tutorial needs to be created with the goal of getting new users to \texit{understand} how Qlik Core works, what it can do, and show that them that it solves problems in an easy and efficient way.
     \subsection{The API documentation gives thorough explanations on how it works}\label{APIexplained}
     Qlik Core is a group of different services running together. How these are linked together, is nowhere explained.\\
     On the QC website one can find the API documentation. It turns out that the documentation there however, is not directly under the Qlik Core teams control. It's pulled from other sources and automatically generated. In the end however, it's the Qlik Core team that is responsible for what is on their website. \\ \\
-    At the heart of it all is the QAE, which uses several different APIs: Qlik's own QIX API (built on JSONRPC), a REST API, Data Connector and Analytical Connector. The last two are based on gRPC (Google's implementation of RPC). In the introduction to the QAE it is explained that the different APIs are meant to be used in different use cases, and each of these APIs has their own API documentation. An error that exists in all documentation is that they are out of data. At time of writing, the latest release is 12.331.0, and the documentation is for version 12.292.0. Another thing that is true for all API documentations is that there are close to no examples. \\ \\
+    At the heart of it all is the QAE, which uses several different APIs, as stated in section \ref{sec:Qlik}. In the introduction to the QAE it is explained that the different APIs are meant to be used in different use cases, and that each of these APIs has their own API documentation. An error that exists in all documentation is that they are out of data. At time of writing, the latest release is 12.331.0, and the documentation is for version 12.292.0. Another thing that is true for all API documentations is that there are close to no examples. \\ \\
     \textbf{QIX API Documentation}\\
     For their own QIX API, it's lacking a lot. The documentation has been split up into several different sub-categories. They are "Definitions", "Global", "Doc", "Generic Obj", "Generic Bookmark", "Generic Dimension", "Generic Measure" and "Generic Variable". None of the sub-pages has an introduction or description of what the page contains. \\
     The sub-page "Definitions" is the one that is lacking the most. The definitions page is simply just a long list of a total of 217 definitions. In figure \ref{fig:qixmethod} we can see how an entry in "Definitions" typically looks like.
@@ -2436,19 +2466,19 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         \caption{The description on how to pass the licensing to the Qlik Associative Engine.}
         \label{fig:APIlicenese}
     \end{figure}
-    \textbf{Importance: Very important.}\\
-    \textbf{Verdict: Failed. Overall, the documentation feels overwhelming. It's hard to get a grip on when, where and how the APIs are supposed to be used. The documentation is not really explained at all. An introduction, with images, explaining how things are interconnected would be a great way to start. The licensing page needs rework too.}
+    \textbf{Effort: High. Payoff: High. Importance: Very important.}\\
+    \textbf{Verdict: Failed.} Overall, the documentation feels overwhelming. It's hard to get a grip on when, where and how the APIs are supposed to be used. The documentation is not really explained at all. An introduction, with images, explaining how things are interconnected would be a great way to start. The licensing page needs rework too.
     \subsection{The API has code examples}
     The APIs have close to \texit{no} examples at all. The few examples that exists are in the introduction part, and are snippets without any context. The recommendation for this aspect is to always have small examples, and preferably longer examples as well. As stated in \ref{hascodeexamples}, code examples are used for many things: getting an overview as to understand the platform, getting started and seeing how code is used. Even more alarming, the tutorials that is suppose to get people started is without examples. They simply rely on the user opening and project in GitHub and reading through it. API examples is the most important aspect according to this research paper, and the lack of them can been felt heavily. It's hard to get an understandable overview, hard to get started and hard to see how the APIs should be used.\\ \\
-    \textbf{Importance: Very important.} \\
+    \textbf{Effort: High. Payoff: High. Importance: Very important.}\\
     \textbf{Verdict: Failed.} The software platform has almost no examples at all, which makes it hard to use in a lot of ways. This needs to be of very high priority to fix.
     \subsection{The documentation doesn’t assume any prior expertise}
-    Qlik states that this documentation requires you to know some things before you begin. Most central is the third-party software Docker. By doing this, Qlik rejects the responsibility to explain how these things work. However, it feels like the documentation take \textit{too} little responsibility in explaining new concepts. The documentation also uses some unexplained expressions. One example of this is the terms to do something "On The Fly". This is a concept used throughout the documentation, but never explained what exactly it means. \\ Their way of dealing with new concepts however follows the recommendations of linking to places where an explanation is given. Qlik should be aware that the threshold of starting with Qlik Core is high for a new person because of the high requirements in prerequisite knowledge.\\ \\
-    \textbf{Importance: Not Very Important}\\
+    Qlik states that this documentation requires you to know some things before you begin. Most central is the third-party software Docker. By doing this, Qlik rejects the responsibility to explain how these things work. However, it feels like the documentation take \textit{too} little responsibility in explaining new concepts. The documentation also uses some unexplained expressions. One example of this is the term to do something "On The Fly". This is a concept used throughout the documentation, but never explained what exactly it means. \\ Their way of dealing with new concepts however follows the recommendations of linking to places where an explanation is given. Qlik should be aware that the threshold of starting with Qlik Core is high for a new person because of the high requirements in prerequisite knowledge.\\ \\
+    \textbf{Effort: Low. Payoff: Medium. Importance: Not Very Important}\\
     \textbf{Verdict: Pass.} If Qlik Core gives more examples and gets better at explaining its documentation, this aspect does not need fixing. It follows the recommendations. Combined with this aspect's importance being low, this aspects gets a pass.
     \subsection{The documentation has consistent language}
-    As mentioned in \ref{APIexplained}, the Qlik Core team are not directly responsible for the documentation for the APIs. When contacting the people responsible for the different parts, it turns out that there is not central vocabulary used. When reading through the documentation, it does however not seem inconsistent in its wording. The effort to produce a vocabulary to be used by many different teams is high, and inconsistency in the language does not seem to be an issue. \\ \\
-    \textbf{Importance: Not very important}\\
+    As mentioned in \ref{APIexplained}, the Qlik Core team are not directly responsible for the documentation for the APIs. When contacting the people responsible for the different parts, it turns out that there is no central vocabulary used, as is recommended. When reading through the documentation, it does however not seem inconsistent in its wording. The effort to produce a vocabulary to be used by many different teams is high, and inconsistency in the language does not seem to be an issue. \\ \\
+    \textbf{Effort: High. Payoff: Low. Importance: Not very important}\\
     \textbf{Verdict: Pass.} The recommendation is to use a central vocabulary. The language is however not inconsitent without it, and because of the high effort to implement it, this gets a pass anyway.
     \subsection{The documentation is easy to navigate}
     There are a few issues with the navigation for the documentation. The first is that on the start page, see figure \ref{fig:startpage}, there is no clear way of how to reach the API documentation. It turns out that the documentation is hidden in "Services", see figure \ref{fig:navgiation}.
@@ -2458,55 +2488,125 @@ Leave a \textit{2cm} vertical space after the abstract and provide a few keyword
         \caption{The sidebar navigation. The API documentation is found inside "Services".}
         \label{fig:navgiation}
     \end{figure}
-    The recommendation is to carefully choose your titles. API documentation being found inside Services is not very obvious, according to us. The sub-pages also have some very vague names. The services' APIs are quite big. For example, the QIX Definitions part having 217 entries in just one long list. Navigating the API documentation feels cumbersome and overwhelming. Restructuring this into smaller sections, with aptly named headings would make it easier.\\
+    The recommendation is to carefully choose your titles. API documentation being found inside Services is not very obvious, in my opinion. The sub-pages also have some very vague names. The services' APIs are quite big. For example, the QIX Definitions part having 217 entries in just one long list. Navigating the API documentation feels cumbersome and overwhelming. Restructuring this into smaller sections, with aptly named headings would make it easier.\\
     The Qlik Core website has a search function, which searches both their own documentation and third-party software documentation. The search function however is limited. It does not allow you to search for exact phrases, normally done by putting a phrase within citation marks. You cannot tell the search to \textit{not} include certain words or phrases, normally done by adding a minus before the word or phrase. In the end, it's probably easier to use a search engine like Google, than Qlik Core's own search function.\\\\
-    \textbf{Importance: Somewhat Important}\\
+    \textbf{Effort: Medium-High. Payoff: Medium. Importance: Somewhat Important}\\
     \textbf{Verdict: Failed.} The documentation is hard to find, somewhat hard to navigate and the search function is lacking functionality.
     \subsection{The official website looks professional}
-    This aspect is hard to evaluate objectively, since it is up to each user's opinion. According to us, the website does look professional. It's using standard conversions, doesn't have spelling errors or buggy CSS. It works well on mobile as well.\\ \\
-    \textbf{Importance: Somewhat important.}\\
+    This aspect is hard to evaluate objectively, since it is up to each user's opinion. According to me, the website does look professional. It's using standard conversions, doesn't have spelling errors or buggy CSS. It works well on mobile as well.\\ \\
+    \textbf{Effort: Medium. Payoff: Medium. Importance: Somewhat important.}\\
     \textbf{Verdict: Pass.}
     \subsection{The pricing of the software}
     Finding the pricing of Qlik Core is not possible. Going to the licensing page, you can easily try the software for free for a period of time. If you want to obtain an actual license however, you have to contact the sales department of Qlik. They don't give any information of any kind of price range or if it's a monthly or yearly (or any other) payment. Any information you want about pricing, you have to contact the sales department. This clearly goes against my recommendations.\\ \\
-    \textbf{Importance: Important}\\
+    \textbf{Effort: Low. Payoff: High. Importance: Important}\\
     \textbf{Verdict: Failed}. It's up to Qlik themselves how they choose to sell their product. Not giving any sort of information on the cost however will have a huge negative impact on developer experience for their potential buyers.
     \subsection{The release- and change notes are thorough}
     The release notes are in my opinion well done. Since it is a very new product, the release notes are more about new features rather than changes. These are presented in the form of a blog post with images and gifs, which makes it easy to get an overview of what's new. They warn about changes they are making that may cause issues, and explain how one should fix these things.\\ \\
-    \textbf{Importance: Not important.}\\
+    \textbf{Effort: Medium. Payoff: Low. Importance: Not important.}\\
     \textbf{Verdict: Pass.}
     \subsection{The software has the same features on all different platforms}\label{features}
     Qlik Core does not list on their website what features exist on what platforms. They have, according to one of their team members, tested it on different web browsers and found limitations for their services, but have yet to put them on their website. When it comes to the Qlik Associative Enginge, that is run in support of the third-party software Docker. Docker is supported by Mac, Windows and Ubuntu. It's also supports many different servers, such as Fedora. So the heart of Qlik Core, the engine, acting the same on all different platforms is reliant on Docker acting the same on all different platforms.\\\\
-    \textbf{Importance: Not very important}\\
+    \textbf{Effort: High. Payoff: Low-medium. Importance: Not very important}\\
     \textbf{Verdict: Failed}. The recommendation is to list your feature support on your website, which Qlik Core does not.
     \subsection{The software is compatible with different platforms}
     As mentioned in \ref{features}, the server side of Qlik Core (the engine) supports many platforms through Docker. The other services offered in Qlik Core works in all browsers, but may have limitations depending on the browser. \\\\
-    \textbf{Importance: Not very important.}\\
+    \textbf{Effort: High. Payoff: Low-medium. Importance: Not very important.}\\
     \textbf{Verdict: Pass.} I recommend however to make the information of platform support more clear on the Qlik Core website.
     \subsection{The software is offered in more than one programming language}
-    As mentioned before, Qlik Core is constructed from a combination of different services. The Engine is close-source, so the programming languages needed to know is for the supporting libraries that comes with Qlik Core. The majority of the libraries are written in JavaScript, which we saw in section \ref{sec:popLang} was a very popular programming language. However, they've actually gone to the length of offering the library that communicates with the engine, Engima, is both JavaScript and Go. This is above and beyond what I even recommend.\\\\
-    \textbf{Importance: Not important.}\\
+    As mentioned before, Qlik Core is constructed from a combination of different services. The engine is close-source, so the programming languages needed to know is for the supporting libraries that comes with Qlik Core. The majority of the libraries are written in JavaScript, which we saw in section \ref{sec:popLang} was a very popular programming language. However, they've actually gone to the length of offering the library that communicates with the engine, Engima, is both JavaScript and Go. This is above and beyond what I even recommend.\\\\
+    \textbf{Effort: High. Payoff: Low. Importance: Not important.}\\
     \textbf{Verdict: Pass.}
     \subsection{The software is open source}
     Qlik Core is partially open source. The data loading software "Halyard", the discovery service "Mira" and the software communicating with the engine "Enigma" are all open source. The Qlik Core website and all the tutorials are also open-source. The Licensing service and the Qlik Associative Engine are however close-source. Their reasoning behind making the Qlik Associative Engine close-source is to protect intellectual property. It is their main selling point, and also serves as the basis for their other products, and needs to be protected. Their licensing service contains some intellectual property as well and logic that would be vulnerable to open up to the public. Qlik has been in talks however to open up this service as well to the public, but would need some refactoring of the software in that case.\\\\
-    \textbf{Importance: Important}\\
+    \textbf{Effort: Medium-High. Payoff: High. Importance: Important}\\
     \textbf{Verdict: Pass.} Qlik has tried to make Qlik Core as open-source as possible, which follows the recommendations.
     \subsection{The software uses the programming language I am most comfortable with}
-    As talked about in \ref{Qlik}, the libraries in QC mainly uses JavaScript. The recommendation for this aspect is not to offer many langugaes, but rather keep an eye on what languages are popular, and will keep on being popular. And as we saw in section \ref{sec:popLang}, JavaScript is the most popular language on GitHub. \\\\
-    \textbf{Importance: Important}\\
+    As talked about in \ref{sec:Qlik}, the libraries in QC mainly uses JavaScript. The recommendation for this aspect is not to offer many langugaes, but rather keep an eye on what languages are popular, and will keep on being popular. And as we saw in section \ref{sec:popLang}, JavaScript is the most popular language on GitHub. \\\\
+    \textbf{Effort: Medium. Payoff: High. Importance: Important}\\
     \textbf{Verdict: Pass.}
     \subsection{There exists an active online community around the software}
     Being a fairly new product, there doesn't seem to be any community around Qlik Core yet. Searching for Qlik Core on Stack Overflow yields \textit{zero} results. There are no discussions from users directly in the GitHub repository relating to Qlik Core either. Qlik does have a forum site for its users, \texttt{https://community.qlik.com}. This website has different sub-categories for their products. It does not yet however a sub-category dedicated to Qlik Core. On the Qlik Core website, they link to a support channel on Slack (a chat program used commonly by developers). As of writing this paper, this seems to be the best way to get help as a user.\\
     It may be too early to judge Qlik Core for not having an online community. As we have seen however, Qlik has not yet done much to help create a community either. An easy first step would be to make a part of their official community site dedicated to questions regarding Qlik Core.\\ \\
-    \textbf{Importance: Important.}\\
+    \textbf{Effort: Medium. Payoff: Medium-High. Importance: Important.}\\
     \textbf{Verdict: Failed.} Although the product is in its early stages and will naturally not have a community yet, because of the aspect's importance and how little has been done to try to create a community, I give this aspect a failed grade.
+    \section{Qlik Core Evaluation Summary}
+    So how did Qlik Core do? In total, it passed 9 out of the 16 aspects. In table \ref{tab:qcScore} we can see a summation. We see that it gets av average score of 0.52/1.00. It's most suited for developers and engineers, and least suited for managers. It's most suited for hobby projects, and the same score for group and single projects.
+    \begin{table}[H]
+        \centering
+        \caption{The summation of how well Qlik Core follows the recommendations}
+        \label{tab:qcScore}
+        \begin{tabularx}{\columnwidth}{c|X|c:c:c:c:c:c:c}
+            \rotatebox{90}{\textbf{Failed}} & \textbf{Question}&	\rotatebox{90}{\textbf{Avg Everyone}}&\rotatebox{90}{\textbf{Architect}}&\rotatebox{90}{\textbf{D\&E}}&\rotatebox{90}{\textbf{Managers}}&\rotatebox{90}{\textbf{Group Points}}&\rotatebox{90}{\textbf{Single Points}}&\rotatebox{90}{\textbf{Hobby Points}} \\ \hline
+            \rowcolor{myGreen} &How often the software is updated	&	0.58	&	0.52	&	0.57	&	0.63	&	0.69	&	0.59	&	0.46	\\ \hline
+            \rowcolor{myRed}X &I can have working code quickly	&	0.80	&	0.85	&	0.80	&	0.71	&	0.75	&	0.80	&	0.86	\\ \hline
+            \rowcolor{myRed}X &The API documentation gives thorough explanations on how it works	&	0.82	&	0.82	&	0.87	&	0.73	&	0.85	&	0.82	&	0.79	\\ \hline
+            \rowcolor{myRed}X & The API has code examples	&	0.90	&	0.92	&	0.91	&	0.79	&	0.93	&	0.88	&	0.88	\\ \hline
+            \rowcolor{myGreen}  &The documentation doesn't assume any prior expertise	&	0.47	&	0.47	&	0.44	&	0.54	&	0.41	&	0.47	&	0.53	\\ \hline
+            \rowcolor{myGreen}  &The documentation has consistent language	&	0.41	&	0.49	&	0.34	&	0.42	&	0.42	&	0.42	&	0.39	\\ \hline
+            \rowcolor{myRed}X &The documentation is easy to navigate	&	0.60	&	0.66	&	0.61	&	0.52	&	0.61	&	0.60	&	0.60	\\ \hline
+            \rowcolor{myGreen}  &The official website looks professional	&	0.60	&	0.63	&	0.56	&	0.71	&	0.67	&	0.60	&	0.53	\\ \hline
+            \rowcolor{myRed}X &The pricing of the software	&	0.80	&	0.76	&	0.84	&	0.75	&	0.74	&	0.76	&	0.91	\\ \hline
+            \rowcolor{myGreen}  &The release- and change notes are thorough	&	0.33	&	0.26	&	0.29	&	0.44	&	0.40	&	0.31	&	0.27	\\ \hline
+            \rowcolor{myRed}X &The software has the same features on all different platforms	&	0.46	&	0.41	&	0.45	&	0.44	&	0.63	&	0.47	&	0.28	\\ \hline
+            \rowcolor{myGreen}  &The software is compatible with different platforms	&	0.58	&	0.58	&	0.52	&	0.54	&	0.81	&	0.58	&	0.37	\\ \hline
+            \rowcolor{myGreen}  &The software is offered in more than one programming language	&	0.36	&	0.37	&	0.31	&	0.44	&	0.48	&	0.35	&	0.25	\\ \hline
+            \rowcolor{myGreen}  &The software is open source	&	0.68	&	0.77	&	0.69	&	0.60	&	0.64	&	0.66	&	0.74	\\ \hline
+            \rowcolor{myGreen}  &The software uses the programming language I am most comfortable with	&	0.68	&	0.69	&	0.73	&	0.63	&	0.56	&	0.71	&	0.78	\\ \hline
+            \rowcolor{myRed}X &There exists an active online community around the software	&	0.65	    &	0.63	    &	0.67	    &	0.54	    &	0.69	    &	0.62	    &	0.65	\\ \hline \hline
+            \multicolumn{2}{l}{Max Points}                                                  &   9.73	&	9.81	&	9.60	&	9.42	&	10.27	&	9.64	&	9.28    \\ \hline
+            \multicolumn{2}{l}{Points}                                                      &	5.04	&	5.04	&	5.14	&	4.48	&	5.20	&	4.96	&	4.97	\\ \hline
+            \multicolumn{2}{l}{Score}                                                        &   0.52	&	0.51	&	0.54	&	0.48	&	0.51	&	0.51	&	0.54	\\ \hline
+        \end{tabularx}
+    \end{table}
+    \section{Self-Critique Of Results}
+    A few things should be said about the validity of the results from this research project. The two major issues that exist with the research is how homogeneous the data pool and the sample size. While the results are based on data from people working with the software industry, and it is therefor valid to say that this is a good basis for what developer want, it is a homogeneous group. The majority of the data pool work at Qlik. The standard praxis at Qlik is that you need at least a MSc to be employed, which means that this is highly educated data pool. It is also a group of people with similar lives and working practices.\\
+    The other critique is that the data pool, while not small enough to make the data unreliable, is not huge. A bigger data pool with a broader sample sources would make the results even more trustworthy.
     \chapter{Conclusion}
-    More text here...
+    So what is the conclusion of this research paper? If we go back to the original questions this research paper intended to answer, they were:
+    \begin{enumerate}
+        \item What aspects are needed by a software platform in order for people to enjoy using them, and how important are these aspects?
+        \item Do different groups of software platform users have different needs?
+        \item Why are some of these aspects needed or not needed in order for people to enjoy a software platform?
+        \item How enjoyable is Qlik's software platform Qlik Core to use for a user?
+    \end{enumerate}
+    We now have the knowledge to answer each of these questions.\\\\
+    \textbf{What aspects are needed by a software platform in order for people to enjoy using them, and how important are these aspects?}\\
+    The conclusion of the first question is that the most important aspects for a software platform is that it has thorough documentation, great code examples, is easy to get started with, and clearly shows the cost of the software platform. The least important aspects that need to exist in order for developers to enjoy using a software platform is that the release notes are thorough, that the software platform is offered in several languages and the documentation has consistent language.\\\\
+    \textbf{Do different groups of software platform users have different needs}\\
+    The conclusion for the second question is that some groupings are irrelevant, while some other show that different groups have different needs. Looking at years of experience or if people has the power to make decisions for other people did not say much about what needs they had from a software platform. Grouping people by their job title or by in what context they are going to use a software platform showed differences in priorities. The research also found that there is no uncoupling between what people consider and what while give them a positive experience using a software platform. Ergo, they are aware of what they need in order to be happy. \\
+    %Developers and Engineers want to have thorough documentation, good code examples, working code quickly and to know the pricing. Architects also want these aspects, but care more about the software platform being open-source and less about the pricing. Managers are less opinionated in what they want. They care less about documentation and more about online community support.\\
+    %People working on hobby projects care a lot about the pricing of the software compared to the situation of working professionally. \\
+    Overall the research also found that developers are impatient and follow the path of least resistance. If a software platform seems cumbersome, they would rather spend time on finding an alternative than trying to understand the software platform.\\\\
+    \textbf{Why are some of these aspects needed or not needed in order for people to enjoy a software platform?}\\
+    The research found that developers want working code quickly in order to be able to evaluate if a software platform is useful. They do not read about the platform when evaluating, but would rather just try it out themselves. The research also found that online communities are used as a source of questions-and-answers when stuck and developers do not care much about where it is, who is answering or if they feel apart of the community. Release notes were also found to be avoided by developers as much as possible. API examples in documentation was used for several things: copy-pasting into your code, seeing how methods should be used but most importantly as an overview for understanding the platform instead of reading explanatory texts.\\\\
+    \textbf{How enjoyable is Qlik's software platform Qlik Core to use for a user?}\\
+    Qlik's software platform Qlik Core was found to have some issues. It lacked API examples and API documentation explanations. It was hard to get started with and did not tell users its pricing. The research found that it was suitable for both professional use as well as hobby projects, and was most suited for the group developers and software engineers.\\\\
+
+
+    \chapter{Further Research}
+    There is a lot of possibility for further research. Here I suggest a few things.\\\\
+    \textbf{Deeper investigate other aspects than the three in this research paper}\\
+    Because of time constraints, there was only possible deep dive in to some of the aspects. It would however be interesting to get a deeper understanding of some of the other aspects.\\\\
+    \textbf{How do people discover new software?}\\
+    It was investigated a little bit in the test survey how people discover new software. This had to be dropped because of time constraints in this research paper, but would be interesting to research more.\\\\
+    \textbf{Use another data pool}\\
+    The data pool for this research paper was quite homogeneous. It would be interesting to see if other data pools yields similar results.\\\\
+    \textbf{Do the creators behind the software matter?}\\
+    In the test survey it was also asked about if people consider the creator behind the software. This was also dropped in the main survey, but would be interesting to research more.\\\\
+    \textbf{Extend the list of aspects}\\
+    The nature of this research paper was of the investigating kind. The list of aspects could be extended with considerations that were not brought up in this paper.
     \newpage
     \bibliographystyle{plainnat}
-    \makebibliography{references}
+    \bibliography{references}
     \begin{appendices}
         \chapter{Material for Interview}\label{interviewMaterial}
         Before the interviews were conducted, the interviewees got handed this PDF with a part of a fictive software platform documentation. They had to read and solve three questions, to make sure that they had actually read through it properly.
         \includepdf[pages=-]{QuizAndMaterial.pdf}
+        \chapter{Pilot Survey}\label{pilotsurvey}
+        The initial test survey that was sent out. The original survey was conducted using Google Form, and answered online. The look of it is not the same here as it was online, but the questions are identical.
+        \includepdf[pages=-]{survey1.pdf}
+        \chapter{Main Survey}\label{mainsurvey}
+        The main survey that was sent out. The original survey was conducted using Google Form, and answered online. The look of it is not the same here as it was online, but the questions are identical.
+        \includepdf[pages=-]{Survey2.pdf}
     \end{appendices}
 \end{document}
